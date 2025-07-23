@@ -14,6 +14,7 @@
   * [How to create a limit order?](guide/workflow/how-to-create-a-limit-order.md)
   * [How to create a sell-the-news strategy?](guide/workflow/how-to-create-a-sell-the-news-strategy.md)
   * [How to create a grid trading bot?](guide/workflow/how-to-create-a-grid-trading-bot.md)
+  * [How to create a copy trading bot?](guide/workflow/how-to-create-a-copy-trading-bot.md)
 
 ## Mechanism
 
