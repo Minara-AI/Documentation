@@ -1,14 +1,19 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Subscription](subscription/README.md)
+  * [How credits work?](subscription/how-credits-work.md)
 * [FAQ](faq.md)
 
 ## Guide
 
-* [How to optimzie Minara's response](guide/how-to-optimzie-minaras-response.md)
 * [How to get stablecoin with a credit card?](guide/how-to-get-stablecoin-with-a-credit-card.md)
 * [How to buy tokens or stocks?](guide/how-to-buy-tokens-or-stocks.md)
-* [How credits work?](guide/how-credits-work.md)
+* [Workflow](guide/workflow/README.md)
+  * [How to create a price alert bot?](guide/workflow/how-to-create-a-price-alert-bot.md)
+  * [How to create a limit order?](guide/workflow/how-to-create-a-limit-order.md)
+  * [How to create a sell-the-news strategy?](guide/workflow/how-to-create-a-sell-the-news-strategy.md)
+  * [How to create a grid trading bot?](guide/workflow/how-to-create-a-grid-trading-bot.md)
 
 ## Mechanism
 

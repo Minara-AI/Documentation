@@ -4,4 +4,4 @@ Trading capabilities are powered by Particle Network. You can use stablecoins li
 
 Network fees will be deducted directly from your stablecoins.
 
-Currently, we support the following blockchian networks:  **TODO** [Amber Wang](https://app.gitbook.com/u/Qy4BTXtT7aclO3Nxfy4lhkqo1ux1 "mention")
+Currently, Minara can trade tokens on the following blockchians: **Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, Linea, Polygon, HyperEVM, Sonic, BearChain.**

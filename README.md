@@ -1,9 +1,15 @@
+---
+description: Minara - Your reliable virtual CFO.
+---
+
 # Introduction
+
+<figure><img src=".gitbook/assets/banner.png" alt=""><figcaption></figcaption></figure>
 
 ## What is Minara?
 
 **Minara is not just another AI chatbot—**\
-**she's an all-powerful financial assistant like no other.**
+**she's an all-powerful financial AI assistant like no other.**
 
 Ask anything about digital finance—stocks, commodity, Bitcoin, tokens, RWA, DeFi, NFTs, and more. Trade any asset in one place, and create powerful proxies with just your words, no code required. With Minara, everything is possible.
 
@@ -37,4 +43,5 @@ Access raw data and protocols across multi-chains.Trade tokens with stablecoin t
 
 ### Agent Factory
 
-Prompt to create any kinds of financial workflows, like trading, monitor or yield agents—no code required.\
+Prompt to create any kinds of financial workflows, like trading, monitor or yield agents—no code required.
+
