@@ -14,5 +14,5 @@
 
 * [Tools Integration](mechanism/tools-integration.md)
 * [Trading](mechanism/trading.md)
-* [Smart Agent Wallet](mechanism/smart-agent-wallet.md)
+* [Wallet Security](mechanism/wallet-security.md)
 * [Prompt to Agent(Workflow)](mechanism/prompt-to-agent-workflow.md)
