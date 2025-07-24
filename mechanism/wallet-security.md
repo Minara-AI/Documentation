@@ -8,7 +8,7 @@ Unlike traditional centralized exchanges, **this custodial smart wallet is not s
 
 To elaborate, Minara's wallet system involves two types of wallets:
 
-* **Funding Wallet**: An automatically generated smart contract wallet for each user, storing the funds they deposit.
+* **Funding Wallet**: An automatically generated smart contract wallet for each user, storing the funds they deposit. It makes fund flows transparent, auditable, and verifiable, which is different from CEXs.
 * **Controller Wallet**: A wallet controlled by Minara that can manage the Funding Wallet and its funds, conducting transactions, staking, and other on-chain operations. This wallet uses advanced cryptography technology such as key sharding, multi-signature, and TEE to ensure security while maximizing signature efficiency.
 
 ## Funding Wallet
