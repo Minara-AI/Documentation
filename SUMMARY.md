@@ -7,7 +7,8 @@
 
 ## Guide
 
-* [How to get stablecoins?](guide/how-to-get-stablecoins.md)
+* [How to optimize Minara's response](guide/how-to-optimize-minaras-response.md)
+* [How to get stablecoins?](guide/how-to-get-stablecoin-with-a-credit-card.md)
 * [How to buy tokens or stocks?](guide/how-to-buy-tokens-or-stocks.md)
 * [Workflow](guide/workflow/README.md)
   * [How to create a price alert bot?](guide/workflow/how-to-create-a-price-alert-bot.md)
