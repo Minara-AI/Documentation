@@ -2,24 +2,24 @@
 
 ## Overview
 
-1. **Prepare Your Card**\
-   Make sure you have a valid Visa, Mastercard, or another supported payment card ready.
-2. **Log in to Minara**\
-   Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner.![](<../.gitbook/assets/image (9).png>)
-3. **Choose an OTC Option**\
-   Select one of the available OTC (Over-the-Counter) providers listed on the deposit page.![](<../.gitbook/assets/image (10).png>)
-4. **Complete the Purchase**\
-   You’ll be redirected to the OTC provider's interface.
-   1. Choose your fiat currency
-   2. Enter the purchase amount
-   3. Select the blockchain network where you want to receive your stablecoin (e.g., Ethereum, Polygon)
-   4. Pay with your credit/debit card to receive **USDC** directly to your wallet.
-
 In Minara, users can deposit any tokens on the blockchain Minara supports, and USDC will be used as the base cryptocurrency used for trading.
 
-This guid will show you how to deposit **USDC** in three different ways.
+This guide will show you how to deposit **USDC** in three different ways.
 
 ## Deposit using a credit card
+
+* **Prepare Your Card**\
+  Make sure you have a valid Visa, Mastercard, or another supported payment card ready.
+* **Log in to Minara**\
+  Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner.![](<../.gitbook/assets/image (9).png>)
+* **Choose an OTC Option**\
+  Select one of the available OTC (Over-the-Counter) providers listed on the deposit page.![](<../.gitbook/assets/image (10).png>)
+* **Complete the Purchase**\
+  You’ll be redirected to the OTC provider's interface.
+  1. Choose your fiat currency
+  2. Enter the purchase amount
+  3. Select the blockchain network where you want to receive your stablecoin (e.g., Ethereum, Polygon)
+  4. Pay with your credit/debit card to receive **USDC** directly to your wallet.
 
 ## Deposit from CEX
 
