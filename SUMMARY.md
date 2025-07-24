@@ -23,3 +23,4 @@
 * [Wallet Security](mechanism/wallet-security.md)
 * [Prompt to Agent(Workflow)](mechanism/prompt-to-agent-workflow.md)
 * [Deep Research](mechanism/deep-research.md)
+* [Personalization](mechanism/personalization.md)
