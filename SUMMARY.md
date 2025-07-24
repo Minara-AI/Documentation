@@ -7,15 +7,16 @@
 
 ## Guide
 
-* [How to optimize Minara's response](guide/how-to-optimize-minaras-response.md)
-* [How to get stablecoins?](guide/how-to-get-stablecoin-with-a-credit-card.md)
-* [How to buy tokens or stocks?](guide/how-to-buy-tokens-or-stocks.md)
+* [How to deposit funds?](guide/how-to-deposit-funds.md)
+* [How to buy cryptocurrency?](guide/how-to-buy-cryptocurrency.md)
+* [How to buy stocks?](guide/how-to-buy-stocks.md)
 * [Workflow](guide/workflow/README.md)
   * [How to create a price alert bot?](guide/workflow/how-to-create-a-price-alert-bot.md)
   * [How to create a limit order?](guide/workflow/how-to-create-a-limit-order.md)
   * [How to create a sell-the-news strategy?](guide/workflow/how-to-create-a-sell-the-news-strategy.md)
   * [How to create a grid trading bot?](guide/workflow/how-to-create-a-grid-trading-bot.md)
   * [How to create a copy trading bot?](guide/workflow/how-to-create-a-copy-trading-bot.md)
+* [How to withdraw funds?](guide/how-to-withdraw-funds.md)
 
 ## Mechanism
 

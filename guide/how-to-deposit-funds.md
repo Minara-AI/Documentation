@@ -1,6 +1,6 @@
-# How to get stablecoins?
+# How to deposit funds?
 
-## Deposit using a credit card
+## Overview
 
 1. **Prepare Your Card**\
    Make sure you have a valid Visa, Mastercard, or another supported payment card ready.
@@ -14,6 +14,12 @@
    2. Enter the purchase amount
    3. Select the blockchain network where you want to receive your stablecoin (e.g., Ethereum, Polygon)
    4. Pay with your credit/debit card to receive **USDC** directly to your wallet.
+
+In Minara, users can deposit any tokens on the blockchain Minara supports, and USDC will be used as the base cryptocurrency used for trading.
+
+This guid will show you how to deposit **USDC** in three different ways.
+
+## Deposit using a credit card
 
 ## Deposit from CEX
 
