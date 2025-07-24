@@ -23,7 +23,7 @@ Funding wallet is based on [Universal Account](https://developers.particle.netwo
 
 <figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Minara's Controller Wallet leverages Privy, TEE (Trusted Execution Environment), smart contract(Abstract account), and a multi-party authorization signing mechanism. Its core features include:
+Minara's Controller Wallet leverages Privy, TEE (Trusted Execution Environment) and a multi-party authorization signing mechanism. Its core features include:
 
 * **Sharded Key Management & TEE Custody**: Keys are encrypted and stored in shards across different security boundaries. They are encapsulated and retrieved within the TEE, ensuring they always remain in a trusted environment.
 * **M-of-N Authorized Signatures**: Multi-party authorization enhances transaction security. Independent services like business, risk control, and strategy services contribute to signature verification, minimizing single points of failure.
