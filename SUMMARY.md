@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Subscription](subscription/README.md)
+  * [Subscription & Top-up Policy](subscription/subscription-and-top-up-policy.md)
   * [How credits work?](subscription/how-credits-work.md)
 * [FAQ](faq.md)
 

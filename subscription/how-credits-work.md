@@ -1,8 +1,11 @@
+---
+description: >-
+  We use credits to measure your usage on Minara. Whenever you perform actions
+  that involve AI processing or specific workflow execution, credits are
+  deducted based on token consumption.
+---
+
 # How credits work?
-
-We use credits to measure your usage on Minara. Whenever you perform actions that involve AI processing or specific workflow execution, credits are deducted based on token consumption.
-
-
 
 ### When Are Credits Deducted?
 
