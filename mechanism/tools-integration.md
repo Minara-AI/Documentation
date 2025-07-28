@@ -6,7 +6,7 @@ Currently, Minara integrates the following external tools, including various dat
 
 ## Date Source
 
-Minara does not rely on web search for actionable insights, **as they're often unreliable.Instead,** Minara opted to integrate various industry data sources through APIs or MCPs, covering the following categories:
+Minara does not rely on web search for actionable insights, **as they're often unreliable.** Instead, Minara opted to integrate various industry data sources, covering the following categories:
 
 * **Finance Data**: transactions, stocks, tokens, DeFi, NFTs, liquidation, project/VC information, etc
 * **Audience Data**: entities, holders, smart money, social identities, P\&L, relationships, etc
