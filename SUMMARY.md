@@ -18,6 +18,7 @@
   * [How to create a grid trading bot?](guide/workflow/how-to-create-a-grid-trading-bot.md)
   * [How to create a copy trading bot?](guide/workflow/how-to-create-a-copy-trading-bot.md)
 * [How to withdraw funds?](guide/how-to-withdraw-funds.md)
+* [How to create an analysis report](guide/how-to-create-an-analysis-report.md)
 
 ## Mechanism
 
