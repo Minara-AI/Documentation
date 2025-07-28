@@ -29,14 +29,11 @@ This guide will show you how to deposit **USDC** in three different ways.
    Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner.![](<../.gitbook/assets/image (9).png>)
 3. **Choose Token and Network**\
    Select the blockchain network you want to use for the deposit. Minara will generate a wallet address for the selected network.                 ![](<../.gitbook/assets/image (8).png>)
-4.  **Withdraw from the CEX**\
-    Go to your exchange's **Withdraw/Send** section.
-
-    * Paste the deposit address from Minara
-    * Select the same token and network as shown on Minara
-    * Enter the amount and confirm the withdrawal
-
-    <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+4. **Withdraw from the CEX**\
+   Go to your exchange's **Withdraw/Send** section.
+   * Paste the deposit address from Minara
+   * Select the same token and network as shown on Minara
+   * Enter the amount and confirm the withdrawal
 
 Once the transaction is confirmed on-chain, your funds will appear in your Minara account.
 
