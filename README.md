@@ -39,9 +39,13 @@ Minara has integrated numerous industry data sources covering the following cate
 
 ### AI-powered Access To Digital Finance
 
-Access raw data and protocols across multi-chains.Trade tokens with stablecoin through a built-in custodial wallet.
+Access raw data and protocols across multi-chains. Trade tokens with stablecoin through a built-in custodial wallet.
 
 ### Agent Factory
 
 Prompt to create any kinds of financial workflows, like trading, monitor or yield agents—no code required.
+
+
+
+## Minara适合哪些用户？
 

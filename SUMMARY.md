@@ -8,6 +8,7 @@
 
 ## Guide
 
+* [How to active an account](guide/how-to-active-an-account.md)
 * [How to deposit funds?](guide/how-to-deposit-funds.md)
 * [How to buy cryptocurrency?](guide/how-to-buy-cryptocurrency.md)
 * [How to buy stocks?](guide/how-to-buy-stocks.md)
