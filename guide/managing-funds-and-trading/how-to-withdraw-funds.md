@@ -17,11 +17,11 @@ This guide will show you how to withdraw **USDC** in three different ways.
 2.  **Log in to Minara**\
     Visit Minara and log in to your account. Click the **“Asset”** button at the top right corner. Then, click the "Withdraw" button.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 3. **Complete the Withdraw**
    1. Choose your fiat currency.
    2. Enter the valid address copied from CEX, token and amount.
@@ -34,11 +34,11 @@ This guide will show you how to withdraw **USDC** in three different ways.
 2.  **Log in to Minara**\
     Visit Minara and log in to your account. Click the **“Asset”** button at the top right corner. Then, click the "Withdraw" button.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 3. **Complete the Withdraw**
    1. Choose your fiat currency.
    2. Enter the valid address, token and amount.

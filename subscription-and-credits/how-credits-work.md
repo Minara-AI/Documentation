@@ -1,11 +1,11 @@
 ---
 description: >-
-  We use credits to measure your usage on Minara. Whenever you perform actions
+  WWe use credits to measure your usage on Minara. Whenever you perform actions
   that involve AI processing or specific workflow execution, credits are
   deducted based on token consumption.
 ---
 
-# How credits work?
+# How Credits Work?
 
 ### When Are Credits Deducted?
 
@@ -46,7 +46,7 @@ For now, credits are deducted only for Minara Call nodes.
 
 ### **Need More Credits?**
 
-Credits are refreshed monthly at the beginning of your plan cycle. You can upgrade your plan (which takes effect immediately) or purchase a Top-Up pack (available only with an active subscription) at any time to keep things running smoothly.
+Credits are refreshed monthly at the beginning of your plan cycle. You can upgrade your plan (which takes effect immediately) or purchase a top-up credit pack (available only with an active subscription) at any time to keep things running smoothly.
 
 
 

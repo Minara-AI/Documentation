@@ -1,24 +1,25 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Subscription](subscription/README.md)
-  * [Subscription & Top-up Policy](subscription/subscription-and-top-up-policy.md)
-  * [How credits work?](subscription/how-credits-work.md)
+* [Subscription & Credits](subscription-and-credits/README.md)
+  * [Subscription & Top-up Policy](subscription-and-credits/subscription-and-top-up-policy.md)
+  * [How Credits Work?](subscription-and-credits/how-credits-work.md)
 * [FAQ](faq.md)
 
 ## Guide
 
 * [How to active an account](guide/how-to-active-an-account.md)
-* [How to deposit funds?](guide/how-to-deposit-funds.md)
-* [How to buy cryptocurrency?](guide/how-to-buy-cryptocurrency.md)
-* [How to buy stocks?](guide/how-to-buy-stocks.md)
+* [Managing Funds and Trading](guide/managing-funds-and-trading/README.md)
+  * [How to Deposit Funds?](guide/managing-funds-and-trading/how-to-deposit-funds.md)
+  * [How to buy cryptocurrency?](guide/managing-funds-and-trading/how-to-buy-cryptocurrency.md)
+  * [How to buy stocks?](guide/managing-funds-and-trading/how-to-buy-stocks.md)
+  * [How to withdraw funds?](guide/managing-funds-and-trading/how-to-withdraw-funds.md)
 * [Workflow](guide/workflow/README.md)
   * [How to create a price alert bot?](guide/workflow/how-to-create-a-price-alert-bot.md)
   * [How to create a limit order?](guide/workflow/how-to-create-a-limit-order.md)
   * [How to create a sell-the-news strategy?](guide/workflow/how-to-create-a-sell-the-news-strategy.md)
   * [How to create a grid trading bot?](guide/workflow/how-to-create-a-grid-trading-bot.md)
   * [How to create a copy trading bot?](guide/workflow/how-to-create-a-copy-trading-bot.md)
-* [How to withdraw funds?](guide/how-to-withdraw-funds.md)
 * [How to create an analysis report](guide/how-to-create-an-analysis-report.md)
 
 ## Mechanism
