@@ -8,18 +8,18 @@
 
 ## Guide
 
-* [How to active an account](guide/how-to-active-an-account.md)
+* [Active Your Account](guide/active-your-account.md)
 * [Managing Funds and Trading](guide/managing-funds-and-trading/README.md)
   * [How to Deposit Funds?](guide/managing-funds-and-trading/how-to-deposit-funds.md)
   * [How to buy cryptocurrency?](guide/managing-funds-and-trading/how-to-buy-cryptocurrency.md)
   * [How to buy stocks?](guide/managing-funds-and-trading/how-to-buy-stocks.md)
   * [How to withdraw funds?](guide/managing-funds-and-trading/how-to-withdraw-funds.md)
-* [Workflow](guide/workflow/README.md)
-  * [How to create a price alert bot?](guide/workflow/how-to-create-a-price-alert-bot.md)
-  * [How to create a limit order?](guide/workflow/how-to-create-a-limit-order.md)
-  * [How to create a sell-the-news strategy?](guide/workflow/how-to-create-a-sell-the-news-strategy.md)
-  * [How to create a grid trading bot?](guide/workflow/how-to-create-a-grid-trading-bot.md)
-  * [How to create a copy trading bot?](guide/workflow/how-to-create-a-copy-trading-bot.md)
+* [Prompt to Agent](guide/prompt-to-agent/README.md)
+  * [How to create a price alert bot?](guide/prompt-to-agent/how-to-create-a-price-alert-bot.md)
+  * [How to create a limit order?](guide/prompt-to-agent/how-to-create-a-limit-order.md)
+  * [How to create a sell-the-news strategy?](guide/prompt-to-agent/how-to-create-a-sell-the-news-strategy.md)
+  * [How to create a grid trading bot?](guide/prompt-to-agent/how-to-create-a-grid-trading-bot.md)
+  * [How to create a copy trading bot?](guide/prompt-to-agent/how-to-create-a-copy-trading-bot.md)
 * [How to create an analysis report](guide/how-to-create-an-analysis-report.md)
 
 ## Mechanism
