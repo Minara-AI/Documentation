@@ -8,27 +8,20 @@ This guide will show you how to withdraw **USDC** in three different ways.
 
 ## Withdraw using a credit card
 
-* **Prepare Your Card**\
-  Make sure you have a valid Visa, Mastercard, or another supported card ready.
-*
 
-## Deposit from CEX
+
+## Withdraw to CEX
 
 1. **Prepare Your Exchange Account**\
-   Log in to your CEX account (e.g., Binance, OKX, Coinbase) and ensure you have the crypto asset you want to transfer.
+   Log in to your CEX account (e.g., Binance, OKX, Coinbase) and ensure you have the access to receive crypto.
 2. **Log in to Minara**\
-   Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner.![](<../.gitbook/assets/image (9).png>)
-3. **Choose Token and Network**\
-   Select the blockchain network you want to use for the deposit. Minara will generate a wallet address for the selected network.                 ![](<../.gitbook/assets/image (8).png>)
-4. **Withdraw from the CEX**\
-   Go to your exchange's **Withdraw/Send** section.
-   * Paste the deposit address from Minara
-   * Select the same token and network as shown on Minara
-   * Enter the amount and confirm the withdrawal
+   Visit Minara and log in to your account. Click the **“Asset”** button at the top right corner. Then, click the "Withdraw" button. ![](<../.gitbook/assets/image (17).png>)![](<../.gitbook/assets/image (18).png>)![](<../.gitbook/assets/image (19).png>)
+3. **Complete the Withdraw**
+   1. Choose your fiat currency.
+   2. Enter the valid address copied from CEX, token and amount.
+   3. Click "Withdraw" and send **USDC** directly to your CEX.
 
-Once the transaction is confirmed on-chain, your funds will appear in your Minara account.
-
-## Deposit from another crypto wallet
+## Withdraw to another crypto wallet
 
 1. **Prepare Your Wallet**\
    Make sure you have a crypto wallet with access to the correct blockchain network.
@@ -37,6 +30,6 @@ Once the transaction is confirmed on-chain, your funds will appear in your Minar
 3. **Complete the Withdraw**
    1. Choose your fiat currency.
    2. Enter the valid address, token and amount.
-   3. &#x20;with your credit/debit card to receive **USDC** directly to your .
+   3. Click "Withdraw" and send **USDC** directly to your another wallet.
 
 Once confirmed, your balance will be updated in Minara.
