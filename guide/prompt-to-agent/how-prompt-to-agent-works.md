@@ -52,4 +52,6 @@ Minara's workflows are composed of various node types, each serving a specific f
   * However, successful trading actions will incur transaction fees, like other trades done with Minara.
 * **Workflow Execution**: If your credit balance is depleted, all active workflows will be automatically paused. To avoid unexpected losses from execution interruptions, please make sure that you have sufficient credits.
 
+For more details about credits, please refer to: [subscription-and-credits](../../subscription-and-credits/ "mention")
+
 ***
