@@ -12,7 +12,7 @@ description: >-
 
 Minara's workflow engine is built upon the open-source platform [n8n](https://n8n.io/), a visual automation tool that enables the creation of complex workflows through a node-based interface.
 
-When you chat with Minara, she recognizes your intent and parse your command to identify executable tasks. These tasks are then translated into workflows and displayed visually as nodes and branches on a canvas. This approach enables users to:
+When you chat with Minara, she recognizes your intent and parses your command to identify executable tasks. These tasks are then translated into workflows and displayed visually as nodes and branches on a canvas. This approach enables users to:
 
 * **Visualize Workflow Logic**: Understand the sequence and dependencies of tasks.
 * **Monitor Workflow Status**: Track the execution of each workflow, even performance (coming soon).
@@ -50,6 +50,6 @@ Minara's workflows are composed of various node types, each serving a specific f
 
 * **Credit Consumption**: For now, only the **Minara Call** node consumes credits.
   * However, successful trading actions will incur transaction fees, like other trades done with Minara.
-* **Workflow Execution**: If your credit balance is depleted, all active workflows will be automatically paused. To avoid unexpected loss from execution interruption, please make sure that you have sufficient credits.
+* **Workflow Execution**: If your credit balance is depleted, all active workflows will be automatically paused. To avoid unexpected losses from execution interruptions, please make sure that you have sufficient credits.
 
 ***
