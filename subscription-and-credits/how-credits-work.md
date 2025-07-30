@@ -33,7 +33,7 @@ If a response or task is interrupted due to a system error, **no credits will be
 
 ### Workflow Execution Rules
 
-For now, credits are deducted only for Minara Call nodes.
+> **Note**: For now, credits are only deducted for Minara Call nodes. However, please note that all running workflows will be paused if credits run out.
 
 | **Node Type** | **Credit Usage**            |
 | ------------- | --------------------------- |
