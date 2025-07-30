@@ -15,12 +15,14 @@
   * [How to buy stocks?](guide/managing-funds-and-trading/how-to-buy-stocks.md)
   * [How to withdraw funds?](guide/managing-funds-and-trading/how-to-withdraw-funds.md)
 * [Prompt to Agent](guide/prompt-to-agent/README.md)
-  * [How to create a price alert bot?](guide/prompt-to-agent/how-to-create-a-price-alert-bot.md)
-  * [How to create a limit order?](guide/prompt-to-agent/how-to-create-a-limit-order.md)
-  * [How to create a sell-the-news strategy?](guide/prompt-to-agent/how-to-create-a-sell-the-news-strategy.md)
-  * [How to create a grid trading bot?](guide/prompt-to-agent/how-to-create-a-grid-trading-bot.md)
-  * [How to create a copy trading bot?](guide/prompt-to-agent/how-to-create-a-copy-trading-bot.md)
-* [How to create an analysis report](guide/how-to-create-an-analysis-report.md)
+  * [How Prompt-to-Agent works](guide/prompt-to-agent/how-prompt-to-agent-works.md)
+  * [Agentic Workflow Best Practice](guide/prompt-to-agent/agentic-workflow-best-practice/README.md)
+    * [How to create a price alert bot?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-price-alert-bot.md)
+    * [How to create a limit order?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-limit-order.md)
+    * [How to create a sell-the-news strategy?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-sell-the-news-strategy.md)
+    * [How to create a grid trading bot?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-grid-trading-bot.md)
+    * [How to create an analysis report](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-an-analysis-report.md)
+    * [How to create a copy trading bot?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
 
 ## Mechanism
 
