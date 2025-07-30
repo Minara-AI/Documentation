@@ -47,14 +47,6 @@ With access to over **50 leading data providers** (e.g., Arkham, CoinMarketCap, 
 
 Access raw data and protocols across multi-chains. Trade tokens with stablecoin through a built-in custodial wallet.
 
-**Comprehensive Data Analysis**\
-Minara tracks and analyzes both on-chain and off-chain data, including:
-
-* **On-chain behavior**: wallet activity, capital flows, Degen operations, etc.
-* **Market dynamics**: token price trends, stock analysis, trading depth, and liquidation data.
-* **Sentiment & Social Data**: KOL followings, community sentiment, and social media trends (e.g., X, Telegram).
-* **Airdrop & Project Insights**: airdrop trends, token issuance monitoring, and project attention.
-
 #### Agent Factory
 
 Prompt to create any kinds of financial workflows, like trading, monitor or yield agents—no code required.
