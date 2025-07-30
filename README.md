@@ -25,7 +25,7 @@ If you're struggling to find effective tools for retrieving financial or crypto 
 
 ### Who is Minara for?
 
-Minara is perfect for anyone involved in or interested in Web3. Whether you're an active trader (stocks, RWAs, or meme coins), DeFi enthusiast, airdrop hunter, or a newcomer to the space, Minara will be your trusted financial analyst and friend in the world of Web3.
+Minara is perfect for anyone involved in or interested in digital finance. Whether you're an active trader (stocks, RWAs, or meme coins), DeFi enthusiast, airdrop hunter, or a newcomer to the space, Minara will be your trusted financial analyst and friend in the world of Web3.
 
 ### What makes Minara different?
 
