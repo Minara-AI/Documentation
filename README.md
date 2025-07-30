@@ -37,19 +37,31 @@ Optimized with domain-specific data and an extensive digital finance knowledge g
 
 Minara has integrated numerous industry data sources covering the following categories:
 
-* **Finance Data:** transactions, stocks, tokens, DeFi, NFTs, liquidation, Web3 project/VC information, etc
-* **Audience Data:** entities, holders, smart money, social identities, P\&L, relationships, etc
-* **Sentiment Data:** news, X posts and trends, Greed/Fear index, macro signals, policy headlines, etc
+* **Finance Data:** transactions, stocks, tokens, DeFi, NFTs, liquidation, Web3 project/VC information, etc.
+* **Audience Data:** entities, holders, smart money, social identities, P\&L, relationships, etc.
+* **Sentiment Data:** news, X posts and trends, Greed/Fear index, macro signals, policy headlines, etc.
+
+With access to over **50 leading data providers** (e.g., Arkham, CoinMarketCap, Glassnode, NFTGo, DeFiLlama), Minara offers real-time, actionable insights into financial markets, Web3, and crypto.
 
 #### AI-powered Access To Digital Finance
 
 Access raw data and protocols across multi-chains. Trade tokens with stablecoin through a built-in custodial wallet.
 
+**Comprehensive Data Analysis**\
+Minara tracks and analyzes both on-chain and off-chain data, including:
+
+* **On-chain behavior**: wallet activity, capital flows, Degen operations, etc.
+* **Market dynamics**: token price trends, stock analysis, trading depth, and liquidation data.
+* **Sentiment & Social Data**: KOL followings, community sentiment, and social media trends (e.g., X, Telegram).
+* **Airdrop & Project Insights**: airdrop trends, token issuance monitoring, and project attention.
+
 #### Agent Factory
 
 Prompt to create any kinds of financial workflows, like trading, monitor or yield agents—no code required.
 
+***
 
+By combining these insights with proprietary strategies, we are confident that Minara has become your best companion in your digital financing journey.&#x20;
 
 
 
