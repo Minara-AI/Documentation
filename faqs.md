@@ -120,7 +120,7 @@ Minara is committed to providing transparent and verifiable information. All key
 
 ***
 
-### Troubleshooting Crypto Deposit via Card (OTC)
+### Troubleshooting Crypto Deposit with Card
 
 Some users prefer to deposit crypto using credit or debit cards via third-party OTC (Over-The-Counter) services. This section answers common questions and issues that might come up. Please refer to [#deposit-using-a-credit-card](guide/managing-funds-and-trading/how-to-deposit-funds.md#deposit-using-a-credit-card "mention") if you are looking for tutorials.
 
