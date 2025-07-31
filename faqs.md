@@ -32,6 +32,11 @@ Minara responds quickly and executes precisely. Additionally, Minara's built-in 
 
 Minara also supports **Prompt-to-Agent**, enabling you to create automated workflows (e.g., monitor on-chain transactions and trigger actions) through simple dialogue with Minara, and manage them through a visual interface.
 
+#### **3. Where can I manage my subscription plans?**
+
+Managing your subscription is simple. Click **“Manage”** in the top right corner to access the subscription management page, where you can view your current plan details, usage, and billing cycle. You can upgrade or downgrade your plan at any time. Upgrades will take effect immediately once payment is completed, and downgrades will take effect in the next billing cycle.\
+For more details, visit: [subscription-and-top-up-policy.md](subscription-and-credits/subscription-and-top-up-policy.md "mention")
+
 ***
 
 ### Trading & Asset Management
@@ -60,7 +65,7 @@ Future support will include:
 * Structured DeFi product integration
 * Other advanced features
 
-#### **4. How does Minara handle failed or erroneous trades?**
+#### **4. How does Minara handle failed trades?**
 
 Minara uses a multi-layer security mechanism to ensure transaction reliability and fund safety. Before execution, critical parameters like account balance, gas fees, and slippage settings are automatically checked. During execution, if network congestion or price volatility occurs, Minara will intelligently adjust gas fees and retry automatically. If a trade ultimately fails, the system will provide a detailed error analysis and suggestions. All operations are logged, so you can easily track execution status and avoid worrying about funds being stuck.
 
@@ -71,6 +76,16 @@ Minara strictly adheres to the security principle of **“user authorization fir
 #### **6. Where can I view and track my trades and activity history?**
 
 You can track your trades and activities by clicking **“Asset - Activity”** to view your transaction history and account activity.
+
+{% columns %}
+{% column %}
+![](https://byterum.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWZmYTA1MjY3MmQwYTA2NGYyM2UzYThhNWQ3NzUzYmNfa3R4UzFKd0dWQURFTWEzTjZ5RFRpbFliSW55Yzh6WG1fVG9rZW46VXlNSmJCOHBlb1hhaFN4TkRCOWM1MkpRbk1lXzE3NTM5NTIzMDA6MTc1Mzk1NTkwMF9WNA)
+{% endcolumn %}
+
+{% column %}
+<figure><img src=".gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 #### **7. Does Minara support manual intervention in trading strategies?**
 
@@ -105,16 +120,42 @@ Minara is committed to providing transparent and verifiable information. All key
 
 ***
 
-### Subscription & Account Management
+### Troubleshooting Crypto Deposit via Card (OTC)
 
-#### **1. Where can I manage my subscription plans?**
+Some users prefer to deposit crypto using credit or debit cards via third-party OTC (Over-The-Counter) services. This section answers common questions and issues that might come up. Please refer to [#deposit-using-a-credit-card](guide/managing-funds-and-trading/how-to-deposit-funds.md#deposit-using-a-credit-card "mention") if you are looking for tutorials.
 
-Managing your subscription is simple. Click **“Manage”** in the top right corner to access the subscription management page, where you can view your current plan details, usage, and billing cycle. You can upgrade or downgrade your plan at any time. Upgrades will take effect immediately once payment is completed, and downgrades will take effect in the next billing cycle.\
-For more details, visit: [subscription-and-top-up-policy.md](subscription-and-credits/subscription-and-top-up-policy.md "mention")
-
-#### **2. What if my credit card deposit fails?**
+#### **1. What if my credit card deposit fails?**
 
 Minara integrates multiple OTC payment channels, but due to policy restrictions and bank risk controls in different countries or regions, credit card payments may fail. If this happens, try using a different card or payment method/channel. In addition to OTC payments, you can also deposit crypto to your Minara wallet address.
+
+#### 2. Are there other ways to get crypto besides OTC payment?
+
+Yes! You can deposit cryptocurrency directly into your Minara wallet from another wallet or exchange. Please refer to [how-to-deposit-funds.md](guide/managing-funds-and-trading/how-to-deposit-funds.md "mention") for more details.
+
+#### 3. I paid, but I haven’t received my crypto — what should I do?
+
+Don't worry — in most cases, if the transaction fails, your funds will be automatically refunded to your original payment method.
+
+If you haven’t received your crypto or a refund after **24 hours**, please contact the customer support of the specific OTC provider, and provide your **payment proof and order ID**.
+
+Here are the links for the OTC providers currently integrated with Minara:
+
+* [Alchemy Pay](https://ramp.alchemypay.org/)
+* [Banxa Pay Support Centre](https://support.banxa.com/en/support/home)
+* [Kodo Finance](https://global.kodo.finance/)
+
+⚠️ _Note: Minara does not operate these services_ and isn’t able to step in on their behalf. _We only aggregate third-party OTC providers._
+
+#### 4. Why did I receive less crypto than I paid for?
+
+This is common and usually due to:
+
+* Platform or processing fees
+* Exchange rate slippage
+* Payment provider fees
+* Blockchain gas fees
+
+If the difference seems unusually large, we recommend contacting the OTC provider directly with your **transaction details and receipt**.
 
 ***
 
