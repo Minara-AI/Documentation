@@ -27,7 +27,7 @@
 ## Mechanism
 
 * [Tools Integration](mechanism/tools-integration.md)
-* [Trading](mechanism/trading.md)
+* [Vibe Trading](mechanism/vibe-trading.md)
 * [Wallet Security](mechanism/wallet-security.md)
 * [Deep Research](mechanism/deep-research.md)
 * [Personalization](mechanism/personalization.md)
