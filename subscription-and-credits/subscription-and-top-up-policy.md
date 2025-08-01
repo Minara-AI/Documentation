@@ -19,20 +19,20 @@ description: >-
 
 #### &#x20;Upgrading
 
-* Upgrading means switching from a lower-tier plan to a higher-tier one.
-* The upgrade takes effect **immediately after payment completed**.
-* After successful payment for the new plan, Minara will **refund the unused portion** of your current plan to your original payment method.
-
-
+* Upgrading refers to switching from a lower-tier subscription plan to a higher-tier one.
+* The upgrade takes effect **immediately** after **payment is completed**.
+* **Your current billing cycle remains unchanged** — the renewal date stays the same as your original subscription.
+* You will only be charged the **price difference** between the new plan and your existing plan.
+* Your **credits will be added** based on the new plan’s allocation, while keeping the same expiry date.
 
 **Example:**
 
-> You subscribed to the **Starter Plan ($49)** on May 1 and upgraded to the **Partner Plan ($199)** on June 5, with **1000 credits remaining** out of 2600.\
-> The refund would be:
+> You subscribed to the **Starter Plan ($49)** on **May 1**, and decided to upgrade to the **Partner Plan ($199)** on **May 10**. \
+> You will be charged: $199 - $49 = $150
 >
-> `($49 × 1000) ÷ 2600 = $18.84`
-
-_(Rounded down to two decimal places.)_
+> After the payment, your plan is upgraded to Partner immediately, and your subscription still renews on **June 1**.&#x20;
+>
+> This amount of credits are added to your account: 41500-2600= 38900
 
 ***
 
