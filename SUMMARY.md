@@ -8,7 +8,9 @@
 
 ## Guide
 
-* [Activate Your Account](guide/activate-your-account.md)
+* [Getting Started](guide/getting-started/README.md)
+  * [Activate Your Account](guide/getting-started/activate-your-account.md)
+  * [Get Invitation Code](guide/getting-started/get-invitation-code.md)
 * [Managing Funds and Trading](guide/managing-funds-and-trading/README.md)
   * [How to deposit funds?](guide/managing-funds-and-trading/how-to-deposit-funds.md)
   * [How to buy cryptocurrency?](guide/managing-funds-and-trading/how-to-buy-cryptocurrency.md)
