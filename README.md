@@ -6,23 +6,6 @@ description: Minara - Your reliable virtual CFO for digital finance.
 
 <figure><img src=".gitbook/assets/banner.png" alt=""><figcaption></figcaption></figure>
 
-## What is Next-gen Digital Finance?
-
-With AI and blockchain technologies maturing—and the [GENIUS](https://en.wikipedia.org/wiki/GENIUS_Act) and [CLARITY](https://en.wikipedia.org/wiki/Clarity_Act) Acts being passed—**we’re entering an era where everyone can take part in digital finance.**
-
-We define next-gen digital finance as a global open financial network, with the following core pillars:
-
-1. **Stablecoins** as the main currency for global trade,
-2. **Public** **blockchains** as the core infrastructure for asset transfers,
-3. **Tokens and NFTs** as standard formats for both digital-native and real-world assets (RWA),
-4. **DeFi protocols** as the foundation for open, smart contract-based investment products.
-
-Most importantly, **AI will serve as a 24/7 wealth manager,** assisting humans in partial or full asset management.
-
-A typical user story is shown below:
-
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
 ## What is Minara?
 
 Minara is not just another AI chatbot—\
@@ -32,21 +15,35 @@ Ask anything about digital finance—stocks, crypto, RWA, DeFi, NFTs, and more. 
 
 <table><thead><tr><th width="343.92578125">Feature</th><th align="center">Generic Chatbots like ChatGPT and Grok</th><th align="center">Minara AI</th></tr></thead><tbody><tr><td>Accurate and real-time crypto data</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> </td></tr><tr><td>Trusted and actionable financial insights</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Robust sentiment detection</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Built-in crypto wallet</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Gasless on-chain actions</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Creating agents without coding</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
 
-## Why Minara?
+## Why We build Minara?
 
-The digital finance is gaining significant influence—but also more complex. As on-chain ecosystems evolve at lightning speed and crypto wallets remain clunky and unintuitive, the entry barrier for newcomers stays high. We believe the current product stack is no longer sufficient to onboard the next wave of users.
+With AI and blockchain technologies maturing—and the [GENIUS](https://en.wikipedia.org/wiki/GENIUS_Act) and [CLARITY](https://en.wikipedia.org/wiki/Clarity_Act) Acts being passed—**we’re entering an era where everyone can take part in next-gen digital finance.**
 
-That's why Minara is here: **we need a brand new AI-powered interface that replaces complexity with chatting and brings everyone into the on-chain world—regardless of background or skill.**
+We define next-gen digital finance as a 24/7 global open financial network, with the following core pillars:
 
-If you're struggling to find effective tools for retrieving financial or crypto information, collecting and interpreting industry data, quickly identifying the relationships between complex information, and swiftly deriving insights on future trends, then **Minara is your ideal partner.**
+1. **Stablecoins** as the main currency for global trade,
+2. **Public** **blockchains** as the core infrastructure for asset transfers,
+3. **Tokens and NFTs** as standard formats for both digital-native and real-world assets (RWA),
+4. **DeFi protocols** as the foundation for open, smart contract-based investment products.
+5. **AI will serve as a 24/7 wealth manager,** assisting humans in partial or full asset management.
+
+A typical user story is shown below:
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+In the past 5 years, digital finance is growing fast—but it’s also getting more complex. On-chain ecosystems evolve rapidly, while crypto wallets are still clunky and hard to use. This keeps the entry barrier high for newcomers. We believe the current tools aren’t enough to onboard the next wave of users.
+
+That's why Minara is here: **we need a brand new AI interface that replaces complexity with chatting and brings everyone into the digital finance—regardless of background or skill.**
 
 ## Who is Minara for?
 
-Minara is perfect for anyone involved in or interested in digital finance. Whether you're an active trader, DeFi enthusiast, airdrop hunter, or a newcomer to the space, Minara will be your trusted financial analyst and life companion.
+Minara is perfect for anyone interested or involved in digital finance.&#x20;
+
+Whether you’re trading, exploring DeFi, hunting airdrops, or just getting started—if you struggle to find clear crypto insights, track market trends, spot alpha, or build custom financial workflows, **Minara is your ideal partner.**
 
 ## What makes Minara different?
 
-### Finance-native LLM
+### Web3-native LLM
 
 Optimized with domain-specific data and an extensive digital finance knowledge graph, offering enhanced accuracy and efficient tool utilization.
 
