@@ -11,6 +11,8 @@ To achieve this, we introduce **vibe trading** — a new way to interact with al
 
 With Minara, you can use stablecoins like **$USDC** to trade any on-chain assets—cryptocurrency, tokenized stocks, RWAs, NFTs—and interact seamlessly with DeFi protocols.
 
+{% embed url="https://drive.google.com/file/d/1XIdtW4YNROAcLlcwYS6cut_NWDm-rvuY/view?usp=sharing" %}
+
 ## Why it's important?
 
 Most people aren’t experts in finance or trading. Complex tools, confusing strategies, and steep learning curves have kept them out.
@@ -27,9 +29,9 @@ Check this [guide.](../guide/managing-funds-and-trading/)
 
 Swapping a token will incur these fees:
 
-* **Network fee(Gas fee)**: Paid to blockchain validators/miners to process your transaction. Varies by blockchain, network traffic and gas price.
-* **Service fee**: 0.1% - 1%, charged by the DEX for providing swap services like routing and execution.
-* **Bridge fee**: Charged by the bridge protocol for transferring assets across chains.&#x20;
+* **Network fee(Required)**: Chared by to blockchain validators/miners to process your transaction. Varies by blockchain, network traffic and gas price.
+* **Service fee(Required)**: 0.1% - 1%, charged by the DEX for providing swap services like routing and execution.
+* **Bridge fee(Optional)**: Only charged by the bridge protocol when transferring assets across chains.&#x20;
 
 ## Supported Blockchain
 
