@@ -13,11 +13,11 @@ With Minara, you can use stablecoins like **$USDC** to trade any on-chain assets
 
 ## Why it's important?
 
-Most people aren’t experts in finance or trading. Complex tools, confusing strategies, and steep learning curves have kept them out.
+Most people aren’t experts in trading. Complex tools, confusing strategies, and steep learning curves have kept them out.&#x20;
 
 **Vibe Trading changes that.** By combining AI with automation, it enables anyone to run powerful trading strategies—just by using prompts.
 
-This opens the door for billions of new users and fresh capital to enter the world of finance. More importantly, it gives common people the chance to grow their wealth the way professional traders do.
+This opens the door for billions of new users and fresh capital to enter the world of digital finance. More importantly, it gives common people the chance to grow their wealth the way professional traders do.
 
 ## Guide
 
