@@ -33,3 +33,9 @@
 * [Wallet Security](mechanism/wallet-security.md)
 * [Deep Research](mechanism/deep-research.md)
 * [Personalization](mechanism/personalization.md)
+
+## Links
+
+* [Ask Minara](https://minara.ai/)
+* [X](https://x.com/minara_ai)
+* [Discord](https://discord.com/invite/minaraai)
