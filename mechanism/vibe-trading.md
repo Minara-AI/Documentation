@@ -11,8 +11,6 @@ To achieve this, we introduce **vibe trading** — a new way to interact with al
 
 With Minara, you can use stablecoins like **$USDC** to trade any on-chain assets—cryptocurrency, tokenized stocks, RWAs, NFTs—and interact seamlessly with DeFi protocols.
 
-{% embed url="https://drive.google.com/file/d/1XIdtW4YNROAcLlcwYS6cut_NWDm-rvuY/view?usp=sharing" %}
-
 ## Why it's important?
 
 Most people aren’t experts in finance or trading. Complex tools, confusing strategies, and steep learning curves have kept them out.

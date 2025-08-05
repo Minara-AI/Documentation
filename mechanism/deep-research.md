@@ -33,9 +33,9 @@ An AI-powered engine that processes collected data, identifies insights, cross-c
 * **Contextual Analysis Framework**: Applies domain-specific reasoning models for various research types.
 * **Report Generation Pipeline**: Outputs professional reports in HTML, PDF, or Markdown with visualizations and executive summaries.
 
-## Interactive Report
+## Showcase
 
-Minara generates analysis reports in PDF and interactive HTML file, supporting deployment to publicly accessible static websites.
+Minara generates analysis reports in PDF and **interactive** HTML file, supporting deployment to publicly accessible static websites.
 
 Here's the example:
 

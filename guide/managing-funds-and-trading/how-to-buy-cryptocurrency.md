@@ -1,6 +1,8 @@
 # How to buy cryptocurrency?
 
-## Step 0: Deposit funds
+{% embed url="https://drive.google.com/file/d/1XIdtW4YNROAcLlcwYS6cut_NWDm-rvuY/view?usp=sharing" %}
+
+## Deposit funds
 
 If you dont know how to deposit USDC, check [this guide](how-to-deposit-funds.md).
 
