@@ -6,7 +6,7 @@ description: >-
 
 # FAQs
 
-### Getting Started with Minara**n**
+### Getting Started with Minara
 
 #### **1. How should I ask questions to Minara?**
 

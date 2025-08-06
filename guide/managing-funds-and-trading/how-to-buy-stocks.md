@@ -24,9 +24,13 @@ Visit Minara and log in to your account.
 
 2. **Open Token Detail**
 
-In the token list sidebar (which appears when tokens are mentioned in the chat), select the token you want to buy or sell and click **“View Detail.”**
+If you search for a tokenized stock, you can trade it directly. In the token list sidebar (which appears when tokens are mentioned in the chat), select the stock token you want to buy or sell and click **“View Detail.”**
 
 <figure><img src="../../.gitbook/assets/图片 (9).png" alt=""><figcaption></figcaption></figure>
+
+If you have searched for a traditional stock, you can also access it in the list sidebar, and Minara will guide you to its on-chain tokenized version for trading.
+
+<figure><img src="../../.gitbook/assets/图片 (17).png" alt=""><figcaption></figcaption></figure>
 
 3. **Set Up Your Trade**
 
