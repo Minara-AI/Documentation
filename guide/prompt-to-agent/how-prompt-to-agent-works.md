@@ -1,14 +1,6 @@
----
-description: >-
-  This page explains the mechanism of Minara's Prompt-to-Agent feature. Learn
-  about its underlying architecture, supported node types, and usage rules.
----
+# How prompt-to-agent works
 
-# How Prompt-to-Agent works
-
-***
-
-### Core Mechanism
+## Core Mechanism
 
 Minara's workflow engine is built upon the open-source platform [n8n](https://n8n.io/), a visual automation tool that enables the creation of complex workflows through a node-based interface.
 

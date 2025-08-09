@@ -25,6 +25,7 @@
     * [How to create a grid trading bot?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-grid-trading-bot.md)
     * [How to create an analysis report](guide/how-to-create-an-analysis-report.md)
     * [How to create a copy trading bot?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
+* [How to create an interactive report](guide/how-to-create-an-interactive-report.md)
 
 ## Mechanism
 
