@@ -9,9 +9,9 @@ To achieve this, we introduce **vibe trading** — a new way to interact with al
 * People can manually trade tokens directly within the chat interface, guided by Minara’s insights and suggestions;
 * People can execute trades or set up agentic strategies **using prompts** — no coding required.
 
-With Minara, you can use stablecoins like **$USDC** to trade any on-chain assets—cryptocurrency, tokenized stocks, RWAs, NFTs—and interact seamlessly with DeFi protocols.
+With Minara, you can use **stablecoins** like [**$USDC**](https://www.circle.com/usdc) to trade any on-chain assets—cryptocurrency, tokenized stocks, RWAs, NFTs—and interact seamlessly with DeFi protocols.
 
-{% embed url="https://drive.google.com/file/d/1XIdtW4YNROAcLlcwYS6cut_NWDm-rvuY/view?usp=sharing" %}
+{% embed url="https://drive.google.com/file/d/1JlGUdubEmJFT_wHuA0VBYdY1puiYc_lt/view?usp=sharing" %}
 
 ## Why it's important?
 
