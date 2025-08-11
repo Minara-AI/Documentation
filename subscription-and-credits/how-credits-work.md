@@ -41,6 +41,7 @@ If a response or task is interrupted due to a system error, **no credits will be
 | Trade         | Free                        |
 | Notify        | Currently free              |
 | Minara Call   | Based on actual tokens used |
+| Minara Coding | Based on actual tokens used |
 
 
 

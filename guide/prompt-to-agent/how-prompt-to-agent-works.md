@@ -34,7 +34,9 @@ Minara's workflows are composed of various node types, each serving a specific f
      * **Market Orders**: Execute buy/sell orders on supported blockchains (Base, Ethereum, Solana).
      * **Stop Market Orders**: Combine token price triggers with market orders for automated trading.
    * **Minara Call**:
-     * Send prompts to Minara to get responses. Deep Research mode available.
+     * Send prompts to Minara to get responses. Deep Research mode available. (For best results, specify if you want to use Deep Research mode.)
+   * **Minara Coding**:
+     * Lets Minara generate and run custom code on demand — from creating HTML email templates to executing complex trading logic.
 
 ***
 
