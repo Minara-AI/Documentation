@@ -37,6 +37,23 @@ Minara also supports **Prompt-to-Agent**, enabling you to create automated workf
 Managing your subscription is simple. Click **“Manage”** in the top right corner to access the subscription management page, where you can view your current plan details, usage, and billing cycle. You can upgrade or downgrade your plan at any time. Upgrades will take effect immediately once payment is completed, and downgrades will take effect in the next billing cycle.\
 For more details, visit: [subscription-and-top-up-policy.md](subscription-and-credits/subscription-and-top-up-policy.md "mention")
 
+#### **4.** How is the plan priced? How many times can I ask for 1 USD?
+
+Credit consumption depends on the complexity of your question, the tools invoked, and the amount of AI processing required. Please refer to [how-credits-work.md](subscription-and-credits/how-credits-work.md "mention") for the detailed mechanism.
+
+In general:
+
+* **Standard Chat ≈ 20 credits per message**
+* **Deep Research ≈ 50 credits per message**
+
+Therefore, the number of questions you can ask for 1 USD (or any other specific amount) depends on the type and complexity of your queries.
+
+#### **5.** What are Credits? What are Bonus Sparks?
+
+**Credits:** Minara’s unit of usage. Every time you perform AI processing or run workflows with certain node types, credits are deducted based on the tokens consumed. For more details, please check out [how-credits-work.md](subscription-and-credits/how-credits-work.md "mention")
+
+**Bonus Sparks:** Extra reward points included in subscription plans. More Spark-based features will be introduced in the future — stay tuned for what they can unlock.
+
 ***
 
 ### Trading & Asset Management
@@ -79,7 +96,7 @@ You can track your trades and activities by clicking **“Asset - Activity”** 
 
 {% columns %}
 {% column %}
-![](https://byterum.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWZmYTA1MjY3MmQwYTA2NGYyM2UzYThhNWQ3NzUzYmNfa3R4UzFKd0dWQURFTWEzTjZ5RFRpbFliSW55Yzh6WG1fVG9rZW46VXlNSmJCOHBlb1hhaFN4TkRCOWM1MkpRbk1lXzE3NTM5NTIzMDA6MTc1Mzk1NTkwMF9WNA)
+<figure><img src=".gitbook/assets/图片 (18).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -96,6 +113,46 @@ Minara's design philosophy is "AI automation + human control." You have full con
 One major advantage of Minara is that it creates a custodial smart wallet for each user. You don’t have to hold gas tokens (like $ETH or $SOL) or learn how multi-chain crypto wallets work—Minara simplifies it for you.\
 Unlike traditional centralized exchanges, this custodial smart wallet is not stored in Minara's internal database but is an on-chain smart contract wallet. Minara can manage the funds in this wallet but cannot hide, delete, or blacklist it. Customizing wallet management will be supported in the future.\
 For more details, visit: [wallet-security.md](mechanism/wallet-security.md "mention")
+
+#### **9. What should I do if** the price (or other stats) Minara shows is wrong/inaccurate?
+
+If you notice an error, you can follow up directly by saying: _“The BTC price you gave me is wrong. Please re-fetch and analyze again.”_\
+Minara’s data is sourced from multiple major providers (CoinMarketCap, DeFiLlama, DexScreener, etc.). Short-term price deviations can occur, especially for low-liquidity or newly listed assets. We recommend cross-checking key data before making major investment decisions.
+
+#### **10.** What should I do if my deposit hasn’t arrived?
+
+Blockchain confirmation times vary by network, but most deposits are completed within 5–30 minutes. If yours takes longer:
+
+1. **Verify the details** – Make sure you used the correct deposit chain and address.
+2. **Check on-chain status** – Use a blockchain explorer to confirm whether the transaction has been processed.
+3. **Contact support** – If the transaction is confirmed on-chain but your balance hasn’t updated, please reach out via our [official Discord](https://discord.com/invite/minaraai) for assistance.
+
+#### **11.** Why was my on-chain withdrawal rejected?
+
+Common reasons include:
+
+* **Insufficient balance** – Make sure to leave enough funds to cover gas fees.
+* **Invalid withdrawal address format** – Double-check the address you entered.
+* **Network mismatch** – The selected network does not match the withdrawal address.
+
+Please review the above points one by one before attempting the withdrawal again.\
+If the issue persists, please contact us via our official Discord for technical support.
+
+#### **12.** Why can’t I deposit SOL from Binance to Minara?
+
+Minara wallets are **AA+ custodial wallets**, which are fully secure and industry-standard. However, Binance’s mobile on-chain withdrawal currently does not support **certain secure wallet architectures**, including AA+ custodial wallets, multi-signature wallets, etc.\
+To deposit SOL to your Minara wallet, you may:
+
+* Use **Binance Web,** or
+* Deposit via **BSC or another supported chain** instead.
+
+#### **13.** I deposited tokens from an unsupported chain into Minara. What should I do?
+
+Please visit our official Discord for technical support. We will do our best to assist you, but **there is no guarantee that your assets can be recovered**.\
+⚠️ Common reasons for unrecoverable deposits include:
+
+* Sending assets via an **unsupported blockchain**.
+* Sending to an **incorrect recipient address.**
 
 ***
 
@@ -140,9 +197,9 @@ If you haven’t received your crypto or a refund after **24 hours**, please con
 
 Here are the links for the OTC providers currently integrated with Minara:
 
-* [Alchemy Pay](https://ramp.alchemypay.org/)
-* [Banxa Pay Support Centre](https://support.banxa.com/en/support/home)
-* [Kodo Finance](https://global.kodo.finance/)
+* **Alchemy Pay:** [https://ramp.alchemypay.org/](https://ramp.alchemypay.org/)
+* **Banxa Pay:** [https://support.banxa.com/en/support](https://support.banxa.com/en/support)
+* **Kodo Finance:** [https://global.kodo.finance/](https://global.kodo.finance/)
 
 ⚠️ _Note: Minara does not operate these services_ and isn’t able to step in on their behalf. _We only aggregate third-party OTC providers._
 
@@ -156,6 +213,21 @@ This is common and usually due to:
 * Blockchain gas fees
 
 If the difference seems unusually large, we recommend contacting the OTC provider directly with your **transaction details and receipt**.
+
+#### 5. Why I can't pass KYC?
+
+Minara integrates with multiple third-party OTC payment providers. Due to varying regulatory requirements across countries/regions and bank risk-control measures, your KYC verification may occasionally fail.
+
+We recommend:
+
+* Trying a different bank card
+* Selecting an alternative payment method or channel
+* Contacting the corresponding provider’s customer support:
+  * **Alchemy Pay:** [https://ramp.alchemypay.org/](https://ramp.alchemypay.org/)
+  * **Banxa Pay:** [https://support.banxa.com/en/support](https://support.banxa.com/en/support)
+  * **Kodo Finance:** [https://global.kodo.finance/](https://global.kodo.finance/)
+
+⚠️ _Note: Minara does not operate these services_ and isn’t able to step in on their behalf. _We only aggregate third-party OTC providers._
 
 ***
 
@@ -178,6 +250,36 @@ Access issues can usually be resolved by following these steps:
 * Check for browser issues: clear cache and cookies, try incognito mode, or switch browsers
 * If you're on mobile, try switching between Wi-Fi and mobile data.\
   Most access issues can be resolved with basic troubleshooting. If problems persist, visit the official Discord for technical support.
+
+#### **4. Why didn’t Minara give me any output?**
+
+If you received no output at all:
+
+1. Check whether you still have credits and confirm your subscription hasn’t expired.
+2. Refresh the page or start a new chat, then try again.
+3. If there’s still no output, please visit our [official Discord](https://discord.com/invite/minaraai) for support.
+
+If the output is not what you expected:
+
+* Ask more specific questions — for example, **“BTC price trend analysis for next week”** is more effective than **“Give me a way to make money.”**
+* Use follow-up questions to refine your request so Minara can better understand your needs.
+
+#### **5.** My data isn’t syncing between mobile and desktop — what should I do?
+
+Make sure you’re logged into the **same account** on both devices, then try refreshing or logging in again.
+
+For now, we recommend primarily using the **web version on Chrome (PC)**, as our native mobile app is still in development.
+
+#### **6. What should I do if my account is hacked?**
+
+If your login method (email or Google) is compromised, please:
+
+1. **Change your password of the hacked account immediately.**
+2. **Log in to Minara** and:
+   * Check the **Activity** page for any suspicious transactions.
+   * Consider pausing all automated strategies.
+   * Transfer out all assets to a secure wallet.
+3. **If there is any asset loss**, keep all relevant evidence (e.g., screenshots, transaction records) for investigation.
 
 ***
 
