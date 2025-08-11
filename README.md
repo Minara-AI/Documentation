@@ -51,7 +51,7 @@ Optimized with domain-specific data and an extensive digital finance knowledge g
 
 Minara has integrated numerous industry data sources covering the following categories:
 
-* **Finance Data:** Transactions, stocks, tokens, DeFi, NFTs, liquidation, Web3 project/VC information, etc.
+* **Finance Data:** Transactions, stocks, crypto, DeFi, NFTs, liquidation, Web3 project/VC information, etc.
 * **Audience Data:** Entities, holders, smart money, social identities, P\&L, relationships, etc.
 * **Sentiment Data:** News, X posts and trends, Greed/Fear index, macro signals, policy headlines, etc.
 
@@ -59,7 +59,7 @@ With access to over [**50+ leading data providers**](mechanism/tools-integration
 
 ### AI-powered Access To Digital Finance
 
-Access raw data and protocols across multi-chains. Trade tokens with stablecoin through a built-in custodial wallet.
+Access raw data and protocols across multi-chains. Trade crypto and stocks with stablecoin through a built-in custodial agent wallet.
 
 ### Agent Factory
 

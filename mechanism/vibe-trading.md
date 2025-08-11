@@ -6,7 +6,7 @@ Minara is committed to bringing every people into the world of blockchain.
 
 To achieve this, we introduce **vibe trading** — a new way to interact with all kinds of assets:
 
-* People can manually trade tokens directly within the chat interface, guided by Minara’s insights and suggestions;
+* People can manually trade crypto directly within the chat interface, guided by Minara’s insights and suggestions;
 * People can execute trades or set up agentic strategies **using prompts** — no coding required.
 
 With Minara, you can use **stablecoins** like [**$USDC**](https://www.circle.com/usdc) to trade any on-chain assets—cryptocurrency, tokenized stocks, RWAs, NFTs—and interact seamlessly with DeFi protocols.
@@ -35,4 +35,4 @@ Swapping a token will incur these fees:
 
 ## Supported Blockchain
 
-Currently, Minara can trade tokens on the following blockchian mainnets: **Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, Linea, Polygon, HyperEVM, Sonic, BearChain.**
+Currently, Minara can trade crypto on the following blockchian mainnets: **Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, Linea, Polygon, HyperEVM, Sonic, BearChain.**
