@@ -13,11 +13,9 @@ To elaborate, Minara's wallet system involves two types of wallets:
 
 ## Funding Wallet
 
-Funding wallet is based on [Universal Account](https://developers.particle.network/intro/universal-accounts) by Particle Network.&#x20;
+Funding wallet is based on [Universal Account](https://developers.particle.network/intro/universal-accounts) by Particle Network. It's a kind of smart contract wallet built on the [ERC-4337](https://www.alchemy.com/overviews/how-do-smart-contract-wallets-work) standard and compatible with existing EOA wallets.&#x20;
 
-* Built on the ERC-4337 standard.
-* Compatible with existing EOA wallets.
-* Support social login integration.
+User deposits are stored in this smart contract wallet, with every transaction publicly recorded and verifiable on-chain. **This ensures funds cannot be misused in private and allows for full auditing.**
 
 ## Controller Wallet
 
