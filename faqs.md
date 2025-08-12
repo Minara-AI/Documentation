@@ -112,7 +112,7 @@ Minara's design philosophy is "AI automation + human control." You have full con
 
 One major advantage of Minara is that it creates a custodial smart wallet for each user. You don’t have to hold gas tokens (like $ETH or $SOL) or learn how multi-chain crypto wallets work—Minara simplifies it for you.\
 Unlike traditional centralized exchanges, this custodial smart wallet is not stored in Minara's internal database but is an on-chain smart contract wallet. Minara can manage the funds in this wallet but cannot hide, delete, or blacklist it. Customizing wallet management will be supported in the future.\
-For more details, visit: [wallet-security.md](mechanism/wallet-security.md "mention")
+For more details, visit: [wallet-security.md](features/wallet-security.md "mention")
 
 #### **9. What should I do if** the price (or other stats) Minara shows is wrong/inaccurate?
 

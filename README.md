@@ -55,7 +55,7 @@ Minara has integrated numerous industry data sources covering the following cate
 * **Audience Data:** Entities, holders, smart money, social identities, P\&L, relationships, etc.
 * **Sentiment Data:** News, X posts and trends, Greed/Fear index, macro signals, policy headlines, etc.
 
-With access to over [**50+ leading data providers**](mechanism/tools-integration.md), Minara offers real-time, actionable insights into financial markets, Web3, and crypto.
+With access to over [**50+ leading data providers**](features/tools-integration.md), Minara offers real-time, actionable insights into financial markets, Web3, and crypto.
 
 ### AI-powered Access To Digital Finance
 

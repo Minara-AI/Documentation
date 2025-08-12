@@ -27,13 +27,14 @@
     * [How to create a copy trading bot?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
 * [How to create an interactive report](guide/how-to-create-an-interactive-report.md)
 
-## Mechanism
+## Features
 
-* [Tools Integration](mechanism/tools-integration.md)
-* [Vibe Trading](mechanism/vibe-trading.md)
-* [Wallet Security](mechanism/wallet-security.md)
-* [Deep Research](mechanism/deep-research.md)
-* [Personalization](mechanism/personalization.md)
+* [Tools Integration](features/tools-integration.md)
+* [Vibe Trading](features/vibe-trading.md)
+* [Wallet Security](features/wallet-security.md)
+* [Deep Research](features/deep-research.md)
+* [Personalization](features/personalization.md)
+* [Spark](features/spark.md)
 
 ## Links
 
