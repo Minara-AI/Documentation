@@ -35,4 +35,4 @@ Swapping a token will incur these fees:
 
 ## Supported Blockchain
 
-Currently, Minara can trade crypto on the following blockchian mainnets: **Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, Linea, Polygon, HyperEVM, Sonic, BearChain.**
+Currently, Minara can trade crypto on the following blockchian mainnets: **Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, Polygon.**
