@@ -25,8 +25,8 @@ If a response or task is interrupted due to a system error, **no credits will be
 
 | **Action**        | **Est. Average Cost Per Action** |
 | ----------------- | -------------------------------- |
-| Messaging         | \~20 Credits                     |
-| Deep Research     | \~50 Credits                     |
+| Messaging         | \~30 Credits                     |
+| Deep Research     | \~140 Credits                    |
 | Workflow Creation | \~5 Credits                      |
 
 
@@ -41,7 +41,6 @@ If a response or task is interrupted due to a system error, **no credits will be
 | Trade         | Free                        |
 | Notify        | Currently free              |
 | Minara Call   | Based on actual tokens used |
-| Minara Coding | Based on actual tokens used |
 
 
 

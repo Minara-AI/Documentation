@@ -45,12 +45,12 @@ description: >-
 
 ### Cross-Plan Switching Rules
 
-| From \ To         | Monthly Plan           | Yearly Plan            |
-| ----------------- | ---------------------- | ---------------------- |
-| Monthly → Monthly | ✅ Any plan             | ✅ Equivalent or higher |
-| Yearly → Yearly   | ✅ Any plan             | ✅ Equivalent or higher |
-| Monthly → Yearly  | ✅ Equivalent or higher | ❌ Not yet supported    |
-| Yearly → Monthly  | ❌ Not yet supported    | ❌ Not yet supported    |
+| From \ To         | Plan Tier              |
+| ----------------- | ---------------------- |
+| Monthly → Monthly | ✅ Any plan             |
+| Yearly → Yearly   | ✅ Any plan             |
+| Monthly → Yearly  | ✅ Equivalent or higher |
+| Yearly → Monthly  | ❌ Not yet supported    |
 
 ***
 
