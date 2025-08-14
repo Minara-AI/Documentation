@@ -6,50 +6,85 @@ This guide will show you how to deposit **USDC** in three different ways: using 
 
 ## Deposit with a credit card
 
-### **1. Prepare Your Card**
+⚠️ _Note: Minara does not operate these services (deposit with a credit card)_ and isn’t able to step in on their behalf. _We only aggregate third-party OTC providers._
 
-Make sure you have a valid Visa, Mastercard, or another supported payment card ready.
+### Deposit via Alchemy Pay
 
-### **2. Click "Deposit" button**
+#### 1. Select Alchemy Pay
 
-Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner.
+First, click on the **Deposit** button at the top right, then select **Alchemy Pay**.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (19).png" alt=""><figcaption></figcaption></figure>
 
-### **3. Choose an OTC Option**
+#### 2. Select Fiat and Input Amount
 
-Select one of the available OTC (Over-the-Counter) providers listed on the deposit page.
+Select the fiat currency you wish to pay with, then input the amount of USDC you wish to buy.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (20).png" alt="" width="375"><figcaption></figcaption></figure>
 
-### **4. Complete the Purchase**
+#### 3. Confirm Email
 
-You’ll be redirected to the OTC provider's interface.
+Confirm your Email Address and enter the verification code sent to your email.
 
-1. Choose your fiat currency
-2. Enter the purchase amount
-3. Select the blockchain network (EVM or Solana) where you want to receive your stablecoin (e.g., Ethereum, Polygon)
-4. Pay with your credit/debit card to receive **USDC** directly to your wallet.
+<figure><img src="../../.gitbook/assets/图片 (21).png" alt="" width="375"><figcaption></figcaption></figure>
+
+#### 4. Fill in Payment Method and KYC
+
+Choose your payment method, input your credit card or Google Pay information, and complete KYC. Once verified and the payment is completed, you will receive your tokens.
+
+| Choose Payment Method                                                                                     | Fill in Information                                                                                       | KYC                                                                                                       |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| <div><figure><img src="../../.gitbook/assets/图片 (22).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../../.gitbook/assets/图片 (23).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../../.gitbook/assets/图片 (24).png" alt=""><figcaption></figcaption></figure></div> |
+
+If you have any questions, please contact Alchemy Pay support: https://ramp.alchemypay.org/
+
+***
+
+### Deposit via Banxa Pay
+
+#### 1. Select Banxa Pay
+
+First, click on the **Deposit** button at the top right, then select **Banxa Pay**.
+
+<figure><img src="../../.gitbook/assets/图片 (25).png" alt=""><figcaption></figcaption></figure>
+
+#### 2. Select Fiat and Input Amount
+
+Select the fiat currency you wish to pay with. In the red box, input the amount and token you wish to buy (e.g., USDC), and select Solona chain.
+
+<figure><img src="../../.gitbook/assets/图片 (26).png" alt="" width="375"><figcaption></figcaption></figure>
+
+3. #### KYC and Pay
+
+Then, fill out your personal details for KYC. After verification and payment, you will receive your tokens.
+
+| KYC Step 1                                                                                                | KYC Step 2                                                                                                | KYC Step 3                                                                                                |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| <div><figure><img src="../../.gitbook/assets/图片 (27).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../../.gitbook/assets/图片 (28).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../../.gitbook/assets/图片 (29).png" alt=""><figcaption></figcaption></figure></div> |
+
+If you have any questions, please contact Banxa Pay support: https://support.banxa.com/en/support
+
+***
 
 ## Deposit from CEXs
 
-### **1. Prepare Your Exchange Account**
+#### **1. Prepare Your Exchange Account**
 
 Log in to your CEX account (e.g., Binance, OKX, Coinbase) and ensure you have the crypto asset you want to transfer.
 
-### **2. Click "Deposit" button**
+#### **2. Click "Deposit" button**
 
-Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner.
+Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner, and select "On-chain Deposit".
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (52).png" alt=""><figcaption></figcaption></figure>
 
-### **3. Choose Token and Network**
+**3. Choose Token and Network**
 
 Select the blockchain network you want to use for the deposit. Minara will generate a wallet address for the selected network.                &#x20;
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-### **4. Withdraw from the CEX**
+#### **4. Withdraw from the CEX**
 
 Go to your exchange's **Withdraw/Send** section.
 
@@ -59,25 +94,27 @@ Go to your exchange's **Withdraw/Send** section.
 
 Once the transaction is confirmed on-chain, your funds will appear in your Minara account.
 
+***
+
 ## Deposit from another crypto wallet
 
-### **1. Prepare Your Wallet**
+#### **1. Prepare Your Wallet**
 
 Make sure you have a crypto wallet with sufficient funds and access to the correct blockchain network.
 
-### **2. Click "Deposit" button**
+#### **2. Click "Deposit" button**
 
-Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner.
+Visit Minara and log in to your account. Click the **“Deposit”** button at the top right corner, and select "On-chain Deposit".
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (53).png" alt=""><figcaption></figcaption></figure>
 
-### **3. Select the Token and Network**
+**3. Select the Token and Network**
 
 Choose the token you want to deposit (e.g., USDC, ETH) and the corresponding blockchain network (e.g., Ethereum, Arbitrum, BNB Chain).
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-### **4. Send the Funds**
+#### **4. Send the Funds**
 
 Copy the deposit address provided by Minara and send the tokens from your wallet.
 
