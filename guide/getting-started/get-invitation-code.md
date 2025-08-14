@@ -25,7 +25,7 @@ To get the invitation code, please first join our waitlist, then redeem the code
 2. **Find Latest Guide in Discord**
    * After joining our Discord community, please navigate to the **Get A Code** channel, and learn the latest guide there.
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (54).png" alt=""><figcaption></figcaption></figure>
 
 3. **Complete tasks** to collect points, such as:
    * **Share on Twitter**

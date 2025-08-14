@@ -17,7 +17,6 @@ You’ll learn the key patterns, what to specify in your prompt (asset/chain, tr
 * **Price alert bot** – Monitor token (crypto or stock) moves and push alerts.
 * **Trigger order (with TP/SL)** – Set precise entries plus take‑profit/stop‑loss using price triggers + market execution.
 * **Sell‑the‑news strategy** – Trade around events: pre‑position, announce‑time action, and post‑event exits.
-* **Grid trading bot** – Laddered buys/sells across price bands with position sizing and safeguards.
 * **Analysis report** – Schedule Deep Research to deliver a formatted web/PDF report (daily/weekly).
 * **Copy trading bot** – Mirror a wallet’s buys/sells (with proportional sizing, caps, and filters).
 
