@@ -44,7 +44,7 @@ Credit consumption depends on the complexity of your question, the tools invoked
 In general:
 
 * **Standard Chat ≈ 30 credits per message**
-* **Deep Research ≈ 140 credits per message**
+* **Deep Research ≈ 70 credits per message**
 
 Therefore, the number of questions you can ask for 1 USD (or any other specific amount) depends on the type and complexity of your queries.
 

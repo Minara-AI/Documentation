@@ -26,7 +26,7 @@ If a response or task is interrupted due to a system error, **no credits will be
 | **Action**        | **Est. Average Cost Per Action** |
 | ----------------- | -------------------------------- |
 | Messaging         | \~30 Credits                     |
-| Deep Research     | \~140 Credits                    |
+| Deep Research     | \~70 Credits                     |
 | Workflow Creation | \~5 Credits                      |
 
 
