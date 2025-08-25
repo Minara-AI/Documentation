@@ -67,5 +67,5 @@ We recommend reserving this approach for low-frequency use cases. For example:
 * **Monthly asset performance review** — Pull 30-day price change data for your top 5 holdings on the first day of each month.
 * **Long-term target tracking** — Every Friday, evaluate our market bias by reviewing all bull- and bear-market top indicators.
 
-To explore more about the use cases above, please check out&#x20;
+To explore more about the use cases above, please check out [how-to-run-analysis-on-a-schedule.md](how-to-run-analysis-on-a-schedule.md "mention").
 
