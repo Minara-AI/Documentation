@@ -114,10 +114,45 @@ One major advantage of Minara is that it creates a custodial smart wallet for ea
 Unlike traditional centralized exchanges, this custodial smart wallet is not stored in Minara's internal database but is an on-chain smart contract wallet. Minara can manage the funds in this wallet but cannot hide, delete, or blacklist it. Customizing wallet management will be supported in the future.\
 For more details, visit: [wallet-security.md](features/wallet-security.md "mention")
 
-#### **9. What should I do if** the price (or other stats) Minara shows is wrong/inaccurate?
+#### **9.** What should I do if Minara’s answer seems inaccurate or doesn’t match my expectation?
 
-If you notice an error, you can follow up directly by saying: _“The BTC price you gave me is wrong. Please re-fetch and analyze again.”_\
-Minara’s data is sourced from multiple major providers (CoinMarketCap, DeFiLlama, DexScreener, etc.). Short-term price deviations can occur, especially for low-liquidity or newly listed assets. We recommend cross-checking key data before making major investment decisions.
+1. **If it’s a factual error (e.g., price, volume, TVL):**
+
+If you notice an error in factual data (e.g., token price, trading volume), you can follow up directly:
+
+* _“The BTC price you gave me is wrong. Please re-fetch and analyze again.”_
+
+Minara sources data from multiple providers (CoinMarketCap, DeFiLlama, DexScreener, etc.). Short-term deviations may occur, especially for low-liquidity or newly listed assets. We recommend cross-checking key numbers before making major investment decisions.
+
+2. **If the analysis doesn’t match your expectation (e.g. market interpretation):**
+
+If the analysis or interpretation doesn’t match your view, you can prompt Minara to reconsider the query.&#x20;
+
+For example:
+
+You asked Minara to analyze the current BTC market. Minara concluded it’s **bullish**, but you believe it’s **bearish** and her reasoning didn’t convince you. The key is **how you follow up:**
+
+**✅ Good practice:**
+
+* Ask for multi-angle validation
+
+> “Re-analyze BTC and show how each signal supports or contradicts a bullish/bearish view.”
+
+* Compare plausible alternatives side-by-side
+
+> “Please give me both sides: what would make the market look bullish, and what would make it look bearish? Then tell me which one seems stronger right now.”
+
+This way, Minara is guided to re-check the reasoning process instead of just aligning with your opinion.
+
+
+
+**❌ Wrong practice:**
+
+> “I don’t think that’s right. I believe BTC is already bearish.”
+
+(Minara may simply agree with you, which can bias her reasoning.)
+
+
 
 #### **10.** What should I do if my deposit hasn’t arrived?
 
