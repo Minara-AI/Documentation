@@ -4,7 +4,9 @@ description: Minara - Your reliable virtual CFO for digital finance.
 
 # Introduction
 
-<figure><img src=".gitbook/assets/banner.png" alt=""><figcaption></figcaption></figure>
+{% hint style="success" %}
+The Early Access is open. Join the waitlist: [https://minara.ai/join-waitlist](https://minara.ai/join-waitlist)
+{% endhint %}
 
 ## What is Minara?
 
