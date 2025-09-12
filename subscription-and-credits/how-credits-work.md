@@ -23,11 +23,11 @@ If a response or task is interrupted due to a system error, **no credits will be
 
 > **Note:** The values below are estimated averages for reference only. Actual credit usage varies per action and is calculated based on the number of tokens used.
 
-| **Action**        | **Est. Average Cost Per Action** |
-| ----------------- | -------------------------------- |
-| Messaging         | \~30 Credits                     |
-| Deep Research     | \~70 Credits                     |
-| Workflow Creation | \~5 Credits                      |
+| **Action**              | **Est. Average Cost Per Action** |
+| ----------------------- | -------------------------------- |
+| Messaging               | \~20 Credits                     |
+| Deep Research           | \~40 Credits                     |
+| Minara Node in Workflow | \~15 Credits                     |
 
 
 
