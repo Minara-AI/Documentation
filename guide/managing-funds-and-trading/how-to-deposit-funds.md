@@ -82,7 +82,7 @@ Visit Minara and log in to your account. Click the **“Deposit”** button at t
 
 Select the blockchain network you want to use for the deposit. Minara will generate a wallet address for the selected network.                &#x20;
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 #### **4. Withdraw from the CEX**
 
@@ -112,7 +112,7 @@ Visit Minara and log in to your account. Click the **“Deposit”** button at t
 
 Choose the token you want to deposit (e.g., USDC, ETH) and the corresponding blockchain network (e.g., Ethereum, Arbitrum, BNB Chain).
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 #### **4. Send the Funds**
 

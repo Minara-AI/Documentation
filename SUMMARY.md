@@ -13,7 +13,7 @@
   * [Get Invitation Code](guide/getting-started/get-invitation-code.md)
 * [Managing Funds and Trading](guide/managing-funds-and-trading/README.md)
   * [How to deposit funds?](guide/managing-funds-and-trading/how-to-deposit-funds.md)
-  * [How to withdraw funds?](guide/how-to-withdraw-funds.md)
+  * [How to withdraw funds?](guide/managing-funds-and-trading/how-to-withdraw-funds.md)
   * [How to buy cryptocurrency?](guide/managing-funds-and-trading/how-to-buy-cryptocurrency.md)
   * [How to buy stocks?](guide/managing-funds-and-trading/how-to-buy-stocks.md)
 * [Deep Research: Create Interactive Reports](guide/deep-research-create-interactive-reports.md)

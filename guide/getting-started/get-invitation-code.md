@@ -20,7 +20,7 @@ To get the invitation code, please first join our waitlist, then redeem the code
 1. Make sure you are in Minara Official Discord Community
    * Please find the link here: [https://discord.com/invite/minaraai](https://discord.com/invite/minaraai)
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 2. **Find Latest Guide in Discord**
    * After joining our Discord community, please navigate to the **Get A Code** channel, and learn the latest guide there.

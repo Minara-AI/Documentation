@@ -33,7 +33,7 @@ We define next-gen digital finance as a 24/7 global open financial network, with
 
 A typical user story is shown below:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 In the past 5 years, digital finance is growing fast—but it’s also getting more complex. On-chain ecosystems evolve rapidly, while crypto wallets are still clunky and hard to use. This keeps the entry barrier high for newcomers. We believe the current tools aren’t enough to onboard the next wave of users.
 
