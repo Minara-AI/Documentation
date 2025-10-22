@@ -1,5 +1,5 @@
 ---
-description: Minara - Your reliable virtual CFO for digital finance.
+description: Minara - Your personal virtual CFO for digital finance.
 ---
 
 # Introduction
@@ -10,8 +10,7 @@ The Early Access is open. Join the waitlist: [https://minara.ai/join-waitlist](h
 
 ## What is Minara?
 
-Minara is not just another AI chatbot—\
-**she's an all-powerful financial AI assistant like no other.**
+Minara is not just another AI chatbot—**she's an all-powerful financial AI assistant like no other.**&#x20;
 
 Ask anything about digital finance—stocks, crypto, RWA, DeFi, NFTs, and more. Trade any asset in one place, and create powerful agents with just your words, no code required. With Minara, everything is possible.
 
