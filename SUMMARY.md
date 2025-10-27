@@ -4,6 +4,7 @@
 * [Subscription & Credits](subscription-and-credits/README.md)
   * [Subscription & Top-up Policy](subscription-and-credits/subscription-and-top-up-policy.md)
   * [How Credits Work?](subscription-and-credits/how-credits-work.md)
+* [Referral & Rewards](referral-and-rewards.md)
 * [FAQs](faqs.md)
 
 ## Guide
