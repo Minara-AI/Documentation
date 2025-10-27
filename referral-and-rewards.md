@@ -31,11 +31,9 @@ description: Invite your friends to join Minara and earn rewards together.
 {% endcolumn %}
 
 {% column %}
-<figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 ***
 
@@ -52,6 +50,26 @@ description: Invite your friends to join Minara and earn rewards together.
 ***
 
 ### Invite Quota
+
+#### **Contributor Invite Campaign**&#x20;
+
+The **Contributor Invite Campaign** allows active users to receive additional invite quotas through participation and contribution within the Minara ecosystem. These invites are manually granted by the Minara team based on community engagement and contribution quality.
+
+**Campaign Details**
+
+Eligible users may receive **extra invite quotas** through the following activities:
+
+1. **Engaging actively with Minara:** Explore features, provide insights, and interact regularly.
+2. **Sharing feedback and suggestions:** Participate in discussions on Minara Discord server and share ideas and suggestions with the team.
+3. **Spreading Minara use cases:** Share your own workflows, prompts, analyses, or any use cases that you find helpful on social medias.
+
+All community-based invites are **reviewed and granted manually** by the Minara team.&#x20;
+
+{% hint style="info" %}
+For more information, please reach out to the team on our Discord.
+{% endhint %}
+
+#### Get Invite Quotas by Subscription
 
 * You receive **invite quota upon successful subscription payment**, including actions of **subscribe, upgrade, or renew**.
 * **Upgrade :** When you upgrade to a higher plan, you receive the quota difference between the new plan and the previous plan.&#x20;
