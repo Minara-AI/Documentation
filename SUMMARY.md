@@ -32,6 +32,8 @@
 * [Vibe Trading](features/vibe-trading.md)
 * [Wallet Security](features/wallet-security.md)
 * [Deep Research](features/deep-research.md)
+* [Discover: Crypto Picks](features/discover-crypto-picks.md)
+* [Discover: News Feed](features/discover-news-feed.md)
 * [Personalization](features/personalization.md)
 * [Spark](features/spark.md)
 
