@@ -66,7 +66,7 @@ Eligible users may receive **extra invite quotas** through the following activit
 All community-based invites are **reviewed and granted manually** by the Minara team.&#x20;
 
 {% hint style="info" %}
-For more information, please reach out to the team on our Discord.
+For more information, please reach out to the team on our [Discord](https://discord.com/invite/minaraai).
 {% endhint %}
 
 #### Get Invite Quotas by Subscription
