@@ -39,7 +39,8 @@ Each event is anchored to the timestamp of its earliest reported article, ensuri
 
 #### **Asset & Sector Mapping**
 
-Minara performs **entity extraction** and **context tagging** to map which cryptos, stocks, projects, or sectors are directly or indirectly affected by each event.\
+Minara performs **entity extraction** and **context tagging** to map which cryptos, stocks, projects, or sectors are directly or indirectly affected by each event.
+
 Each identified entity receives a sentiment label:
 
 * 🟢 **Bullish:** positive catalyst or favorable implication.
