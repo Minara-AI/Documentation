@@ -1,4 +1,4 @@
-# Discover: Crypto Picks
+# Crypto Picks
 
 **Crypto Picks** is designed to help users track evolving trends, evaluate market confidence, and manage risk exposure through structured, explainable signals.
 
@@ -56,7 +56,7 @@ Each token receives a **directional probability** (bullish or bearish) and a **c
 
 Each board item shows standardized fields to help users judge direction, timing, and risk at a glance.
 
-<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Visual and Data Mapping
 
