@@ -40,5 +40,5 @@
 ## Links
 
 * [Ask Minara](https://minara.ai/)
-* [X](https://x.com/minara_ai)
+* [X](https://x.com/minara)
 * [Discord](https://discord.com/invite/minaraai)
