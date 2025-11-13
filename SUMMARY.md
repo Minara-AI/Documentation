@@ -37,6 +37,13 @@
 * [Personalization](features/personalization.md)
 * [Spark](features/spark.md)
 
+## Ecosystem
+
+* [Gen Zero(Gen-0)](ecosystem/gen-zero-gen-0.md)
+* [Developer](ecosystem/developer/README.md)
+  * [Agent API](ecosystem/developer/agent-api.md)
+  * [Copilot API](ecosystem/developer/copilot-api.md)
+
 ## Links
 
 * [Ask Minara](https://minara.ai/)

@@ -31,7 +31,7 @@ description: Invite your friends to join Minara and earn rewards together.
 {% endcolumn %}
 
 {% column %}
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

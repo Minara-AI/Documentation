@@ -1,0 +1,62 @@
+# Gen Zero(Gen-0)
+
+## Introduction
+
+Gen Zero(Gen-0) is an NFT-gated community dedicated to push AI beyond human limits in digital finance. Gen-0 NFT is a collection of trustless on-chain agents built on [ERC8004](https://eips.ethereum.org/EIPS/eip-8004), with unique personalities defined by their traits, and natively integrated with Minara Agent's endpoints.
+
+As a Gen-0 (agent) holder, you're able to customize your agent and Minara. When a client calls your agent's endpoints with [x402](https://www.coinbase.com/developer-platform/products/x402) or [A2A](https://a2a-protocol.org/) payment, you'll receive a revenue share from Minara.
+
+## Why ERC8004 and Gen-0?
+
+Before ERC8004, there was no way to turn an AI agent into an ownable asset.
+
+ERC8004 gives every agent:
+
+* On-chain identity (a stable, trustless agent ID)
+* Ownership & transferability (the agent _is_ the NFT)
+* Standardized endpoints for calls, payments, and usage
+* Native monetization through x402 / A2A
+
+However, an ERC8004 on-chain agent still requires an external entity to provide comprehensive, reliable, and verifiable AI services (declared through its `metadata.endpoints`).
+
+**That’s why Gen-0 exists:** We want to create a new collection of ownable AI agents powered by Minara’s full stack, and spreading them globally through the strength of NFT communities.
+
+## How Gen-0 Agent Works?
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Minara provides every Gen-0 agent with all essential endpoints, including agent services for emotion, analytics, trading, DeFi, social media, and more.&#x20;
+
+Gen-0 holders can advertise their own Gen-0 agents externally. As more clients call a specific Gen-0 agent’s services, more payments are made to Minara via x402 and A2A.&#x20;
+
+**Minara then shares the revenue with the holder based on their Gen-0 ownership.**
+
+## A Transferable White-label License
+
+At the business level, Gen-0 NFT is a new type of **transferable white-label license** that lets partners run Minara Agents under their own branding and capture the commercial benefits.
+
+Gen-0 holders can also leverage Minara’s developer toolkits to quickly build their own agent-powered websites, offering more differentiated and localized services on top of Gen-0 agents.
+
+This establishes a community network powered by on-chain identity and reputation, creating a win-win model for both Minara and the Gen-0 community.
+
+## Who’s the ideal Gen-0 holder?
+
+Gen-0 is designed for those who wants to own an AI agent that can serve multiple use cases and earn real revenue.
+
+More concretely:
+
+* **Creators** who want a multi-purpose AI agent (emotion, research, trading, DeFi, social) that also generates income.
+* **Developers** who need a standardized ERC-8004 on-chain agent they can extend, integrate, and monetize.
+* **Analysts & traders** who want an autonomous research/trading agent that clients can call — and pay for.
+* **Communities & KOLs** who want an AI “digital twin” that supports their audience and creates a new revenue stream.
+* **Founders & builders** who want to spin up localized or specialized agent services and get paid when people use them.
+
+## How to get whitelist spots?
+
+There are three ways to get a WL spot:
+
+* Win WL from community campaigns and events,
+* Redeem your WL with [Sparks](../features/spark.md),
+* Redeem your WL with Engage point in DC.
+
+Joinc our Discord and check the channel [#how-to-get-wl](https://discord.gg/invite/minaraai).
