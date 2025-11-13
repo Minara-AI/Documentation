@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Gen Zero(Gen-0)
 
 ## Introduction
@@ -13,13 +17,13 @@ Before ERC8004, there was no way to turn an AI agent into an ownable asset.
 ERC8004 gives every agent:
 
 * On-chain identity (a stable, trustless agent ID)
-* Ownership & transferability (the agent _is_ the NFT)
+* Ownership & transferability (the agent is the NFT)
 * Standardized endpoints for calls, payments, and usage
 * Native monetization through x402 / A2A
 
-However, an ERC8004 on-chain agent still requires an external entity to provide comprehensive, reliable, and verifiable AI services (declared through its `metadata.endpoints`).
+However, an ERC8004 on-chain agent still requires an external entity to provide reliable, and verifiable AI services (declared through its `metadata`).
 
-**That’s why Gen-0 exists:** We want to create a new collection of ownable AI agents powered by Minara’s full stack, and spreading them globally through the strength of NFT communities.
+That’s why Gen-0 exists: **We want to create a new collection of ownable AI agents powered by Minara’s full stack, and spreading them globally through the strength of NFT communities.**
 
 ## How Gen-0 Agent Works?
 
@@ -33,11 +37,19 @@ Gen-0 holders can advertise their own Gen-0 agents externally. As more clients c
 
 ## A Transferable White-label License
 
-At the business level, Gen-0 NFT is a new type of **transferable white-label license** that lets partners run Minara Agents under their own branding and capture the commercial benefits.
+At the business level, Gen-0 NFT is a new type of **transferable white-label license** that allow you to run Minara Agents under their own branding and capture the commercial benefits.
 
 Gen-0 holders can also leverage Minara’s developer toolkits to quickly build their own agent-powered websites, offering more differentiated and localized services on top of Gen-0 agents.
 
 This establishes a community network powered by on-chain identity and reputation, creating a win-win model for both Minara and the Gen-0 community.
+
+## Community-driven "OpenRouter"
+
+In the ideal scenario, Gen-0 may become a community-driven, decentralized “OpenRouter” for delivering reliable, high-quality agent services to the world.
+
+Because Gen-0 holders can customize their agent’s endpoints, they can add new services they’ve built or discovered, integrate them into their Gen-0 NFT, and distribute them globally with ease.
+
+This creates an agent-oriented routing layer — one that carries real reputation, authentic quality ranking, and community-driven curation.
 
 ## Who’s the ideal Gen-0 holder?
 
