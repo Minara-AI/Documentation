@@ -1,8 +1,27 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
 # Gen Zero(Gen-0)
+
+<figure><img src="../.gitbook/assets/gen-0-nft (1).jpg" alt=""><figcaption></figcaption></figure>
 
 ## Introduction
 
-Simply put, Gen-0 is an Agentic NFT.
+**Simply put, Gen-0 NFT is an Agentic NFT.**
 
 Gen-0 NFT is a collection of trustless on-chain agents built on [ERC8004](https://eips.ethereum.org/EIPS/eip-8004), with unique personalities defined by their traits, and natively integrated with Minara Agent's endpoints.
 
