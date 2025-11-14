@@ -39,7 +39,7 @@
 
 ## Ecosystem
 
-* [Gen Zero(Gen-0)](ecosystem/gen-zero-gen-0.md)
+* [Gen Zero(Gen-0)](ecosystem/gen-zero.md)
 * [Developer](ecosystem/developer/README.md)
   * [Agent API](ecosystem/developer/agent-api.md)
   * [Copilot API](ecosystem/developer/copilot-api.md)
