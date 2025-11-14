@@ -35,6 +35,7 @@
 * [Crypto Picks](features/crypto-picks.md)
 * [News Feed](features/news-feed.md)
 * [Personalization](features/personalization.md)
+* [Multimodel Input](features/multimodel-input.md)
 * [Spark](features/spark.md)
 
 ## Ecosystem
