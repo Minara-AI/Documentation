@@ -1,14 +1,12 @@
----
-hidden: true
----
-
 # Gen Zero(Gen-0)
 
 ## Introduction
 
-Gen Zero(Gen-0) is an NFT-gated community dedicated to push AI beyond human limits in digital finance. Gen-0 NFT is a collection of trustless on-chain agents built on [ERC8004](https://eips.ethereum.org/EIPS/eip-8004), with unique personalities defined by their traits, and natively integrated with Minara Agent's endpoints.
+Simply put, Gen-0 is an Agentic NFT.
 
-As a Gen-0 (agent) holder, you're able to customize your agent and Minara. When a client calls your agent's endpoints with [x402](https://www.coinbase.com/developer-platform/products/x402) or [A2A](https://a2a-protocol.org/) payment, you'll receive a revenue share from Minara.
+Gen-0 NFT is a collection of trustless on-chain agents built on [ERC8004](https://eips.ethereum.org/EIPS/eip-8004), with unique personalities defined by their traits, and natively integrated with Minara Agent's endpoints.
+
+As a Gen-0 holder, you're able to customize your agent and Minara. When a client calls your agent's endpoints with [x402](https://www.coinbase.com/developer-platform/products/x402) or [A2A](https://a2a-protocol.org/) payment, you'll receive a revenue share from Minara.
 
 ## Why ERC8004 and Gen-0?
 
@@ -21,9 +19,9 @@ ERC8004 gives every agent:
 * Standardized endpoints for calls, payments, and usage
 * Native monetization through x402 / A2A
 
-However, an ERC8004 on-chain agent still requires an external entity to provide reliable, and verifiable AI services (declared through its `metadata`).
+However, an ERC8004 on-chain agent still requires an external entity to provide reliable, and verifiable AI services (declared through its `metadata`). As the number of agents in the world continues to grow, distributing them effectively will become a new challenge.
 
-That’s why Gen-0 exists: **We want to create a new collection of ownable AI agents powered by Minara’s full stack, and spreading them globally through the strength of NFT communities.**
+That’s why Gen-0 exists: **We are combining the community culture of PFP NFTs with ERC8004 Agents to create a collection of Agentic NFTs, and distribute them across the world.**
 
 ## How Gen-0 Agent Works?
 
@@ -47,7 +45,7 @@ This establishes a community network powered by on-chain identity and reputation
 
 In the ideal scenario, Gen-0 may become a community-driven, decentralized “OpenRouter” for delivering reliable, high-quality agent services to the world.
 
-Because Gen-0 holders can customize their agent’s endpoints, they can add new services they’ve built or discovered, integrate them into their Gen-0 NFT, and distribute them globally with ease.
+Since Gen-0 holders can customize their agent’s endpoints, they can add new services they’ve built or discovered, integrate them into their Gen-0 NFT, and distribute them globally with ease.
 
 This creates an agent-oriented routing layer — one that carries real reputation, authentic quality ranking, and community-driven curation.
 
