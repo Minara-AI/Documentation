@@ -1,6 +1,6 @@
-# How prompt-to-agent works
+# Workflow Mechanism
 
-## Core Mechanism
+## Core Infrastructure
 
 Minara's workflow engine is built upon the open-source platform [n8n](https://n8n.io/), a visual automation tool that enables the creation of complex workflows through a node-based interface.
 

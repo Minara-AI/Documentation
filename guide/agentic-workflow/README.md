@@ -1,5 +1,5 @@
 ---
-description: Create agentic financial workflows using prompts.
+description: Create agentic workflows to manage your finance using prompts.
 ---
 
 # Agentic Workflow
