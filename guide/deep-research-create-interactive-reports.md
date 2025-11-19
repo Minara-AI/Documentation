@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Deep Research: Create Interactive Reports
 
 You can turn on **"Deep Research"** to create an interactive report. Enter your report requirements accurately. Minara will generate a static webpage with interactive charts and a PDF.
