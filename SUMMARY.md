@@ -18,13 +18,13 @@
   * [How to buy cryptocurrency?](guide/managing-funds-and-trading/how-to-buy-cryptocurrency.md)
   * [How to buy stocks?](guide/managing-funds-and-trading/how-to-buy-stocks.md)
 * [Deep Research: Create Interactive Reports](guide/deep-research-create-interactive-reports.md)
-* [Prompt to Agent](guide/prompt-to-agent/README.md)
-  * [How prompt-to-agent works](guide/prompt-to-agent/how-prompt-to-agent-works.md)
-  * [Agentic Workflow Best Practice](guide/prompt-to-agent/agentic-workflow-best-practice/README.md)
-    * [How to create a price alert bot?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-price-alert-bot.md)
-    * [How to set up automated trade execution](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-set-up-automated-trade-execution.md)
-    * [How to run analysis on a schedule](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-run-analysis-on-a-schedule.md)
-    * [How to create a copy trading bot?](guide/prompt-to-agent/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
+* [Agentic Workflow](guide/agentic-workflow/README.md)
+  * [Workflow Mechanism](guide/agentic-workflow/workflow-mechanism.md)
+  * [Agentic Workflow Best Practice](guide/agentic-workflow/agentic-workflow-best-practice/README.md)
+    * [How to create a price alert bot?](guide/agentic-workflow/agentic-workflow-best-practice/how-to-create-a-price-alert-bot.md)
+    * [How to set up automated trade execution](guide/agentic-workflow/agentic-workflow-best-practice/how-to-set-up-automated-trade-execution.md)
+    * [How to run analysis on a schedule](guide/agentic-workflow/agentic-workflow-best-practice/how-to-run-analysis-on-a-schedule.md)
+    * [How to create a copy trading bot?](guide/agentic-workflow/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
 
 ## Features
 
