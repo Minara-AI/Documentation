@@ -1,4 +1,14 @@
-# Workflow Mechanism
+---
+description: This page describes how Minara's agentic workflows run under the hood.
+---
+
+# Agentic Workflow
+
+{% embed url="https://drive.google.com/file/d/1fTq804srm0k2ILKbsOgOfN7J0fo-MMj6/view?usp=sharing" %}
+Video Introduction: Workflow by Minara
+{% endembed %}
+
+
 
 ## Core Infrastructure
 
@@ -46,6 +56,7 @@ Minara's workflows are composed of various node types, each serving a specific f
   * However, successful trading actions will incur transaction fees, like other trades done with Minara.
 * **Workflow Execution**: If your credit balance is depleted, all active workflows will be automatically paused. To avoid unexpected losses from execution interruptions, please make sure that you have sufficient credits.
 
-For more details about credits, please refer to: [subscription-and-credits](../../subscription-and-credits/ "mention")
+For more details about credits, please refer to: [subscription-and-credits](../subscription-and-credits/ "mention")
 
 ***
+

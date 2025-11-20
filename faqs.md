@@ -31,7 +31,7 @@ Minara can assist you throughout the entire process, from data analysis and deci
 
 Minara responds quickly and executes precisely. Additionally, Minara's built-in **DeepResearch** module can perform multi-stage reasoning and generate detailed, beautiful research reports on complex topics, like "Compare the technical architecture and development potential of Solana and Sui."
 
-Minara also supports [agentic-workflow](guide/agentic-workflow/ "mention"), enabling you to create automated workflows (e.g., monitor on-chain transactions and trigger actions) through simple dialogue with Minara, and manage them through a visual interface.
+Minara also supports [agentic-workflow-1](features/agentic-workflow-1/ "mention"), enabling you to create automated workflows (e.g., monitor on-chain transactions and trigger actions) through simple dialogue with Minara, and manage them through a visual interface.
 
 #### **3. Where can I manage my subscription plans?**
 

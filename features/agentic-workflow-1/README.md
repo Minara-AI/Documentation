@@ -1,5 +1,6 @@
 ---
 description: Create agentic workflows to manage your finance using prompts.
+hidden: true
 ---
 
 # Agentic Workflow
