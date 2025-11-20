@@ -1,6 +1,10 @@
 # News Feed
 
-**News Feed** is Minara’s curated information system that aggregates, analyzes, and summarizes high-value finance-related news in real time.
+**News Feed** is Minara’s curated information system that aggregates, analyzes, and summarizes high-value finance-related news in real time. See the real time news feed here: [https://minara.ai/app/discover/news](https://minara.ai/app/discover/news)
+
+<figure><img src="../.gitbook/assets/Frame 1948756743.png" alt=""><figcaption></figcaption></figure>
+
+
 
 It transforms fragmented information from global media into structured, verifiable insights, enabling users to understand **what happened**, **why it matters**, and **how it impacts the markets**.
 
