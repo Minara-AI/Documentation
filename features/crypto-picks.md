@@ -1,6 +1,6 @@
 # Crypto Picks
 
-**Crypto Picks** is designed to help users track evolving trends, evaluate market confidence, and manage risk exposure through structured, explainable signals.
+**Crypto Picks** is designed to help users track evolving trends, evaluate market confidence, and manage risk exposure through structured, explainable signals. Check it out now: [https://minara.ai/app/discover/crypto](https://minara.ai/app/discover/crypto)
 
 ***
 
