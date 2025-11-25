@@ -4,14 +4,6 @@ description: Minara - Your personal virtual CFO for digital finance.
 
 # Introduction
 
-{% hint style="success" %}
-Early Access is now open! Get your invite code by either:
-
-• Asking existing Minara users for a referral (view more in [referral-and-rewards.md](referral-and-rewards.md "mention")), or
-
-• Joining the waitlist at [https://minara.ai/join-waitlist](https://minara.ai/join-waitlist)
-{% endhint %}
-
 ## What is Minara?
 
 Minara is not just another AI chatbot—**she's an all-powerful financial AI assistant like no other.**&#x20;
