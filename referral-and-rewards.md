@@ -12,7 +12,7 @@ description: Invite your friends to join Minara and earn rewards together.
    Send your link or code to people who haven’t joined Minara yet.\
    When they register their account using your invite, it counts as a referral.
 3. **Earn rewards**\
-   You receive **Credits and Sparks** automatically base on the action of your invitees. (See “Reward Details” below for more details.)
+   You receive **Credits and Sparks** automatically based on the action of your invitees. (See “Reward Details” below for more details.)
 4. **Track your progress**\
    See your total invites, paid conversions, and rewards at a glance in your **Profile** - **Invites**.
 
@@ -36,7 +36,7 @@ Each tier is determined by the **total number of invitees** who have successfull
 
 Inviter rewards vary by tier and are granted when an invitee purchases a **paid plan for the first time**.
 
-<table><thead><tr><th width="152">Tier</th><th>Inviter Reward</th></tr></thead><tbody><tr><td>Frist 10 Invites</td><td><p><strong>Signup Reward:</strong> 200 Credits for each signup</p><p></p><p><strong>First Purchase Reward:</strong></p><ul><li>300 Credits</li><li>50% of the Sparks your invitee receives from their first paid plan</li></ul></td></tr><tr><td>11 to 50 Invites</td><td><p><strong>Signup Reward:</strong> None</p><p></p><p><strong>First Purchase Reward:</strong></p><ul><li>400 Credits</li><li>60% of the Sparks your invitee receives from their first paid plan</li></ul></td></tr><tr><td>Above 50 invites</td><td><p><strong>Signup Reward:</strong> None</p><p></p><p><strong>First Purchase Reward:</strong></p><ul><li>500 Credits</li><li>70% of the Sparks your invitee receives from their first paid plan</li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="152">Tier</th><th>Inviter Reward</th></tr></thead><tbody><tr><td>First 10 Invites</td><td><p><strong>Signup Reward:</strong> 200 Credits for each signup</p><p></p><p><strong>First Purchase Reward:</strong></p><ul><li>300 Credits</li><li>50% of the Sparks your invitee receives from their first paid plan</li></ul></td></tr><tr><td>11 to 50 Invites</td><td><p><strong>Signup Reward:</strong> None</p><p></p><p><strong>First Purchase Reward:</strong></p><ul><li>400 Credits</li><li>60% of the Sparks your invitee receives from their first paid plan</li></ul></td></tr><tr><td>Above 50 invites</td><td><p><strong>Signup Reward:</strong> None</p><p></p><p><strong>First Purchase Reward:</strong></p><ul><li>500 Credits</li><li>70% of the Sparks your invitee receives from their first paid plan</li></ul></td></tr></tbody></table>
 
 {% hint style="info" %}
 **Invitee rewards remain the same:** every invitee receives extra **200 Credits** upon signup.
@@ -74,4 +74,17 @@ Reward credits do not expire. Credits are used in the following order whenever y
 
 **Q4. My invitee has paid. Why didn't I receive more rewards?**
 
-Please note that rewards are only granted for the **invitee’s first paid subscription.** If you didn't receive rewards correctly, please submit a ticket in our Discord.
+Please note that rewards are only granted for the **invitee’s first paid plan.** If you didn't receive rewards correctly, please submit a ticket in our Discord.
+
+**Q5. Do invitee rewards change based on the inviter’s tier?**
+
+No. Invitee rewards always remain the same.
+
+**Q6. Does the order in which people sign up matter?**
+
+No. The rewards you receive as an inviter are determined by your tier at the time the reward event is triggered.
+
+**Q7. Why didn’t I receive signup Credits when inviting people?**
+
+Please check your reward tier. Signup Credits for inviters are only granted in Tier 1 (the first 10 invitees). If you still believe your rewards are incorrect, please contact us through [Discord](https://discord.com/invite/minaraai).
+
