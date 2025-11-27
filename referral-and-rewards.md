@@ -1,5 +1,6 @@
 ---
 description: Invite your friends to join Minara and earn rewards together.
+hidden: true
 ---
 
 # Referral & Rewards
