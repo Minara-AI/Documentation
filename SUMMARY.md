@@ -21,7 +21,7 @@
 
 ## Features
 
-* [Tools Integration](features/tools-integration.md)
+* [Deep Research](features/deep-research.md)
 * [Vibe Trading](features/vibe-trading.md)
 * [Agentic Workflow](features/agentic-workflow.md)
 * [Agentic Workflow](features/agentic-workflow-1/README.md)
@@ -30,13 +30,17 @@
     * [How to set up automated trade execution](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-set-up-automated-trade-execution.md)
     * [How to run analysis on a schedule](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-run-analysis-on-a-schedule.md)
     * [How to create a copy trading bot?](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
-* [Wallet Security](features/wallet-security.md)
-* [Deep Research](features/deep-research.md)
 * [Crypto Picks](features/crypto-picks.md)
 * [News Feed](features/news-feed.md)
 * [Personalization](features/personalization.md)
 * [Multimodel Input](features/multimodel-input.md)
 * [Spark](features/spark.md)
+
+## Technology
+
+* [Tools Integration](technology/tools-integration.md)
+* [Wallet Security](technology/wallet-security.md)
+* [Financial Expert LLM](technology/financial-expert-llm.md)
 
 ## Ecosystem
 

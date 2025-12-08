@@ -23,7 +23,7 @@ A smart workflow engine that decomposes complex queries into executable tasks, s
 
 A unified API layer integrating over 50 professional tools and data sources. It provides real-time access to market data, on-chain metrics, social sentiment, macro indicators, and project fundamentals.&#x20;
 
-You can check our tools integration at this [doc](tools-integration.md).
+You can check our tools integration at this [doc](../technology/tools-integration.md).
 
 ### Analysis Synthesizer
 
