@@ -1,5 +1,5 @@
 ---
-description: Minara - Your personal virtual CFO for digital finance.
+description: Minara - Your personal AI CFO for digital finance.
 ---
 
 # Introduction
