@@ -23,7 +23,7 @@ hidden: true
 {% endcolumn %}
 
 {% column %}
-<figure><img src=".gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

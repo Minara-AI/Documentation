@@ -21,6 +21,7 @@
 
 ## Features
 
+* [Trading Copilot](features/trading-copilot.md)
 * [Deep Research](features/deep-research.md)
 * [Vibe Trading](features/vibe-trading.md)
 * [Agentic Workflow](features/agentic-workflow.md)

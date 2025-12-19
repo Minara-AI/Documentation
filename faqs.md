@@ -101,7 +101,7 @@ You can track your trades and activities by clicking **“Asset - Activity”** 
 {% endcolumn %}
 
 {% column %}
-<figure><img src=".gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/图片 (3) (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
