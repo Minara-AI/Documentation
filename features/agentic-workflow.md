@@ -43,8 +43,8 @@ Minara's workflows are composed of various node types, each serving a specific f
    * **Trade**:
      * **Market Orders**: Execute buy/sell orders on supported blockchains (Base, Ethereum, Solana).
      * **Stop Market Orders**: Combine token price triggers with market orders for automated trading.
-   * **Minara Call**:
-     * Send prompts to Minara to get responses. Deep Research mode available. (For best results, specify if you want to use Deep Research mode.)
+   * **Minara AI Query**:
+     * Send prompts to Minara to get responses.&#x20;
    * **Code**:
      * Minara generates custom code on demand — from creating HTML email templates to executing complex trading logic.
 
@@ -52,7 +52,7 @@ Minara's workflows are composed of various node types, each serving a specific f
 
 ### Important Usage Notes
 
-* **Credit Consumption**: For now, only the **Minara Call** node consumes credits.
+* **Credit Consumption**: For now, only the **Minara AI Query** node consumes credits.
   * However, successful trading actions will incur transaction fees, like other trades done with Minara.
 * **Workflow Execution**: If your credit balance is depleted, all active workflows will be automatically paused. To avoid unexpected losses from execution interruptions, please make sure that you have sufficient credits.
 
