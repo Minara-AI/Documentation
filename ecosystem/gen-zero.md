@@ -85,7 +85,7 @@ More concretely:
 There are three ways to get a WL spot:
 
 * Win WL from community campaigns and events,
-* Redeem your WL with [Sparks](../features/spark.md),
+* Redeem your WL with [Sparks](spark.md),
 * Redeem your WL with Engage point in DC.
 
 Joinc our Discord and check the channel [#how-to-get-wl](https://discord.gg/invite/minaraai).

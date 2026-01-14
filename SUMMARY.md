@@ -31,11 +31,10 @@
     * [How to set up automated trade execution](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-set-up-automated-trade-execution.md)
     * [How to run analysis on a schedule](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-run-analysis-on-a-schedule.md)
     * [How to create a copy trading bot?](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
-* [Crypto Picks](features/crypto-picks.md)
-* [News Feed](features/news-feed.md)
 * [Personalization](features/personalization.md)
 * [Multimodel Input](features/multimodel-input.md)
-* [Spark](features/spark.md)
+* [Crypto Picks](features/crypto-picks.md)
+* [News Feed](features/news-feed.md)
 
 ## Technology
 
@@ -45,13 +44,13 @@
 
 ## Ecosystem
 
+* [Agent API](ecosystem/agent-api.md)
 * [Gen Zero(Gen-0)](ecosystem/gen-zero.md)
-* [Developer](ecosystem/developer/README.md)
-  * [Agent API](ecosystem/developer/agent-api.md)
-  * [Copilot API](ecosystem/developer/copilot-api.md)
+* [Spark](ecosystem/spark.md)
 
 ## Links
 
 * [Ask Minara](https://minara.ai/)
 * [X](https://x.com/minara)
 * [Discord](https://discord.com/invite/minaraai)
+* [IOS](https://apps.apple.com/us/app/minara-ai/id6754446850)

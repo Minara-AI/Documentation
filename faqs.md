@@ -53,7 +53,7 @@ Therefore, the number of questions you can ask for 1 USD (or any other specific 
 
 **Credits:** Minara’s unit of usage. Every time you perform AI processing or run workflows with certain node types, credits are deducted based on the tokens consumed. For more details, please check out [how-credits-work.md](subscription-and-credits/how-credits-work.md "mention")
 
-**Bonus Sparks:** Extra reward points included in subscription plans. More Spark-based features will be introduced in the future in [spark.md](features/spark.md "mention")— stay tuned for what they can unlock.&#x20;
+**Bonus Sparks:** Extra reward points included in subscription plans. More Spark-based features will be introduced in the future in [spark.md](ecosystem/spark.md "mention")— stay tuned for what they can unlock.&#x20;
 
 ***
 

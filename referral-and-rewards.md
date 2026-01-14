@@ -53,7 +53,7 @@ This means:
   → you receive **Tier 3 rewards (500 Credits + 70% Sparks)**.
 
 > _Credits_ can be used across Minara’s features. Learn more about credits in [how-credits-work.md](subscription-and-credits/how-credits-work.md "mention") \
-> &#xNAN;_&#x53;parks_ are special bonuses for limited events. Check out [spark.md](features/spark.md "mention") for more details
+> &#xNAN;_&#x53;parks_ are special bonuses for limited events. Check out [spark.md](ecosystem/spark.md "mention") for more details
 
 ***
 
