@@ -32,7 +32,7 @@
     * [How to run analysis on a schedule](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-run-analysis-on-a-schedule.md)
     * [How to create a copy trading bot?](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
 * [Personalization](features/personalization.md)
-* [Multimodel Input](features/multimodel-input.md)
+* [Multimodal Input](features/multimodal-input.md)
 * [Crypto Picks](features/crypto-picks.md)
 * [News Feed](features/news-feed.md)
 
