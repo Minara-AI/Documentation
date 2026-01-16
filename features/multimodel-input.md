@@ -1,8 +1,6 @@
 # Multimodel Input
 
-## Multimodel Input
-
-Minara now supports **multimodel input:** users can upload images and files directly when chatting with Minara.
+Minara now supports **multimodal input:** users can upload images and files directly when chatting with Minara.
 
 Upload supported file types such as **images**, **Excel sheets**, and **PDF documents** alongside your prompt to get richer insights, automated summaries, and data-driven answers without switching between tools.
 
