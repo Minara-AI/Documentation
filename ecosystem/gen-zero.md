@@ -44,7 +44,7 @@ That’s why Gen-0 exists: **We are combining the community culture of PFP NFTs 
 
 ## How Gen-0 Agent Works?
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Minara provides every Gen-0 agent with all essential endpoints, including agent services for emotion, analytics, trading, DeFi, social media, and more.&#x20;
 

@@ -1,65 +1,150 @@
 # Multimodel Input
 
-Minara now supports **multimodel input:** users can upload images and files directly when chatting with Minara.&#x20;
+## Personalization
 
-Upload supported file types such as **images**, **Excel sheets**, and **PDF documents** alongside your prompt to get richer insights, automated summaries, and data-driven answers without switching between tools.
+Personalization is Minara’s AI layer that adapts chat responses to your preferences and context. It helps Minara deliver answers that are **more relevant, more consistent, and easier to act on.**
 
-> **Single file limit:** up to _10 MB_\
-> **Max files amount per upload:** _5 files_
+###
 
-### 🚀 How It Works
+### **What you get**
 
-1. **Upload Files**\
-   Drag and drop or select files when composing your prompt. You can upload up to _5 files at once_ (each ≤ _10 MB_).
-2. **Describe Your Task**\
-   Add a question or instruction in natural language — e.g., _“Summarize key insights from this report”_ or _“Analyze this Excel dataset and tell me the top trends.”_
-3. **Minara Reads & Responds**\
-   Minara integrates text, visual elements, and structured data to produce a unified answer — extracting tables, interpreting charts, or summarizing text.
+With Personalization enabled, Minara can:
+
+* **Match your decision style** (e.g., data-driven vs narrative-driven) and preferred **explanation depth**
+* **Keep responses consistent** (structure, emphasis, risk checks, and tone)
+* **Use high-level context** (when enabled) to avoid generic advice and reduce repeated back-and-forth
+
+### **How it works**
+
+Personalization only applies to the inputs you explicitly enable. When enabled, Minara uses them to shape **how responses are framed.**<br>
+
+**Basic flow**
+
+1. **Minara autaomaicalyl collect some from your usage** or you can **Inputs you control on "Personalization" Panel**(Tags, Memories, Trading Summary, Custom Prompt)
+2. Minara converts them into a small set of **preference + context signals** (e.g., your decision style, risk posture, preferred depth)
+3. Those signals guide the response: **structure, emphasis, depth, and risk checks**
 
 
 
-### 📎 Example Scenarios
+**What it changes**
 
-> Below are some typical usage scenarios for multimodal input. Users are free to explore this feature beyond these examples.
->
-> For a better experience and more thorough multimodal analysis, we recommend enabling **Quality mode** during the conversation.
+* The **structure** of the answer (e.g., thesis → levels → risk checks → next actions)
+* Which **signals** are prioritized (based on your style and horizon)
+* How **detailed** the explanation is (concise vs deep)
+* How **risk** is presented (guardrails, invalidation, position sizing prompts)
 
-#### 📈 Image-Based Chart Review
 
-Users uploadd candlestick chart screenshots, either raw or with their own annotations such as trend lines, arrows, support/resistance levels, or text notes.&#x20;
 
-For raw charts, Minara analyzes the price structure directly and identifies key support and resistance zones. When annotations are present, Minara interprets the visual signals and evaluates whether the user’s analysis logic is reasonable, highlighting confirmations, invalidation conditions, and context-aware trading insights.
+### **How to use**
+
+Go to **Settings → Personalization** and toggle each module on or off:
+
+
+
+* **Tags** — structured preferences you can edit
+* **Memories** — saved helpful info from chats (removable)
+* **Trading Summary** — high-level context snapshot (optional / if available)
+* **Custom Prompt** — your explicit response rules (optional)
+
+<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 7.03.45 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Inputs
+
+#### 1) Tags
+
+Tags are **structured preferences.** Minara uses them to choose the right framing, depth, and emphasis in chat.&#x20;
+
+* use the **dropdown** menus to set or update your preferences (example: Decision-Making Style)—things like decision-making style, risk profile, learning preference, and trading habits.&#x20;
+
+<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 6.40.16 PM.png" alt=""><figcaption><p>Tags are editable. Use dropdowns to tune how Minara responds.</p></figcaption></figure>
+
+#### 2) Memories (transparent and removable)
+
+Memories store **useful, stable information from your chats** (e.g., language preference, frequently discussed topics). You can review and delete any memory at any time.
+
+* click **Manage Saved Memories** to review and delete items you don’t want Minara to reference.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 6.42.02 PM.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 6.42.07 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### 📰 Tweet / News Screenshot Fact Check
+#### 3) Trading Summary
 
-Users uploads screenshots of tweets or news articles.&#x20;
+Trading Summary is a **high-level snapshot** used to make chat more context-aware. It’s designed to be _summary-level_ (helpful for relevance) rather than exposing sensitive details.
 
-For tweets, minara analyzes visible signals such as handle patterns, verification status, follower structure, and content characteristics to identify potential scam or high-risk accounts.
+<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 6.43.05 PM.png" alt=""><figcaption><p>Trading Summary provides a high-level context snapshot to improve relevance.</p></figcaption></figure>
 
-For news articles, minara extracts key information such as source, author, timestamp, and main claims, and helps assess credibility, missing context, or potential misinterpretation.
+#### 4) Custom Prompt
+
+Custom Prompt lets you set **your own rules** for how Minara should respond.
+
+If you want more predictable formatting or stricter rules, add a Custom Prompt. Keep it short and specific.
+
+Suggested template:
+
+* **Structure:** “Answer in: Summary → Key signals → Risk checks → Next actions.”
+* **Style:** “Be concise. Use bullet points. Avoid long paragraphs.”
+* **Safety:** “If uncertain, say what is unknown and what to verify.”
+
+
 
 ***
 
-#### 📊 Excel Data Analysis
+### 📌 Example Scenarios
 
-Users uploads Excel or CSV files containing trading records or datasets.
+Below are typical usage scenarios for Personalization. Users are free to explore beyond these examples.
 
-Minara interprets the structure, analyzes performance and behavior patterns, summarizes profit and loss drivers, and provides personalized improvement suggestions.
+For best results, we recommend enabling **Quality mode** when you want deeper reasoning and more thorough risk checks.
+
+#### 🧭 Scenario 1 — “Make it match my decision style”
+
+**Goal:** Get answers that fit how you decide (data-first vs narrative-first vs community sentiment vs tech-first).
+
+**Setup**
+
+* Turn on **Tags**
+* Set **Decision-Making Style** (e.g., Data-Driven)
+
+**Try this prompt**
+
+> “Analyze BTC’s current setup. I’m Data-Driven — prioritize evidence, key levels, and invalidation conditions. End with a clear action plan.”
+
+**What you’ll see**
+
+* More structured logic, clearer levels, explicit invalidation, less storytelling.
 
 ***
 
-#### 📄 PDF Insights & Summaries
+#### 🧱 Scenario 2 — “Always give me a disciplined plan”
 
-Users uploads project whitepapers or reports in PDF format.&#x20;
+**Goal:** Avoid improvising off raw price moves by enforcing a consistent decision framework.
 
-Minara summarizes core positioning, evaluates technical feasibility, token necessity, team credibility, roadmap clarity, and highlights key risks in a structured way.
+**Setup**
 
+* Turn on **Custom Prompt**
+* (Optional) Turn on **Tags** and set Risk Profile
 
+**Custom Prompt example**
 
-### 🧠 Tips for Best Results
+> “Always respond with: 1) Thesis 2) Key levels 3) Risk checks 4) Position sizing suggestion 5) Invalidation triggers 6) Next action.”
 
-* **Combine text + files:** Provide clear instructions with your upload
-* **Multiple files context:** You can upload several related files at once (e.g., an image and an Excel) and ask cross-document questions.
-* **Clean data helps:** Well-formatted spreadsheets or scanned PDFs with clear text yield better extraction and interpretation.
+**Try this prompt**
+
+> “I’m considering a SOL trade. Give me a disciplined plan using my structure.”
+
+**What you’ll see**
+
+* A repeatable template every time: fewer missed risk checks.
+
+***
+
+### Control & safety notes
+
+* **Opt-in by default:** Nothing is used unless you enable it.
+* **Editable:** Tags can be changed at any time.
+* **Reversible:** Memories can be deleted; modules can be toggled off.
+* **Bounded context:** Trading Summary is intentionally high-level, designed for relevance without oversharing.
