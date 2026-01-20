@@ -17,6 +17,6 @@ Minara Agent API offers a cutting-edge financial agent service tailored for deve
 
 Developers can access the Minara API endpoints through two main methods:
 
-1. **Subscription**: Available with a **Business plan**, providing comprehensive access with enhanced features. We will roll out to other plans in the future.
-2. **Pay-As-You-Go**: A flexible, permissionless access option facilitated through the [x402](https://www.x402.org/), allowing usage-based payments.
+1. **API-Key**: Available with a **Pro /** **Partner** plan, providing API-key-basedaccess to Minara agent. We will roll out to other plans in the future.
+2. **Pay-As-You-Go**: A flexible, permissionless access option facilitated through the [x402](https://www.x402.org/), allowing usage-based payments using stablecoins such as $USDC.
 
