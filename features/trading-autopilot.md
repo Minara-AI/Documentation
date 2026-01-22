@@ -1,6 +1,6 @@
 # Trading Autopilot
 
-Trading Autopilot is Minara’s fully managed mode for perpertual trading.&#x20;
+Trading Autopilot is Minara’s fully managed mode for perpetual trading.&#x20;
 
 Within the asset scope you authorize, Autopilot can open new positions, take over eligible existing positions, place and maintain stop-loss / take-profit orders, apply trailing risk control, and enforce global safeguards, while keeping all actions observable and reviewable in logs.
 
@@ -11,7 +11,7 @@ When Autopilot is running, it can perform the following on your behalf, within y
 * Open positions automatically
 * Manage positions (including positions you already have, when eligible)
 * Place take-profit and stop-loss orders, and update stop-loss as market conditions change
-* Reverse positions as market conditions reverses
+* Reverse positions when market conditions reverse
 * Apply global risk controls (e.g., maximum drawdown)
 * Exit and notify you when safety conditions are triggered
 
@@ -19,7 +19,7 @@ When Autopilot is running, it can perform the following on your behalf, within y
 Autopilot is built around three principles:&#x20;
 
 * Every automated action is visible and explainable
-* Human can override any time
+* Users can override any time
 * Any manual action that conflicts with AI execution is treated as a deliberate override and handled explicitly in-product
 {% endhint %}
 
@@ -48,7 +48,7 @@ Autopilot Turned On
 {% endcolumns %}
 
 * Minara plan subscribers can switch between Copilot and Autopilot mode and run Autopilot. Autopilot is not yet open to free users.
-* If user's subscription expires while Autopilot is already running, they can keep viewing and operating the Autopilot panel. However, the user won't be able to start Autopilot without resuming their subscription.
+* If a user's subscription expires while Autopilot is already running, they can keep viewing and operating the Autopilot panel. However, they won't be able to start Autopilot without resuming their subscription.
 
 ***
 
@@ -65,13 +65,13 @@ Autopilot requires at least **$50** in available funds (available for Autopilot 
 
 Occupied Funds = Autopilot margin in use + (if any) worst-case estimated loss of eligible user positions
 
-Worst-case estimated loss is computed from stop-loss trigger (including estimated slippage) plus fees
+Worst-case estimated loss is calculated based on the stop-loss trigger price, including estimated slippage and fees.
 {% endhint %}
 
-* If there are no open positions in your perps account, In this case, all equity is fully available for Autopilot to allocate into new positions.
+* If there are no open positions in your perps account, all equity is fully available for Autopilot to allocate into new positions.
 * If you hold an existing position, the stop-loss-bounded risk of the existing position is treated as already “reserved,” and only the remaining equity can be used to size new positions.
 
-For now, direct deposit to perps wallet is not yet supported. User will need to deposit **USDC** into their spot wallet, then transfer funds into perps wallet before they start Autopilot.
+For now, direct deposit to perps wallet is not yet supported. Users will need to deposit **USDC** into their spot wallet, then transfer funds into perps wallet before they start Autopilot.
 
 **Margin mode & position requirements**
 
@@ -80,7 +80,7 @@ Autopilot requires **cross margin** for all managed assets. When Autopilot start
 * Any isolated margin position blocks starting.
 * Any position outside the strategy trading scope blocks starting.
 
-> e.g. If current strategy is only applicable to BTC, ETH, SOL, but the user has an existing position in HYPE, then it would block Autopilot from starting.
+> e.g. If the current strategy applies only to BTC, ETH, and SOL, but the user holds an existing position in HYPE, Autopilot cannot be started until that position is closed.
 
 ***
 
@@ -97,7 +97,7 @@ On your first enablement:
 3. You confirm risk settings and start Autopilot
 
 > * Within the trading scope, If you already have a cross position on any asset, the asset must be managed by Autopilot and cannot be unselected.
-> * All existing open order will be canceled when starting Autopilot.
+> * All existing open orders will be canceled when Autopilot starts.
 
 #### Subsequent enablement
 
@@ -111,7 +111,7 @@ Each strategy comes with a preset trading scope that defines the assets to which
 
 Assets are divided into tiers, which determine leverage limits, margin allocation, and execution priority when multiple entry signals occur simultaneously.
 
-BTC is defined as a tier-1 asset, ETH and SOL are defined as tier-2 assets, and all other assets are assigned lower priority tiers.&#x20;
+BTC is defined as a Tier-1 asset. ETH and SOL are Tier-2 assets. All other assets are assigned lower priority tiers.&#x20;
 
 When multiple assets trigger entry signals at the same time and the account supports fewer concurrent positions than available signals, Autopilot opens positions according to asset priority order.
 
@@ -148,7 +148,7 @@ Transferring funds into perps wallet will not stop Autopilot from running; incom
 
 #### Manual management on positions
 
-* User may close the positions whenever they want.&#x20;
+* User may close the positions at any time.
 * User cannot cancel the TP/SL open orders when Autopilot is active.
 
 ***
@@ -167,7 +167,7 @@ If the user enabled a maximum drawdown limit and it is triggered:
 
 #### Account equity falls below minimum
 
-If perps account equity is ≤ 5 USDT:
+If perps account equity falls to ≤ $5:
 
 * All Autopilot-managed positions will be closed at market price
 * All pending Autopilot orders will be canceled
@@ -178,6 +178,6 @@ If perps account equity is ≤ 5 USDT:
 Autopilot is built to enforce trading discipline with mandatory TP/SL and trailing stop-loss updates, while leaving you with control over starting, stopping, position management, and the scope you authorize.&#x20;
 
 {% hint style="info" %}
-However, please note that perpetual trading involves high risks and Autopilot does not remove market risk nor guarantee profits.
+However, please note that perpetual perpetual trading involves significant market risk. Autopilot does not eliminate market risk and does not guarantee profits.
 {% endhint %}
 
