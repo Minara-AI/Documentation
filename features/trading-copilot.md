@@ -1,25 +1,14 @@
 # Trading Copilot
 
-Trading Copilot is Minara’s AI-powered assistant designed to analyze markets, generate trading strategies, and execute perpetual trades for users.
+Trading Copilot helps you make fast, structured perpertual trading decisions. You select a market, choose a trading style and strategy, then click **Ask Long / Short** to get an actionable direction plus take-profit and stop-loss levels, with one-click execution while the strategy is valid.
 
 ### How-to Guide
 
 The following guide will cover all functionalities needed for using Minara Trading Copilot:
 
-#### 1. Access & Waitlist
+#### 1. Access&#x20;
 
-Trading Copilot is currently in **waitlist access**.
-
-* Users must apply for the [Trading Copilot waitlist ](https://copilot.minara.ai)before gaining access.
-* Once approved, Trading Copilot will be unlocked automatically in your account.
-
-Some users may receive **priority access** through:
-
-* Membership plans
-* Campaigns or promotions
-* Invitations or internal selection
-
-Access status will be displayed directly in the Trading Copilot interface.
+Trading Copilot is now open to all Minara users. Access Trading Copilot via: copilot.minara.ai
 
 ***
 
@@ -42,9 +31,9 @@ Trading Copilot analyzes market data and generates a structured trading plan, in
 * **Initial Margin:**
   * Your default amount of intiail margin for quick orders. It does not affect Minara's strategy output.
 * **Style**
-  * **Scalping:** Very short-term trades. Focusing on minute charts for quick in-and-out for small moves.
-  * **Day:** Short-term trades. Focusing on hourly or daily charts for short-term in-and-out.
-  * **Swing:** Hold positions for days to weeks. Focus on 4h–1W chart timeframes to ride short-term trends.
+  * **Scalping:** Very short-term trades. Focusing on 3-minute charts for quick in-and-out for small moves.
+  * **Day:** Short-term trades. Focusing on 15-minute charts for short-term in-and-out.
+  * **Swing:** Hold positions for days to weeks. Focus on 4-hour chart timeframes to ride short-term trends.
 * **Strategy**
   * **Max Gain:** Optimizes for high reward-to-risk setups with strong backtest upside. Fewer trades, bigger moves.
   * **Max Win Rate** _(coming soon):_ Prioritizes high-probability setups with more flexible entry conditions. More trades, higher consistency.
