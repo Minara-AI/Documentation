@@ -10,7 +10,7 @@ With Personalization enabled, Minara can:
 * **Keep responses consistent** (structure, emphasis, risk checks, and tone)
 * **Use high-level context** to avoid generic advice and reduce repeated back-and-forth
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **How it works**
 

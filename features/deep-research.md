@@ -6,7 +6,7 @@ Minara leverages its AI-powered deep research engine to deliver institutional-gr
 
 Unlike other research tools that rely on static data or web pages or simple aggregation, Minara’s engine uses dynamic and agentic workflows that adapt based on query complexity and context. It handles multiple data streams in parallel, cross-validates findings, and generates real-time, professional-grade reports.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Core Components
 

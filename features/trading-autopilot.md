@@ -88,6 +88,8 @@ Autopilot requires **cross margin** for all managed assets. When Autopilot start
 
 #### First-time enablement
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 On your first enablement:
 
 1. Autopilot checks eligibility and minimum funds
