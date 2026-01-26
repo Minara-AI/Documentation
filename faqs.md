@@ -3,6 +3,7 @@ description: >-
   You can find the answers of the most frequently asked questions about Minara
   here.
 hidden: true
+noIndex: true
 ---
 
 # FAQs
