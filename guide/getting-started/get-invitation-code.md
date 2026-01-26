@@ -20,12 +20,12 @@ To get the invitation code, please first join our waitlist, then redeem the code
 1. Make sure you are in Minara Official Discord Community
    * Please find the link here: [https://discord.com/invite/minaraai](https://discord.com/invite/minaraai)
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 2. **Find Latest Guide in Discord**
    * After joining our Discord community, please navigate to the **Get A Code** channel, and learn the latest guide there.
 
-<figure><img src="../../.gitbook/assets/图片 (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (62).png" alt=""><figcaption></figcaption></figure>
 
 3. **Complete tasks** to collect points, such as:
    * **Share on Twitter**
@@ -41,11 +41,11 @@ To get the invitation code, please first join our waitlist, then redeem the code
 
 {% columns %}
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (15).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (16).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

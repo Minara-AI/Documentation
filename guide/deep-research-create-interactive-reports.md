@@ -17,16 +17,16 @@ In business and data-driven environments, analysis reports transform raw data in
 1.  **Activate Deep Research**\
     Click the _Deep Research_ button to enable the report generation feature.
 
-    <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 2.  **Define Your Research Focus**\
     Enter your topic of interest in the input field, and specify the type of analysis report you require (e.g., "Provide a comprehensive market analysis of Ethereum Layer-2 solutions").
 
-    <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 3.  **Review Preliminary Insights**\
     Minara will process your query and display key findings in the chat interface. Scroll through the initial analysis to verify data relevance.
 
-    <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 4.  **Download Full Report**\
     Navigate to the end of the response where Minara automatically generates a formatted research report. Download the file in **Word** or **PDF** format for offline review, sharing, or archival purposes.
 
-    <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>

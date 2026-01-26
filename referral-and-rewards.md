@@ -19,7 +19,7 @@ hidden: true
 
 {% columns %}
 {% column %}
-<figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}

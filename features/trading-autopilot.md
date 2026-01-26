@@ -29,19 +29,19 @@ Path: [**Trade**](https://copilot.minara.ai/) **→ Perps → Autopilot**
 
 {% columns %}
 {% column %}
-<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
 Copilot Mode
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 Switch to Autopilot
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 Autopilot Turned On
 {% endcolumn %}
@@ -58,7 +58,7 @@ Autopilot Turned On
 
 Autopilot requires at least **$50** in available funds (available for Autopilot to trade) to operate.
 
-<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption><p>Real time available funds indicated here</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption><p>Real time available funds indicated here</p></figcaption></figure>
 
 {% hint style="info" %}
 **Available Funds = Perps Wallet Equity − Occupied Funds**

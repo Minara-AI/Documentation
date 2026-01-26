@@ -101,7 +101,7 @@ Every event supports user interaction through the **Follow-Up** feature:
 
 In the follow-up chat, users can click the title to view the original news directly without leaving the chat.
 
-<figure><img src="../.gitbook/assets/图片 (83).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (91).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

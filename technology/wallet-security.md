@@ -19,7 +19,7 @@ User deposits are stored in this smart contract wallet, with every transaction p
 
 ## Controller Wallet
 
-<figure><img src="../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Minara's Controller Wallet leverages Privy, TEE (Trusted Execution Environment) and a multi-party authorization signing mechanism. Its core features include:
 

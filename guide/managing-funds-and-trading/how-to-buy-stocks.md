@@ -26,17 +26,17 @@ Visit Minara and log in to your account.
 
 If you search for a tokenized stock, you can trade it directly. In the token list sidebar (which appears when tokens are mentioned in the chat), select the stock token you want to buy or sell and click **“View Detail.”**
 
-<figure><img src="../../.gitbook/assets/图片 (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (17).png" alt=""><figcaption></figcaption></figure>
 
 If you have searched for a traditional stock, you can also access it in the list sidebar, and Minara will guide you to its on-chain tokenized version for trading.
 
-<figure><img src="../../.gitbook/assets/图片 (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (25).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. Set Up Your Trade**
 
 Enter the amount you wish to trade. You can review the estimated fees by unfolding the “Receive Amount” section. You may also adjust the slippage tolerance in settings.
 
-<figure><img src="../../.gitbook/assets/图片 (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (18).png" alt=""><figcaption></figcaption></figure>
 
 ### **4. Confirm the Action to Complete**
 
@@ -54,12 +54,12 @@ Visit Minara and log in to your account.
 
 ### **2. Type Your Request in the Chat**
 
-<figure><img src="../../.gitbook/assets/图片 (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (19).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. Confirm with One Click**
 
 Minara will generate an interactive plugin in her response.You can now proceed simply by clicking **“Yes”**—no extra setup or selections required.
 
-<figure><img src="../../.gitbook/assets/图片 (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (20).png" alt=""><figcaption></figcaption></figure>
 
 That’s it! You’re all set to start buying stocks with Minara.

@@ -18,11 +18,11 @@ First, click on the Assets button at the top right, then click **Withdraw** and 
 
 {% columns %}
 {% column width="58.333333333333336%" %}
-<figure><img src="../../.gitbook/assets/图片 (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (39).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column width="41.666666666666664%" %}
-<figure><img src="../../.gitbook/assets/图片 (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (40).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -30,21 +30,21 @@ First, click on the Assets button at the top right, then click **Withdraw** and 
 
 Select the crypto you want to sell, the fiat currency you want to receive, and the amount you wish to sell.
 
-<figure><img src="../../.gitbook/assets/图片 (33).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (41).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### 3. Confrim Email
 
 Confirm your Email Address and enter the verification code sent to your email.
 
-<figure><img src="../../.gitbook/assets/图片 (34).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (42).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### 3. Fill in Payment Method and KYC
 
 Select your preferred payment method (e.g., card), fill in the required information, and complete the KYC and other necessary verifications.
 
-| Choose Payment Method                                                                                     | Fill in Information                                                                                       | KYC                                                                                                       |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| <div><figure><img src="../../.gitbook/assets/图片 (36).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../../.gitbook/assets/图片 (38).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../../.gitbook/assets/图片 (39).png" alt=""><figcaption></figcaption></figure></div> |
+| Choose Payment Method                                                     | Fill in Information                                                       | KYC                                                                       |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <img src="../../.gitbook/assets/图片 (44).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/图片 (46).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/图片 (47).png" alt="" data-size="original"> |
 
 #### 4. Send Crypto to Alchemy Pay
 
@@ -52,15 +52,15 @@ Copy the address provided by Alchemy Pay, go to **Minara** and click **On-chain 
 
 > **Tips:** Before initiating the withdrawal, please make sure that the address, amount, and token (along with the corresponding blockchain) exactly match the details in your Alchempy order.
 
-| Copy Alchemy Pay Address                                                                                  | Select On-chain Withdraw                                                                                  | Confirm Withdraw                                                                                          |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| <div><figure><img src="../../.gitbook/assets/图片 (42).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../../.gitbook/assets/图片 (43).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../../.gitbook/assets/图片 (44).png" alt=""><figcaption></figcaption></figure></div> |
+| Copy Alchemy Pay Address                                                  | Select On-chain Withdraw                                                  | Confirm Withdraw                                                          |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <img src="../../.gitbook/assets/图片 (50).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/图片 (51).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/图片 (52).png" alt="" data-size="original"> |
 
 #### 5. Confirm Order Status
 
 Wait for the order status to update and check whether the payment has been received.
 
-<figure><img src="../../.gitbook/assets/图片 (45).png" alt="" width="233"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (53).png" alt="" width="233"><figcaption></figcaption></figure>
 
 If you have any questions, please contact Alchemy Pay support: https://ramp.alchemypay.org/
 
@@ -76,11 +76,11 @@ Visit Minara and log in to your account. Click the **“Asset”** button at the
 
 {% columns %}
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (56).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (55).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -102,17 +102,17 @@ Visit Minara and log in to your account. Click the **“Asset”** button at the
 
 {% columns %}
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (57).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (58).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 **3. Complete the Withdraw**
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 1. Choose your fiat currency.
 2. Enter the valid address, token and amount.

@@ -16,13 +16,13 @@ Visit Minara and log in to your account.
 
 In the token list sidebar (which appears when tokens are mentioned in the chat), select the token you want to buy or sell and click **“View Detail.”**
 
-<figure><img src="../../.gitbook/assets/图片 (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (21).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. Set Up Your Trade**
 
 Enter the amount you wish to trade. You can review the estimated fees by unfolding the “Receive Amount” section. You may also adjust the slippage tolerance in settings.
 
-<figure><img src="../../.gitbook/assets/图片 (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (23).png" alt=""><figcaption></figcaption></figure>
 
 ### **4. Confirm the Action to Complete**
 
@@ -44,6 +44,6 @@ Visit Minara and log in to your account.
 
 Minara will generate an interactive plugin in her response.You can now proceed simply by clicking **“Yes”**—no extra setup or selections required.
 
-<figure><img src="../../.gitbook/assets/图片 (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (24).png" alt=""><figcaption></figcaption></figure>
 
 That’s it! You’re all set to start buying crypto with Minara.
