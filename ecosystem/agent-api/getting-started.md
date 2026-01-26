@@ -21,9 +21,11 @@ If you are on a free plan, navigate to the `API` tab in your profile to see the 
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2026-01-26 at 10.36.10 PM-creat-api-key.png" alt=""><figcaption></figcaption></figure>
 
-3. Once created, your API key will be displayed. **Copy and store it securely—the full key is only shown once** (You can also download a `.txt` file backup).
+3.  Once created, your API key will be displayed. **Copy and store it securely.**
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2026-01-26 at 10.36.35 PM (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/Screen Shot 2026-01-26 at 10.36.28 PM.png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
