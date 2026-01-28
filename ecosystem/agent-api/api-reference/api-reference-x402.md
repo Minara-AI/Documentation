@@ -6,60 +6,64 @@ Technical specifications for Minara's x402 endpoints using the Pay-As-You-Go mod
 
 **Base URL**: `https://x402.minara.ai`
 
-**Authentication**: x402 protocol payment-challenge flow (see Authentication guide)
-
-**Supported Chains**: Base, Solana
-
 
 
 {% openapi-operation spec="minara-api-x402-v2" path="/x402/chat" method="post" %}
-[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/70bdcd9527c5f7c9bb892008a0f9b3b987445b6656d533c0d7b219a87ea56694.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260126%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260126T145033Z&X-Amz-Expires=172800&X-Amz-Signature=8a4cd2b15b2164cf3fded573f0eff096f5a34c2160bd113fb57f0f07af5bebc0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="minara-api-x402-v2" path="/x402/chat/expert" method="post" %}
-[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/70bdcd9527c5f7c9bb892008a0f9b3b987445b6656d533c0d7b219a87ea56694.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260126%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260126T145033Z&X-Amz-Expires=172800&X-Amz-Signature=8a4cd2b15b2164cf3fded573f0eff096f5a34c2160bd113fb57f0f07af5bebc0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
+
+{% openapi-operation spec="minara-api-x402-v2" path="/x402/polygon/chat" method="post" %}
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
+
+{% openapi-operation spec="minara-api-x402-v2" path="/x402/polygon/chat/expert" method="post" %}
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="minara-api-x402-v2" path="/x402/solana/chat" method="post" %}
-[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/70bdcd9527c5f7c9bb892008a0f9b3b987445b6656d533c0d7b219a87ea56694.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260126%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260126T145033Z&X-Amz-Expires=172800&X-Amz-Signature=8a4cd2b15b2164cf3fded573f0eff096f5a34c2160bd113fb57f0f07af5bebc0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="minara-api-x402-v2" path="/x402/solana/chat/expert" method="post" %}
-[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/70bdcd9527c5f7c9bb892008a0f9b3b987445b6656d533c0d7b219a87ea56694.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260126%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260126T145033Z&X-Amz-Expires=172800&X-Amz-Signature=8a4cd2b15b2164cf3fded573f0eff096f5a34c2160bd113fb57f0f07af5bebc0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
-{% endopenapi-operation %}
-
-{% openapi-operation spec="minara-api-x402-v2" path="/x402/intent-to-swap-tx" method="post" %}
-[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/70bdcd9527c5f7c9bb892008a0f9b3b987445b6656d533c0d7b219a87ea56694.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260126%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260126T145033Z&X-Amz-Expires=172800&X-Amz-Signature=8a4cd2b15b2164cf3fded573f0eff096f5a34c2160bd113fb57f0f07af5bebc0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="minara-api-x402-v2" path="/x402/perp-trading-suggestion" method="post" %}
-[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/70bdcd9527c5f7c9bb892008a0f9b3b987445b6656d533c0d7b219a87ea56694.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260126%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260126T145033Z&X-Amz-Expires=172800&X-Amz-Signature=8a4cd2b15b2164cf3fded573f0eff096f5a34c2160bd113fb57f0f07af5bebc0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
-***
+{% openapi-operation spec="minara-api-x402-v2" path="/x402/intent-to-swap-tx" method="post" %}
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
-### Endpoints
+{% openapi-operation spec="minara-api-x402-v2" path="/x402/prediction-market-ask" method="post" %}
+[OpenAPI minara-api-x402-v2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/f2005b599c571afe6a360120c983d5e91955e7fcdfc792c1b9ff286cc3e3b0a4.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=e68fab0520f80c8310e075b7e552e571ceec138af01bf126fa321d51d03e74de&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
 
-#### Chat (Base Chain)
+## Endpoints
 
-**POST** `/x402/chat`
+### Chat (Base Chain)
 
-Ask Minara AI - Intelligent crypto assistant
+**Endpoint:** `POST /x402/chat`
 
-**Request**
+#### Request
 
-**Headers**
+**Headers:**
 
 * `x-payment-response` (required) - Payment proof token from x402 protocol
 * `Content-Type: application/json`
 
-**Body Parameters**
+**Body Parameters:**
 
 | Parameter   | Type   | Required | Description        |
 | ----------- | ------ | -------- | ------------------ |
 | `userQuery` | string | Yes      | User query content |
 
-**Example Request**
+#### Example Request
 
 ```bash
 curl -X POST https://x402.minara.ai/x402/chat \
@@ -70,9 +74,9 @@ curl -X POST https://x402.minara.ai/x402/chat \
   }'
 ```
 
-**Response**
+#### Response
 
-**Status**: 201 Created
+**Status:** 201 Created
 
 ```json
 {
@@ -82,26 +86,26 @@ curl -X POST https://x402.minara.ai/x402/chat \
 
 ***
 
-#### Chat Expert (Base Chain)
+### Chat Expert (Base Chain)
 
-**POST** `/x402/chat/expert`
+**Endpoint:** `POST /x402/chat/expert`
 
-Ask Minara AI - Intelligent crypto assistant
+Ask Minara AI - Intelligent crypto assistant on Base chain with expert mode
 
-**Request**
+#### Request
 
-**Headers**
+**Headers:**
 
 * `x-payment-response` (required) - Payment proof token from x402 protocol
 * `Content-Type: application/json`
 
-**Body Parameters**
+**Body Parameters:**
 
 | Parameter   | Type   | Required | Description        |
 | ----------- | ------ | -------- | ------------------ |
 | `userQuery` | string | Yes      | User query content |
 
-**Example Request**
+#### Example Request
 
 ```bash
 curl -X POST https://x402.minara.ai/x402/chat/expert \
@@ -112,9 +116,9 @@ curl -X POST https://x402.minara.ai/x402/chat/expert \
   }'
 ```
 
-**Response**
+#### Response
 
-**Status**: 201 Created
+**Status:** 201 Created
 
 ```json
 {
@@ -124,28 +128,24 @@ curl -X POST https://x402.minara.ai/x402/chat/expert \
 
 ***
 
-#### Chat (Solana Chain)
+### Chat (Solana Chain)
 
-**POST** `/x402/solana/chat`
+**Endpoint:** `POST /x402/solana/chat`
 
-Ask Minara AI - Intelligent crypto assistant
+#### Request
 
-**Price**: $0.20 per request
-
-**Request**
-
-**Headers**
+**Headers:**
 
 * `x-payment-response` (required) - Payment proof token from x402 protocol
 * `Content-Type: application/json`
 
-**Body Parameters**
+**Body Parameters:**
 
 | Parameter   | Type   | Required | Description        |
 | ----------- | ------ | -------- | ------------------ |
 | `userQuery` | string | Yes      | User query content |
 
-**Example Request**
+#### Example Request
 
 ```bash
 curl -X POST https://x402.minara.ai/x402/solana/chat \
@@ -156,9 +156,9 @@ curl -X POST https://x402.minara.ai/x402/solana/chat \
   }'
 ```
 
-**Response**
+#### Response
 
-**Status**: 201 Created
+**Status:** 201 Created
 
 ```json
 {
@@ -166,30 +166,26 @@ curl -X POST https://x402.minara.ai/x402/solana/chat \
 }
 ```
 
-***
+### Chat Expert (Solana Chain)
 
-#### Chat Expert (Solana Chain)
+**Endpoint:** `POST /x402/solana/chat/expert`
 
-**POST** `/x402/solana/chat/expert`
+Ask Minara AI - Intelligent crypto assistant on Solana chain with expert mode
 
-Ask Minara AI - Intelligent crypto assistant
+#### Request
 
-**Price**: $1.25 per request
-
-**Request**
-
-**Headers**
+**Headers:**
 
 * `x-payment-response` (required) - Payment proof token from x402 protocol
 * `Content-Type: application/json`
 
-**Body Parameters**
+**Body Parameters:**
 
 | Parameter   | Type   | Required | Description        |
 | ----------- | ------ | -------- | ------------------ |
 | `userQuery` | string | Yes      | User query content |
 
-**Example Request**
+#### Example Request
 
 ```bash
 curl -X POST https://x402.minara.ai/x402/solana/chat/expert \
@@ -200,9 +196,9 @@ curl -X POST https://x402.minara.ai/x402/solana/chat/expert \
   }'
 ```
 
-**Response**
+#### Response
 
-**Status**: 201 Created
+**Status:** 201 Created
 
 ```json
 {
@@ -212,22 +208,106 @@ curl -X POST https://x402.minara.ai/x402/solana/chat/expert \
 
 ***
 
-### Trading Endpoints
+### Chat (Polygon Chain)
 
-#### Intent to Swap Transaction
+**Endpoint:** `POST /x402/polygon/chat`
 
-**POST** `/x402/intent-to-swap-tx`
+Ask Minara AI - Intelligent crypto assistant on Polygon chain
 
-Convert natural language trading intent into an executable swap transaction payload. Compatible with OKX DEX by default.
+#### Request
 
-**Request**
-
-**Headers**
+**Headers:**
 
 * `x-payment-response` (required) - Payment proof token from x402 protocol
 * `Content-Type: application/json`
 
-**Body Parameters**
+**Body Parameters:**
+
+| Parameter   | Type   | Required | Description        |
+| ----------- | ------ | -------- | ------------------ |
+| `userQuery` | string | Yes      | User query content |
+
+#### Example Request
+
+```bash
+curl -X POST https://x402.minara.ai/x402/polygon/chat \
+  -H "x-payment-response: <payment_proof_token>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "userQuery": "What is the current price of BTC and what are the key support levels?"
+  }'
+```
+
+#### Response
+
+**Status:** 201 Created
+
+```json
+{
+  "content": "BTC is currently trading at $98,450. Key support levels are at $96,500 and $94,200. The recent breakout above $97,000 with strong volume suggests bullish continuation..."
+}
+```
+
+***
+
+### Chat Expert (Polygon Chain)
+
+**Endpoint:** `POST /x402/polygon/chat/expert`
+
+Ask Minara AI - Intelligent crypto assistant on Polygon chain with expert mode
+
+#### Request
+
+**Headers:**
+
+* `x-payment-response` (required) - Payment proof token from x402 protocol
+* `Content-Type: application/json`
+
+**Body Parameters:**
+
+| Parameter   | Type   | Required | Description        |
+| ----------- | ------ | -------- | ------------------ |
+| `userQuery` | string | Yes      | User query content |
+
+#### Example Request
+
+```bash
+curl -X POST https://x402.minara.ai/x402/polygon/chat/expert \
+  -H "x-payment-response: <payment_proof_token>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "userQuery": "Provide a comprehensive analysis of ETH including on-chain metrics and trading strategy"
+  }'
+```
+
+#### Response
+
+**Status:** 201 Created
+
+```json
+{
+  "content": "**Comprehensive ETH Analysis**\n\n**Price Action**: ETH is trading at $3,420, consolidating near the $3,400-$3,500 range...\n\n**On-Chain Metrics**: Active addresses increased 12% week-over-week, indicating growing network activity...\n\n**Trading Strategy**: Consider accumulating on dips to $3,300 support with targets at $3,600 and $3,850..."
+}
+```
+
+***
+
+## Trading Endpoints
+
+### Intent to Swap Transaction
+
+**Endpoint:** `POST /x402/intent-to-swap-tx`
+
+Convert natural language trading intent into an executable swap transaction payload. Compatible with OKX DEX by default.
+
+#### Request
+
+**Headers:**
+
+* `x-payment-response` (required) - Payment proof token from x402 protocol
+* `Content-Type: application/json`
+
+**Body Parameters:**
 
 | Parameter       | Type   | Required | Description                                                          |
 | --------------- | ------ | -------- | -------------------------------------------------------------------- |
@@ -235,7 +315,7 @@ Convert natural language trading intent into an executable swap transaction payl
 | `walletAddress` | string | Yes      | User wallet address (0x...)                                          |
 | `chain`         | string | No       | Chain name (e.g., "base", "ethereum", "bsc", "arbitrum", "optimism") |
 
-**Example Request**
+#### Example Request
 
 ```bash
 curl -X POST https://x402.minara.ai/x402/intent-to-swap-tx \
@@ -248,9 +328,9 @@ curl -X POST https://x402.minara.ai/x402/intent-to-swap-tx \
   }'
 ```
 
-**Response**
+#### Response
 
-**Status**: 201 Created
+**Status:** 201 Created
 
 ```json
 {
@@ -269,20 +349,20 @@ curl -X POST https://x402.minara.ai/x402/intent-to-swap-tx \
 
 ***
 
-#### Perpetual Trading Suggestion
+### Perpetual Trading Suggestion
 
-**POST** `/x402/perp-trading-suggestion`
+**Endpoint:** `POST /x402/perp-trading-suggestion`
 
 Get AI-powered perpetual trading suggestions with long/short recommendations, entry price, stop loss, take profit levels, and confidence score based on comprehensive market analysis.
 
-**Request**
+#### Request
 
-**Headers**
+**Headers:**
 
 * `x-payment-response` (required) - Payment proof token from x402 protocol
 * `Content-Type: application/json`
 
-**Body Parameters**
+**Body Parameters:**
 
 | Parameter   | Type   | Required | Default      | Description                                                  |
 | ----------- | ------ | -------- | ------------ | ------------------------------------------------------------ |
@@ -292,7 +372,7 @@ Get AI-powered perpetual trading suggestions with long/short recommendations, en
 | `leverage`  | number | No       | 10           | Leverage multiplier (max: 40)                                |
 | `strategy`  | string | No       | "max-profit" | Strategy type (more strategies coming soon)                  |
 
-**Example Request**
+#### Example Request
 
 ```bash
 curl -X POST https://x402.minara.ai/x402/perp-trading-suggestion \
@@ -307,9 +387,9 @@ curl -X POST https://x402.minara.ai/x402/perp-trading-suggestion \
   }'
 ```
 
-**Response**
+#### Response
 
-**Status**: 201 Created
+**Status:** 201 Created
 
 ```json
 {
@@ -334,9 +414,107 @@ curl -X POST https://x402.minara.ai/x402/perp-trading-suggestion \
 
 ***
 
-### Error Responses
+### Prediction Market Analysis (Base Chain)
 
-#### 402 Payment Required
+**Endpoint:** `POST /x402/prediction-market-ask`
+
+AI-powered prediction market analysis. Analyze prediction market events and get probability estimates for each outcome with detailed reasoning.
+
+#### Request
+
+**Headers:**
+
+* `x-payment-response` (required) - Payment proof token from x402 protocol
+* `Content-Type: application/json`
+
+**Body Parameters:**
+
+| Parameter      | Type    | Required | Default | Description                                              |
+| -------------- | ------- | -------- | ------- | -------------------------------------------------------- |
+| `link`         | string  | Yes      | -       | Prediction market page link (e.g., Polymarket event URL) |
+| `mode`         | string  | Yes      | -       | Chat mode: "fast" or "expert"                            |
+| `only_result`  | boolean | No       | false   | Only return prediction probabilities without reasoning   |
+| `customPrompt` | string  | No       | -       | Custom instructions to guide the analysis                |
+
+#### Example Request
+
+```bash
+curl -X POST https://x402.minara.ai/x402/prediction-market-ask \
+  -H "x-payment-response: <payment_proof_token>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "link": "https://polymarket.com/event/will-there-be-another-us-government-shutdown-by-january-31",
+    "mode": "fast",
+    "only_result": false,
+    "customPrompt": "Focus on recent news and sentiment analysis. Be more conservative in probability estimates."
+  }'
+```
+
+#### Response
+
+**Status:** 201 Created
+
+```json
+{
+  "predictions": [
+    {
+      "outcome": "Donald Trump",
+      "yesProb": 0.65,
+      "noProb": 0.35
+    },
+    {
+      "outcome": "Kamala Harris",
+      "yesProb": 0.3,
+      "noProb": 0.7
+    }
+  ],
+  "reasoning": "Based on recent polling data and historical trends, Trump maintains a slight lead in key swing states. However, the race remains highly competitive with significant uncertainty..."
+}
+```
+
+***
+
+### Prediction Market Analysis (Polygon Chain)
+
+**Endpoint:** `POST /x402/polygon/prediction-market-ask`
+
+AI-powered prediction market analysis on Polygon chain. Same functionality as Base chain endpoint.
+
+#### Request
+
+**Headers:**
+
+* `x-payment-response` (required) - Payment proof token from x402 protocol
+* `Content-Type: application/json`
+
+**Body Parameters:**
+
+Same as Base chain endpoint above.
+
+#### Example Request
+
+```bash
+curl -X POST https://x402.minara.ai/x402/polygon/prediction-market-ask \
+  -H "x-payment-response: <payment_proof_token>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "link": "https://polymarket.com/event/will-there-be-another-us-government-shutdown-by-january-31",
+    "mode": "fast",
+    "only_result": false
+  }'
+```
+
+#### Response
+
+**Status:** 201 Created
+
+Same response format as Base chain endpoint.
+
+***
+
+## Error Responses
+
+### 402 Payment Required
 
 Initial request without payment credentials will return:
 
@@ -353,7 +531,7 @@ Initial request without payment credentials will return:
 }
 ```
 
-#### 401 Unauthorized
+### 401 Unauthorized
 
 Invalid or expired payment proof:
 
@@ -364,7 +542,7 @@ Invalid or expired payment proof:
 }
 ```
 
-#### 400 Bad Request
+### 400 Bad Request
 
 Invalid request parameters:
 
@@ -377,12 +555,12 @@ Invalid request parameters:
 
 ***
 
-### Rate Limits
+## Rate Limits
 
 x402 endpoints are rate-limited per wallet address:
 
-* **AI Endpoints**: 60 requests per minute
-* **Trading Endpoints**: 30 requests per minute
+* **AI Endpoints:** 60 requests per minute
+* **Trading Endpoints:** 30 requests per minute
 
 Exceeding rate limits will return:
 
@@ -396,8 +574,9 @@ Exceeding rate limits will return:
 
 ***
 
-### Notes
+## Notes
 
 * All x402 endpoints require the `x-payment-response` header after completing the payment challenge
 * Prices are subject to change based on network conditions
 * For more information on x402 protocol, see [x402 Documentation](https://x402scan.com/server)
+
