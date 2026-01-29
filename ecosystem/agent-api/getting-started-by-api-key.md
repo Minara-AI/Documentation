@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started By API Key
 
 This guide walks you through gaining access to the Minara Agent API and managing your API keys.
 
@@ -42,3 +42,9 @@ If you are on a free plan, navigate to the `API` tab in your profile to see the 
 All API calls consume **credits** from your Minara account. If credits run out, API requests will pause until replenished.
 
 > All API calls consume credits from your Minara account. If your credits run out, API requests will be paused until credits are replenished.
+
+## API Reference
+
+{% content-ref url="api-reference/api-reference-api-key.md" %}
+[api-reference-api-key.md](api-reference/api-reference-api-key.md)
+{% endcontent-ref %}

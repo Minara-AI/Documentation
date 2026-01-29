@@ -2,7 +2,7 @@
 
 Minara provides two methods for authenticating API requests.
 
-### API Key
+### API Key (Subscription)
 
 The standard method for **Pro** and **Partner** plan users. Include your API key in the `Authorization` header of every request.
 
@@ -28,4 +28,4 @@ For usage-based access without a subscription, we support the [**x402 protocol**
 
 **Explore our x402 endpoints:** [Minara on x402scan](https://www.x402scan.com/server/66307a3c-aeb9-4508-9531-71eed69bc9b5)
 
-👉 **Learn more:** [x402-protocol.md](x402-protocol.md "mention")
+👉 **Learn more:** [getting-started-by-x402.md](getting-started-by-x402.md "mention")

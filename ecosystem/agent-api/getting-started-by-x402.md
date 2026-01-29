@@ -1,6 +1,8 @@
-# x402 Protocol
+# Getting Started By x402
 
 The x402 protocol (also known as L402) is an emerging standard for API monetization that enables pay-per-use access without requiring a subscription.
+
+Minara x402 endpoint: `https://x402.minara.ai`
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2026-01-21 at 6.10.41 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -39,3 +41,9 @@ Authorization: L402 <invoice>:<preimage>
 ```
 
 For implementation details, explore libraries and tools compatible with the L402/x402 protocol.
+
+## API Reference
+
+{% content-ref url="api-reference/api-reference-x402.md" %}
+[api-reference-x402.md](api-reference/api-reference-x402.md)
+{% endcontent-ref %}

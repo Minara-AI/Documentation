@@ -46,12 +46,12 @@
 ## Ecosystem
 
 * [Agent API](ecosystem/agent-api/README.md)
-  * [Getting Started](ecosystem/agent-api/getting-started.md)
+  * [Getting Started By API Key](ecosystem/agent-api/getting-started-by-api-key.md)
+  * [Getting Started By x402](ecosystem/agent-api/getting-started-by-x402.md)
   * [Authentication](ecosystem/agent-api/authentication.md)
   * [API Reference](ecosystem/agent-api/api-reference/README.md)
     * [API Reference (API Key)](ecosystem/agent-api/api-reference/api-reference-api-key.md)
     * [API Reference (x402)](ecosystem/agent-api/api-reference/api-reference-x402.md)
-  * [x402 Protocol](ecosystem/agent-api/x402-protocol.md)
 * [Gen Zero(Gen-0)](ecosystem/gen-zero.md)
 * [Spark](ecosystem/spark.md)
 
