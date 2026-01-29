@@ -46,6 +46,7 @@
 ## Ecosystem
 
 * [Agent API](ecosystem/agent-api/README.md)
+  * [Getting Started By xx](ecosystem/agent-api/getting-started-by-xx.md)
   * [Authentication](ecosystem/agent-api/authentication.md)
   * [Getting Started By API Key](ecosystem/agent-api/getting-started-by-api-key.md)
   * [Getting Started By x402](ecosystem/agent-api/getting-started-by-x402.md)

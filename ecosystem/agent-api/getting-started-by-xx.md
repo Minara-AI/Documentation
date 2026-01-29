@@ -1,83 +1,59 @@
-# Getting Started By x402
+# Getting Started By xx
+
+## Getting Started By x402
 
 The x402 protocol (also known as L402) is an emerging standard for API monetization that enables pay-per-use access without requiring a subscription.
 
-Minara x402 endpoint: `https://x402.minara.ai`
+**Minara x402 endpoint:** `https://x402.minara.ai`
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2026-01-21 at 6.10.41 PM.png" alt=""><figcaption></figcaption></figure>
+***
 
 ### What is x402?
 
 x402 is a native "pay-to-play" system for the web. Instead of pre-paying for a subscription, you pay for each API call directly using stablecoins like $USDC.
 
+**Think of it like a vending machine:**
+
+* You select what you want (make an API request)
+* See the price (receive payment instructions)
+* Insert coins (pay with USDC)
+* Get your item (receive API response)
+
 **Key Benefits:**
 
-* **No Subscription Required:** Pay only for what you use
-* **Permissionless Access:** No account creation or approval process
-* **Instant Activation:** Start using APIs immediately after payment
-* **Crypto-Native:** Payments in USDC on Base, Solana, or Polygon
-* **Transparent Pricing:** Know exactly what each API call costs
-
-### How it works:
-
-<figure><img src="../../.gitbook/assets/img_v3_02uc_274227be-055c-4d2a-84ac-b858e01d2a2g.jpg" alt=""><figcaption></figcaption></figure>
-
-The x402 protocol follows a payment-challenge flow with these key steps:
-
-#### The Complete Flow
-
-1. **Initial Request** (Client → Server)
-   * You make an API request to a protected endpoint without payment
-2. **Payment Challenge** (Server → Client)
-   * Server responds with `402 Payment Required` status
-   * Returns payment instructions (amount, currency, recipient address, chain)
-3. **Payment Selection** (Client)
-   * You select a payment method and create a payment payload
-   * Prepare to pay with USDC on the specified chain
-4. **Authenticated Request** (Client → Server)
-   * Include payment proof in `x-payment-response` header
-   * Retry the original request
-5. **Verification** (Server → Facilitator)
-   * Server sends payment proof to facilitator for verification
-   * Confirms payment validity
-6. **Payment Processing** (Facilitator → Blockchain)
-   * Facilitator submits transaction to blockchain
-   * Transaction confirmed on-chain
-7. **Settlement** (Facilitator → Server)
-   * Facilitator confirms settlement to server
-   * Payment is finalized
-8. **Access Granted** (Server → Client)
-   * You receive the API response
-   * Payment receipt included in `X-PAYMENT-RESPONSE` header
-
-#### Key Components
-
-* **Client**: Your application making API requests
-* **Server**: Minara API endpoints (`https://x402.minara.ai`)
-* **Facilitator**: Payment verification and settlement service
-* **Blockchain**: On-chain payment settlement (Base, Solana, or Polygon)
-
-
+✅ **No Subscription Required** - Pay only for what you use\
+✅ **Permissionless Access** - No account creation or approval process\
+✅ **Instant Activation** - Start using APIs immediately after payment\
+✅ **Crypto-Native** - Payments in USDC on Base, Solana, or Polygon\
+✅ **Transparent Pricing** - Know exactly what each API call costs
 
 ***
 
-### How to Use x402 with Minara
+### How x402 Works
 
+x402 works in **3 simple steps**:
 
+1️⃣ **Try First** - Make an API request without payment\
+2️⃣ **Get the Bill** - Receive payment instructions (amount, chain, recipient)\
+3️⃣ **Pay & Access** - Pay with USDC, get proof, retry request, receive response
 
-### 1. Using x402 SDK (Recommended)
+The entire payment flow happens automatically when you use the x402 SDK.
 
-Most developers use the official x402 SDK which **handles all payment flows automatically**.
+***
 
-You just make requests: the SDK handles payment challenges, verification, and settlement for you.
+### Quick Start: Using x402 SDK (Recommended)
+
+Most developers use the official x402 SDK which **handles all payment flows automatically**. You just make requests—the SDK handles payment challenges, verification, and settlement for you.
 
 #### Prerequisites
 
 Before you begin, ensure you have:
 
-* A crypto wallet with USDC (any EVM-compatible wallet)
-* Node.js and npm, Go, or Python and pip
-* Your wallet's private key (for signing payments)
+* ✅ A crypto wallet with USDC (any EVM-compatible wallet)
+* ✅ Node.js and npm, Go, or Python and pip
+* ✅ Your wallet's private key (for signing payments)
+
+***
 
 #### Step 1: Install Dependencies
 
@@ -124,6 +100,8 @@ go get github.com/coinbase/x402/go
 ```
 
 </details>
+
+***
 
 #### Step 2: Set Up Your Wallet Signer
 
@@ -191,7 +169,9 @@ if err != nil {
 
 </details>
 
-#### Step 3: Make Requests: Payments Handled Automatically!
+***
+
+#### Step 3: Make Requests - Payments Handled Automatically!
 
 The SDK automatically handles payment challenges for you. Just make requests normally!
 
@@ -418,6 +398,8 @@ func main() {
 
 </details>
 
+***
+
 #### Multi-Chain Support (Base + Solana + Polygon)
 
 You can register multiple payment schemes to support all Minara chains:
@@ -454,6 +436,29 @@ await fetchWithPayment("https://x402.minara.ai/x402/solana/chat", {...});
 // Polygon endpoints
 await fetchWithPayment("https://x402.minara.ai/x402/polygon/chat", {...});
 ```
+
+***
+
+### Available Endpoints
+
+Visit [Minara on x402scan](https://www.x402scan.com/server/b9dea1bf-cf70-41d5-96b5-b91c924cfa50) to see all available endpoints and real-time pricing.
+
+#### Minara x402 Endpoints
+
+| Endpoint                              | Price | Chain   | Description                      |
+| ------------------------------------- | ----- | ------- | -------------------------------- |
+| `/x402/chat`                          | $0.20 | Base    | AI chat (fast mode)              |
+| `/x402/chat/expert`                   | $1.25 | Base    | AI chat (expert mode)            |
+| `/x402/solana/chat`                   | $0.20 | Solana  | AI chat (fast mode)              |
+| `/x402/solana/chat/expert`            | $1.25 | Solana  | AI chat (expert mode)            |
+| `/x402/polygon/chat`                  | $0.20 | Polygon | AI chat (fast mode)              |
+| `/x402/polygon/chat/expert`           | $1.25 | Polygon | AI chat (expert mode)            |
+| `/x402/intent-to-swap-tx`             | $0.10 | Base    | Convert text to swap transaction |
+| `/x402/perp-trading-suggestion`       | $0.10 | Base    | Get trading suggestions          |
+| `/x402/prediction-market-ask`         | $0.20 | Base    | Analyze prediction markets       |
+| `/x402/polygon/prediction-market-ask` | $0.20 | Polygon | Analyze prediction markets       |
+
+***
 
 ### Complete Example: Chat with Minara
 
@@ -493,16 +498,21 @@ async function chatWithMinara(query: string) {
 const answer = await chatWithMinara("What is the current price of BTC?");
 console.log(answer);
 // Output: "BTC is currently trading at $98,450. Key support levels..."
-
 ```
 
+**What happened behind the scenes:**
 
+1. ✅ SDK made initial request
+2. ✅ Received 402 Payment Required
+3. ✅ Automatically paid $0.20 USDC on Base
+4. ✅ Retried request with payment proof
+5. ✅ Got response with AI answer
 
-**For more information, please check the official x402 documentation:** [Quickstart for buyers](https://docs.x402.org/getting-started/quickstart-for-buyers)
+All automatic! You just called a function. 🎉
 
 ***
 
-### 2. Manual Payment Flow (Without SDK)
+### Alternative: Manual Payment Flow (Without SDK)
 
 If you prefer not to use the SDK, you can handle payments manually:
 
@@ -554,6 +564,25 @@ curl -X POST https://x402.minara.ai/x402/chat \
 
 ### Error Handling
 
+When using the SDK, handle errors like this:
+
+```typescript
+try {
+  const response = await fetchWithPayment(url, options);
+  // Success
+} catch (error) {
+  if (error.message.includes("No scheme registered")) {
+    console.error("❌ Network not supported - register the appropriate scheme");
+  } else if (error.message.includes("Payment already attempted")) {
+    console.error("❌ Payment failed on retry");
+  } else if (error.message.includes("Insufficient balance")) {
+    console.error("❌ Not enough USDC in wallet");
+  } else {
+    console.error("❌ Request failed:", error);
+  }
+}
+```
+
 #### Common Errors from Minara API
 
 **402 Payment Required**
@@ -580,7 +609,7 @@ curl -X POST https://x402.minara.ai/x402/chat \
 
 → Check your request body has required fields.
 
-
+***
 
 ### Rate Limits
 
@@ -598,6 +627,29 @@ If you exceed limits:
   "retryAfter": 30
 }
 ```
+
+***
+
+### Advanced: Service Discovery
+
+Instead of hardcoding endpoints, use the x402 Bazaar to discover services dynamically:
+
+```typescript
+// Discover all x402 services
+const response = await fetch(
+  "https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources"
+);
+const services = await response.json();
+
+// Find affordable services
+const affordableServices = services.items.filter((item) =>
+  item.accepts.some((req) => Number(req.amount) < 100000) // Under $0.10
+);
+
+console.log("Available services:", affordableServices);
+```
+
+Learn more in the [x402 Bazaar documentation](https://docs.x402.org/extensions/bazaar).
 
 ***
 
@@ -621,10 +673,54 @@ If you exceed limits:
 #### 🔍 Minara Specific
 
 * [Minara on x402scan](https://www.x402scan.com/server/b9dea1bf-cf70-41d5-96b5-b91c924cfa50) - View all endpoints
-* Minara API Reference (x402) - [api-reference-x402.md](api-reference/api-reference-x402.md "mention")
+* Minara API Reference (x402) - Full API documentation
+* Minara Discord - Community support
 
-## API Reference
+***
 
-{% content-ref url="api-reference/api-reference-x402.md" %}
-[api-reference-x402.md](api-reference/api-reference-x402.md)
-{% endcontent-ref %}
+### FAQ
+
+#### ❓ Do I need to manually handle payments?
+
+**No!** When you use the x402 SDK, all payment flows are handled automatically. You just make requests like normal.
+
+#### ❓ Which SDK should I use?
+
+* **JavaScript/TypeScript**: Use `@x402/fetch` (simpler) or `@x402/axios` (if you prefer axios)
+* **Python**: Use `x402[httpx]` (async) or `x402[requests]` (sync)
+* **Go**: Use `github.com/coinbase/x402/go`
+
+#### ❓ Is my private key safe?
+
+Yes. Your private key stays **local** and is only used to sign payment transactions. It's never sent to Minara or any server.
+
+#### ❓ Which chain should I use?
+
+* **Base** - Recommended (fast, cheap, \~2 sec confirmation)
+* **Solana** - Very fast (\~1 sec) but need SOL for gas
+* **Polygon** - Ethereum-compatible, moderate speed
+
+#### ❓ How much USDC do I need?
+
+Start with $5-10 USDC:
+
+* That's 25-50 fast chat requests ($0.20 each)
+* Or 50-100 trading endpoint calls ($0.10 each)
+
+#### ❓ Can I use this in production?
+
+Yes! The x402 protocol is production-ready. Many developers use it for:
+
+* Agent applications
+* Trading bots
+* Research tools
+* Automated workflows
+
+***
+
+### Next Steps
+
+🎯 **Try it now**: Copy one of the code examples above and run it\
+📖 **Read API Docs**: View all x402 endpoints →\
+💬 **Get Help**: Join Discord →\
+🔧 **Advanced Usage**: [Explore lifecycle hooks and extensions →](https://docs.x402.org/advanced-concepts/lifecycle-hooks)
