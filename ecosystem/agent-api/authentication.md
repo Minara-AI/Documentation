@@ -20,6 +20,8 @@ curl -H "Authorization: Bearer sk-minara-xxxxxxxx" https://api.minara.ai/v1/deve
 
 > **Security:** Treat your API keys like passwords. Never expose them in client-side code or public repositories.
 
+👉 **Learn more:** [getting-started-by-api-key.md](getting-started-by-api-key.md "mention")
+
 ### Pay-As-You-Go (x402)
 
 For usage-based access without a subscription, we support the [**x402 protocol**](https://www.x402.org/). Pay for API calls directly using stablecoins like $USDC (no subscription required).
