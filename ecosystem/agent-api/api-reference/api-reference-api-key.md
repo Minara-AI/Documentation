@@ -6,22 +6,20 @@ Technical specifications for the Minara Agent API endpoints.
 
 The core endpoint for interacting with Minara's conversational AI.
 
-
-
-{% openapi-operation spec="minara-api-v1-1" path="/v1/developer/chat" method="post" %}
-[OpenAPI minara-api-v1-1](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/5191c0cc22b2ce42b322a0c755e7201082c55e4d48cc266f0d2973adb99934f5.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=8adc98e9f8c544a60dc91ed909f0d91fe45ae407e64918b924c3bd77ba5f39bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% openapi-operation spec="api-reference-api-key" path="/v1/developer/chat" method="post" %}
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T075105Z&X-Amz-Expires=172800&X-Amz-Signature=13d0b563fb9076d19c4f42222514805932667228be3e589fb13fd5b85621ab62&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
-{% openapi-operation spec="minara-api-v1-1" path="/v1/developer/intent-to-swap-tx" method="post" %}
-[OpenAPI minara-api-v1-1](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/5191c0cc22b2ce42b322a0c755e7201082c55e4d48cc266f0d2973adb99934f5.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=8adc98e9f8c544a60dc91ed909f0d91fe45ae407e64918b924c3bd77ba5f39bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% openapi-operation spec="api-reference-api-key" path="/v1/developer/intent-to-swap-tx" method="post" %}
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T075105Z&X-Amz-Expires=172800&X-Amz-Signature=13d0b563fb9076d19c4f42222514805932667228be3e589fb13fd5b85621ab62&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
-{% openapi-operation spec="minara-api-v1-1" path="/v1/developer/perp-trading-suggestion" method="post" %}
-[OpenAPI minara-api-v1-1](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/5191c0cc22b2ce42b322a0c755e7201082c55e4d48cc266f0d2973adb99934f5.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=8adc98e9f8c544a60dc91ed909f0d91fe45ae407e64918b924c3bd77ba5f39bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% openapi-operation spec="api-reference-api-key" path="/v1/developer/perp-trading-suggestion" method="post" %}
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T075105Z&X-Amz-Expires=172800&X-Amz-Signature=13d0b563fb9076d19c4f42222514805932667228be3e589fb13fd5b85621ab62&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
-{% openapi-operation spec="minara-api-v1-1" path="/v1/developer/prediction-market-ask" method="post" %}
-[OpenAPI minara-api-v1-1](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/5191c0cc22b2ce42b322a0c755e7201082c55e4d48cc266f0d2973adb99934f5.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260128%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260128T072237Z&X-Amz-Expires=172800&X-Amz-Signature=8adc98e9f8c544a60dc91ed909f0d91fe45ae407e64918b924c3bd77ba5f39bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% openapi-operation spec="api-reference-api-key" path="/v1/developer/prediction-market-ask" method="post" %}
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T075105Z&X-Amz-Expires=172800&X-Amz-Signature=13d0b563fb9076d19c4f42222514805932667228be3e589fb13fd5b85621ab62&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## Developer API
@@ -30,13 +28,12 @@ The core endpoint for interacting with Minara's conversational AI.
 
 ### Endpoint
 
-`POST https://api.minara.ai/v1/developer/chat`
+`POST https://api-developer.minara.ai/v1/developer/chat`
 
 ### Request Body
 
 | Parameter         | Type    | Required | Description                                                             |
 | ----------------- | ------- | -------- | ----------------------------------------------------------------------- |
-| `chatId`          | string  | No       | Optional. Unique conversation ID to continue an existing chat.          |
 | `mode`            | string  | Yes      | Model mode: 'fast' for quick responses, 'expert' for in-depth analysis. |
 | `stream`          | boolean | Yes      | Set to true for streaming (SSE), false for standard JSON response.      |
 | `message`         | object  | Yes      | Message object with role and content                                    |
@@ -46,7 +43,7 @@ The core endpoint for interacting with Minara's conversational AI.
 ### Example Request
 
 ```bash
-curl -X POST https://api.minara.ai/v1/developer/chat \
+curl -X POST https://api-developer.minara.ai/v1/developer/chat \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -94,7 +91,7 @@ data: [DONE]
 
 ### Endpoint
 
-`POST https://api.minara.ai/v1/developer/intent-to-swap-tx`
+`POST https://api-developer.minara.ai/v1/developer/intent-to-swap-tx`
 
 Convert natural language trading intent into an executable swap transaction payload. Compatible with OKX DEX by default.
 
@@ -109,7 +106,7 @@ Convert natural language trading intent into an executable swap transaction payl
 ### Example Request
 
 ```bash
-curl -X POST https://api.minara.ai/v1/developer/intent-to-swap-tx \
+curl -X POST https://api-developer.minara.ai/v1/developer/intent-to-swap-tx \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -142,7 +139,7 @@ curl -X POST https://api.minara.ai/v1/developer/intent-to-swap-tx \
 
 ### Endpoint
 
-`POST https://api.minara.ai/v1/developer/perp-trading-suggestion`
+`POST https://api-developer.minara.ai/v1/developer/perp-trading-suggestion`
 
 Get AI-powered perpetual trading suggestions with long/short recommendations, entry price, stop loss, take profit levels, and confidence score based on comprehensive market analysis.
 
@@ -159,7 +156,7 @@ Get AI-powered perpetual trading suggestions with long/short recommendations, en
 ### Example Request
 
 ```bash
-curl -X POST https://api.minara.ai/v1/developer/perp-trading-suggestion \
+curl -X POST https://api-developer.minara.ai/v1/developer/perp-trading-suggestion \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -200,7 +197,7 @@ curl -X POST https://api.minara.ai/v1/developer/perp-trading-suggestion \
 
 ### Endpoint
 
-`POST https://api.minara.ai/v1/developer/prediction-market-ask`
+`POST https://api-developer.minara.ai/v1/developer/prediction-market-ask`
 
 AI-powered prediction market analysis. Analyze prediction market events and get probability estimates for each outcome with detailed reasoning.
 
@@ -216,7 +213,7 @@ AI-powered prediction market analysis. Analyze prediction market events and get 
 ### Example Request
 
 ```bash
-curl -X POST https://api.minara.ai/v1/developer/prediction-market-ask \
+curl -X POST https://api-developer.minara.ai/v1/developer/prediction-market-ask \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
