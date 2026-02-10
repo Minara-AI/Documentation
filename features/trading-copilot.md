@@ -150,6 +150,23 @@ Once positions are open, Trading Copilot provides flexible position controls.
   * Close individual positions by:
     * Market orders
     * Limit orders
+* **Manual TP/SL Management** (Positions)
+  * Manually set and manage **Take Profit / Stop Loss** directly.
+  *   How to manage
+
+      * Go to **Trade → Positions →** Select a position → Click "Add"&#x20;
+
+      <figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.10.04 PM.png" alt=""><figcaption></figcaption></figure>
+
+      * Set **TP** and/or **SL**: **Input fields** → "**Add Split Target**" → **Confirm**
+
+      <figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.15.02 PM.png" alt=""><figcaption></figcaption></figure>
+
+      * You successfully set your **Take Profit / Stop Loss** for your position.
+
+      <figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.15.27 PM.png" alt=""><figcaption></figcaption></figure>
+
+
 
 All realized PnL is reflected immediately after execution.
 
