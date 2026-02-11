@@ -7,19 +7,19 @@ Technical specifications for the Minara Agent API endpoints.
 The core endpoint for interacting with Minara's conversational AI.
 
 {% openapi-operation spec="api-reference-api-key" path="/v1/developer/chat" method="post" %}
-[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T075105Z&X-Amz-Expires=172800&X-Amz-Signature=13d0b563fb9076d19c4f42222514805932667228be3e589fb13fd5b85621ab62&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T121504Z&X-Amz-Expires=172800&X-Amz-Signature=d88bf98e44d991872efa9dc16907c0a66c442eb3ec65e38688b939be92748ed3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
-{% openapi-operation spec="api-reference-api-key" path="/v1/developer/intent-to-swap-tx" method="post" %}
-[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T075105Z&X-Amz-Expires=172800&X-Amz-Signature=13d0b563fb9076d19c4f42222514805932667228be3e589fb13fd5b85621ab62&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% openapi-operation spec="11" path="/v1/developer/intent-to-swap-tx" method="post" %}
+[OpenAPI 11](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/c70f51222b06a26b8ebc4c008c89b7cedeb3f5ee0973ff93edf591e6165904dc.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T121504Z&X-Amz-Expires=172800&X-Amz-Signature=bcd0029b51d5ee97c2d22b57073b6eaaab81562c12e8f1173878577c45d3ce38&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="api-reference-api-key" path="/v1/developer/perp-trading-suggestion" method="post" %}
-[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T075105Z&X-Amz-Expires=172800&X-Amz-Signature=13d0b563fb9076d19c4f42222514805932667228be3e589fb13fd5b85621ab62&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T121504Z&X-Amz-Expires=172800&X-Amz-Signature=d88bf98e44d991872efa9dc16907c0a66c442eb3ec65e38688b939be92748ed3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="api-reference-api-key" path="/v1/developer/prediction-market-ask" method="post" %}
-[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260210%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260210T075105Z&X-Amz-Expires=172800&X-Amz-Signature=13d0b563fb9076d19c4f42222514805932667228be3e589fb13fd5b85621ab62&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T121504Z&X-Amz-Expires=172800&X-Amz-Signature=d88bf98e44d991872efa9dc16907c0a66c442eb3ec65e38688b939be92748ed3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 ## Developer API
@@ -120,15 +120,43 @@ curl -X POST https://api-developer.minara.ai/v1/developer/intent-to-swap-tx \
 
 ```json
 {
-  "transaction": {
+  "intent": {
     "chain": "base",
-    "inputTokenAddress": "0x4200000000000000000000000000000000000006",
+    "inputTokenAddress": null,
     "inputTokenSymbol": "ETH",
     "outputTokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "outputTokenSymbol": "USDC",
-    "amount": "0.1",
-    "amountPercentage": 100,
-    "slippagePercent": "0.5"
+    "amount": "100000000000000000",
+    "userWalletAddress": "0x42a345F3d379B5060f0C36580bAF22C395B1D462"
+  },
+  "quote": {
+    "fromTokenAmount": "100000000000000000",
+    "toTokenAmount": "194058559",
+    "estimatedGas": "1338000",
+    "priceImpact": "-0.03",
+    "tradeFee": "0.0174870969512694"
+  },
+  "inputToken": {
+    "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+    "symbol": "ETH",
+    "decimals": "18",
+    "unitPrice": "1960.63"
+  },
+  "outputToken": {
+    "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "symbol": "USDC",
+    "decimals": "6",
+    "unitPrice": "0.99989"
+  },
+  "unsignedTx": {
+    "chainType": "evm",
+    "from": "0x42a345F3d379B5060f0C36580bAF22C395B1D462",
+    "to": "0x4409921ae43a39a11d90f7b96cfd0b8093d9fc",
+    "data": "0xf2c42696000000000000000000000000000000000000000000000000000000000003479e...",
+    "value": "100000000000000000",
+    "gas": "1338000",
+    "gasPrice": "10943011",
+    "maxPriorityFeePerGas": "7301883"
   }
 }
 ```
