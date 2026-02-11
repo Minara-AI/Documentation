@@ -7,20 +7,24 @@ Technical specifications for the Minara Agent API endpoints.
 The core endpoint for interacting with Minara's conversational AI.
 
 {% openapi-operation spec="api-reference-api-key" path="/v1/developer/chat" method="post" %}
-[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T121504Z&X-Amz-Expires=172800&X-Amz-Signature=d88bf98e44d991872efa9dc16907c0a66c442eb3ec65e38688b939be92748ed3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T164857Z&X-Amz-Expires=172800&X-Amz-Signature=814ae1a7db8e675d90f7e091bea2203361cc1010a47f78909ec849bd0708da4b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
-{% openapi-operation spec="11" path="/v1/developer/intent-to-swap-tx" method="post" %}
-[OpenAPI 11](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/c70f51222b06a26b8ebc4c008c89b7cedeb3f5ee0973ff93edf591e6165904dc.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T121504Z&X-Amz-Expires=172800&X-Amz-Signature=bcd0029b51d5ee97c2d22b57073b6eaaab81562c12e8f1173878577c45d3ce38&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% openapi-operation spec="212-2" path="/v1/developer/intent-to-swap-tx" method="post" %}
+[OpenAPI 212-2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/e80f64cdd458a0f090cfdb6df35bbf7657541475d3097e5f89ca3600d864321e.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T164857Z&X-Amz-Expires=172800&X-Amz-Signature=818be66221516281c2681f5644cd101211e19b2d44e434719238bd9e24658ff9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="api-reference-api-key" path="/v1/developer/perp-trading-suggestion" method="post" %}
-[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T121504Z&X-Amz-Expires=172800&X-Amz-Signature=d88bf98e44d991872efa9dc16907c0a66c442eb3ec65e38688b939be92748ed3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T164857Z&X-Amz-Expires=172800&X-Amz-Signature=814ae1a7db8e675d90f7e091bea2203361cc1010a47f78909ec849bd0708da4b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="api-reference-api-key" path="/v1/developer/prediction-market-ask" method="post" %}
-[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T121504Z&X-Amz-Expires=172800&X-Amz-Signature=d88bf98e44d991872efa9dc16907c0a66c442eb3ec65e38688b939be92748ed3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI api-reference-api-key](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/eb18bd8b738e65d4003fb5f39d9596a51584ae0c65005df4df876639031f6751.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T164857Z&X-Amz-Expires=172800&X-Amz-Signature=814ae1a7db8e675d90f7e091bea2203361cc1010a47f78909ec849bd0708da4b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
+
+{% openapi-schemas spec="212-2" schemas="Message,ChatResponse" grouped="true" %}
+[OpenAPI 212-2](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/e80f64cdd458a0f090cfdb6df35bbf7657541475d3097e5f89ca3600d864321e.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260211T164857Z&X-Amz-Expires=172800&X-Amz-Signature=818be66221516281c2681f5644cd101211e19b2d44e434719238bd9e24658ff9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-schemas %}
 
 ## Developer API
 
@@ -157,6 +161,15 @@ curl -X POST https://api-developer.minara.ai/v1/developer/intent-to-swap-tx \
     "gas": "1338000",
     "gasPrice": "10943011",
     "maxPriorityFeePerGas": "7301883"
+  },
+  "approval": {
+    "isRequired": false,
+    "tokenAddress": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "spenderAddress": "0x57df6092665eb6058DE53939612413ff4B09114E",
+    "requiredAmount": "10000000",
+    "approveAmount": "10000000",
+    "currentAllowance": "115792089237316195423570985008687907853269984665640564039457584007913129316681",
+    "message": "Allowance is sufficient for spender 0x57df6092665eb6058DE53939612413ff4B09114E"
   }
 }
 ```
