@@ -15,7 +15,7 @@ Authorization: Bearer <YOUR_API_KEY>
 **Example:**
 
 ```bash
-curl -H "Authorization: Bearer sk-minara-xxxxxxxx" https://api.minara.ai/v1/developer/chat
+curl -H "Authorization: Bearer sk-minara-xxxxxxxx" https://api-developer.minara.ai/v1/developer/chat
 ```
 
 > **Security:** Treat your API keys like passwords. Never expose them in client-side code or public repositories.
