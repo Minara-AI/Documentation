@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Gen Zero(Gen-0)
 
 <figure><img src="../.gitbook/assets/gen-0-nft (1).jpg" alt=""><figcaption></figcaption></figure>
