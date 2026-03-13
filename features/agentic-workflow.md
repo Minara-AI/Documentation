@@ -29,8 +29,10 @@ Currently, a workflow can only be modified through follow-up prompts to Minara i
 Minara's workflows are composed of various node types, each serving a specific function:
 
 1. **Monitor Triggers**:
-   * **Token Price Monitoring**: Monitor price changes of specific tokens. (e.g. "When ETH breaks through $4000")
-   * **Wallet Activity Monitoring**: Track buy or sell transactions from a wallet address.
+   * **Token Price Monitor**: Monitor price changes of specific tokens. (e.g. "When ETH breaks through $4000")
+   * **Wallet Activity Monitor**: Track buy or sell transactions from a wallet address.
+   * **Polymarket Odds Monitor:** Monitor the odds changes of specific events. (e.g. "When the odds of 'Fed decision in March - No change' falls below 80%")
+   * **Polymarket Wallet Monitor:** Track the trade activities along with the event, betting side, and odds (price) of the trade from a Polymarket wallet address.
 2. **Time-Based Triggers**:
    * **Delayed Start**: Trigger a workflow after a specified delay. (e.g., today at 3 PM)
    * **Scheduled Start**: Execute workflows at predefined intervals (e.g., daily at 8 AM).
