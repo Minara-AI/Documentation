@@ -23,6 +23,7 @@
 
 * [Trading Copilot](features/trading-copilot.md)
 * [Trading Autopilot](features/trading-autopilot.md)
+* [Personalization](features/personalization.md)
 * [Deep Research](features/deep-research.md)
 * [Vibe Trading](features/vibe-trading.md)
 * [Agentic Workflow](features/agentic-workflow.md)
@@ -32,7 +33,7 @@
     * [How to set up automated trade execution](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-set-up-automated-trade-execution.md)
     * [How to run analysis on a schedule](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-run-analysis-on-a-schedule.md)
     * [How to create a copy trading bot?](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
-* [Personalization](features/personalization.md)
+* [Personalization](features/personalization-1.md)
 * [Multimodal Input](features/multimodal-input.md)
 * [Crypto Picks](features/crypto-picks.md)
 * [News Feed](features/news-feed.md)

@@ -1,131 +1,133 @@
 # Personalization
 
-Personalization is Minara’s AI layer that adapts chat responses and trading features to your preferences and context. It helps Minara deliver answers that are **more relevant, more consistent, and easier to act on.**
+### Overview
 
-### **What you get**
+Personalization is Minara’s context-aware AI layer that adapts analysis and decision support to each user’s unique habits and preferences.
 
-With Personalization enabled, Minara can:
+Rather than generating generic answers, Minara gradually learns how you think, analyze markets, and make trading decisions, allowing the system to produce insights that better match your style and workflow.&#x20;
 
-* **Match your decision style** and preferred **explanation depth**
-* **Keep responses consistent** (structure, emphasis, risk checks, and tone)
-* **Use high-level context** to avoid generic advice and reduce repeated back-and-forth
+With user consent, Personalization continuously improves the relevance and consistency of Minara’s responses across features such as chat analysis, Trading Copilot, and strategy guidance.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+The goal is simple:
 
-### **How it works**
-
-You control what Minara can use for Personalization. You can either set your preferences, or Minara could suggest preferences from your in-app usage.&#x20;
-
-**Basic flow**
-
-1. You **set preferences** directly, and Minara may **suggest inputs** based on your **in-app usage patterns**.
-2. Minara converts them into a small set of **preference** and **context signals** (e.g., your decision style, risk posture, preferred depth)
-3. Those signals guide the response (**structure**, **emphasis**, **depth**, and **risk checks)** and even trading decisions made by Minara Copilot.
-
-### **How to use**
-
-Go to **Settings → Personalization** and toggle each module **on** or **off**:
-
-* **Tags** — structured preferences you can edit
-* **Memories** — saved helpful info from chats (removable)
-* **Trading Summary** — high-level context snapshot (optional)
-* **Custom Prompt** — your explicit response rules (optional)
-
-<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 7.03.45 PM.png" alt=""><figcaption></figcaption></figure>
-
-### Inputs
-
-#### 1) Tags
-
-Tags are **structured preferences.** Minara uses them to choose the right framing, depth, and emphasis in chat and in trading assistance.
-
-* Use the **dropdown** menus to set or update your preferences (example: Decision-Making Style)—things like decision-making style, risk profile, learning preference, and trading habits.&#x20;
-
-<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 6.40.16 PM.png" alt=""><figcaption><p>Tags are editable. Use dropdowns to tune how Minara responds.</p></figcaption></figure>
-
-#### 2) Memories (transparent and removable)
-
-Memories store **useful, stable information from your chats** (e.g., language preference, frequently discussed topics). You can review and delete any memory at any time.
-
-* Click **Manage Saved Memories** to review and delete items you don’t want Minara to reference.
-
-<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 6.42.02 PM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 6.42.07 PM.png" alt=""><figcaption></figcaption></figure>
+> Make Minara feel less like a generic AI assistant and more like a financial partner that understands how you work.
 
 ***
 
-#### 3) Trading Summary
+### Why Personalization Matters
 
-Trading Summary is a **high-level snapshot** used to make chat and your trading experience more context-aware. It’s designed to be _summary-level_ rather than exposing sensitive details.
+Financial decision-making is highly individual.
 
-* You can also **add external wallets** here: import up to 10 addresses from EVM or Solana by clicking the button.
+Two traders may look at the same market data but approach decisions differently:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2026-01-16 at 6.43.05 PM.png" alt=""><figcaption><p>Trading Summary provides a high-level context snapshot to improve relevance.</p></figcaption></figure>
+* Some prefer fast momentum trades
+* Some focus on long-term macro signals
+* Some rely heavily on technical indicators
+* Others prioritize portfolio allocation and risk control
 
-#### 4) Custom Prompt
+Traditional AI assistants provide the same analysis to everyone.
 
-Custom Prompt lets you set **your own rules** for how Minara should respond, and understand of you.
-
-If you want more predictable formatting or stricter rules, add a Custom Prompt. Keep it short and specific.
-
-Suggested template:
-
-* **Structure:** “Answer in: Summary → Key signals → Risk checks → Next actions.”
-* **Style:** “Be concise. Use bullet points. Avoid long paragraphs.”
-* **Safety:** “If uncertain, say what is unknown and what to verify.”
+Minara Personalization instead adapts to your analytical habits and decision patterns, producing responses that feel more aligned with how you normally operate. &#x20;
 
 ***
 
-### 📌 Example Scenarios
+### Personalization Architecture
 
-Below are typical usage scenarios for Personalization. Users are free to explore beyond these examples. (For best results, we recommend enabling **Quality mode** when you want deeper reasoning and more thorough risk checks.)
+Minara’s personalization system is designed as a controllable and explainable layer, rather than a hidden behavioral model. All personalization modules are enabled by default, but users can disable them at any time.
 
-#### 🧭 Scenario 1 — “Make it match my decision style”
+It combines four key modules to build contextual understanding:
 
-**Goal:** Get answers that fit how you decide (data-first vs narrative-first vs community sentiment vs tech-first).
+#### Trading Summary
 
-**Setup**
+<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
-* Turn on **Tags**
-* Set **Decision-Making Style** (e.g., Data-Driven)
+**Minara Wallet Context**
 
-**Try this prompt**
+Minara incorporates the portfolio composition of your **Minara spot wallet** into analysis.
 
-> “Analyze BTC’s current setup. I’m Data-Driven — prioritize evidence, key levels, and invalidation conditions. End with a clear action plan.”
+Instead of answering questions in isolation, the system can consider:
 
-**What you’ll see**
+* assets you currently hold
+* exposure concentration
+* risk distribution
+* unrealized positions
 
-* More structured logic, clearer levels, explicit invalidation, less storytelling.
+This allows insights to be contextualized to your current holdings.
 
-***
+> The context of Minara perpetual wallets is not yet integrated.&#x20;
 
-#### 🧱 Scenario 2 — “Always give me a disciplined plan”
+**External Portfolio**&#x20;
 
-**Goal:** Avoid improvising off raw price moves by enforcing a consistent decision framework.
+<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
-**Setup**
+You may also import your wallet addresses outside of Minara, and let Minara summarize your trading activity and patterns.
 
-* Turn on **Custom Prompt**
-* (Optional) Turn on **Tags** and set Risk Profile
+This includes observations such as:
 
-**Custom Prompt example**
+* typical holding time
+* preferred trading pairs
+* strategy patterns
+* performance tendencies
 
-> “Always respond with: 1) Thesis 2) Key levels 3) Risk checks 4) Position sizing suggestion 5) Invalidation triggers 6) Next action.”
+These summaries allow Minara to better understand your decision-making behavior through a broader portfolio context.
 
-**Try this prompt**
 
-> “I’m considering a SOL trade. Give me a disciplined plan using my structure.”
 
-**What you’ll see**
+#### Custom Prompt
 
-* A repeatable template every time: fewer missed risk checks.
+<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
-***
+Custom Prompt allows users to define their own system-level instructions for how Minara should respond.
 
-### Control & safety notes
+Similar to custom prompts in other LLM products, this feature lets you guide Minara’s behavior, tone, and analytical focus. The instructions you provide will be applied to your interactions with Minara, helping the AI better align with your preferred workflow.
 
-* **Opt-in by default:** Nothing is used unless you enable it.
-* **Editable:** Tags can be changed at any time.
-* **Reversible:** Memories can be deleted; modules can be toggled off.
-* **Bounded context:** Trading Summary is intentionally high-level, designed for relevance without oversharing.
+Users may use Custom Prompt to specify:
+
+* preferred analysis style or depth
+* trading frameworks or indicators to prioritize
+* response format (e.g., concise summary vs detailed breakdown)
+* specific assets, markets, or strategies to focus on
+* personal preferences such as Minara’s tone and how you would like to be addressed
+
+
+
+#### Tags
+
+<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+
+Tags represent structured dimensions of your user profile that help Minara better understand your preferences, habits, and trading style.
+
+Each dimension corresponds to a set of possible labels. For example:
+
+* Risk Profile: Aggressive / Balanced / Conservative
+* Decision-Making Style: Data-Driven / Narrative-Driven / Community-Driven / Tech-Driven
+* Trading Frequency: Passive Holder / Market Watcer
+
+Minara may automatically infer and update these tags based on your conversations and interactions over time.
+
+You can also manually modify any tag. Once a tag is manually set, it will not be automatically overwritten by AI. If a tag does not apply, you may choose N/A.
+
+These tags allow Minara to adjust analysis, suggestions, and explanations to better match your individual profile.
+
+#### Memories
+
+{% columns %}
+{% column %}
+<figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+Important information about your preferences, strategies, and interactions that Minara stores over time.
+
+Examples include:
+
+* preferred trading timeframe
+* preferred analysis style
+* typical risk tolerance
+
+These memories help Minara maintain continuity across conversations. You may also delete memorries that you do not want Minara to keep.
+
