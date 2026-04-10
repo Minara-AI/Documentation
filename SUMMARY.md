@@ -23,7 +23,7 @@
 
 * [Trading Copilot](features/trading-copilot.md)
 * [Trading Autopilot](features/trading-autopilot.md)
-* [Strtegy Studio](features/strtegy-studio.md)
+* [Strategy Studio](features/strategy-studio.md)
 * [Personalization](features/personalization.md)
 * [Deep Research](features/deep-research.md)
 * [Vibe Trading](features/vibe-trading.md)
