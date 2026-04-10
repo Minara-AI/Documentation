@@ -1,4 +1,8 @@
-# Strtegy Studio
+---
+hidden: true
+---
+
+# Strategy Studio
 
 ## What is Strategy Studio?
 
