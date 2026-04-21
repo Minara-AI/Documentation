@@ -20,11 +20,11 @@ Minara Skills runs on top of the [Minara CLI](https://www.npmjs.com/package/mina
 
 ## Who is Minara Skills For?
 
-| User Type | Experience Level | How to Use |
-|-----------|-----------------|------------|
-| **Retail traders** | Any | Talk to your agent in plain English: *"Buy 100 USDC of ETH"*, *"Long ETH perp 5x"*, *"What's trending today?"* |
-| **Power users & quants** | Comfortable with CLIs | Drive the underlying [Minara CLI](https://www.npmjs.com/package/minara) directly for scripting, batch jobs, and reproducible workflows |
-| **Agent developers** | Building on Claude Code, OpenClaw, or Hermes | Drop the skill pack into your agent's skills directory and call Minara as a first-class tool — no glue code |
+| User Type                | Experience Level                             | How to Use                                                                                                                             |
+| ------------------------ | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Retail traders**       | Any                                          | Talk to your agent in plain English: _"Buy 100 USDC of ETH"_, _"Long ETH perp 5x"_, _"What's trending today?"_                         |
+| **Power users & quants** | Comfortable with CLIs                        | Drive the underlying [Minara CLI](https://www.npmjs.com/package/minara) directly for scripting, batch jobs, and reproducible workflows |
+| **Agent developers**     | Building on Claude Code, OpenClaw, or Hermes | Drop the skill pack into your agent's skills directory and call Minara as a first-class tool — no glue code                            |
 
 ***
 
@@ -114,21 +114,21 @@ The fastest way to validate that the install worked end-to-end. Three commands t
 
 {% stepper %}
 {% step %}
-### Log in
+#### Log in
 
-Tell the agent: *"Login to Minara"*. The agent runs the CLI login command and opens a browser tab. Authenticate with your Minara account; the CLI stores the session locally.
+Tell the agent: _"Login to Minara"_. The agent runs the CLI login command and opens a browser tab. Authenticate with your Minara account; the CLI stores the session locally.
 {% endstep %}
 
 {% step %}
-### Fund your wallet
+#### Fund your wallet
 
-Tell the agent: *"Show my Minara deposit address"* to deposit existing crypto, or *"Buy crypto with credit card"* to on-ramp via MoonPay. To trade perps, follow up with *"Deposit 500 USDC to perps"* to move funds from spot to the Hyperliquid perps wallet.
+Tell the agent: _"Show my Minara deposit address"_ to deposit existing crypto, or _"Buy crypto with credit card"_ to on-ramp via MoonPay. To trade perps, follow up with _"Deposit 500 USDC to perps"_ to move funds from spot to the Hyperliquid perps wallet.
 {% endstep %}
 
 {% step %}
-### Trade
+#### Trade
 
-Tell the agent what you want: *"Buy 100 USDC worth of ETH"*, *"Swap 0.1 ETH to USDC"*, or *"Long ETH perp, 5x leverage"*. The agent confirms the trade details before executing. Review the **risk disclosure** carefully before approving.
+Tell the agent what you want: _"Buy 100 USDC worth of ETH"_, _"Swap 0.1 ETH to USDC"_, or _"Long ETH perp, 5x leverage"_. The agent confirms the trade details before executing. Review the **risk disclosure** carefully before approving.
 {% endstep %}
 {% endstepper %}
 
@@ -136,14 +136,14 @@ Tell the agent what you want: *"Buy 100 USDC worth of ETH"*, *"Swap 0.1 ETH to U
 
 ## Spot Trading
 
-Spot trading covers buying, selling, swapping, converting, and transferring tokens across all [supported networks](#supported-networks). You can reference assets by ticker (`ETH`, `SOL`), name (`ethereum`), or contract address.
+Spot trading covers buying, selling, swapping, converting, and transferring tokens across all [supported networks](minara-skills.md#supported-networks). You can reference assets by ticker (`ETH`, `SOL`), name (`ethereum`), or contract address.
 
 **Examples:**
 
-* *"Buy 100 USDC worth of ETH"*
-* *"Sell all my SOL"*
-* *"Swap 0.1 ETH to USDC on Base"*
-* *"Transfer 50 USDC to 0xabc..."*
+* _"Buy 100 USDC worth of ETH"_
+* _"Sell all my SOL"_
+* _"Swap 0.1 ETH to USDC on Base"_
+* _"Transfer 50 USDC to 0xabc..."_
 
 The agent picks the right network and routing based on your wallet balances and the asset.
 
@@ -155,14 +155,14 @@ Perpetual futures are routed through Hyperliquid. You can open and close positio
 
 **Examples:**
 
-* *"Long ETH perp"*
-* *"Short BTC, 10x leverage"*
-* *"Close my ETH position"*
-* *"Show my perps history"*
+* _"Long ETH perp"_
+* _"Short BTC, 10x leverage"_
+* _"Close my ETH position"_
+* _"Show my perps history"_
 
 ### AI Autopilot
 
-Autopilot lets the agent manage perps positions for you according to a strategy. Enable it with *"Enable AI autopilot for perps"*. Autopilot only acts within the scope you authorize, and you can disable it at any time.
+Autopilot lets the agent manage perps positions for you according to a strategy. Enable it with _"Enable AI autopilot for perps"_. Autopilot only acts within the scope you authorize, and you can disable it at any time.
 
 > **Risk:** Perpetual futures are leveraged products. Losses can exceed your initial margin. Review the risk disclosure before enabling autopilot or opening leveraged positions.
 
@@ -174,22 +174,22 @@ Limit orders work on both spot and perps. Place an order, list open orders, and 
 
 **Examples:**
 
-* *"Buy ETH when price hits $3000"*
-* *"Buy SOL at $150"*
-* *"List my limit orders"*
-* *"Cancel limit order [id]"*
+* _"Buy ETH when price hits $3000"_
+* _"Buy SOL at $150"_
+* _"List my limit orders"_
+* _"Cancel limit order \[id]"_
 
 ***
 
 ## Wallet & Funds
 
-| Action | Example prompts |
-|--------|-----------------|
-| **Check balance** | *"What's my balance?"* / *"Show my crypto portfolio"* |
-| **Deposit** | *"Show my deposit address"* / *"Buy crypto with credit card"* |
-| **Spot ↔ Perps transfer** | *"Deposit 500 USDC to perps"* / *"Withdraw 200 USDC from perps"* |
-| **Withdraw on-chain** | *"Withdraw 10 SOL to [address]"* |
-| **Pay** | *"Pay 100 USDC to [address]"* |
+| Action                    | Example prompts                                                  |
+| ------------------------- | ---------------------------------------------------------------- |
+| **Check balance**         | _"What's my balance?"_ / _"Show my crypto portfolio"_            |
+| **Deposit**               | _"Show my deposit address"_ / _"Buy crypto with credit card"_    |
+| **Spot ↔ Perps transfer** | _"Deposit 500 USDC to perps"_ / _"Withdraw 200 USDC from perps"_ |
+| **Withdraw on-chain**     | _"Withdraw 10 SOL to \[address]"_                                |
+| **Pay**                   | _"Pay 100 USDC to \[address]"_                                   |
 
 Credit-card on-ramp uses MoonPay. Withdrawals to external addresses go on-chain and incur the standard network fee.
 
@@ -201,11 +201,11 @@ Minara Skills exposes Minara's full market intelligence stack to your agent: rea
 
 **Examples:**
 
-* *"What tokens are trending?"*
-* *"Search for SOL tokens"*
-* *"Show me whale flows on ETH"*
-* *"What's the outlook on NVDA?"*
-* *"Price of gold right now"*
+* _"What tokens are trending?"_
+* _"Search for SOL tokens"_
+* _"Show me whale flows on ETH"_
+* _"What's the outlook on NVDA?"_
+* _"Price of gold right now"_
 
 ***
 
@@ -223,9 +223,9 @@ Manage your Minara subscription, credits balance, and plan from inside the agent
 
 **Examples:**
 
-* *"Show my credits"*
-* *"Upgrade my Minara plan"*
-* *"What plan am I on?"*
+* _"Show my credits"_
+* _"Upgrade my Minara plan"_
+* _"What plan am I on?"_
 
 ***
 
@@ -243,13 +243,13 @@ Perpetual futures are routed through Hyperliquid.
 
 Minara Skills scored **88/100** on [crypto-skill-bench](https://github.com/Minara-AI/crypto-skill-benchmark) v3.0.2, evaluated on Claude Sonnet 4.6 across 76 scenarios.
 
-| Dimension | Score |
-|-----------|-------|
-| Safety | 91 |
-| Coverage | 86 |
-| Robustness | 88 |
-| Routing | 88 |
-| UX | 86 |
+| Dimension  | Score |
+| ---------- | ----- |
+| Safety     | 91    |
+| Coverage   | 86    |
+| Robustness | 88    |
+| Routing    | 88    |
+| UX         | 86    |
 
 66 scenarios passed, 10 partial, 0 failed. Safety gate: PASS.
 
@@ -287,8 +287,8 @@ The benchmark is open source. You can reproduce the run, inspect every scenario,
 
 ## Tips for Better Results
 
-1. **Be specific about amounts and assets.** *"Buy 100 USDC of ETH"* is unambiguous; *"buy some ETH"* will trigger a clarification round.
-2. **Name the network when in doubt.** *"Swap 0.1 ETH to USDC on Base"* avoids the agent having to infer routing.
+1. **Be specific about amounts and assets.** _"Buy 100 USDC of ETH"_ is unambiguous; _"buy some ETH"_ will trigger a clarification round.
+2. **Name the network when in doubt.** _"Swap 0.1 ETH to USDC on Base"_ avoids the agent having to infer routing.
 3. **Confirm before approving.** The agent always shows the trade details before executing. Read them; reject if anything looks wrong.
 4. **Start small.** Validate the install with a $5 swap before moving real size.
 5. **Use limit orders for entries you care about.** Market orders are faster but less precise on thin pairs.
@@ -313,10 +313,4 @@ The benchmark is open source. You can reproduce the run, inspect every scenario,
 * Repository: [github.com/Minara-AI/skills](https://github.com/Minara-AI/skills)
 * CLI on npm: [npmjs.com/package/minara](https://www.npmjs.com/package/minara)
 * Benchmark: [github.com/Minara-AI/crypto-skill-benchmark](https://github.com/Minara-AI/crypto-skill-benchmark)
-* OpenClaw skills docs: [docs.openclaw.ai/tools/skills](https://docs.openclaw.ai/tools/skills)
-* ClawHub: [clawhub.ai](https://clawhub.ai)
 * License: MIT
-
-<!-- Commit this file to Minara-AI/Documentation under features/minara-skills.md and add an entry to SUMMARY.md under the Features section. -->
-
-<!-- source: https://github.com/Minara-AI/skills · generated: 2026-04-21 -->
