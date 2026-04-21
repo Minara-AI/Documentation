@@ -38,6 +38,7 @@
 * [Multimodal Input](features/multimodal-input.md)
 * [Crypto Picks](features/crypto-picks.md)
 * [News Feed](features/news-feed.md)
+* [Minara Skills](features/minara-skills.md)
 
 ## Technology
 
