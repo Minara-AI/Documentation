@@ -23,7 +23,7 @@ Autopilot does not make discretionary trades outside strategy rules.
 All trading behavior depends on the chosen strategy.
 
 {% hint style="info" %}
-Autopilot is built around three principles:&#x20;
+Autopilot is built around three principles:
 
 * Every automated action is visible and explainable
 * Users can override any time
@@ -59,7 +59,7 @@ Copilot Mode
 
 Minara currently provides the following official strategies:
 
-**Standard AI Strategies** (Sharpe Guard, Supertrend Monitor, etc.):
+**Standard AI Strategies** (Sharpe Guard 2.0):
 
 AI performs the following on your behalf, within your authorized trading scope and risk settings:
 
@@ -74,17 +74,21 @@ AI performs the following on your behalf, within your authorized trading scope a
 
 AI will suggest the grid parameters (grid amount, funding, upper/lower bounds) based on latest data. Once started, the grid engine _automatically places and manages orders_ based on these parameters without the sequential trigger/interpretation steps typical of AI strategy workflows.
 
-#### 1. Sharpe Guard
+#### 1. Sharpe Guard 2.0
 
 Type: Trend-following
 
 A 15-minute trend-following strategy optimized for Sharpe Ratio. It combines fast stop-loss execution, stable multi-layer trend confirmation, and trailing exits to improve consistency, control drawdowns, and maximize return per unit of risk.
 
-#### 2. Supertrend Monitor
+**What's new in 2.0:** Sharpe Guard now includes a **market regime detection** layer that classifies the prevailing market state (trending vs. ranging / risk-on vs. risk-off) and adapts entry, sizing and exit behavior accordingly — reducing whipsaws in choppy regimes and leaning in when trend quality is high.
 
-Type: Trend-following
+Read more: [Sharpe Guard 2.0 announcement](https://x.com/minara/status/2030132735910785335).
 
-SuperTrend Monitor continuously monitors multi-timeframe trend, momentum, and volatility conditions, opening positions only when confidence and risk-reward thresholds are met. With aggressive downside protection and adaptive Sharpe-based controls, the strategy prioritizes capital preservation while expanding profits via Supertrend trailing logic.
+#### 2. Supertrend Monitor (_Legacy — deprecated)_
+
+{% hint style="info" %}
+Supertrend Monitor has been retired and is no longer available for Autopilot runs. Existing users should migrate to **Sharpe Guard 2.0**, which supersedes it with broader regime-aware logic. This section is retained for historical reference only.&#x20;
+{% endhint %}
 
 #### 3. Classic Futures Grid
 
@@ -94,17 +98,19 @@ Classic long/short grid strategy.
 
 AI dynamically suggests optimized grid parameters based on market volatility and structure.
 
-Futures Grid cannot be enabled when there's any open position with the wallet, and all existing open orders will be canceled when enabling Futures Grid.&#x20;
+Futures Grid cannot be enabled when there's any open position with the wallet, and all existing open orders will be canceled when enabling Futures Grid.
 
-### Customized Strategies (Coming Soon)
+### Customized Strategies&#x20;
 
-In addition to official strategies, Minara will soon launch Strategy Studio — an AI-assisted creative environment where users can:
+In addition to the official strategies above, Autopilot now supports **custom strategies built in** [**Strategy Studio** ](https://minara.ai/zh/app/trade/strategy-studio)( learn more in[strategy-studio.md](strategy-studio.md "mention")) — Minara's AI-assisted environment where users can:
 
 * Describe trading ideas in natural language
 * Let AI generate executable strategy logic
 * Backtest ideas automatically
-* Deploy them via Autopilot
+* Live trade via Autopilot
 * Share strategies with other users
+
+Once a custom strategy is deployed from Strategy Studio, it becomes selectable inside Autopilot alongside the official strategies, running under the same execution, risk-control and manual-override framework.
 
 This opens up:
 
@@ -112,13 +118,11 @@ This opens up:
 * Community collaboration
 * Ecosystem-level innovation
 
-Autopilot will evolve from a fixed set of official strategies into a broader strategy ecosystem.
-
 ### Wallet Setup
 
 **Minimum available funds**
 
-Autopilot requires at least **$50** in available funds (available for Autopilot to trade) to operate.
+Autopilot requires at least **$100** in available funds (available for Autopilot to trade) to operate.
 
 For Futures Grid, a minimum required amount is calculated dynamically base on the parameters.
 
@@ -135,9 +139,7 @@ Worst-case estimated loss is calculated based on the stop-loss trigger price, in
 * If there are no open positions in your perps account, all equity is fully available for Autopilot to allocate into new positions.
 * If you hold an existing position, the stop-loss-bounded risk of the existing position is treated as already “reserved,” and only the remaining equity can be used to size new positions.
 
-To transfer funds into a Perp Wallet, users must first deposit USDC into their Spot Wallet, then manually transfer the funds to their Perp Wallet before starting Autopilot.
-
-Alternatively, users may deposit **USDC** on **Arbitrum** directly into the Perp Wallet. Deposits from other chains or in other assets are not supported at this time. The minimum deposit amount is 10 USDC.
+To transfer funds into a Perp Wallet, users may deposit **USDC** on **Arbitrum** directly into the Perp Wallet. Deposits from other chains or in other assets are not supported at the moment. The minimum deposit amount is 10 USDC (after gas fee).
 
 {% hint style="info" %}
 If a user deposits less than 10 USDC (e.g., 5 USDC), the funds will remain pending and will not be credited to the Perp Wallet. Once the cumulative deposited amount reaches 10 USDC or more (for example, depositing 5 USDC + 5 USDC), the total amount will be credited to the user’s Perp Wallet.
@@ -167,7 +169,7 @@ On your first enablement:
 > * Within the trading scope, If you already have a cross position on any asset, the asset must be managed by Autopilot and cannot be unselected.
 > * All existing open orders will be canceled when Autopilot starts.
 
-On later enablement attempts, Autopilot reuses your last configuration (scope and risk settings).&#x20;
+On later enablement attempts, Autopilot reuses your last configuration (scope and risk settings).
 
 ***
 
@@ -193,15 +195,6 @@ When conditions are met, Autopilot may close the original position at market pri
 
 Autopilot treats manual intervention as an intentional override and asks you how to proceed.
 
-**Removing an asset from management**
-
-If you remove an asset from Autopilot scope, Autopilot will not perform further actions on the asset.
-
-However:
-
-* If there is only one managed asset left, it cannot be removed
-* If there is an active position on the asset, it cannot be removed.
-
 **Transferring funds out of Perps Wallet**
 
 Transferring funds out of perps wallet will stop Autopilot automatically.
@@ -225,7 +218,7 @@ If the user enabled the Initial Equity Drawdown Limit and it is triggered:
 
 * All Autopilot-managed positions will be closed at market price
 * All pending Autopilot orders will be canceled
-* Autopilot stops and sends an email notification&#x20;
+* Autopilot stops and sends an email notification
 
 **Account equity falls below minimum**
 
@@ -237,7 +230,7 @@ If perps account equity falls to ≤ $5:
 
 #### Risk and control notes
 
-Autopilot is built to enforce trading discipline with mandatory TP/SL and trailing stop-loss updates, while leaving you with control over starting, stopping, position management, and the scope you authorize.&#x20;
+Autopilot is built to enforce trading discipline with mandatory TP/SL and trailing stop-loss updates, while leaving you with control over starting, stopping, position management, and the scope you authorize.
 
 {% hint style="info" %}
 However, please note that perpetual perpetual trading involves significant market risk. Autopilot does not eliminate market risk and does not guarantee profits.
