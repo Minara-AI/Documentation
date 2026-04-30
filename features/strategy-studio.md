@@ -2,7 +2,7 @@
 
 ## What is Strategy Studio?
 
-Strategy Studio is Minara's AI-powered quantitative strategy creation platform. It lets you create, backtest, optimize, and deploy trading strategies — all through natural language conversation.
+Strategy Studio is Minara's AI-powered quantitative strategy creation platform. It lets you create, backtest, optimize, paper trade, and deploy trading strategies — all through natural language conversation.
 
 Whether you're a beginner with no coding experience or a seasoned trader with coding expertise, Strategy Studio meets you where you are and helps you build strategies faster than ever.
 
@@ -13,6 +13,7 @@ Whether you're a beginner with no coding experience or a seasoned trader with co
 * Transpile the code of a trading strategy and optimize it with Minara
 * Backtest your strategy against historical data to see how it would have performed
 * Let AI automatically optimize your strategy for better results
+* Paper trade with virtual capital before committing real funds
 * Deploy your strategy to live trading with one click
 
 ***
@@ -194,9 +195,47 @@ Changing any of these settings will rerun the backtest with the new configuratio
 
 ***
 
+## Paper Trading
+
+Paper Trading is a real-time forward test. You run a strategy with virtual capital while the engine applies actual Hyperliquid market data, fee schedule, and funding rate. It is not a sandbox — it is the closest preview of live execution without real capital at risk.
+
+A backtest answers "did this work on history?" Paper Trading answers "does this still work, right now, after the friction the live venue actually charges?"
+
+### How to Start
+
+From any strategy detail page, click **🧪 Run paper** next to **🚀 Deploy live**. Set your virtual initial capital ($100 – $1,000,000) and click **Start paper**.
+
+Active and archived runs are visible on the strategy detail page under **Paper trading history**, and in the global **My paper trading** list.
+
+### How It Works
+
+| What | Detail |
+| ---- | ------ |
+| **Data source** | Live Hyperliquid candles — the same venue your strategy would trade on live |
+| **Fees** | Real Hyperliquid maker/taker rates, charged on every fill |
+| **Funding rate** | Settled hourly from the live Hyperliquid funding API |
+| **Slippage** | Not modeled in the current version |
+
+### Constraints
+
+* One active paper run per (strategy, asset) pair
+* Initial capital is set once — no mid-run injection
+* No pause and resume — stop is always archive
+* Deleting a strategy archives all its paper runs
+
+### Promoting to Live
+
+When a paper run looks promising, click **Deploy live** from the run detail page. The strategy, asset, and interval are pre-filled. Add a wallet and confirm — the paper-to-live transition is a wallet step, not a re-configuration step.
+
+{% hint style="info" %}
+Paper Trading uses virtual capital. No real funds are at risk during a paper run. A favorable paper result does not guarantee a favorable live result — slippage, liquidity at execution time, and partial fills are not modeled.
+{% endhint %}
+
+***
+
 ## Deploying and Live Trading
 
-Once you're satisfied with your backtest results, you can deploy your strategy to live trading.
+Once you're satisfied with your backtest and paper trading results, you can deploy your strategy to live trading.
 
 {% stepper %}
 {% step %}
@@ -340,11 +379,12 @@ Strategy Studio tracks every version of your strategy:
 
 1. **Be specific:** "BTC trend strategy using EMA crossover on 4H timeframe with 3% stop loss" gives better results than "make me a profitable strategy"
 2. **Start with backtesting:** Always review backtest results before deploying to live trading
-3. **Manage risk:** Pay attention to max drawdown, not just profit. A strategy with +50% return and -40% drawdown is riskier than one with +30% return and -10% drawdown
-4. **Iterate:** Use AI optimization or manually tweak parameters. Most good strategies take rounds of refinement
-5. **Match your risk tolerance:** Be honest about how much drawdown you can stomach. AI can adjust the strategy to match your risk preference
-6. **Diversify timeframes:** The same strategy logic can behave very differently on 15min vs 4H. Try multiple timeframes
-7. **Be aware of "overfitting":** Use longer backtest windows for more robust results to avoid overfitting (too tailored to past events)
+3. **Paper trade before going live:** Run for at least 2 weeks. A few days is too short for fees and funding to compound visibly.
+4. **Manage risk:** Pay attention to max drawdown, not just profit. A strategy with +50% return and -40% drawdown is riskier than one with +30% return and -10% drawdown
+5. **Iterate:** Use AI optimization or manually tweak parameters. Most good strategies take rounds of refinement
+6. **Match your risk tolerance:** Be honest about how much drawdown you can stomach. AI can adjust the strategy to match your risk preference
+7. **Diversify timeframes:** The same strategy logic can behave very differently on 15min vs 4H. Try multiple timeframes
+8. **Be aware of "overfitting":** Use longer backtest windows for more robust results to avoid overfitting (too tailored to past events)
 
 ***
 
