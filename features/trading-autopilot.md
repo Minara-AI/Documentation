@@ -1,6 +1,6 @@
 # Trading Autopilot
 
-Autopilot executes trading strategies on your behalf, 24 hours a day. Once you select a strategy and define your trading scope, the AI opens positions, manages take-profit and stop-loss orders, trails stops as conditions change, and closes or reverses positions when signals shift — without requiring manual input.
+Autopilot executes trading strategies on your behalf, 24 hours a day. Once you select a strategy and define your trading scope, the AI opens positions, manages take-profit and stop-loss orders, trails stops as conditions change, and closes or reverses positions when signals shift, without requiring manual input.
 
 You can override or stop Autopilot at any time.
 
@@ -34,7 +34,7 @@ Copilot Mode
 {% endcolumn %}
 {% endcolumns %}
 
-Autopilot is available on paid plans. If your subscription expires while Autopilot is running, you can continue viewing and operating the panel — but you cannot start a new Autopilot session until your subscription is reactivated.
+Autopilot is available on paid plans. If your subscription expires while Autopilot is running, you can continue viewing and operating the panel, but you cannot start a new Autopilot session until your subscription is reactivated.
 
 ***
 
@@ -134,7 +134,7 @@ For example: if the active strategy covers BTC, ETH, and SOL, but you hold an op
 On first enablement:
 
 1. Autopilot checks eligibility and minimum available funds
-2. You configure the **Trading Scope** — the assets you authorize Autopilot to manage
+2. You configure the **Trading Scope**: the assets you authorize Autopilot to manage
 3. You confirm risk settings and start
 
 On later enablement attempts, Autopilot reuses your last configuration.
@@ -149,13 +149,13 @@ All existing open orders are canceled when Autopilot starts.
 
 Autopilot treats manual intervention as an intentional override and prompts you on how to proceed.
 
-**Transferring funds out of Perps Wallet** — stops Autopilot automatically.
+**Transferring funds out of Perps Wallet**: stops Autopilot automatically.
 
-**Transferring funds into Perps Wallet** — does not stop Autopilot; increases available funds.
+**Transferring funds into Perps Wallet**: does not stop Autopilot; increases available funds.
 
-**Closing positions manually** — you can close any position at any time.
+**Closing positions manually**: you can close any position at any time.
 
-**TP/SL orders** — you cannot cancel Autopilot-managed TP/SL orders while Autopilot is active.
+**TP/SL orders**: you cannot cancel Autopilot-managed TP/SL orders while Autopilot is active.
 
 ***
 
@@ -165,7 +165,7 @@ Autopilot stops automatically under two conditions:
 
 **Initial equity drawdown limit reached** (if you enabled this setting): all managed positions are closed at market price, all pending orders are canceled, Autopilot stops, and you receive an email notification.
 
-**Account equity falls to $5 or below**: same result — positions closed, orders canceled, Autopilot stops, email sent.
+**Account equity falls to $5 or below**: same result. Positions are closed, orders are canceled, Autopilot stops, and an email is sent.
 
 ***
 
