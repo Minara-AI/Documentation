@@ -4,8 +4,8 @@ Minara supports trading commodity perpetuals, including silver (SILVER) and crud
 
 ## Available instruments
 
-- **SILVER**: silver futures perpetual, priced in USDC
-- **Crude oil**: available as a perpetual contract
+* **SILVER**: silver futures perpetual, priced in USDC
+* **Crude oil**: available as a perpetual contract
 
 More commodities may be added as Hyperliquid listings expand. Check the asset selector and filter by **Commodities** to see the current list.
 
@@ -19,10 +19,10 @@ Commodities are available 24/7, though liquidity varies by session.
 
 Hyperliquid charges lower fees for commodity perpetuals than for crypto:
 
-- Maker: 0.003%
-- Taker: 0.009%
+* Maker: 0.003%
+* Taker: 0.009%
 
-These apply per trade on the notional position size. Full fee details, including any Minara platform fees, are in [Trading fees](../guide/managing-funds-and-trading/trading-fees.md).
+These apply per trade on the notional position size. Full fee details, including any Minara platform fees, are in [Trading fees](../trade/trading-fees.md).
 
 {% hint style="info" %}
 Commodity perpetuals track the underlying commodity price via oracle feeds. As with all perpetuals on Hyperliquid, you are not taking delivery of physical goods.

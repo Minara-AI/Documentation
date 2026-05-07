@@ -16,10 +16,10 @@ Major US-listed equities are available, including technology, automotive, and ot
 
 The trading mechanics are identical to crypto perpetuals:
 
-- Positions are denominated in USDC
-- Funding rates apply and are exchanged between long and short holders
-- Leverage is available, though at lower maximums than crypto perps
-- Orders can be placed as market or trigger orders
+* Positions are denominated in USDC
+* Funding rates apply and are exchanged between long and short holders
+* Leverage is available, though at lower maximums than crypto perps
+* Orders can be placed as market or trigger orders
 
 See [Margin and leverage](margin-and-leverage.md) for how margin works on stock positions.
 
@@ -29,4 +29,4 @@ Because these are perpetuals tracking stock prices rather than direct ownership,
 
 ## Fees
 
-Fee rates for stock perpetuals are listed in [Trading fees](../guide/managing-funds-and-trading/trading-fees.md).
+Fee rates for stock perpetuals are listed in [Trading fees](../trade/trading-fees.md).

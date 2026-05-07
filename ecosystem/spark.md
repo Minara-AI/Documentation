@@ -5,7 +5,7 @@ noIndex: true
 
 # Spark
 
-**Spark is your love meter with Minara.** Currently, you can get Sparks by subscribing or through referrals (see [referral-and-rewards.md](../referral-and-rewards.md "mention") for details.)
+**Spark is your love meter with Minara.** Currently, you can get Sparks by subscribing or through referrals (see [Broken link](/broken/pages/xAJ2l2EPa0iWtUDmLio6 "mention") for details.)
 
 You can use Bonus Sparks to unlock:
 

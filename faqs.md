@@ -14,9 +14,9 @@ noIndex: true
 
 Open the chat window and type any question or request. No special commands are needed. Examples:
 
-- "Is it a good time to buy ETH now?"
-- "Analyze the BTC market for the next week."
-- "Buy $100 of ETH for me."
+* "Is it a good time to buy ETH now?"
+* "Analyze the BTC market for the next week."
+* "Buy $100 of ETH for me."
 
 Minara understands context across a conversation. You can follow up with shortened requests like "buy $10 more" or "cancel the last order." Technical analysis, market research, and trade execution can all happen in one chat thread.
 
@@ -24,27 +24,27 @@ Minara understands context across a conversation. You can follow up with shorten
 
 Minara covers the full cycle from data analysis to execution:
 
-- Market analysis and trade signals for crypto and stocks
-- On-chain data, wallet tracking, and DeFi activity
-- Deep Research reports on tokens, projects, or macro topics
-- Perpetual and spot trade execution
-- Automated strategy execution via Autopilot
-- Workflow automation for copy trading, DCA, and alerts
+* Market analysis and trade signals for crypto and stocks
+* On-chain data, wallet tracking, and DeFi activity
+* Deep Research reports on tokens, projects, or macro topics
+* Perpetual and spot trade execution
+* Automated strategy execution via Autopilot
+* Workflow automation for copy trading, DCA, and alerts
 
 ### Where do I manage my subscription?
 
 Click **Manage** in the top right corner. From there you can view your current plan, credit usage, billing cycle, and upgrade or downgrade options. Upgrades take effect immediately; downgrades take effect at the next billing cycle.
 
-See [Subscription & Top-up Policy](subscription-and-credits/subscription-and-top-up-policy.md) for full details.
+See [Subscription & Top-up Policy](/broken/pages/dpZhn3Hs16uGh7PWmKqk) for full details.
 
 ### How many credits does a query cost?
 
 Credit consumption depends on the complexity of the query and the tools it invokes. Typical estimates:
 
-- Standard chat message: ~20 credits
-- Deep Research report: ~40 credits
+* Standard chat message: \~20 credits
+* Deep Research report: \~40 credits
 
-See [How Credits Work](subscription-and-credits/how-credits-work.md) for the full breakdown.
+See [How Credits Work](/broken/pages/FrIxIPxclx8xWkxONGA2) for the full breakdown.
 
 ### What are Bonus Sparks?
 
@@ -114,9 +114,9 @@ Most deposits complete within 5–30 minutes. If yours takes longer:
 
 Common reasons:
 
-- Insufficient balance to cover gas fees
-- Invalid withdrawal address format
-- Network mismatch between the selected network and the withdrawal address
+* Insufficient balance to cover gas fees
+* Invalid withdrawal address format
+* Network mismatch between the selected network and the withdrawal address
 
 Check each of these before retrying. If the problem continues, contact support via Discord.
 
@@ -140,9 +140,9 @@ Due to bank risk controls and regional payment policies, card payments may fail.
 
 If the transaction failed, your funds are typically refunded to the original payment method automatically. If you have not received crypto or a refund after 24 hours, contact the OTC provider directly with your payment proof and order ID:
 
-- **Alchemy Pay:** [https://ramp.alchemypay.org/](https://ramp.alchemypay.org/)
-- **Banxa Pay:** [https://support.banxa.com/en/support](https://support.banxa.com/en/support)
-- **Kodo Finance:** [https://global.kodo.finance/](https://global.kodo.finance/)
+* **Alchemy Pay:** [https://ramp.alchemypay.org/](https://ramp.alchemypay.org/)
+* **Banxa Pay:** [https://support.banxa.com/en/support](https://support.banxa.com/en/support)
+* **Kodo Finance:** [https://global.kodo.finance/](https://global.kodo.finance/)
 
 Minara aggregates these third-party OTC providers but does not operate them.
 
@@ -164,8 +164,8 @@ For factual data errors (price, volume, TVL), follow up with a specific request:
 
 For interpretation disagreements, prompt Minara to show both sides rather than just pushing back:
 
-- "Re-analyze BTC and show which signals support bullish vs. bearish."
-- "Give me both a bullish and a bearish case, then tell me which appears stronger."
+* "Re-analyze BTC and show which signals support bullish vs. bearish."
+* "Give me both a bullish and a bearish case, then tell me which appears stronger."
 
 Asking Minara to show conflicting evidence produces more reliable analysis than asking it to reverse its conclusion.
 
@@ -179,10 +179,10 @@ Asking Minara to show conflicting evidence produces more reliable analysis than 
 
 Common causes:
 
-- Access from a restricted region (Mainland China, North Korea, etc.)
-- Network connectivity issue — check other sites first
-- Browser issue — clear cache and cookies, try incognito mode, or switch browsers
-- On mobile — try switching between Wi-Fi and mobile data
+* Access from a restricted region (Mainland China, North Korea, etc.)
+* Network connectivity issue — check other sites first
+* Browser issue — clear cache and cookies, try incognito mode, or switch browsers
+* On mobile — try switching between Wi-Fi and mobile data
 
 If problems persist, contact support via the official Discord.
 

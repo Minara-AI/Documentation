@@ -18,8 +18,8 @@ All assets available on Hyperliquid are available in Minara, including BTC, ETH,
 
 The trading panel is on the right side of the screen. Two order types are available:
 
-- **Market**: executes immediately at the best available price
-- **Trigger**: executes when the asset reaches a price you specify
+* **Market**: executes immediately at the best available price
+* **Trigger**: executes when the asset reaches a price you specify
 
 Both Autopilot and Copilot use this same underlying interface. If you're using Copilot, the AI generates a signal card with suggested entry, take-profit, and stop-loss levels — you place the order manually.
 
@@ -29,4 +29,4 @@ Minara routes orders through Hyperliquid's on-chain order book. Execution is non
 
 ## Fees
 
-Trading fees apply to all perpetual trades. See [Trading fees](../guide/managing-funds-and-trading/trading-fees.md) for the current rate schedule.
+Trading fees apply to all perpetual trades. See [Trading fees](../trade/trading-fees.md) for the current rate schedule.

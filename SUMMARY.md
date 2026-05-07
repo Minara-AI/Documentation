@@ -6,6 +6,7 @@
 
 * [Create your account](guide/getting-started/activate-your-account.md)
 * [Deposit funds](guide/managing-funds-and-trading/how-to-deposit-funds.md)
+* [Withdraw](get-started/withdraw.md)
 
 ## Chat
 
@@ -22,6 +23,7 @@
 * [Prediction Market](features/prediction-market-copilot.md)
 * [Benchmark](features/benchmark.md)
 * [Trade assets](guide/managing-funds-and-trading/trade-assets.md)
+* [Trading fees](trade/trading-fees.md)
 
 ## Workflow
 
@@ -36,16 +38,6 @@
 * [Crypto perpetuals](markets/crypto-perpetuals.md)
 * [Stocks](markets/stocks.md)
 * [Commodities](markets/commodities.md)
-
-## Funds & fees
-
-* [Deposit](guide/managing-funds-and-trading/how-to-deposit-funds.md)
-* [Withdraw](guide/managing-funds-and-trading/how-to-withdraw-funds.md)
-* [Trading fees](guide/managing-funds-and-trading/trading-fees.md)
-* [Subscription & credits](subscription-and-credits/README.md)
-  * [Plans & top-up policy](subscription-and-credits/subscription-and-top-up-policy.md)
-  * [How credits work](subscription-and-credits/how-credits-work.md)
-* [Referral & rewards](referral-and-rewards.md)
 
 ## Reference
 
