@@ -4,7 +4,7 @@ hidden: true
 
 # Benchmark
 
-Benchmark shows the live performance of MINARA's own trading strategies. It is not a feature you configure — it is a transparency dashboard that lets you track how the strategies built and operated by Minara itself are performing in real markets.
+Benchmark shows the live performance of MINARA's own trading strategies. It is not a feature you configure. It is a transparency dashboard that lets you track how the strategies built and operated by Minara itself are performing in real markets.
 
 Access it at `/app/trade` → **Benchmark** tab.
 
@@ -23,21 +23,21 @@ MINARA V2 trades Bitcoin (BTC) perpetuals on Hyperliquid using a trend-following
 
 ## Reading the dashboard
 
-**Total account value** — the current equity of the MINARA strategy portfolio, shown in USD and as a percentage change.
+**Total account value**: the current equity of the MINARA strategy portfolio, shown in USD and as a percentage change.
 
-**Chart view** — toggle between `$` (absolute P\&L) and `%` (percentage return). Filter by `72h` for recent performance or `All` for the full history.
+**Chart view**: toggle between `$` (absolute P\&L) and `%` (percentage return). Filter by `72h` for recent performance or `All` for the full history.
 
-**Completed trades** — the full trade log: every position opened and closed, with entry price, exit price, and P\&L for each trade.
+**Completed trades**: the full trade log, with every position opened and closed, entry price, exit price, and P\&L for each trade.
 
-**AI reasoning** — for each trade, the rationale Minara's AI used to enter or exit the position. This is the same reasoning layer that drives Autopilot for user accounts.
+**AI reasoning**: for each trade, the rationale Minara's AI used to enter or exit the position. This is the same reasoning layer that drives Autopilot for user accounts.
 
-**Positions** — current open positions held by the strategy.
+**Positions**: current open positions held by the strategy.
 
-**Readme** — a description of the strategy logic for each version (V1, V2).
+**Readme**: a description of the strategy logic for each version (V1, V2).
 
 ## Why it exists
 
-Benchmark serves as proof of work. Before asking users to run Autopilot on their own capital, Minara runs the same strategies with real funds. The results — including losses and drawdowns — are shown unfiltered.
+Benchmark serves as proof of work. Before asking users to run Autopilot on their own capital, Minara runs the same strategies with real funds. The results, including losses and drawdowns, are shown unfiltered.
 
 {% hint style="info" %}
 MINARA's performance on Benchmark does not predict your Autopilot results. Your strategies, risk settings, leverage, and allocated capital will differ.
