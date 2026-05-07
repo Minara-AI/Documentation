@@ -44,29 +44,21 @@
 * [Personalization](features/personalization.md)
 * [Multimodal input](features/multimodal-input.md)
 * [Minara Skills](features/minara-skills.md)
-* [FAQs](faqs.md)
-
-## For builders
-
-* [Agent API](ecosystem/agent-api/README.md)
-  * [Authentication](ecosystem/agent-api/authentication.md)
-  * [Getting started (API Key)](ecosystem/agent-api/getting-started-by-api-key.md)
-  * [Getting started (x402)](ecosystem/agent-api/getting-started-by-x402.md)
-  * [API Reference](ecosystem/agent-api/api-reference/README.md)
-    * [API Reference (API Key)](ecosystem/agent-api/api-reference/api-reference-api-key.md)
-    * [API Reference (x402)](ecosystem/agent-api/api-reference/api-reference-x402.md)
+* [Agent API](reference/agent-api/README.md)
+  * [Authentication](reference/agent-api/authentication.md)
+  * [Getting started (API Key)](reference/agent-api/getting-started-by-api-key.md)
+  * [Getting started (x402)](reference/agent-api/getting-started-by-x402.md)
+  * [API Reference](reference/agent-api/api-reference/README.md)
+    * [API Reference (API Key)](reference/agent-api/api-reference/api-reference-api-key.md)
+    * [API Reference (x402)](reference/agent-api/api-reference/api-reference-x402.md)
+  * [Spark](reference/agent-api/spark.md)
+  * [Gen Zero](reference/agent-api/gen-zero.md)
 
 ## Technology
 
 * [DMind LLM](technology/financial-expert-llm.md)
 * [Wallet security](technology/wallet-security.md)
-* [Export your private key](guide/export-private-key.md)
 * [Tool Stack](technology/tools-integration.md)
-
-## Ecosystem
-
-* [Gen Zero](ecosystem/gen-zero.md)
-* [Spark](ecosystem/spark.md)
 
 ## Links
 
