@@ -11,8 +11,8 @@ Access it at `/app/workflow`.
 Workflows combine triggers, conditions, and actions into a visual pipeline. Common use cases:
 
 * Monitor a wallet address and copy its trades automatically
-* Alert you (email or Telegram) when a token crosses a price threshold
-* Run a weekly AI market summary and send it to your inbox
+* Alert you (email or Telegram) when Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), or a stock like NVDA crosses a price threshold
+* Run a weekly AI market summary covering BTC dominance, ETH DeFi activity, and macro signals, then send it to your inbox
 * Track Polymarket odds and notify you when a position shifts
 
 ## Quick templates
@@ -37,7 +37,7 @@ Workflows can only be edited through the chat where they were created, and only 
 
 **Triggers** — start the workflow when a condition is met:
 
-* **Token price monitor** — fires when a token crosses a price level (e.g. "ETH breaks $4,000")
+* **Token price monitor** — fires when a token crosses a price level (e.g. "ETH breaks $4,000" or "BTC crosses $120,000")
 * **Wallet activity monitor** — fires when a tracked wallet buys or sells
 * **Polymarket odds monitor** — fires when a prediction market outcome probability moves past a threshold
 * **Polymarket wallet monitor** — fires when a Polymarket wallet places a bet
