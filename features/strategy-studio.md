@@ -1,397 +1,73 @@
 # Strategy Studio
 
-## What is Strategy Studio?
+Strategy Studio is where you build, backtest, and deploy algorithmic trading strategies. Strategies are written in Pine Runtime — Minara's TypeScript DSL — and run against historical market data before going live. A deployed strategy executes automatically, opening and closing positions according to your code.
 
-Strategy Studio is Minara's AI-powered quantitative strategy creation platform. It lets you create, backtest, optimize, paper trade, and deploy trading strategies — all through natural language conversation.
+Find it at `/app/trade/strategy-studio`.
 
-Whether you're a beginner with no coding experience or a seasoned trader with coding expertise, Strategy Studio meets you where you are and helps you build strategies faster than ever.
+## Left sidebar
 
-**What you can do with Strategy Studio:**
+The sidebar shows two sections:
 
-* Describe a trading idea in plain language, and AI turns it into a working strategy
-* Generate trading strategy with images and videos
-* Transpile the code of a trading strategy and optimize it with Minara
-* Backtest your strategy against historical data to see how it would have performed
-* Let AI automatically optimize your strategy for better results
-* Paper trade with virtual capital before committing real funds
-* Deploy your strategy to live trading with one click
+- **Deployed**: strategies currently running live. Each deployed strategy shows its live APY and the asset it trades.
+- **Drafts**: strategies you're editing or have not yet deployed. Changes to a draft never affect a deployed strategy.
 
-***
+Click any entry to open it in the editor.
 
-## Who is Strategy Studio for?
+## Create a new strategy
 
-| User Type      | Experience Level                                                      | How to Use Strategy Studio                                                                                 |
-| -------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Beginners**  | No trading or coding experience                                       | Use strategy templates or describe your idea in plain language. AI handles everything.                     |
-| **Traders**    | Understand indicators like RSI, MACD, moving averages, but don't code | Use the form builder to select indicators and parameters, or describe your strategy logic in conversation. |
-| **Developers** | Have coding experience                                                | Import your existing code directly, and edit it with AI. AI converts, optimizes, and deploys it.           |
+Click **New Strategy** in the top-right corner. You have two options:
 
-***
+- **Describe your idea in chat**: type what you want the strategy to do ("Go long BTC when RSI is below 30 and close when it crosses 50"). Minara generates the Pine Runtime code for you.
+- **Write code directly**: start from a blank editor or an existing template and write Pine Runtime code yourself.
 
-## How to Access
+Either way, the strategy opens in draft state. Nothing runs until you deploy.
 
-Access it directly via link [https://minara.ai/app/trade/strategy-studio](https://minara.ai/app/trade/strategy-studio), or navigate to **Trade** from the main sidebar on the left in Minara, then click **Strategy Studio** tab on the top.
+## Editor tabs
 
-***
+| Tab | What it shows |
+|---|---|
+| Code | Pine Runtime source code for your strategy |
+| Metrics | Backtest performance summary |
+| Trades | Individual trade log from the backtest |
+| Paper | Live paper trading (no real capital) |
+| Optimize | Parameter sweep tool for finding optimal settings |
 
-## Creating a Strategy
+## Run a backtest
 
-Strategy Studio offers multiple ways to create a strategy. Choose the one that fits your workflow.
+In the **Code** tab, set your date range and asset, then click **Run Backtest**. Results appear in the **Metrics** tab.
 
-### Natural Language (Recommended for Beginners)
+### What each metric means
 
-Type your trading idea in the chat input at the top of the homepage. You can be as simple or detailed as you want.
-
-**Examples:**
-
-* "Create a BTC trend following strategy"
-* "I want a strategy that longs ETH when it breaks above resistance, with a 3% stop loss"
-* "Build a mean reversion strategy for SOL using RSI, buying when RSI drops below 30"
-
-Minara will first ask some clarifying questions if needed, then generate a complete strategy, automatically run a backtest, and show you the results.
-
-**You can also attach image or video files, such as:**
-
-* Upload a screenshot of a chart with markings, and let Minara interpret your annotations
-* Upload a video explaining your strategy idea
-
-### Strategy Templates
-
-The homepage features curated strategy templates with real backtest data. Each template shows:
-
-* Strategy name and type
-* Style tags
-* Backtest results in the detail popup
-
-**To use a template:**
-
-1. Browse the template cards on the strategy studio page
-2. Check out any template card that interests you to see its backtest results
-3. Click the "Generate Strategy" button, and directed to strategy editor page
-4. Enter your preferred asset, timeframe, risk preference, and other answers of related questions Minara might ask
-5. AI generates a personalized version based on the template but optimized for your choices
-6. Review your backtest results
-
-### Form Builder
-
-Click **Form** button in the chat box section to build a strategy step by step:
-
-1. Select your trading pair (e.g., BTC/USDT)
-2. Choose a timeframe (15min, 1H, 4H, etc.)
-3. Pick a strategy style (Trend Following, Mean Reversion, etc.)
-4. Select technical indicators (RSI, MACD, EMA, Bollinger Bands, etc.)
-5. Add any additional instructions (optional)
-
-AI assembles your selections into a complete prompt, generates a strategy accordingly and runs the backtest.
-
-### Code Import
-
-Click **Code** button in the chat box to paste your existing PineScript code. Minara will:
-
-* Convert your PineScript to Minara's execution format
-* Preserve your original logic and indicator choices
-* Run a backtest automatically
-* Suggest optimizations if the results can be improved
-
-***
-
-## Understanding Backtest Results
-
-After your strategy is created, the backtest results are displayed in two tabs: **Metrics** and **Trades**.
-
-### Metrics
-
-**Key Metrics (always visible):**
-
-| Metric            | What It Means                                                        |
-| ----------------- | -------------------------------------------------------------------- |
-| **Total Return**  | Total profit/loss percentage over the backtest period (and $ amount) |
-| **Max Drawdown**  | The largest peak-to-trough decline — measures worst-case risk        |
-| **Win Rate**      | Number of winning vs losing trades                                   |
-| **Profit Factor** | Ratio of gross profit to gross loss — above 1.0 means profitable     |
-| **Sharpe Ratio**  | Risk-adjusted return — higher is better                              |
-
-**Equity Curve:**
-
-Below the key metrics, the equity curve chart shows your strategy's equity over time, compared against a buy-and-hold baseline of the same asset. This helps you see whether the strategy adds value beyond simply holding.
-
-**Performance Analysis:**
-
-A detailed breakdown of your strategy's profit and risk profile, including:
-
-* Total Return vs Buy & Hold return
-* Outperformance (how much you beat or trailed buy & hold)
-* Expected Payoff per trade
-* Long vs Short performance breakdown (return % and profit factor for each side)
-* Max Drawdown, Sharpe Ratio, Sortino Ratio, and Calmar Ratio
-
-**Trades Analysis:**
-
-An overview of your trading activity, including:
-
-* Total number of trades with win/loss bar visualization
-* Win Rate percentage
-* Largest Win and Largest Loss
-* Average Profit and Average Loss per trade
-* Profit Factor
-* Average holding period (in bars)
-* Max Consecutive Wins and Max Consecutive Losses
-
-### List of Trades
-
-The Trades tab lists every trade executed during the backtest, showing:
-
-| Column              | Description                                                         |
-| ------------------- | ------------------------------------------------------------------- |
-| **#**               | Trade number                                                        |
-| **Side**            | LONG or SHORT                                                       |
-| **Entry Time**      | When the position was opened                                        |
-| **Exit Time**       | When the position was closed                                        |
-| **Signal**          | What triggered the exit (e.g., STOP\_LOSS, REVERSAL)                |
-| **Entry Price**     | Price at entry                                                      |
-| **Exit Price**      | Price at exit                                                       |
-| **P\&L %**          | Profit or loss for this trade                                       |
-| **MAE**             | Maximum Adverse Excursion — worst drawdown during the trade         |
-| **MFE**             | Maximum Favorable Excursion — best unrealized gain during the trade |
-| **Cumulative P\&L** | Running total P\&L after this trade                                 |
-
-You can select specific trades and send them to AI as context for analysis. For example, select a few trades and ask: "Why did these trades get stopped out so early?" or "These trades shouldn't have exited here — can you adjust the exit logic?"
-
-***
-
-## AI Auto-Optimization
-
-Strategy Studio automatically optimizes your strategy to aim for positive backtest results.
-
-**How it works:**
-
-* After generating your strategy, AI runs a backtest
-* Based on the backtest result, AI may perform up to **5 optimization rounds**, trying different approaches to improve the strategy, while respecting your core requirements
-
-**If 5 rounds aren't enough:**
-
-AI stops and provides a detailed report of what was tried and why it didn't work, along with suggested new directions. You can pick a suggestion to start a new round of optimization, or describe your own adjustments.
-
-**Manual optimization:**
-
-At any time, you can ask AI to optimize in the chat:
-
-* "Reduce the drawdown"
-* "Make it trade more frequently"
-* "Add a volume filter"
-* "Improve the risk:reward ratio"
-
-***
-
-## Backtest Settings
-
-**You can customize:**
-
-* Number of candles (more candles = longer history = more data. It may take longer to complete the backtest with more data.)
-* Timeframe (15min, 1H, 4H, Daily, etc.)
-* Asset (BTC, ETH, SOL, GOLD, SILVER, etc.)
-
-Changing any of these settings will rerun the backtest with the new configuration. The latest backtest result for each asset is saved.
-
-***
-
-## Paper Trading
-
-Paper Trading is a real-time forward test. You run a strategy with virtual capital while the engine applies actual Hyperliquid market data, fee schedule, and funding rate. It is not a sandbox — it is the closest preview of live execution without real capital at risk.
-
-A backtest answers "did this work on history?" Paper Trading answers "does this still work, right now, after the friction the live venue actually charges?"
-
-### How to Start
-
-From any strategy detail page, click **🧪 Run paper** next to **🚀 Deploy live**. Set your virtual initial capital ($100 – $1,000,000) and click **Start paper**.
-
-Active and archived runs are visible on the strategy detail page under **Paper trading history**, and in the global **My paper trading** list.
-
-### How It Works
-
-| What | Detail |
-| ---- | ------ |
-| **Data source** | Live Hyperliquid candles — the same venue your strategy would trade on live |
-| **Fees** | Real Hyperliquid maker/taker rates, charged on every fill |
-| **Funding rate** | Settled hourly from the live Hyperliquid funding API |
-| **Slippage** | Not modeled in the current version |
-
-### Constraints
-
-* One active paper run per (strategy, asset) pair
-* Initial capital is set once — no mid-run injection
-* No pause and resume — stop is always archive
-* Deleting a strategy archives all its paper runs
-
-### Promoting to Live
-
-When a paper run looks promising, click **Deploy live** from the run detail page. The strategy, asset, and interval are pre-filled. Add a wallet and confirm — the paper-to-live transition is a wallet step, not a re-configuration step.
+| Metric | What it tells you |
+|---|---|
+| Total Return | Percentage gain or loss over the backtest period |
+| Max Drawdown | Largest peak-to-trough decline; measures worst-case loss |
+| Win Rate | Percentage of trades that closed in profit |
+| Profit Factor | Gross profit divided by gross loss; above 1.0 means the strategy made money |
+| Sharpe Ratio | Return per unit of risk; higher is better; above 1.0 is generally acceptable |
+| Sortino Ratio | Like Sharpe but only penalizes downside volatility |
 
 {% hint style="info" %}
-Paper Trading uses virtual capital. No real funds are at risk during a paper run. A favorable paper result does not guarantee a favorable live result — slippage, liquidity at execution time, and partial fills are not modeled.
+A strong backtest does not guarantee live performance. Cold-start bias and overfitting are common. Use the **Paper** tab to validate the strategy in live market conditions before deploying real capital.
 {% endhint %}
 
-***
+## Deploy a strategy
 
-## Deploying and Live Trading
+When you're satisfied with the backtest and paper results, click **Deploy**. This locks the current version of your code into a running strategy. The deployed strategy appears under **Deployed** in the sidebar with a live APY counter.
 
-Once you're satisfied with your backtest and paper trading results, you can deploy your strategy to live trading.
+Two things to know about deployment:
 
-{% stepper %}
-{% step %}
-### How to Deploy
+1. **Editing a draft does not affect the live strategy.** The deployed version runs the code that was current at deployment time. To update a live strategy, you must deploy again.
+2. **You cannot "un-deploy" without closing positions.** Stopping a deployed strategy closes all open positions it manages.
 
-Click **"Run"** on the top bar.
-{% endstep %}
+## Monitor a deployed strategy
 
-{% step %}
-Select your trading wallet.
-{% endstep %}
+Click a deployed strategy to view:
 
-{% step %}
-Review risk disclosure.
-{% endstep %}
+- **APY**: annualized return since deployment
+- **Positions**: current open positions and their unrealized P&L
+- **Trade log**: every entry and exit, with timestamps and realized P&L
 
-{% step %}
-Confirm running.
-{% endstep %}
-
-{% step %}
-The strategy is automatically deployed and running.
-{% endstep %}
-{% endstepper %}
-
-### Before Going Live
-
-* Review the risk disclosure carefully. **Historical backtest performance does not guarantee future results.**
-* Make sure your wallet is idle and has sufficient funds.
-  * If the wallet is running another strategy or currently has positions or open orders, the previous strategy will be stopped, positions will be closed at market price and all open orders will be cancelled.
-* Make sure you understand the strategy logic. You may ask Minara to explain it to you at any time.
-* Backtest the strategy on the desired asset.
-
-### Managing Live Strategies
-
-After deployment, you can monitor your strategy in the Autopilot dashboard:
-
-* **Account equity** tracking
-* **Open positions** with real-time updates (positions)
-* **Recent trades** executed by the strategy (trade history)
-* **Stop** the strategy at any time
-  * Choose to keep current positions or close them at market price
-
-### Updating your Strategy Deployment
-
-{% stepper %}
-{% step %}
-Edits create a new version, so that your live strategy is not affected.
-{% endstep %}
-
-{% step %}
-Backtest the new version.
-{% endstep %}
-
-{% step %}
-Stop the live strategy.
-{% endstep %}
-
-{% step %}
-Click **"Update"** to deploy the new version. Now the new version is deployed and can be run on live.
-{% endstep %}
-{% endstepper %}
-
-Your running version is always protected. Editing and experimenting do not disrupt a running strategy.
-
-***
-
-## Sharing Your Strategy (Coming Soon)
-
-### Share Card
-
-After a backtest, click **"Share"** to generate a visual share card featuring:
-
-* Your strategy name
-* Backtest performance (PNL, drawdown, win rate)
-* Profit curve chart
-
-### How to Share
-
-* **One-click sharing:** Opens your share panel with pre-filled text and the share card image
-* **Copy link:** Copies a short link to your backtest report
-* **Download image:** Saves the share card as an image to your device
-
-### What Others See
-
-When someone clicks your share link, they see a read-only backtest report with all your performance metrics and the AI summary. They cannot see your strategy code or modify your parameters.
-
-From the shared report, viewers can click **"Create My Strategy"** to start their own strategy creation on Minara with your invite link.
-
-***
-
-## Strategy Management
-
-### My Strategies
-
-All your deployed strategies are saved in **"My Strategies"** accessible from the strategy selection window. Each strategy shows:
-
-* Strategy name and description
-* Creation date
-* Latest backtest results
-* Running status
-
-### Version History
-
-Strategy Studio tracks every version of your strategy:
-
-* Each time AI generates new code, a new version is created
-* Previous versions are preserved and can be viewed
-* Running versions are protected and cannot be accidentally overwritten
-* You can always go back to an earlier version
-
-### Deleting a Strategy
-
-* You can delete a strategy in the sidebar of Strategy Studio.
-* If the strategy is running, you must stop it first (you may choose to keep or close positions), then you'll be able to delete it.
-
-***
-
-## What Strategy Studio Can and Cannot Do
-
-### What You Can Define
-
-* **Entry signals:** When to open a position (based on technical indicators, price action, volume, etc.)
-* **Exit signals:** When to close a position (take profit, stop loss, trailing stop, signal-based exit)
-* **Position actions:** Open, add to position, reduce position, close position
-
-### What the Platform Controls
-
-* Supported trading pairs (major crypto pairs on supported exchanges)
-* Leverage is limited to levels that passed backtesting without liquidation
-
-### Current Limitations
-
-* **Single-asset strategies:** Each strategy trades one asset at a time (multi-asset rotation is not yet supported)
-* **No external data:** Strategies are based on price and volume data from specific sources. External data (e.g. news, X posts) are not yet supported.
-* **Backtest accuracy:** Backtesting uses historical candle data and does not account for partial fills or exchange-specific behavior in real trading
-
-***
-
-## Tips for Better Strategies
-
-1. **Be specific:** "BTC trend strategy using EMA crossover on 4H timeframe with 3% stop loss" gives better results than "make me a profitable strategy"
-2. **Start with backtesting:** Always review backtest results before deploying to live trading
-3. **Paper trade before going live:** Run for at least 2 weeks. A few days is too short for fees and funding to compound visibly.
-4. **Manage risk:** Pay attention to max drawdown, not just profit. A strategy with +50% return and -40% drawdown is riskier than one with +30% return and -10% drawdown
-5. **Iterate:** Use AI optimization or manually tweak parameters. Most good strategies take rounds of refinement
-6. **Match your risk tolerance:** Be honest about how much drawdown you can stomach. AI can adjust the strategy to match your risk preference
-7. **Diversify timeframes:** The same strategy logic can behave very differently on 15min vs 4H. Try multiple timeframes
-8. **Be aware of "overfitting":** Use longer backtest windows for more robust results to avoid overfitting (too tailored to past events)
-
-***
-
-## Disclaimers
-
-* **Historical performance is not indicative of future results.** Backtest results show how a strategy would have performed in the past, not how it will perform in the future.
-* **All trading involves risk.** You may lose some or all of your invested capital. Only trade with funds you can afford to lose.
-* **Strategy Studio is a tool, not financial advice.** Minara does not recommend any specific strategy or guarantee any returns. You are responsible for your own trading decisions.
-* **Strategy code is transparent.** You can view, understand, and modify all strategy logic. This transparency is by design — you should understand what your strategy does before deploying it.
-* **You maintain full control.** You can stop any live strategy at any time, modify your strategy, or withdraw your funds.
+{% hint style="info" %}
+APY is calculated from the strategy's realized P&L since deployment. It resets if you stop and redeploy the strategy.
+{% endhint %}
