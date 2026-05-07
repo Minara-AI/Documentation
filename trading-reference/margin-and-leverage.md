@@ -12,9 +12,9 @@ The advantage is that you don't need to allocate funds per position. The risk is
 
 | Asset class | Maximum leverage |
 |---|---|
-| Crypto perpetuals | 25x |
-| Stocks | Lower (varies by asset) |
-| Commodities | Lower (varies by asset) |
+| Crypto perpetuals (BTC, ETH, SOL, etc.) | 25x |
+| Stocks (AAPL, TSLA, NVDA, AMZN, MSFT) | Lower (varies by asset) |
+| Commodities (Gold/XAU, Silver, Crude Oil) | Lower (varies by asset) |
 
 The leverage selector is in the trading panel. Choose a lower multiplier to reduce liquidation risk.
 
