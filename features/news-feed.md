@@ -8,7 +8,7 @@ hidden: true
 
 <figure><img src="../.gitbook/assets/Frame 1948756743.png" alt=""><figcaption></figcaption></figure>
 
-It transforms fragmented information from global media into structured, verifiable insights, enabling users to understand **what happened**, **why it matters**, and **how it impacts the markets**.
+It takes fragmented reporting from global media and organizes it into structured, verifiable events. Each event covers what happened, why it matters, and the market impact.
 
 The system continuously monitors multiple trusted sources, removes redundant or repetitive reports, and organizes news into events with context, relevance, and traceable updates.
 
