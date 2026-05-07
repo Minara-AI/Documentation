@@ -1,64 +1,66 @@
----
-description: This page describes how Minara's agentic workflows run under the hood.
----
+# Workflow
 
-# Agentic Workflow
+Workflow is a visual automation tool built into Minara. You describe what you want to automate — in plain language or by filling in a template — and Minara builds a node-based pipeline that runs on a schedule or in response to market events.
+
+Access it at `/app/workflow`.
 
 {% embed url="https://drive.google.com/file/d/1fTq804srm0k2ILKbsOgOfN7J0fo-MMj6/view?usp=sharing" %}
-Video Introduction: Workflow by Minara
-{% endembed %}
 
+## What you can automate
 
+Workflows combine triggers, conditions, and actions into a visual pipeline. Common use cases:
 
-## Core Infrastructure
+- Monitor a wallet address and copy its trades automatically
+- Alert you (email or Telegram) when a token crosses a price threshold
+- Run a weekly AI market summary and send it to your inbox
+- Track Polymarket odds and notify you when a position shifts
 
-Minara's workflow engine is built upon the open-source platform [n8n](https://n8n.io/), a visual automation tool that enables the creation of complex workflows through a node-based interface.
+## Quick templates
 
-When you chat with Minara, she recognizes your intent and parses your command to identify executable tasks. These tasks are then translated into workflows and displayed visually as nodes and branches on a canvas. This approach enables users to:
+The fastest way to start is with a pre-built template. Select one on the Workflow page and fill in the parameters.
 
-* **Visualize Workflow Logic**: Understand the sequence and dependencies of tasks.
-* **Monitor Workflow Status**: Track the execution of each workflow, even performance (coming soon).
-* **Manage Workflows**: Deploy, pause, resume, or edit manually (coming soon).
+| Template | What it does |
+|---|---|
+| Copy Trade | Mirrors trades from a monitored wallet address. Configurable buy amount and sell conditions. |
+| Polymarket Address Monitor | Tracks a Polymarket wallet's activity with optional AI analysis of trade quality. |
+| Polymarket Odds Monitor | Notifies you when a prediction market outcome crosses a probability threshold you set. |
 
-Currently, a workflow can only be modified through follow-up prompts to Minara in the same chat where it's created, and only modifiable before it gets deployed.&#x20;
+## Build from a description
 
-***
+If a template doesn't fit your use case, describe what you want in the chat input on the Workflow page. Minara generates the workflow and shows it as a node diagram. You can adjust it through follow-up prompts before deploying.
 
-### &#x20;Supported Node Types
+{% hint style="info" %}
+Workflows can only be edited through the chat where they were created, and only before deployment. To change a deployed workflow, create a new one.
+{% endhint %}
 
-Minara's workflows are composed of various node types, each serving a specific function:
+## Node types
 
-1. **Monitor Triggers**:
-   * **Token Price Monitor**: Monitor price changes of specific tokens. (e.g. "When ETH breaks through $4000")
-   * **Wallet Activity Monitor**: Track buy or sell transactions from a wallet address.
-   * **Polymarket Odds Monitor:** Monitor the odds changes of specific events. (e.g. "When the odds of 'Fed decision in March - No change' falls below 80%")
-   * **Polymarket Wallet Monitor:** Track the trade activities along with the event, betting side, and odds (price) of the trade from a Polymarket wallet address.
-2. **Time-Based Triggers**:
-   * **Delayed Start**: Trigger a workflow after a specified delay. (e.g., today at 3 PM)
-   * **Scheduled Start**: Execute workflows at predefined intervals (e.g., daily at 8 AM).
-3. **Conditional Logic**:
-   * **If Condition**: Evaluate conditions and direct the workflow based on the outcome.
-4. **Action Nodes**:
-   * **Notify**:
-     * **Email**: Send alerts to the email or Gmail that links to the user account.
-     * **Telegram**: Dispatch messages via Telegram bot (requires user to provide `chat_id`).
-   * **Trade**:
-     * **Market Orders**: Execute buy/sell orders on supported blockchains (Base, Ethereum, Solana).
-     * **Stop Market Orders**: Combine token price triggers with market orders for automated trading.
-   * **Minara AI Query**:
-     * Send prompts to Minara to get responses.&#x20;
-   * **Code**:
-     * Minara generates custom code on demand — from creating HTML email templates to executing complex trading logic.
+**Triggers** — start the workflow when a condition is met:
 
-***
+- **Token price monitor** — fires when a token crosses a price level (e.g. "ETH breaks $4,000")
+- **Wallet activity monitor** — fires when a tracked wallet buys or sells
+- **Polymarket odds monitor** — fires when a prediction market outcome probability moves past a threshold
+- **Polymarket wallet monitor** — fires when a Polymarket wallet places a bet
+- **Scheduled** — runs on a fixed schedule (e.g. daily at 8 AM, every Sunday at 6 PM)
+- **Delayed start** — runs once after a specified delay
 
-### Important Usage Notes
+**Logic** — control flow:
 
-* **Credit Consumption**: For now, only the **Minara AI Query** node consumes credits.
-  * However, successful trading actions will incur transaction fees, like other trades done with Minara.
-* **Workflow Execution**: If your credit balance is depleted, all active workflows will be automatically paused. To avoid unexpected losses from execution interruptions, please make sure that you have sufficient credits.
+- **If condition** — branches the workflow based on a condition being true or false
 
-For more details about credits, please refer to: [subscription-and-credits](../subscription-and-credits/ "mention")
+**Actions** — what the workflow does when triggered:
 
-***
+- **Notify via email** — sends an alert to the email linked to your account
+- **Notify via Telegram** — sends a message via Telegram bot (requires your `chat_id`)
+- **Trade (market order)** — executes a buy or sell on Base, Ethereum, or Solana
+- **Trade (stop market)** — triggers a trade when a price condition is met
+- **Minara AI query** — sends a prompt to Minara and uses the response downstream (e.g. in an email)
+- **Code** — runs custom logic generated by Minara (HTML email templates, data transformations, etc.)
 
+## Credits and fees
+
+The **Minara AI Query** node consumes credits each time it runs. All other nodes are free to execute. Trades initiated by workflows incur the same trading fees as manual trades.
+
+If your credit balance runs out, all active workflows pause automatically. Keep sufficient credits to avoid interruptions to automated trading workflows.
+
+For credit details, see [How credits work](../subscription-and-credits/how-credits-work.md).
