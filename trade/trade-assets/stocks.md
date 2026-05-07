@@ -21,7 +21,7 @@ The trading mechanics are identical to crypto perpetuals:
 * Leverage is available, though at lower maximums than crypto perps
 * Orders can be placed as market or trigger orders
 
-See [Margin and leverage](margin-and-leverage.md) for how margin works on stock positions.
+See [Margin and leverage](../../markets/margin-and-leverage.md) for how margin works on stock positions.
 
 {% hint style="info" %}
 Because these are perpetuals tracking stock prices rather than direct ownership, your exposure ends when you close the position. There is no settlement or delivery.
@@ -29,4 +29,4 @@ Because these are perpetuals tracking stock prices rather than direct ownership,
 
 ## Fees
 
-Fee rates for stock perpetuals are listed in [Trading fees](../trade/trading-fees.md).
+Fee rates for stock perpetuals are listed in [Trading fees](../trading-fees.md).

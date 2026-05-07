@@ -3,7 +3,7 @@
 Minara supports trading both crypto tokens and tokenized stocks using the same USDC-based flow. This page covers how to buy and sell both asset types.
 
 {% hint style="info" %}
-USDC is the base currency for all trades. If you haven't deposited yet, see [how-to-deposit-funds.md](how-to-deposit-funds.md "mention").
+USDC is the base currency for all trades. If you haven't deposited yet, see [how-to-deposit-funds.md](../../guide/managing-funds-and-trading/how-to-deposit-funds.md "mention").
 {% endhint %}
 
 ## Cryptocurrency
@@ -48,7 +48,7 @@ Minara generates an interactive plugin in her response. Click **"Yes"** to proce
 
 <figure><img src="../../.gitbook/assets/图片 (24).png" alt="Confirmation plugin with Yes button"><figcaption></figcaption></figure>
 
----
+***
 
 ## Tokenized stocks
 

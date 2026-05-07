@@ -22,7 +22,7 @@ Hyperliquid charges lower fees for commodity perpetuals than for crypto:
 * Maker: 0.003%
 * Taker: 0.009%
 
-These apply per trade on the notional position size. Full fee details, including any Minara platform fees, are in [Trading fees](../trade/trading-fees.md).
+These apply per trade on the notional position size. Full fee details, including any Minara platform fees, are in [Trading fees](../trading-fees.md).
 
 {% hint style="info" %}
 Commodity perpetuals track the underlying commodity price via oracle feeds. As with all perpetuals on Hyperliquid, you are not taking delivery of physical goods.

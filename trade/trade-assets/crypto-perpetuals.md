@@ -12,7 +12,7 @@ All assets available on Hyperliquid are available in Minara, including BTC, ETH,
 
 **Funding rates**: to keep the perpetual price close to the spot price, a funding payment is exchanged between long and short holders periodically. When funding is positive, longs pay shorts; when negative, shorts pay longs. The current funding rate is shown in the trading interface.
 
-**Leverage**: Minara supports up to 25x leverage on crypto perpetuals. Leverage multiplies both gains and losses. See [Margin and leverage](margin-and-leverage.md) for how margin requirements work.
+**Leverage**: Minara supports up to 25x leverage on crypto perpetuals. Leverage multiplies both gains and losses. See [Margin and leverage](../../markets/margin-and-leverage.md) for how margin requirements work.
 
 ## The trading interface
 
@@ -29,4 +29,4 @@ Minara routes orders through Hyperliquid's on-chain order book. Execution is non
 
 ## Fees
 
-Trading fees apply to all perpetual trades. See [Trading fees](../trade/trading-fees.md) for the current rate schedule.
+Trading fees apply to all perpetual trades. See [Trading fees](../trading-fees.md) for the current rate schedule.

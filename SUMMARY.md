@@ -22,7 +22,10 @@
 * [Strategy Studio](features/strategy-studio.md)
 * [Prediction Market](features/prediction-market-copilot.md)
 * [Benchmark](features/benchmark.md)
-* [Trade assets](guide/managing-funds-and-trading/trade-assets.md)
+* [Trade assets](trade/trade-assets/README.md)
+  * [Crypto perpetuals](trade/trade-assets/crypto-perpetuals.md)
+  * [Stocks](trade/trade-assets/stocks.md)
+  * [Commodities](trade/trade-assets/commodities.md)
 * [Trading fees](trade/trading-fees.md)
 
 ## Workflow
@@ -34,10 +37,6 @@
   * [Copy trading bot](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
 
 ## Markets
-
-* [Crypto perpetuals](markets/crypto-perpetuals.md)
-* [Stocks](markets/stocks.md)
-* [Commodities](markets/commodities.md)
 
 ## Reference
 
