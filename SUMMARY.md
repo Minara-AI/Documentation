@@ -2,7 +2,7 @@
 
 * [What is Minara?](README.md)
 
-## Get Started
+## Get started
 
 * [Create your account](guide/getting-started/activate-your-account.md)
 * [Get an invitation code](guide/getting-started/get-invitation-code.md)
@@ -11,13 +11,13 @@
 ## Chat
 
 * [Research and analysis](features/deep-research.md)
-* [Crypto Picks](features/crypto-picks.md)
-* [News Feed](features/news-feed.md)
+* [Crypto picks](features/crypto-picks.md)
+* [News feed](features/news-feed.md)
 
 ## Trade
 
-* [Copilot — manual trading with AI signals](features/trading-copilot.md)
-* [Autopilot — automated trading](features/trading-autopilot.md)
+* [Copilot](features/trading-copilot.md)
+* [Autopilot](features/trading-autopilot.md)
 * [Strategy Studio](features/strategy-studio.md)
 * [Benchmark](features/benchmark.md)
 
@@ -35,7 +35,7 @@
 * [Stocks](markets/stocks.md)
 * [Commodities](markets/commodities.md)
 
-## Funds & Fees
+## Funds & fees
 
 * [Deposit](guide/managing-funds-and-trading/how-to-deposit-funds.md)
 * [Withdraw](guide/managing-funds-and-trading/how-to-withdraw-funds.md)
@@ -57,7 +57,7 @@
 * [Minara Skills](features/minara-skills.md)
 * [FAQs](faqs.md)
 
-## For Builders
+## For builders
 
 * [Agent API](ecosystem/agent-api/README.md)
   * [Authentication](ecosystem/agent-api/authentication.md)
