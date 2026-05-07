@@ -1,6 +1,6 @@
 # News Feed
 
-**News Feed** is Minara’s curated information system that aggregates, analyzes, and summarizes high-value finance-related news in real time. See the real time news feed here: [https://minara.ai/app/discover/news](https://minara.ai/app/discover/news)
+**News Feed** is Minara's curated information system that aggregates, analyzes, and summarizes high-value finance-related news in real time. See the real time news feed here: [https://minara.ai/app/discover/news](https://minara.ai/app/discover/news)
 
 <figure><img src="../.gitbook/assets/Frame 1948756743.png" alt=""><figcaption></figcaption></figure>
 
@@ -12,15 +12,15 @@ The system continuously monitors multiple trusted sources, removes redundant or 
 
 ***
 
-### Core Capabilities
+### Core capabilities
 
-<table><thead><tr><th width="262">Capability</th><th>Description</th></tr></thead><tbody><tr><td>Multi-Source Aggregation</td><td>Collects verified news from hundreds of global crypto, finance, and macroeconomic outlets.</td></tr><tr><td>AI Summarization</td><td>Converts multi-source reports into concise, factual summaries (≈5 min read) with structured sections (“What Happened”, “Why It Matters”, “Market Impact”, etc.).</td></tr><tr><td>Event Grouping</td><td>Detects and merges duplicate reports that describe the same incident, and links sequential developments into a continuous event timeline.</td></tr><tr><td>Impact on Assets</td><td>Identifies which assets, tokens, sectors, or projects are directly affected, and classifies them as bullish or bearish, with an explanation section titled <em>Impact on Assets</em> added to the article.</td></tr><tr><td>Scoring &#x26; Prioritization</td><td>Each event receives an internal relevance score based on its importance, scope, expected duration of influence and significance to broader macroeconomic trends.</td></tr><tr><td>“Key Concept” Module</td><td>When an article focuses on a specific project or concept, a <em>Key Concept</em> section is added to briefly introduce it (e.g., “About Bybit”, “About Lightning Network”).</td></tr><tr><td>Follow-Up Interaction</td><td>Users can ask follow-up questions about the news. Pre-generated follow-up questions are also provided for users to easily explore event context, market effects, or implications. </td></tr><tr><td>Source Transparency</td><td>Each summary cites aggregated sources, ensuring verifiability and transparency.</td></tr></tbody></table>
+<table><thead><tr><th width="262">Capability</th><th>Description</th></tr></thead><tbody><tr><td>Multi-source aggregation</td><td>Collects verified news from hundreds of global crypto, finance, and macroeconomic outlets.</td></tr><tr><td>AI summarization</td><td>Converts multi-source reports into concise, factual summaries (≈5 min read) with structured sections ("What Happened", "Why It Matters", "Market Impact", etc.).</td></tr><tr><td>Event grouping</td><td>Detects and merges duplicate reports that describe the same incident, and links sequential developments into a continuous event timeline.</td></tr><tr><td>Impact on assets</td><td>Identifies which assets, tokens, sectors, or projects are directly affected, and classifies them as bullish or bearish, with an explanation section titled <em>Impact on Assets</em> added to the article.</td></tr><tr><td>Scoring &amp; prioritization</td><td>Each event receives an internal relevance score based on its importance, scope, expected duration of influence and significance to broader macroeconomic trends.</td></tr><tr><td>"Key Concept" module</td><td>When an article focuses on a specific project or concept, a <em>Key Concept</em> section is added to briefly introduce it (e.g., "About Bybit", "About Lightning Network").</td></tr><tr><td>Follow-up interaction</td><td>Users can ask follow-up questions about the news. Pre-generated follow-up questions are also provided for users to easily explore event context, market effects, or implications. </td></tr><tr><td>Source transparency</td><td>Each summary cites aggregated sources, ensuring verifiability and transparency.</td></tr></tbody></table>
 
 ***
 
-### How It Works
+### How it works
 
-#### **Source Aggregation**
+#### Source aggregation
 
 Discover News continuously collects information from verified crypto and financial outlets across multiple formats, including RSS feeds, APIs, and platform announcements.
 
@@ -30,7 +30,7 @@ Incoming articles are automatically **normalized**, **timestamped**, and **score
 
 ***
 
-#### **Event Generation**
+#### Event generation
 
 When a new article is ingested, Minara determines whether it should:
 
@@ -41,7 +41,7 @@ Each event is anchored to the timestamp of its earliest reported article, ensuri
 
 ***
 
-#### **Asset & Sector Mapping**
+#### Asset & sector mapping
 
 Minara performs **entity extraction** and **context tagging** to map which cryptos, stocks, projects, or sectors are directly or indirectly affected by each event.
 
@@ -54,7 +54,7 @@ This classification enables users to instantly see how macro events or project-s
 
 ***
 
-#### **Scoring & Prioritization**
+#### Scoring & prioritization
 
 Every event is assigned a **composite score** reflecting its relevance and impact:
 
@@ -67,7 +67,7 @@ For Discover News Feed, low-scoring events are filtered out to reduce noise and 
 
 ***
 
-#### **Summarization**
+#### Summarization
 
 Once event grouping and score filtering are complete, Minara summarizes the combined sources into a **structured report** with distinct sections:
 
@@ -82,7 +82,7 @@ All text follows a neutral, journalistic tone — avoiding speculation or promot
 
 ***
 
-#### **Updates & Revisions**
+#### Updates & revisions
 
 Event content dynamically evolves as new reports emerge:
 
@@ -92,11 +92,11 @@ Event content dynamically evolves as new reports emerge:
 
 ***
 
-#### **Follow-Up Interaction**
+#### Follow-up interaction
 
 Every event supports user interaction through the **Follow-Up** feature:
 
-* Minara auto-suggests questions relevant to the story (e.g., “How does this affect BTC?”, “Is this connected to regulation?”, “What could happen next?”).
+* Minara auto-suggests questions relevant to the story (e.g., "How does this affect BTC?", "Is this connected to regulation?", "What could happen next?").
 * Users may also input custom questions to explore deeper context under each event.
 
 In the follow-up chat, users can click the title to view the original news directly without leaving the chat.
@@ -105,14 +105,11 @@ In the follow-up chat, users can click the title to view the original news direc
 
 ***
 
-### Future Development
+### Upcoming improvements
 
-The **News Feed** will continue to evolve toward a more intelligent, personalized experience.
-
-Upcoming improvements include:
+Planned additions include:
 
 * **Personalization:** delivering user-tailored insights based on profile data, composite scores, and topic relevance;
-* **Topic Filtering:** allowing users to browse and track news by topics such as _DeFi_, _RWA_, _Stablecoins_, _Infrastructure_, and more;
+* **Topic filtering:** allowing users to browse and track news by topics such as _DeFi_, _RWA_, _Stablecoins_, _Infrastructure_, and more.
 
-Additional features such as search and flexible feed views will also be introduced soon.\
-Stay tuned!
+Additional features such as search and flexible feed views will also be introduced.
