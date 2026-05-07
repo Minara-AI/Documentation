@@ -1,12 +1,8 @@
----
-description: Minara — AI trading platform built on Hyperliquid.
----
-
-# Introduction
+# About Minara
 
 Minara is an AI trading platform built on Hyperliquid. Ask questions, get real-time analysis, and trade crypto, stocks, and commodities — all in one interface.
 
-<table><thead><tr><th width="346.65234375">Feature</th><th width="190.7265625" align="center">Generic Chatbots like ChatGPT and Grok</th><th align="center">Minara AI</th></tr></thead><tbody><tr><td>Accurate, real-time crypto &amp; stocks data</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> </td></tr><tr><td>Trusted &amp; actionable financial insights</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Precise market sentiment detection</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Built-in crypto wallet</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Vibe trading with stablecoins</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Gasless on-chain executions</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Creating agentic financial workflows without coding</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
+<table><thead><tr><th width="346.65234375">Feature</th><th width="190.7265625" align="center">Generic Chatbots like ChatGPT and Grok</th><th align="center">Minara AI</th></tr></thead><tbody><tr><td>Accurate, real-time crypto &#x26; stocks data</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Trusted &#x26; actionable financial insights</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Precise market sentiment detection</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Built-in crypto wallet</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Vibe trading with stablecoins</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Gasless on-chain executions</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Creating agentic financial workflows without coding</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
 
 ## What is Minara?
 
@@ -30,9 +26,9 @@ Trained on domain-specific financial and crypto data, with access to over 50 int
 
 **Real-time data integration**
 
-- Finance: transactions, stocks, crypto, DeFi, liquidations, VC and project data
-- Audience: wallet holders, smart money, social identities, PnL, relationships
-- Sentiment: news, X posts, Fear & Greed index, macro signals, policy headlines
+* Finance: transactions, stocks, crypto, DeFi, liquidations, VC and project data
+* Audience: wallet holders, smart money, social identities, PnL, relationships
+* Sentiment: news, X posts, Fear & Greed index, macro signals, policy headlines
 
 **Trading execution**
 
@@ -45,4 +41,3 @@ Write and backtest algorithmic strategies using Pine Runtime, Minara's TypeScrip
 **Agent workflows**
 
 Build trading and monitoring workflows from templates — copy trading, DCA, price alerts — without writing code.
-

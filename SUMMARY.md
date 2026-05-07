@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is Minara?](README.md)
+* [About Minara](README.md)
 
 ## Get started
 
