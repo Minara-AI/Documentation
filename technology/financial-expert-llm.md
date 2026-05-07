@@ -1,7 +1,5 @@
 # Financial Expert LLM
 
-Minara is powered by the [DMind](https://dmind.ai/) series of finance-native expert models, which serve as the backbone for data structuring, analysis, and high-precision summarization.
+Minara is powered by the [DMind](https://dmind.ai/) series of finance-native models, which handle data structuring, analysis, and summarization. DMind is paired with general-purpose models — including Claude and GPT — to cover the full range of tasks Minara handles: research, analysis, decision support, and on-chain execution.
 
-By pairing DMind LLM with **state-of-the-art** industry LLMs like Claude and GPT, Minara delivers best-in-class financial multi-agent systems in the space.
-
-This architecture enables our agents to collaborate, reason, and execute across the full spectrum of digital finance—research, analysis, decision-making, and on-chain/off-chain execution—at a level that outperforms generic AI models by a wide margin.
+The DMind models are trained on domain-specific financial and crypto data. This allows Minara to work with specialized market concepts, on-chain data structures, and financial instruments without requiring generic models to reason across unfamiliar territory.
