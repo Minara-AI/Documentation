@@ -1,6 +1,6 @@
 # Stocks
 
-Minara gives you access to tokenized stocks as perpetual contracts on Hyperliquid. This means you can trade AAPL, TSLA, NVDA, and other major equities using the same USDC-based interface as crypto.
+Minara gives you access to tokenized stocks as perpetual contracts on Hyperliquid. This means you can trade Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major equities using the same USDC-based interface as crypto.
 
 ## What tokenized stock perpetuals are
 
@@ -10,7 +10,11 @@ Trading is available 24/7, including outside traditional market hours, though li
 
 ## Supported assets
 
-Major US-listed equities are available, including technology, automotive, and other sectors. The full list appears in the asset selector — filter by **Stocks** to see available instruments.
+Major US-listed equities are available, including:
+
+- **Technology**: Apple (AAPL), Microsoft (MSFT), NVIDIA (NVDA), Amazon (AMZN)
+- **Automotive / EV**: Tesla (TSLA)
+- Other sectors available in the asset selector — filter by **Stocks** to see all instruments
 
 ## How it works
 
