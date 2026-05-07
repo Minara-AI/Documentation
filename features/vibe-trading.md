@@ -1,49 +1,31 @@
 # Vibe Trading
 
-Vibe Trading lets you describe a trading strategy in plain language and have Minara generate the code, run a backtest, and deploy it — without writing a line of code yourself.
+Vibe Trading is the natural-language entry point to [Strategy Studio](strategy-studio.md). You describe what you want a strategy to do, and Minara writes the Pine Runtime code, runs a backtest, and deploys it — no manual coding required.
 
-It is the natural-language interface to [Strategy Studio](../features/strategy-studio.md), Minara's algorithmic trading environment built on Pine Runtime (a TypeScript DSL).
-
-***
-
-## How it works
-
-**Describe your strategy**
-
-Tell Minara what you want the strategy to do. For example:
-
-> "Buy when the 9-EMA crosses above the 21-EMA on the 1-hour chart. Exit when RSI goes above 70 or price drops 3% from entry."
-
-**Minara generates the code**
-
-Minara translates your description into Pine Runtime code and opens it in Strategy Studio. You can review the logic in the Code tab before proceeding.
-
-**Run the backtest**
-
-Switch to the Metrics tab to run a backtest on historical data. Minara returns total return, drawdown, win rate, profit factor, and Sharpe ratio. The Trades tab shows each individual entry and exit.
-
-**Deploy to Autopilot**
-
-When you are satisfied with the backtest results, deploy the strategy to Autopilot. It will run live under the same execution and risk-control framework as official Minara strategies.
+It is not a separate product. The workflow is identical to Strategy Studio: the difference is how you create the strategy. Instead of writing code, you describe your idea in plain language.
 
 {% embed url="https://drive.google.com/file/d/1JlGUdubEmJFT_wHuA0VBYdY1puiYc_lt/view?usp=sharing" %}
 
-***
+## How to use it
 
-## What you can trade
+**1. Describe your strategy**
 
-Vibe Trading strategies work with any asset supported in Strategy Studio, including crypto perpetuals and spot markets across the chains Minara supports.
+In the chat input on the Strategy Studio page, describe your trading logic in plain language. For example:
 
-For on-chain spot trades, Minara uses stablecoins like USDC as the base currency. Supported chains: Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, Polygon.
+> "Go long BTC on the 1-hour chart when the 9-EMA crosses above the 21-EMA. Exit when RSI exceeds 70 or when price drops 3% from entry. Use a 5% stop-loss."
 
-***
+Be specific about: the asset, timeframe, entry condition, exit condition, and risk parameters. The more precise your description, the closer the generated code will be to your intent.
 
-## Fees
+**2. Review the generated code**
 
-On-chain spot trades incur the following fees:
+Minara generates Pine Runtime code and opens it in the Strategy Studio editor. Check the **Code** tab to confirm the logic matches what you described. You can ask Minara to adjust any part of it.
 
-- **Network fee (required):** paid to blockchain validators to process the transaction; varies by chain, traffic, and gas price
-- **Service fee (required):** 0.1%–1%, charged by the DEX for swap routing and execution
-- **Bridge fee (optional):** only applies when transferring assets across chains
+**3. Run the backtest**
 
-For more detail on trading mechanics, see the [managing funds and trading guide](../guide/managing-funds-and-trading/).
+Click **Run Backtest** to test the strategy against historical data. Review the results in the **Metrics** tab — total return, drawdown, win rate, profit factor, Sharpe ratio.
+
+**4. Deploy**
+
+When the backtest results are acceptable, deploy the strategy. It runs automatically under the same execution framework as Autopilot.
+
+For full details on backtesting, deployment, and monitoring, see [Strategy Studio](strategy-studio.md).
