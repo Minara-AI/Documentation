@@ -28,6 +28,14 @@ Be specific about four things: asset, timeframe, entry condition, exit condition
 
 > "Go long BTC on the 1-hour chart when the 9-EMA crosses above the 21-EMA. Exit when RSI exceeds 70 or price drops 3% from entry."
 
+Other examples to get started:
+
+> "Short ETH on the 15-minute chart when MACD crosses below signal and price is below the 200-EMA."
+
+> "Go long SOL when the daily RSI crosses above 40 coming from oversold. Exit at 10% gain or 5% loss."
+
+> "Long NVDA perpetual on the 4-hour chart when price breaks above the 20-day high with above-average volume."
+
 After Minara generates the code, open the **Code** tab to verify the logic matches your intent. Ask follow-up questions to adjust any part of it before running a backtest.
 
 ## Editor tabs
@@ -43,6 +51,8 @@ After Minara generates the code, open the **Code** tab to verify the logic match
 ## Run a backtest
 
 In the **Code** tab, set your date range and asset, then click **Run Backtest**. Results appear in the **Metrics** tab.
+
+Backtests are supported for all perpetual assets available on Hyperliquid, including Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), silver, and stock perpetuals such as Apple (AAPL), Tesla (TSLA), and NVIDIA (NVDA).
 
 ### What each metric means
 
