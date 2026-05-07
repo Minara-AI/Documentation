@@ -1,10 +1,12 @@
-# News Feed
+---
+hidden: true
+---
+
+# News feed
 
 **News Feed** is Minara's curated information system that aggregates, analyzes, and summarizes high-value finance-related news in real time. See the real time news feed here: [https://minara.ai/app/discover/news](https://minara.ai/app/discover/news)
 
 <figure><img src="../.gitbook/assets/Frame 1948756743.png" alt=""><figcaption></figcaption></figure>
-
-
 
 It transforms fragmented information from global media into structured, verifiable insights, enabling users to understand **what happened**, **why it matters**, and **how it impacts the markets**.
 
@@ -14,7 +16,7 @@ The system continuously monitors multiple trusted sources, removes redundant or 
 
 ### Core capabilities
 
-<table><thead><tr><th width="262">Capability</th><th>Description</th></tr></thead><tbody><tr><td>Multi-source aggregation</td><td>Collects verified news from hundreds of global crypto, finance, and macroeconomic outlets.</td></tr><tr><td>AI summarization</td><td>Converts multi-source reports into concise, factual summaries (≈5 min read) with structured sections ("What Happened", "Why It Matters", "Market Impact", etc.).</td></tr><tr><td>Event grouping</td><td>Detects and merges duplicate reports that describe the same incident, and links sequential developments into a continuous event timeline.</td></tr><tr><td>Impact on assets</td><td>Identifies which assets, tokens, sectors, or projects are directly affected, and classifies them as bullish or bearish, with an explanation section titled <em>Impact on Assets</em> added to the article.</td></tr><tr><td>Scoring &amp; prioritization</td><td>Each event receives an internal relevance score based on its importance, scope, expected duration of influence and significance to broader macroeconomic trends.</td></tr><tr><td>"Key Concept" module</td><td>When an article focuses on a specific project or concept, a <em>Key Concept</em> section is added to briefly introduce it (e.g., "About Bybit", "About Lightning Network").</td></tr><tr><td>Follow-up interaction</td><td>Users can ask follow-up questions about the news. Pre-generated follow-up questions are also provided for users to easily explore event context, market effects, or implications. </td></tr><tr><td>Source transparency</td><td>Each summary cites aggregated sources, ensuring verifiability and transparency.</td></tr></tbody></table>
+<table><thead><tr><th width="262">Capability</th><th>Description</th></tr></thead><tbody><tr><td>Multi-source aggregation</td><td>Collects verified news from hundreds of global crypto, finance, and macroeconomic outlets.</td></tr><tr><td>AI summarization</td><td>Converts multi-source reports into concise, factual summaries (≈5 min read) with structured sections ("What Happened", "Why It Matters", "Market Impact", etc.).</td></tr><tr><td>Event grouping</td><td>Detects and merges duplicate reports that describe the same incident, and links sequential developments into a continuous event timeline.</td></tr><tr><td>Impact on assets</td><td>Identifies which assets, tokens, sectors, or projects are directly affected, and classifies them as bullish or bearish, with an explanation section titled <em>Impact on Assets</em> added to the article.</td></tr><tr><td>Scoring &#x26; prioritization</td><td>Each event receives an internal relevance score based on its importance, scope, expected duration of influence and significance to broader macroeconomic trends.</td></tr><tr><td>"Key Concept" module</td><td>When an article focuses on a specific project or concept, a <em>Key Concept</em> section is added to briefly introduce it (e.g., "About Bybit", "About Lightning Network").</td></tr><tr><td>Follow-up interaction</td><td>Users can ask follow-up questions about the news. Pre-generated follow-up questions are also provided for users to easily explore event context, market effects, or implications.</td></tr><tr><td>Source transparency</td><td>Each summary cites aggregated sources, ensuring verifiability and transparency.</td></tr></tbody></table>
 
 ***
 
