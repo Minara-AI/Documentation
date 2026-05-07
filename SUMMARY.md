@@ -6,7 +6,6 @@
 
 * [Create your account](guide/getting-started/activate-your-account.md)
 * [Deposit funds](guide/managing-funds-and-trading/how-to-deposit-funds.md)
-* [Withdraw](get-started/how-to-withdraw-funds.md)
 
 ## Chat
 
@@ -22,6 +21,7 @@
 * [Strategy Studio](features/strategy-studio.md)
 * [Prediction Market](features/prediction-market-copilot.md)
 * [Benchmark](features/benchmark.md)
+* [Trade assets](guide/managing-funds-and-trading/trade-assets.md)
 
 ## Workflow
 
@@ -39,8 +39,8 @@
 
 ## Funds & fees
 
-* [Buy cryptocurrency](guide/managing-funds-and-trading/how-to-buy-cryptocurrency.md)
-* [Buy stocks](guide/managing-funds-and-trading/how-to-buy-stocks.md)
+* [Deposit](guide/managing-funds-and-trading/how-to-deposit-funds.md)
+* [Withdraw](guide/managing-funds-and-trading/how-to-withdraw-funds.md)
 * [Trading fees](guide/managing-funds-and-trading/trading-fees.md)
 * [Subscription & credits](subscription-and-credits/README.md)
   * [Plans & top-up policy](subscription-and-credits/subscription-and-top-up-policy.md)
