@@ -19,6 +19,8 @@ MINARA runs two active strategies:
 
 Each strategy has been deployed to live markets and trades using the same Autopilot execution infrastructure available to users.
 
+MINARA V2 trades Bitcoin (BTC) perpetuals on Hyperliquid using a trend-following approach. MINARA V1 trades silver (SILVER) perpetuals. Both strategies trade under real market conditions with real capital.
+
 ## Reading the dashboard
 
 **Total account value** — the current equity of the MINARA strategy portfolio, shown in USD and as a percentage change.
