@@ -58,13 +58,23 @@ The output includes:
 
 ***
 
-## 3. Infrastructure
+## 3. Supported assets
+
+Copilot generates signals for all perpetuals available on Hyperliquid. This includes:
+
+- **Crypto**: Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and hundreds of other tokens
+- **Commodities**: gold (XAU), silver (SILVER), crude oil
+- **Stocks**: Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major US equities
+
+***
+
+## 4. Infrastructure
 
 Minara does not provide liquidity or act as a counterparty. All perpetual trades execute on Hyperliquid. Pricing, leverage, funding rates, and liquidity are fully Hyperliquid's. Minara is the AI interface and execution layer on top.
 
 ***
 
-## 4. Deposit and transfer funds
+## 5. Deposit and transfer funds
 
 Before trading, you need funds in your Minara Perps Wallet. Direct deposits to the Perps Wallet are not yet supported — you must go through the Spot Wallet first.
 
@@ -85,7 +95,7 @@ Before trading, you need funds in your Minara Perps Wallet. Direct deposits to t
 
 ***
 
-## 5. Executing a trade
+## 6. Executing a trade
 
 Once Copilot generates a signal, it pre-fills a limit order with the suggested entry, take-profit, and stop-loss. Before confirming, you can adjust:
 
@@ -96,7 +106,7 @@ Place the order with one click. Manual market and limit orders are also availabl
 
 ***
 
-## 6. Managing open positions
+## 7. Managing open positions
 
 **Close all positions** — closes all open positions at market price (requires confirmation).
 
@@ -120,13 +130,13 @@ Realized PnL updates immediately after execution.
 
 ***
 
-## 7. Open order management
+## 8. Open order management
 
 You can cancel individual pending orders or use **Cancel All Orders** to clear everything at once.
 
 ***
 
-## 8. Margin mode
+## 9. Margin mode
 
 Copilot supports both margin modes provided by Hyperliquid:
 
