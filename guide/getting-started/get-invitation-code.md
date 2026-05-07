@@ -1,43 +1,54 @@
 ---
-description: Learn how to acquire an invitation code for Minara account activation.
+description: How to get an invitation code to activate your Minara account.
 ---
 
-# Get Invitation Code
+# Get an invitation code
 
-To get the invitation code, please first join our waitlist, then redeem the code in Minara's Discord. Here's the step by step guide:
+Invitation codes are distributed through Minara's Discord community. Join the waitlist first, then earn a code by completing tasks in Discord.
 
-### Join Waitlist
+---
 
-1. Open the landing page here (hypelink), or from homepage
-2. Click "Apply Now"
-3. Fill out the application form
-4. Join our offical Discord community
+## Step 1 — Join the waitlist
 
-***
+Go to [minara.ai](https://minara.ai), click **Apply Now**, and fill out the application form. You'll be directed to join the official Discord after submitting.
 
-### Earn Invitation Code in Discord
+---
 
-1. Make sure you are in Minara Official Discord Community
-   * Please find the link here: [https://discord.com/invite/minaraai](https://discord.com/invite/minaraai)
+## Step 2 — Join Minara's Discord
+
+[discord.com/invite/minaraai](https://discord.com/invite/minaraai)
 
 <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
-2. **Find Latest Guide in Discord**
-   * After joining our Discord community, please navigate to the **Get A Code** channel, and learn the latest guide there.
+---
+
+## Step 3 — Follow the latest guide in Discord
+
+Navigate to the **Get A Code** channel. The pinned message there has the current instructions for earning points and claiming a code.
 
 <figure><img src="../../.gitbook/assets/图片 (62).png" alt=""><figcaption></figcaption></figure>
 
-3. **Complete tasks** to collect points, such as:
-   * **Share on Twitter**
-   * **Refer friends**&#x20;
-   * **Community engagement**
-4. Track your progress by:
-   * Sending /profile to the#points-check channel
-5. **Claim Your Code in Code Market**
-   1. Enter the **Code-market** channel
-   2. Check the required amount of points for Minara Code
-   3. Once you've gather enough points, click the **"Buy Item"** button
-   4. Confirm point deduction in the verification pop-up and click **Yes**
+---
+
+## Step 4 — Complete tasks to earn points
+
+Tasks typically include:
+
+- Share on X (Twitter)
+- Refer friends
+- Community engagement
+
+Check your points balance by sending `/profile` in the **#points-check** channel.
+
+---
+
+## Step 5 — Claim your code in Code Market
+
+Once you have enough points:
+
+1. Go to the **Code-market** channel
+2. Check the current point cost for a Minara code
+3. Click **Buy Item** and confirm in the pop-up
 
 {% columns %}
 {% column %}
@@ -49,7 +60,4 @@ To get the invitation code, please first join our waitlist, then redeem the code
 {% endcolumn %}
 {% endcolumns %}
 
-
-
-Congratulations! You can now enjoy Minara's companion. See how to use the code from [activate-your-account.md](activate-your-account.md "mention")
-
+Once you have a code, see [Activate your account](activate-your-account.md) to complete registration.
