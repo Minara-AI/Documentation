@@ -1,54 +1,64 @@
 ---
-description: >-
-  We use credits to measure your usage on Minara. Whenever you perform actions
-  that involve AI processing or specific workflow execution, credits are
-  deducted based on token consumption.
+description: How Minara credits are consumed, what uses credits, and what does not.
 ---
 
-# How Credits Work?
+# How credits work
 
-### When Are Credits Deducted?
+Credits measure your AI usage on Minara. They are deducted when you complete an action that requires AI processing. Autopilot execution and Copilot position management do not consume credits.
 
-Credits are deducted when a message or task is completed or manually stopped. Including:
+Credits reset at the start of each billing cycle. Unused credits do not carry over.
 
-1. Regular chats with Minara
-2. Deep Research report generation
-3. Workflow creation and execution (applicable to specific nodes)
+***
 
-If a response or task is interrupted due to a system error, **no credits will be deducted**.
+## What consumes credits
 
+- Chat messages sent to Minara
+- Deep Research report generation
+- Workflow nodes that call Minara's AI (Minara Call nodes)
 
+If a response or task is interrupted due to a system error, no credits are deducted.
 
-### Typical Usage Examples
+## What does not consume credits
 
-> **Note:** The values below are estimated averages for reference only. Actual credit usage varies per action and is calculated based on the number of tokens used.
+- Autopilot opening, managing, and closing positions
+- Copilot generating trade signals
+- Viewing your portfolio or trade history
+- Running Monitor, Trade, or Notify nodes in a workflow
 
-| **Action**              | **Est. Average Cost Per Action** |
-| ----------------------- | -------------------------------- |
-| Messaging               | \~20 Credits                     |
-| Deep Research           | \~40 Credits                     |
-| Minara Node in Workflow | \~15 Credits                     |
+***
 
+## Estimated credit costs
 
+Credit consumption varies by query type and complexity. The values below are averages for reference only.
 
-### Workflow Execution Rules
+| Action | Estimated credits per action |
+| --- | --- |
+| Chat message | ~20 credits |
+| Deep Research report | ~40 credits |
+| Minara Call node in workflow | ~15 credits |
 
-> **Note**: For now, credits are only deducted for Minara nodes. However, please note that all running workflows will be paused if credits run out.
+Longer or more complex queries (for example, Deep Research on a less-covered topic with many data sources) may use more credits than the estimates above.
 
-| **Node Type** | **Credit Usage**            |
-| ------------- | --------------------------- |
-| Monitor       | Currently free              |
-| Trade         | Free                        |
-| Notify        | Currently free              |
-| Minara Call   | Based on actual tokens used |
+***
 
+## Workflow node credit usage
 
+| Node type | Credit usage |
+| --- | --- |
+| Monitor | Currently free |
+| Trade | Free |
+| Notify | Currently free |
+| Minara Call | Based on actual tokens used |
 
-### **Need More Credits?**
+All running workflows pause if your credits run out, regardless of node type.
 
-Credits are refreshed monthly at the beginning of your plan cycle. You can upgrade your plan (which takes effect immediately) or purchase a top-up credit pack (available only with an active subscription) at any time to keep things running smoothly.
+***
 
+## Getting more credits
 
+Credits reset at the start of each new billing cycle. If you run out before then, you have two options:
 
-Enjoy your time with Minara!
+- **Upgrade your plan** — takes effect immediately and adds the new plan's credit allocation at the price difference
+- **Purchase a top-up credit pack** — available only on paid plans and only after your subscription credits are fully consumed
 
+See [Subscription & Top-up Policy](subscription-and-top-up-policy.md) for upgrade and top-up rules.
