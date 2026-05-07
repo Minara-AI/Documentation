@@ -12,6 +12,8 @@ Minara offers three ways to trade. Each suits a different level of involvement.
 
 Copilot is a chat interface where you ask Minara for trade signals and decide whether to act on them. Ask "Should I long BTC?" and Minara responds with a signal card showing direction (Long/Short), entry price, take-profit, and stop-loss. You place the trade manually.
 
+Copilot works across all supported assets — Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), silver, crude oil, and tokenized stocks including Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), and Microsoft (MSFT).
+
 Use Copilot when you want AI input but prefer to stay in control of every order.
 
 ## Autopilot
@@ -24,7 +26,7 @@ Use Autopilot when you want consistent exposure without watching the screen.
 
 Strategy Studio is a code editor where you write, backtest, and deploy trading strategies using Pine Runtime — Minara's TypeScript-based strategy language. You define entry and exit logic, run backtests against historical data, review performance metrics, then deploy. A deployed strategy runs automatically, similar to Autopilot but driven entirely by your code.
 
-Use Strategy Studio when you have a specific hypothesis you want to test and run systematically.
+Use Strategy Studio when you have a specific hypothesis you want to test and run systematically — for example, an EMA crossover on BTC/USDT or a momentum strategy on ETH.
 
 ## How they work together
 
