@@ -6,7 +6,7 @@ In Minara, users can directly sell crypto for fiat or withdraw any tokens on the
 
 This guide will show you how to withdraw **USDC** in three different ways.
 
-## Sell Crypto For Fiat
+## Sell crypto for fiat
 
 ⚠️ _Note: Minara does not operate these services (sell crypto for fiat)_ and isn’t able to step in on their behalf. _We only aggregate third-party OTC providers._
 
@@ -26,19 +26,19 @@ First, click on the Assets button at the top right, then click **Withdraw** and 
 {% endcolumn %}
 {% endcolumns %}
 
-#### 2. Select Fiat and Input amount
+#### 2. Select fiat and input amount
 
 Select the crypto you want to sell, the fiat currency you want to receive, and the amount you wish to sell.
 
 <figure><img src="../.gitbook/assets/图片 (33).png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### 3. Confrim Email
+#### 3. Confirm email
 
 Confirm your Email Address and enter the verification code sent to your email.
 
 <figure><img src="../.gitbook/assets/图片 (34).png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### 3. Fill in Payment Method and KYC
+#### 4. Fill in payment method and KYC
 
 Select your preferred payment method (e.g., card), fill in the required information, and complete the KYC and other necessary verifications.
 
@@ -46,7 +46,7 @@ Select your preferred payment method (e.g., card), fill in the required informat
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | <div><figure><img src="../.gitbook/assets/图片 (36).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../.gitbook/assets/图片 (38).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../.gitbook/assets/图片 (39).png" alt=""><figcaption></figcaption></figure></div> |
 
-#### 4. Send Crypto to Alchemy Pay
+#### 5. Send crypto to Alchemy Pay
 
 Copy the address provided by Alchemy Pay, go to **Minara** and click **On-chain Withdraw**, paste the address into the address input field, select the correct token (please choose the token corresponding to the correct blockchain — in this tutorial, the Solana chain is used as an example), enter the correct transfer amount, and click **“Withdraw.”**
 
@@ -56,7 +56,7 @@ Copy the address provided by Alchemy Pay, go to **Minara** and click **On-chain 
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | <div><figure><img src="../.gitbook/assets/图片 (42).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../.gitbook/assets/图片 (43).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../.gitbook/assets/图片 (44).png" alt=""><figcaption></figcaption></figure></div> |
 
-#### 5. Confirm Order Status
+#### 6. Confirm order status
 
 Wait for the order status to update and check whether the payment has been received.
 
