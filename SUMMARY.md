@@ -30,13 +30,11 @@
 
 ## Workflow
 
-* [Overview](features/agentic-workflow.md)
-  * [Price alert bot](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-create-a-price-alert-bot.md)
-  * [Automated trade execution](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-set-up-automated-trade-execution.md)
-  * [Scheduled analysis](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-run-analysis-on-a-schedule.md)
-  * [Copy trading bot](features/agentic-workflow-1/agentic-workflow-best-practice/how-to-create-a-copy-trading-bot.md)
-
-## Markets
+* [Overview](workflow/agentic-workflow.md)
+* [Price alert bot](workflow/how-to-create-a-price-alert-bot.md)
+* [Automated trade execution](workflow/how-to-set-up-automated-trade-execution.md)
+* [Scheduled analysis](workflow/how-to-run-analysis-on-a-schedule.md)
+* [Copy trading bot](workflow/how-to-create-a-copy-trading-bot.md)
 
 ## Reference
 
