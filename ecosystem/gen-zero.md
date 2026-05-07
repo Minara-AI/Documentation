@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Gen Zero
 
 <figure><img src="../.gitbook/assets/gen-0-nft.jpg" alt=""><figcaption></figcaption></figure>
