@@ -6,11 +6,11 @@ description: >-
 
 # How to set up automated trade execution
 
-Minara can watch for specific price conditions and automatically place orders when they're met — perfect for buying the dip, taking profits, or setting stop-losses without constant manual monitoring.
+Minara can watch for specific price conditions and automatically place orders when they're met, perfect for buying the dip, taking profits, or setting stop-losses without constant manual monitoring.
 
 ***
 
-### What You'll Build
+### What you'll build
 
 A workflow that:
 
@@ -18,11 +18,11 @@ A workflow that:
 * Executes **buy, sell, or both** when the condition is met, including **take-profit (TP)** and/or **stop-loss (SL)** strategies
 * Sends you a notification confirming the execution
 
-> Price monitoring is handled by our monitor system — real-time and reliable, but only for supported tokens on supported chains.
+> Price monitoring is handled by our monitor system: real-time and reliable, but only for supported tokens on supported chains.
 
 ***
 
-### Example Prompts
+### Example prompts
 
 You can simply describe the order logic you want. Minara will translate it into a workflow that uses our dedicated monitor system for high-precision execution.
 
@@ -49,22 +49,22 @@ You can simply describe the order logic you want. Minara will translate it into 
 
 ***
 
-### Best Practices
+### Best practices
 
 * Use **limit orders with TP/SL** for better risk management.
 * Keep your telegram account linked and [Minara notification bot](https://t.me/MinaraNotificationBot) enabled to get real-time execution updates.
 * Check spam folder first if you didn't receive the execution result email that you should've received.
-* Avoid unnecessarily small TP/SL gaps — sudden price wicks can trigger premature exits.
-* For small‑cap meme tokens, copycats and same‑name lookalikes are common—especially during hype. To avoid mistakes, always specify and double‑check the chain and the token's contract address.
+* Avoid unnecessarily small TP/SL gaps. Sudden price wicks can trigger premature exits.
+* For small‑cap meme tokens, copycats and same‑name lookalikes are common, especially during hype. To avoid mistakes, always specify and double‑check the chain and the token's contract address.
 
 > Mainstream assets like BTC, ETH, or SOL are already disambiguated by contract.
 
 ***
 
-### Future Developments
+### Future developments
 
 * Percentage-based triggers (e.g., +5% in 24h)
-* Futures, leverage, and advanced strategies for order triggers.
+* Futures, leverage, and advanced strategies for order triggers
 * Multi-condition orders (e.g., trigger only if price condition + volume spike)
 * Auto-adjusting stop-loss (trailing SL)
 * More trigger types (e.g. news trigger for sell-the-news strategy)
