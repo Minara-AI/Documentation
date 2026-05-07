@@ -12,6 +12,8 @@ The Minara chat input has four modes, selectable from the toolbar beneath the te
 
 The default mode. Ask any question about crypto, stocks, commodities, or macro — Minara queries its data sources in real time and responds in conversational format. Use this for price checks, quick analysis, trade signals, on-chain lookups, and follow-up questions.
 
+Common examples: checking BTC price and on-chain metrics, reviewing ETH funding rates, looking up SOL whale activity, or asking about gold (XAU) macro positioning.
+
 <figure><img src="../.gitbook/assets/mode-1-chat.png" alt="Chat mode tooltip showing Get instant financial insight"><figcaption></figcaption></figure>
 
 **Speed toggle** — in Chat mode, you can switch between two response depths using the toggle on the right side of the input:
@@ -31,7 +33,7 @@ Deep Research runs a multi-stage research workflow instead of responding immedia
 
 <figure><img src="../.gitbook/assets/mode-2-deepresearch.png" alt="Deep Research mode tooltip showing Generate structured reports on complex topics"><figcaption></figcaption></figure>
 
-Use Deep Research when you need a shareable, source-backed output rather than a quick answer — for example, a fund memo on a new token, a competitive analysis, or a sector overview.
+Use Deep Research when you need a shareable, source-backed output rather than a quick answer — for example, a fund memo on Ethereum's competitive positioning, a macro analysis of gold versus Bitcoin in a risk-off environment, or a sector overview of AI-related stocks like NVIDIA (NVDA), Microsoft (MSFT), and Amazon (AMZN).
 
 Output is downloadable as PDF or Word.
 
@@ -58,10 +60,11 @@ Data Visualization mode outputs structured tables and charts alongside analysis.
 
 **When to use Data Visualization:**
 
-- Comparing multiple assets across a time range
-- Visualizing whale or holder distributions
+- Comparing multiple assets across a time range — for example, BTC versus ETH versus SOL over 30 days
+- Visualizing whale or holder distributions for a specific token
 - Building a portfolio breakdown by chain or asset
 - Tracking wallet activity with charts
+- Comparing stock performance across sectors (AAPL, TSLA, NVDA, AMZN, MSFT)
 - Turning a research output into a visual you can share
 
 {% hint style="info" %}
