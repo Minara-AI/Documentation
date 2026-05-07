@@ -12,9 +12,9 @@ Trading is available 24/7, including outside traditional market hours, though li
 
 Major US-listed equities are available, including:
 
-- **Technology**: Apple (AAPL), Microsoft (MSFT), NVIDIA (NVDA), Amazon (AMZN)
-- **Automotive / EV**: Tesla (TSLA)
-- Other sectors available in the asset selector — filter by **Stocks** to see all instruments
+- Technology: Apple (AAPL), Microsoft (MSFT), NVIDIA (NVDA), Amazon (AMZN)
+- Automotive / EV: Tesla (TSLA)
+- Other sectors available in the asset selector. Filter by **Stocks** to see all instruments.
 
 ## How it works
 
