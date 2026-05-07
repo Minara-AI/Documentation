@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Export your private key
 
 Exporting your private key lets you import your Minara wallet into any compatible external wallet (MetaMask, Rabby, etc.) or recover it independently.

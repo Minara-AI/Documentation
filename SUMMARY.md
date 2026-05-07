@@ -71,10 +71,10 @@
 
 ## Technology
 
+* [Dmind LLM](technology/financial-expert-llm.md)
 * [Wallet security](technology/wallet-security.md)
 * [Export your private key](guide/export-private-key.md)
-* [Financial Expert LLM](technology/financial-expert-llm.md)
-* [Tools integration](technology/tools-integration.md)
+* [Tool Stack](technology/tools-integration.md)
 
 ## Ecosystem
 
