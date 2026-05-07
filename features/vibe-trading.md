@@ -1,6 +1,6 @@
 # Vibe Trading
 
-Vibe Trading is the natural-language entry point to [Strategy Studio](strategy-studio.md). You describe what you want a strategy to do, and Minara writes the Pine Runtime code, runs a backtest, and deploys it — no manual coding required.
+Vibe Trading is the natural-language entry point to [Strategy Studio](strategy-studio.md). You describe what you want a strategy to do, and Minara writes the Pine Runtime code, runs a backtest, and deploys it. No manual coding required.
 
 It is not a separate product. The workflow is identical to Strategy Studio: the difference is how you create the strategy. Instead of writing code, you describe your idea in plain language.
 
@@ -32,7 +32,7 @@ Minara generates Pine Runtime code and opens it in the Strategy Studio editor. C
 
 **3. Run the backtest**
 
-Click **Run Backtest** to test the strategy against historical data. Review the results in the **Metrics** tab — total return, drawdown, win rate, profit factor, Sharpe ratio.
+Click **Run Backtest** to test the strategy against historical data. Review the results in the **Metrics** tab: total return, drawdown, win rate, profit factor, Sharpe ratio.
 
 **4. Deploy**
 
