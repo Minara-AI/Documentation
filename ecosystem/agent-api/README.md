@@ -1,21 +1,22 @@
 # Agent API
 
-Minara Agent API offers a cutting-edge financial agent service tailored for developers, traders, and market analysts. This API provides an array of tools and data for enhancing trading strategies and financial insights.
+The Minara Agent API gives developers, traders, and market analysts direct access to Minara's financial intelligence and trading execution through a standard HTTP interface.
 
 <figure><img src="../../.gitbook/assets/minara-api.png" alt=""><figcaption></figcaption></figure>
 
-### Key Features
+### Key features
 
-Minara API delivers not just raw endpoints, but actionable agent capabilities you can use to enhance trading strategies, accelerate research, and power a true chat-to-execution workflow.
+**Real-time market data.** Query live data across crypto and stocks: wallet activity, DeFi metrics, on-chain flows, and alpha signals — all structured for agent consumption.
 
-* **Real-Time Insights**: Access powerful, real-time data across crypto and stocks to make faster, better-informed decisions. Wallet tracking, DeFi features, and alpha-hunting capabilities — ready to be orchestrated by agents out of the box.
-* **Trading Suggestions**: Minara analyzes the current market conditions and returns direct long/short suggestions, along with preset order setups you can execute immediately. It's designed to shorten the loop from “what’s happening?” to “place the trade.”
-* **Text-to-Swap**: Describe your trading intent in plain English, and Minara converts it quickly and accurately into an executable on-chain transaction payload. By default, it’s compatible with OKX DEX, so you can route swaps with minimal friction.
-* **Prediction Market**: Get an AI-estimated “fair range” of probability distributions for event outcomes, backed by structured reasoning signals (market data, news context, and uncertainty bands). Use it to spot mispriced odds faster and translate conviction into trades with clearer risk boundaries.
+**Trade suggestions.** Send a market context query and get back a direct long/short recommendation with a preset order payload you can execute immediately. Reduces the loop from signal to trade.
 
-### How It Works
+**Text-to-swap.** Describe a trade in plain English; the API returns an executable on-chain transaction payload compatible with OKX DEX by default.
 
-The API offers two primary methods for access and billing:
+**Prediction market.** Query AI-estimated probability distributions for event outcomes, backed by market data, news context, and uncertainty bands. Use it to identify mispriced odds and size positions with clearer risk boundaries.
+
+### How it works
+
+Two billing methods:
 
 1. **API Key** — Available with a **Pro or Partner** plan. Generate keys directly from your Minara profile.
 2. **Pay-As-You-Go** — A flexible, permissionless option via the [x402 protocol](https://www.x402.org/), allowing usage-based payments with stablecoins like $USDC.
