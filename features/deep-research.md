@@ -1,50 +1,77 @@
-# Deep Research
+# Research and analysis
 
-Deep Research generates a sourced, structured analysis report on any asset, market, or topic. Type a research question in chat, select Deep Research mode, and Minara produces an interactive report with charts, citations, and key findings.
+The Minara chat input has four modes, selectable from the toolbar beneath the text field. Each mode changes what Minara does with your question.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/uc-chat-main.png" alt="Minara chat interface showing the four mode icons in the input toolbar"><figcaption></figcaption></figure>
 
-***
+---
 
-## How to use it
+## Chat
 
-In the chat interface, type your research question — for example:
+**Tooltip:** Get instant financial insight.
 
-> "Create a professional BTC investment analysis report covering macro market trends, key news, technical indicators, ETF data, community sentiment, and capital flows."
+The default mode. Ask any question about crypto, stocks, commodities, or macro — Minara queries its data sources in real time and responds in conversational format. Use this for price checks, quick analysis, trade signals, on-chain lookups, and follow-up questions.
 
-Then activate Deep Research mode before submitting. Minara will decompose the question into research tasks, pull data from relevant sources, cross-validate findings, and return a formatted report.
+<figure><img src="../.gitbook/assets/mode-1-chat.png" alt="Chat mode tooltip showing Get instant financial insight"><figcaption></figcaption></figure>
 
-Reports are available as interactive HTML files and can be deployed to a public URL for sharing.
+**Speed toggle** — in Chat mode, you can switch between two response depths using the toggle on the right side of the input:
 
-Example output: [https://space.minara.ai/reports/btc-analysis-report-en-0726-1.html](https://space.minara.ai/reports/btc-analysis-report-en-0726-1.html)
+- **Fast** — clear, concise answers with fewer reasoning steps. Good for quick checks.
+- **Quality** — thorough explanations with structured insights. Use for complex analysis or trade decisions.
 
-***
+<figure><img src="../.gitbook/assets/mode-4-unknown.png" alt="Fast and Quality response depth toggle showing descriptions for each option"><figcaption></figcaption></figure>
 
-## What the report includes
+---
 
-A typical Deep Research report covers:
+## Deep Research
 
-- Key findings and executive summary
-- Charts and visualizations from relevant data sources
-- Citations linking back to source data
-- Contextual analysis organized by research area (technicals, fundamentals, sentiment, etc.)
+**Tooltip:** Generate structured reports on complex topics.
 
-The structure adapts to the query type. A token analysis report looks different from a macro trend report.
+Deep Research runs a multi-stage research workflow instead of responding immediately. Minara decomposes your question into tasks, queries multiple data sources in parallel, cross-validates findings, and produces a structured report with charts, citations, and an executive summary.
 
-***
+<figure><img src="../.gitbook/assets/mode-2-deepresearch.png" alt="Deep Research mode tooltip showing Generate structured reports on complex topics"><figcaption></figcaption></figure>
 
-## How it works
+Use Deep Research when you need a shareable, source-backed output rather than a quick answer — for example, a fund memo on a new token, a competitive analysis, or a sector overview.
 
-**Research orchestrator**
+Output is downloadable as PDF or Word.
 
-Minara decomposes your query into executable tasks and selects the appropriate research approach for each. The orchestrator detects the research context (token analysis, macro overview, project comparison, etc.) and applies the corresponding methodology. It dynamically adjusts depth and scope based on what the initial data returns.
+**When to use Deep Research vs Chat:**
 
-**Data layer**
+| | Chat | Deep Research |
+|---|---|---|
+| Response time | Seconds | 1–3 minutes |
+| Output format | Conversational | Structured report with sections |
+| Best for | Quick decisions, follow-ups | In-depth analysis, documentation |
+| Downloadable | No | Yes (PDF / Word) |
 
-Minara pulls from over 50 integrated data providers covering price data, on-chain metrics, social sentiment, DeFi activity, and macro indicators. See the full [tools integration list](../technology/tools-integration.md).
+---
 
-**Analysis synthesizer**
+## Data Visualization
 
-The synthesizer processes collected data, identifies patterns across sources, cross-checks for consistency, and generates the final report. It handles structured API data, unstructured text, and time-series data in a single pass.
+**Tooltip:** Data in tables and visuals, on your command.
 
-If a response is interrupted due to a system error, no credits are deducted.
+Data Visualization mode outputs structured tables and charts alongside analysis. When you activate it, you can select up to 5 preferred chart types before sending your question — Minara will try to produce your preferred chart types from the data.
+
+<figure><img src="../.gitbook/assets/mode-dataviz-active.png" alt="Data Visualization mode active state showing sample prompts and Preferred Charts selector with Lines, Bars, Pie, Candles, and Funnel options"><figcaption></figcaption></figure>
+
+**Available chart types:** Lines, Bars, Pie, Candles, Funnel, Scatter, Heatmap, Radar, Calendar, Treemap, Sankey, Sunburst, Network, Gauge.
+
+**When to use Data Visualization:**
+
+- Comparing multiple assets across a time range
+- Visualizing whale or holder distributions
+- Building a portfolio breakdown by chain or asset
+- Tracking wallet activity with charts
+- Turning a research output into a visual you can share
+
+{% hint style="info" %}
+Data Visualization queries typically cost more credits than standard Chat responses. The cost scales with the number of assets, the date range, and the number of charts rendered. Start with a table-only request if you want to control credit spend, then add charts in a follow-up.
+{% endhint %}
+
+---
+
+## Upload images or files
+
+The chain icon in the toolbar opens a file picker. You can attach images, Excel/CSV files, or PDFs alongside your question. Minara reads the content and incorporates it into its response — for example, analyzing a chart screenshot you annotated, reviewing a trading journal in Excel, or summarizing a whitepaper PDF.
+
+Up to 5 files, 10 MB each. See [Multimodal input](multimodal-input.md) for details and examples.
