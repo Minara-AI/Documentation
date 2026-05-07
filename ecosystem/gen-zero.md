@@ -1,6 +1,6 @@
-# Gen Zero(Gen-0)
+# Gen Zero
 
-<figure><img src="../.gitbook/assets/gen-0-nft (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gen-0-nft.jpg" alt=""><figcaption></figcaption></figure>
 
 **Gen-0 NFT is an Agentic NFT** — a collection of trustless on-chain agents built on [ERC8004](https://eips.ethereum.org/EIPS/eip-8004), with unique personalities defined by their traits, and natively integrated with Minara Agent's endpoints.
 
@@ -25,9 +25,9 @@ That's why Gen-0 exists: **We are combining the community culture of PFP NFTs wi
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Minara provides every Gen-0 agent with all essential endpoints, including agent services for emotion, analytics, trading, DeFi, social media, and more.&#x20;
+Minara provides every Gen-0 agent with all essential endpoints, including agent services for emotion, analytics, trading, DeFi, social media, and more.
 
-Gen-0 holders can advertise their own Gen-0 agents externally. As more clients call a specific Gen-0 agent's services, more payments are made to Minara via x402 and A2A.&#x20;
+Gen-0 holders can advertise their own Gen-0 agents externally. As more clients call a specific Gen-0 agent's services, more payments are made to Minara via x402 and A2A.
 
 **Minara then shares the revenue with the holder based on their Gen-0 ownership.**
 

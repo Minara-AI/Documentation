@@ -1,4 +1,4 @@
-# How to withdraw funds?
+# Withdraw
 
 ## Overview
 
@@ -44,7 +44,7 @@ Select your preferred payment method (e.g., card), fill in the required informat
 
 | Choose Payment Method                                                     | Fill in Information                                                       | KYC                                                                       |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| <img src="../../.gitbook/assets/图片 (44).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/图片 (46).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/图片 (47).png" alt="" data-size="original"> |
+| <img src="../../.gitbook/assets/图片 (44).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/图片 (45).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/图片 (47).png" alt="" data-size="original"> |
 
 #### 4. Send crypto to Alchemy Pay
 
@@ -76,7 +76,7 @@ Visit Minara and log in to your account. Click the **"Asset"** button at the top
 
 {% columns %}
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (54).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -102,11 +102,11 @@ Visit Minara and log in to your account. Click the **"Asset"** button at the top
 
 {% columns %}
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (54).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../.gitbook/assets/图片 (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (55).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

@@ -33,11 +33,11 @@ A Copilot signal fires when EV on one side is positive. The signal does not mean
 
 ## Who is Prediction Market Copilot For?
 
-| User Type | Experience Level | How to Use |
-|---|---|---|
-| **Beginners** | New to prediction markets | Follow Copilot signals directly; use $10–$50 preset sizes; read risk notes on each card |
-| **Traders** | Familiar with binary outcomes and EV | Use signals as a first filter; review TA reasoning before execution; size by conviction |
-| **Developers / Power Users** | Quantitative or automated workflows | Access structured signal output via API; run position sizing logic on raw probability data |
+| User Type                    | Experience Level                     | How to Use                                                                                 |
+| ---------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------ |
+| **Beginners**                | New to prediction markets            | Follow Copilot signals directly; use $10–$50 preset sizes; read risk notes on each card    |
+| **Traders**                  | Familiar with binary outcomes and EV | Use signals as a first filter; review TA reasoning before execution; size by conviction    |
+| **Developers / Power Users** | Quantitative or automated workflows  | Access structured signal output via API; run position sizing logic on raw probability data |
 
 ***
 
@@ -55,17 +55,15 @@ A connected Hyperliquid wallet with USDC balance is required for trade execution
 
 The signal list displays all active HIP-4 contracts. Each row contains:
 
-| Field | Description |
-|---|---|
-| **Contract** | Asset, target price, and settlement timestamp |
-| **Time remaining** | Countdown to settlement |
-| **Direction** | YES (green) / NO (red) / WAIT (gray) |
-| **Edge** | AI probability minus market-implied probability, in percentage points |
-| **Confidence** | HIGH / MEDIUM / LOW, based on EV magnitude |
+| Field              | Description                                                           |
+| ------------------ | --------------------------------------------------------------------- |
+| **Contract**       | Asset, target price, and settlement timestamp                         |
+| **Time remaining** | Countdown to settlement                                               |
+| **Direction**      | YES (green) / NO (red) / WAIT (gray)                                  |
+| **Edge**           | AI probability minus market-implied probability, in percentage points |
+| **Confidence**     | HIGH / MEDIUM / LOW, based on EV magnitude                            |
 
 The list defaults to sorting by edge size descending. Contracts with the highest expected value appear first.
-
-<figure><img src="../../../.gitbook/assets/prediction-market-copilot-list.png" alt="Signal list showing active HIP-4 contracts sorted by edge percentage"><figcaption></figcaption></figure>
 
 ***
 
@@ -73,17 +71,15 @@ The list defaults to sorting by edge size descending. Contracts with the highest
 
 Tapping any contract in the signal list opens its signal card.
 
-| Section | Content |
-|---|---|
-| **Direction badge** | YES / NO / WAIT with HIGH / MEDIUM / LOW confidence |
-| **Probability comparison** | AI probability vs market-implied probability (YES price) |
-| **Edge** | Gap between the two, in percentage points |
-| **Expected value** | EV per $1 risked (e.g., "+$0.14") |
-| **TA reasoning** | Three data-specific bullets (max 20 words each) |
-| **Risk note** | The single most likely factor that could invalidate the call |
-| **Execution** | Preset sizes ($10 / $50 / $100 / $500) + custom; win/loss preview updates live |
-
-<figure><img src="../../../.gitbook/assets/prediction-market-copilot-signal-card.png" alt="Signal card showing YES recommendation with AI probability, market price, edge, and expected value"><figcaption></figcaption></figure>
+| Section                    | Content                                                                        |
+| -------------------------- | ------------------------------------------------------------------------------ |
+| **Direction badge**        | YES / NO / WAIT with HIGH / MEDIUM / LOW confidence                            |
+| **Probability comparison** | AI probability vs market-implied probability (YES price)                       |
+| **Edge**                   | Gap between the two, in percentage points                                      |
+| **Expected value**         | EV per $1 risked (e.g., "+$0.14")                                              |
+| **TA reasoning**           | Three data-specific bullets (max 20 words each)                                |
+| **Risk note**              | The single most likely factor that could invalidate the call                   |
+| **Execution**              | Preset sizes ($10 / $50 / $100 / $500) + custom; win/loss preview updates live |
 
 ***
 
@@ -93,15 +89,15 @@ Copilot generates an AI probability estimate through the following pipeline:
 
 **Step 1 — Technical analysis.** For each contract, Copilot reads K-line data across five timeframes: 1m, 5m, 15m, 1h, and 4h. It computes:
 
-| Indicator | Parameters |
-|---|---|
-| RSI | 14-period |
-| MACD | 12 / 26 / 9 |
-| Bollinger Bands | 20-period, 2 std dev |
-| EMA | 20, 50, 200 |
-| ATR | 14-period |
-| Support / Resistance | Local swing highs/lows |
-| Funding rate | Current Hyperliquid perpetual rate |
+| Indicator            | Parameters                         |
+| -------------------- | ---------------------------------- |
+| RSI                  | 14-period                          |
+| MACD                 | 12 / 26 / 9                        |
+| Bollinger Bands      | 20-period, 2 std dev               |
+| EMA                  | 20, 50, 200                        |
+| ATR                  | 14-period                          |
+| Support / Resistance | Local swing highs/lows             |
+| Funding rate         | Current Hyperliquid perpetual rate |
 
 **Step 2 — Timeframe weighting.** The timeframe closest to the settlement window carries more weight. A 2-hour contract emphasizes 5m and 15m data. A 24-hour contract emphasizes 1h and 4h.
 
@@ -111,11 +107,11 @@ Copilot generates an AI probability estimate through the following pipeline:
 
 ## Expected Value Calculation
 
-| Variable | Definition |
-|---|---|
-| `p_AI` | AI-estimated probability that the condition is met |
+| Variable    | Definition                                             |
+| ----------- | ------------------------------------------------------ |
+| `p_AI`      | AI-estimated probability that the condition is met     |
 | `yes_price` | Current YES token price (= market-implied probability) |
-| `no_price` | 1 − yes_price |
+| `no_price`  | 1 − yes\_price                                         |
 
 ```
 EV(YES) = p_AI × (1 − yes_price) − (1 − p_AI) × yes_price
@@ -124,11 +120,11 @@ EV(NO) = (1 − p_AI) × yes_price − p_AI × (1 − yes_price)
 
 Copilot recommends YES when EV(YES) > 0, NO when EV(NO) > 0. Confidence tiers:
 
-| EV | Confidence |
-|---|---|
-| > 0.10 (> 10 percentage points of edge) | HIGH |
-| 0.02–0.10 | MEDIUM |
-| < 0.02 or negative | WAIT |
+| EV                                      | Confidence |
+| --------------------------------------- | ---------- |
+| > 0.10 (> 10 percentage points of edge) | HIGH       |
+| 0.02–0.10                               | MEDIUM     |
+| < 0.02 or negative                      | WAIT       |
 
 ***
 
@@ -161,14 +157,14 @@ Settlement is automatic at the contract's expiry time. Winning tokens credit you
 
 The **Positions** tab shows all open prediction market contracts:
 
-| Field | Description |
-|---|---|
-| Contract | Target price + settlement timestamp |
-| Side | YES or NO |
-| Size | Number of tokens |
-| Current price | Live YES/NO token price |
-| Unrealized P&L | Marked-to-market against current price |
-| Time remaining | Countdown to settlement |
+| Field           | Description                            |
+| --------------- | -------------------------------------- |
+| Contract        | Target price + settlement timestamp    |
+| Side            | YES or NO                              |
+| Size            | Number of tokens                       |
+| Current price   | Live YES/NO token price                |
+| Unrealized P\&L | Marked-to-market against current price |
+| Time remaining  | Countdown to settlement                |
 
 ***
 
@@ -218,5 +214,3 @@ The **Positions** tab shows all open prediction market contracts:
 * AI probability estimates are based on technical analysis and may not account for fundamental, macroeconomic, or news-driven events.
 * The user maintains full control of all positions at all times. Copilot does not execute trades autonomously.
 * Model calibration improves over time. Early accuracy statistics should be treated as preliminary.
-
-<!-- source: https://byterum.feishu.cn/docx/O2lEddemholouRxBmi4cTINvnth · generated: 2026-05-07 -->

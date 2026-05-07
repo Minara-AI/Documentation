@@ -1,4 +1,8 @@
-# Crypto Picks
+---
+hidden: true
+---
+
+# Crypto picks
 
 Crypto Picks is an AI-curated watchlist of tokens with short-term directional signals. Minara analyzes each token continuously and presents its current outlook (bullish or bearish), a price target, and the data behind the call. You can ask follow-up questions or trade directly from the board.
 
@@ -18,8 +22,8 @@ Crypto Picks focuses on short-term market monitoring (12-hour to 1-week horizon)
 
 The board has two sides:
 
-- **Bullish Board** — tokens with upward potential in the near term
-- **Bearish Board** — tokens with increasing downside risk in the near term
+* **Bullish Board** — tokens with upward potential in the near term
+* **Bearish Board** — tokens with increasing downside risk in the near term
 
 Each side is ranked and refreshed continuously based on a multi-factor model covering volatility, liquidity, technical signals, and sentiment.
 
@@ -31,20 +35,20 @@ Each token on the board passed a data-driven selection process that evaluates:
 
 **Market and technical signals**
 
-- 30-day rolling volatility and maximum drawdown
-- Trading volume, liquidity, and turnover rate
-- Momentum indicators: MA, EMA, RSI, ATR, funding-rate shifts, structural breakouts
+* 30-day rolling volatility and maximum drawdown
+* Trading volume, liquidity, and turnover rate
+* Momentum indicators: MA, EMA, RSI, ATR, funding-rate shifts, structural breakouts
 
 **On-chain and capital flow signals**
 
-- Large wallet transactions and address cluster behavior
-- Net fund movement between CEXs and on-chain wallets (accumulation vs. distribution)
-- Long-term holder counts and active address changes
+* Large wallet transactions and address cluster behavior
+* Net fund movement between CEXs and on-chain wallets (accumulation vs. distribution)
+* Long-term holder counts and active address changes
 
 **Fundamental and news factors**
 
-- Ecosystem activity, development progress, major upgrades, tokenomics changes
-- News sentiment and market reactions to policy or macro events
+* Ecosystem activity, development progress, major upgrades, tokenomics changes
+* News sentiment and market reactions to policy or macro events
 
 Each token receives a directional probability (bullish or bearish) and a confidence score reflecting Minara's conviction in the call.
 
@@ -56,23 +60,23 @@ Each board item shows standardized fields so you can judge direction, timing, an
 
 <figure><img src="../.gitbook/assets/图片 (5).png" alt=""><figcaption></figcaption></figure>
 
-| Visual & interaction | What it shows |
-| --- | --- |
-| <img src="../.gitbook/assets/图片 (82).png" alt=""> Hover to view | **Volatility** — a standardized classification derived from volatility, market cap, and liquidity |
-| <img src="../.gitbook/assets/图片 (86).png" alt=""> | 1. **Current price and 24h change** — latest price and percentage change in the past 24 hours. 2. **Comparison with initial tracked price** — green arrow means current price is above the price when the token was added; red arrow means below |
-| <img src="../.gitbook/assets/图片 (85).png" alt=""> Hover on [Price] section | **Initial tracked price** — price when the token was added. **Highest since listing** — peak price during the tracking window vs. initial. **Lowest since listing** — lowest price during the tracking window vs. initial. **Tracking since** — timestamp of initial inclusion |
-| <img src="../.gitbook/assets/图片 (7).png" alt=""> Hover on green progress bar | 1. **Target price** — short-horizon price objective predicted by Minara (12h–1w); targets are dynamic and may be revised as the trend develops. 2. **Progress** — how far price has moved toward the target from initial level; stays at zero if the move goes against the position, locks at 100% once the target is reached |
-| <img src="../.gitbook/assets/图片 (89).png" alt=""> Hover to view full content | **Why Bullish / Why Bearish** — AI-generated rationale combining technical signals (MA, EMA, RSI, ATR, funding rate), on-chain and flow data (whale transactions, CEX in/out, holder changes), and fundamental drivers (project updates, tokenomics, macro events) |
-| <img src="../.gitbook/assets/图片 (90).png" alt=""> Hover for options | 1. **Follow-up questions** — three suggested questions based on the token's rationale, or ask Minara anything directly. 2. **Trade** — on-chain trading is supported for major tokens through Minara's integrated wallet; perpetual trading is coming soon |
+| Visual & interaction                                             | What it shows                                                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](<../.gitbook/assets/图片 (81).png>) Hover to view              | **Volatility** — a standardized classification derived from volatility, market cap, and liquidity                                                                                                                                                                                                                             |
+| ![](<../.gitbook/assets/图片 (86).png>)                            | 1. **Current price and 24h change** — latest price and percentage change in the past 24 hours. 2. **Comparison with initial tracked price** — green arrow means current price is above the price when the token was added; red arrow means below                                                                              |
+| ![](<../.gitbook/assets/图片 (84).png>) Hover on \[Price] section  | **Initial tracked price** — price when the token was added. **Highest since listing** — peak price during the tracking window vs. initial. **Lowest since listing** — lowest price during the tracking window vs. initial. **Tracking since** — timestamp of initial inclusion                                                |
+| ![](<../.gitbook/assets/图片 (7).png>) Hover on green progress bar | 1. **Target price** — short-horizon price objective predicted by Minara (12h–1w); targets are dynamic and may be revised as the trend develops. 2. **Progress** — how far price has moved toward the target from initial level; stays at zero if the move goes against the position, locks at 100% once the target is reached |
+| ![](<../.gitbook/assets/图片 (88).png>) Hover to view full content | **Why Bullish / Why Bearish** — AI-generated rationale combining technical signals (MA, EMA, RSI, ATR, funding rate), on-chain and flow data (whale transactions, CEX in/out, holder changes), and fundamental drivers (project updates, tokenomics, macro events)                                                            |
+| ![](<../.gitbook/assets/图片 (90).png>) Hover for options          | 1. **Follow-up questions** — three suggested questions based on the token's rationale, or ask Minara anything directly. 2. **Trade** — on-chain trading is supported for major tokens through Minara's integrated wallet; perpetual trading is coming soon                                                                    |
 
 ***
 
 ## Refresh schedule and review logic
 
-| Type | Trigger | Action |
-| --- | --- | --- |
-| **Scheduled refresh** | Every 4 hours | Recompute direction, target, and confidence using latest market, on-chain, and news data. Extend targets if the trend is intact and momentum persists. |
-| **Immediate review** | Price deviates 20% or more against the prediction | Reassess direction. If direction flips, the token is removed and the removal is logged in History. |
+| Type                  | Trigger                                           | Action                                                                                                                                                 |
+| --------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Scheduled refresh** | Every 4 hours                                     | Recompute direction, target, and confidence using latest market, on-chain, and news data. Extend targets if the trend is intact and momentum persists. |
+| **Immediate review**  | Price deviates 20% or more against the prediction | Reassess direction. If direction flips, the token is removed and the removal is logged in History.                                                     |
 
 ***
 
@@ -82,10 +86,10 @@ Each board item shows standardized fields so you can judge direction, timing, an
 
 History shows tokens removed from either board within the past 7 days. For each removed token:
 
-- **Status at removal:** price and target at the time of removal
-- **Reason for removal:** AI-provided explanation — common reasons are target reached, trend ended, reversal detected, or a material adverse/positive event
-- **Since-listing performance:** highest and lowest price vs. initial tracked price
-- **Tracking window:** start and end timestamps
+* **Status at removal:** price and target at the time of removal
+* **Reason for removal:** AI-provided explanation — common reasons are target reached, trend ended, reversal detected, or a material adverse/positive event
+* **Since-listing performance:** highest and lowest price vs. initial tracked price
+* **Tracking window:** start and end timestamps
 
 **Re-entry:** a previously removed token can reappear if a new valid setup forms. It is treated as a fresh listing — new tracked price, new target, new confidence, new tracking start time. At market turning points, a token may be removed from one board and simultaneously added to the other.
 
@@ -95,8 +99,8 @@ History shows tokens removed from either board within the past 7 days. For each 
 
 You can adjust your **Risk Preference** to filter the tokens shown:
 
-- **Low** — large-cap, lower-volatility tokens
-- **Medium** — balanced exposure
-- **High** — smaller-cap, high-volatility tokens with stronger short-term potential
+* **Low** — large-cap, lower-volatility tokens
+* **Medium** — balanced exposure
+* **High** — smaller-cap, high-volatility tokens with stronger short-term potential
 
 This setting reorders tokens within each board according to their risk-return characteristics.
