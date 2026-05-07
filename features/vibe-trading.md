@@ -1,38 +1,49 @@
 # Vibe Trading
 
-## Overview
+Vibe Trading lets you describe a trading strategy in plain language and have Minara generate the code, run a backtest, and deploy it — without writing a line of code yourself.
 
-Minara is committed to bringing every people into the world of blockchain.
+It is the natural-language interface to [Strategy Studio](../features/strategy-studio.md), Minara's algorithmic trading environment built on Pine Runtime (a TypeScript DSL).
 
-To achieve this, we introduce **vibe trading** — a new way to interact with all kinds of assets:
+***
 
-* People can manually trade crypto directly within the chat interface, guided by Minara’s insights and suggestions;
-* People can execute trades or set up agentic strategies **using prompts** — no coding required.
+## How it works
 
-With Minara, you can use **stablecoins** like [**$USDC**](https://www.circle.com/usdc) to trade any on-chain assets—cryptocurrency, tokenized stocks, RWAs, NFTs—and interact seamlessly with DeFi protocols.
+**Describe your strategy**
 
-## Why it's important?
+Tell Minara what you want the strategy to do. For example:
 
-Most people aren’t experts in trading. Complex tools, confusing strategies, and steep learning curves have kept them out.&#x20;
+> "Buy when the 9-EMA crosses above the 21-EMA on the 1-hour chart. Exit when RSI goes above 70 or price drops 3% from entry."
 
-**Vibe Trading changes that.** By combining AI with automation, it enables anyone to run powerful trading strategies—just by using prompts.
+**Minara generates the code**
 
-This opens the door for billions of new users and fresh capital to enter the world of digital finance. More importantly, it gives common people the chance to grow their wealth the way professional traders do.
+Minara translates your description into Pine Runtime code and opens it in Strategy Studio. You can review the logic in the Code tab before proceeding.
 
-## How to vibe trading?
+**Run the backtest**
+
+Switch to the Metrics tab to run a backtest on historical data. Minara returns total return, drawdown, win rate, profit factor, and Sharpe ratio. The Trades tab shows each individual entry and exit.
+
+**Deploy to Autopilot**
+
+When you are satisfied with the backtest results, deploy the strategy to Autopilot. It will run live under the same execution and risk-control framework as official Minara strategies.
 
 {% embed url="https://drive.google.com/file/d/1JlGUdubEmJFT_wHuA0VBYdY1puiYc_lt/view?usp=sharing" %}
 
-For more details, please check out this [guide.](../guide/managing-funds-and-trading/)
+***
 
-## Fee
+## What you can trade
 
-Swapping a token will incur these fees:
+Vibe Trading strategies work with any asset supported in Strategy Studio, including crypto perpetuals and spot markets across the chains Minara supports.
 
-* **Network fee(Required)**: Chared by to blockchain validators/miners to process your transaction. Varies by blockchain, network traffic and gas price.
-* **Service fee(Required)**: 0.1% - 1%, charged by the DEX for providing swap services like routing and execution.
-* **Bridge fee(Optional)**: Only charged by the bridge protocol when transferring assets across chains.&#x20;
+For on-chain spot trades, Minara uses stablecoins like USDC as the base currency. Supported chains: Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, Polygon.
 
-## Supported Blockchain
+***
 
-Currently, Minara can trade crypto on the following blockchian mainnets: **Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, Polygon.**
+## Fees
+
+On-chain spot trades incur the following fees:
+
+- **Network fee (required):** paid to blockchain validators to process the transaction; varies by chain, traffic, and gas price
+- **Service fee (required):** 0.1%–1%, charged by the DEX for swap routing and execution
+- **Bridge fee (optional):** only applies when transferring assets across chains
+
+For more detail on trading mechanics, see the [managing funds and trading guide](../guide/managing-funds-and-trading/).
