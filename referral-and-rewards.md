@@ -6,15 +6,15 @@ noIndex: true
 
 # Referral & Rewards
 
-### Step by Step Guide
+### Step-by-step guide
 
 1. **Get your invite link**\
-   You’ll find them in the **Invites** section of your profile.
+   You'll find them in the **Invites** section of your profile.
 2. **Share with friends**\
-   Send your link or code to people who haven’t joined Minara yet.\
+   Send your link or code to people who haven't joined Minara yet.\
    When they register their account using your invite, it counts as a referral.
 3. **Earn rewards**\
-   You receive **Credits and Sparks** automatically based on the action of your invitees. (See “Reward Details” below for more details.)
+   You receive **Credits and Sparks** automatically based on the action of your invitees. (See "Reward Details" below for more details.)
 4. **Track your progress**\
    See your total invites, paid conversions, and rewards at a glance in your **Profile** - **Invites**.
 
@@ -30,9 +30,9 @@ noIndex: true
 
 ***
 
-### Reward Tiers
+### Reward tiers
 
-Minara’s referral program uses a tiered reward system, and your rewards as an inviter increase as you bring more users to Minara.
+Minara's referral program uses a tiered reward system, and your rewards as an inviter increase as you bring more users to Minara.
 
 Each tier is determined by the **total number of invitees** who have successfully signed up through your link.
 
@@ -53,12 +53,12 @@ This means:
 * If you have **51 signups** at that time,\
   → you receive **Tier 3 rewards (500 Credits + 70% Sparks)**.
 
-> _Credits_ can be used across Minara’s features. Learn more about credits in [how-credits-work.md](subscription-and-credits/how-credits-work.md "mention") \
+> _Credits_ can be used across Minara's features. Learn more about credits in [how-credits-work.md](subscription-and-credits/how-credits-work.md "mention") \
 > &#xNAN;_&#x53;parks_ are special bonuses for limited events. Check out [spark.md](ecosystem/spark.md "mention") for more details
 
 ***
 
-### 💬 FAQs
+### FAQs
 
 **Q1. Do I keep my rewards even if my plan has expired?**\
 Yes. Earned Credits and Sparks remain in your account.
@@ -76,9 +76,9 @@ Reward credits do not expire. Credits are used in the following order whenever y
 
 **Q4. My invitee has paid. Why didn't I receive more rewards?**
 
-Please note that rewards are only granted for the **invitee’s first paid plan.** If you didn't receive rewards correctly, please submit a ticket in our Discord.
+Please note that rewards are only granted for the **invitee's first paid plan.** If you didn't receive rewards correctly, please submit a ticket in our Discord.
 
-**Q5. Do invitee rewards change based on the inviter’s tier?**
+**Q5. Do invitee rewards change based on the inviter's tier?**
 
 No. Invitee rewards always remain the same.
 
@@ -86,7 +86,6 @@ No. Invitee rewards always remain the same.
 
 No. The rewards you receive as an inviter are determined by your tier at the time the reward event is triggered.
 
-**Q7. Why didn’t I receive signup Credits when inviting people?**
+**Q7. Why didn't I receive signup Credits when inviting people?**
 
 Please check your reward tier. Signup Credits for inviters are only granted in Tier 1 (the first 10 invitees). If you still believe your rewards are incorrect, please contact us through [Discord](https://discord.com/invite/minaraai).
-
