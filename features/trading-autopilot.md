@@ -70,6 +70,14 @@ Autopilot also supports custom strategies built in [Strategy Studio](strategy-st
 
 ***
 
+## Trading scope
+
+When you start Autopilot, you define which assets it is authorized to manage. The strategy supports crypto perpetuals such as Bitcoin (BTC), Ethereum (ETH), and Solana (SOL), as well as commodity perpetuals including gold (XAU) and silver. Stock perpetuals such as Apple (AAPL), Tesla (TSLA), and NVIDIA (NVDA) can also be included depending on the active strategy.
+
+Autopilot only opens positions within your authorized scope. Assets outside that scope are not touched.
+
+***
+
 ## What Autopilot does automatically
 
 For standard AI strategies (Sharpe Guard 2.0):
