@@ -70,7 +70,7 @@
 
 ## Technology
 
-* [Dmind LLM](technology/financial-expert-llm.md)
+* [DMind LLM](technology/financial-expert-llm.md)
 * [Wallet security](technology/wallet-security.md)
 * [Export your private key](guide/export-private-key.md)
 * [Tool Stack](technology/tools-integration.md)
