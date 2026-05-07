@@ -2,7 +2,7 @@
 
 ## What is Minara Skills?
 
-Minara Skills is the official skill pack that turns any compatible AI agent into a personal AI CFO. Once installed, your agent can analyze and trade crypto, US stocks, commodities, and forex; execute on-chain transactions across EVM, Solana, and Hyperliquid; manage wallets and credit-card on-ramp; and pull real-time market intelligence — all by talking to it in natural language.
+Minara Skills is the official skill pack that gives any compatible AI agent access to crypto and stock trading, on-chain execution, and market intelligence. Once installed, your agent can analyze and trade crypto, US stocks, commodities, and forex; execute on-chain transactions across EVM, Solana, and Hyperliquid; manage wallets and credit-card on-ramp; and pull real-time market intelligence — all by talking to it in natural language.
 
 Minara Skills runs on top of the [Minara CLI](https://www.npmjs.com/package/minara) and ships as a drop-in package for [Claude Code](https://claude.com/claude-code), [OpenClaw](https://docs.openclaw.ai/tools/skills), and [Hermes](https://hermes-agent.nousresearch.com/).
 
@@ -28,7 +28,7 @@ Minara Skills runs on top of the [Minara CLI](https://www.npmjs.com/package/mina
 
 ***
 
-## How to Access
+## How to access
 
 Minara Skills is distributed through GitHub: [github.com/Minara-AI/skills](https://github.com/Minara-AI/skills).
 
@@ -108,7 +108,7 @@ All setup scripts are idempotent. They support a three-tier skill download fallb
 
 ***
 
-## First-Run Workflow
+## First-run workflow
 
 The fastest way to validate that the install worked end-to-end. Three commands take you from a fresh install to your first trade.
 
@@ -134,7 +134,7 @@ Tell the agent what you want: _"Buy 100 USDC worth of ETH"_, _"Swap 0.1 ETH to U
 
 ***
 
-## Spot Trading
+## Spot trading
 
 Spot trading covers buying, selling, swapping, converting, and transferring tokens across all [supported networks](minara-skills.md#supported-networks). You can reference assets by ticker (`ETH`, `SOL`), name (`ethereum`), or contract address.
 
@@ -149,7 +149,7 @@ The agent picks the right network and routing based on your wallet balances and 
 
 ***
 
-## Perpetual Futures
+## Perpetual futures
 
 Perpetual futures are routed through Hyperliquid. You can open and close positions, set leverage, manage multiple wallets, and view trade history.
 
@@ -168,7 +168,7 @@ Autopilot lets the agent manage perps positions for you according to a strategy.
 
 ***
 
-## Limit Orders
+## Limit orders
 
 Limit orders work on both spot and perps. Place an order, list open orders, and cancel by ID.
 
@@ -181,7 +181,7 @@ Limit orders work on both spot and perps. Place an order, list open orders, and 
 
 ***
 
-## Wallet & Funds
+## Wallet and funds
 
 | Action                    | Example prompts                                                  |
 | ------------------------- | ---------------------------------------------------------------- |
@@ -195,7 +195,7 @@ Credit-card on-ramp uses MoonPay. Withdrawals to external addresses go on-chain 
 
 ***
 
-## Market Intelligence
+## Market intelligence
 
 Minara Skills exposes Minara's full market intelligence stack to your agent: real-time on-chain data, token fundamentals, whale flows, trending tokens and stocks, equity research, commodities, and forex.
 
@@ -209,7 +209,7 @@ Minara Skills exposes Minara's full market intelligence stack to your agent: rea
 
 ***
 
-## x402 Payments
+## x402 payments
 
 Minara Skills can pay [x402](https://www.x402.org/)-enabled HTTP APIs directly from your Minara wallet. This lets your agent call paid APIs without you handling API keys or top-ups separately.
 
@@ -229,7 +229,7 @@ Manage your Minara subscription, credits balance, and plan from inside the agent
 
 ***
 
-## Supported Networks
+## Supported networks
 
 Spot trading and on-chain operations are available on:
 
@@ -257,9 +257,9 @@ The benchmark is open source. You can reproduce the run, inspect every scenario,
 
 ***
 
-## What Minara Skills Can and Cannot Do
+## What Minara Skills can and cannot do
 
-### What You Can Define
+### What you can define
 
 * The agent runtime (Claude Code, OpenClaw, or Hermes)
 * The networks and assets you want to trade
@@ -267,7 +267,7 @@ The benchmark is open source. You can reproduce the run, inspect every scenario,
 * Limit-order prices, leverage levels, and margin allocations
 * Whether to fund via on-chain deposit or credit-card on-ramp
 
-### What the Platform Controls
+### What the platform controls
 
 * Order routing and venue selection
 * Network fees and on-chain confirmation times
@@ -275,7 +275,7 @@ The benchmark is open source. You can reproduce the run, inspect every scenario,
 * MoonPay's KYC and pricing for credit-card on-ramp
 * Skill version updates (managed by `version-check.sh` per session)
 
-### Current Limitations
+### Current limitations
 
 * The skill is bound to the three supported runtimes; other agent frameworks are not yet integrated.
 * Direct deposits into the perps wallet are not supported. Funds must arrive via spot first, then transfer.
@@ -285,7 +285,7 @@ The benchmark is open source. You can reproduce the run, inspect every scenario,
 
 ***
 
-## Tips for Better Results
+## Tips for better results
 
 1. **Be specific about amounts and assets.** _"Buy 100 USDC of ETH"_ is unambiguous; _"buy some ETH"_ will trigger a clarification round.
 2. **Name the network when in doubt.** _"Swap 0.1 ETH to USDC on Base"_ avoids the agent having to infer routing.
