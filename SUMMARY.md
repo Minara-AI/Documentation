@@ -18,6 +18,7 @@
 ## Trade
 
 * [Copilot](features/trading-copilot.md)
+* [Prediction Market Copilot](features/prediction-market-copilot.md)
 * [Autopilot](features/trading-autopilot.md)
 * [Strategy Studio](features/strategy-studio.md)
 * [Benchmark](features/benchmark.md)
