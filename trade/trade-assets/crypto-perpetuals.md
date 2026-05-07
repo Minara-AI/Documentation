@@ -1,6 +1,6 @@
 # Crypto perpetuals
 
-Minara trades crypto perpetuals on Hyperliquid — a high-performance on-chain order book. Perpetuals are futures contracts with no expiry date. You hold them as long as you want, and the contract price tracks the underlying asset via a funding rate mechanism.
+Minara trades crypto perpetuals on Hyperliquid, a high-performance on-chain order book. Perpetuals are futures contracts with no expiry date. You hold them as long as you want, and the contract price tracks the underlying asset via a funding rate mechanism.
 
 ## Supported assets
 
@@ -23,7 +23,7 @@ The trading panel is on the right side of the screen. Two order types are availa
 * **Market**: executes immediately at the best available price
 * **Trigger**: executes when the asset reaches a price you specify
 
-Both Autopilot and Copilot use this same underlying interface. If you're using Copilot, the AI generates a signal card with suggested entry, take-profit, and stop-loss levels — you place the order manually.
+Both Autopilot and Copilot use this same underlying interface. If you're using Copilot, the AI generates a signal card with suggested entry, take-profit, and stop-loss levels. You place the order manually.
 
 {% hint style="info" %}
 Minara routes orders through Hyperliquid's on-chain order book. Execution is non-custodial: your funds stay in your Hyperliquid account, not held by Minara.
