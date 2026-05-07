@@ -14,7 +14,7 @@ The platform runs on Hyperliquid for perpetual trading and supports spot trading
 
 ## Who is Minara for?
 
-Minara is for active traders and crypto participants who want faster, more informed decisions. Whether you are monitoring market sentiment, running a backtest, setting up a grid bot, or just asking "should I long BTC right now?" — Minara gives you a structured answer with data behind it.
+Minara is for active traders and crypto participants who want faster, more informed decisions. Whether you are monitoring market sentiment on Bitcoin (BTC) or Ethereum (ETH), running a backtest on a Solana (SOL) strategy, setting up a grid bot on gold (XAU), or just asking "should I long BTC right now?" — Minara gives you a structured answer with data behind it.
 
 It is also useful for people newer to trading who want to act on market signals without building complex tooling from scratch.
 
@@ -32,7 +32,7 @@ Trained on domain-specific financial and crypto data, with access to over 50 int
 
 **Trading execution**
 
-Trade perpetuals on Hyperliquid via AI Copilot (manual execution with AI signals) or Autopilot (fully automated). Spot trade across 8 chains directly from chat.
+Trade perpetuals on Hyperliquid via AI Copilot (manual execution with AI signals) or Autopilot (fully automated). Supported assets include Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), silver, crude oil, and tokenized US stocks such as Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), and Microsoft (MSFT). Spot trade across 8 chains directly from chat.
 
 **Strategy Studio**
 
