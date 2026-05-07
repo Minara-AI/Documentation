@@ -1,9 +1,10 @@
 # Commodities
 
-Minara supports trading commodity perpetuals, including silver (SILVER) and crude oil, via Hyperliquid's order book.
+Minara supports trading commodity perpetuals, including gold (XAU), silver (SILVER), and crude oil, via Hyperliquid's order book.
 
 ## Available instruments
 
+* **Gold (XAU)**: trade gold perpetuals as XAUUSDC, priced in USDC. Gold is one of the most liquid commodity markets globally and trades 24/7 on Minara without a brokerage account.
 * **SILVER**: silver futures perpetual, priced in USDC
 * **Crude oil**: available as a perpetual contract
 
