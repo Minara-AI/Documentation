@@ -11,7 +11,7 @@
 ## Chat
 
 * [Research and analysis](features/deep-research.md)
-  * [What to ask Minara](features/chat-use-cases.md)
+* [What to ask Minara](features/chat-use-cases.md)
 * [Crypto picks](features/crypto-picks.md)
 * [News feed](features/news-feed.md)
 
