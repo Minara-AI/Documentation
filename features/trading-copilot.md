@@ -1,197 +1,136 @@
 # Trading Copilot
 
-Trading Copilot helps you make fast, structured perpertual trading decisions. You select a market, choose a trading style and strategy, then click **Ask Long / Short** to get an actionable direction plus take-profit and stop-loss levels, with one-click execution while the strategy is valid.
+Trading Copilot is an AI assistant that analyzes market conditions and generates structured trade signals for perpetual trading on Hyperliquid. You review the signal — entry price, take-profit, and stop-loss — and execute with one click. You remain in control of every trade.
 
-### How-to Guide
-
-The following guide will cover all functionalities needed for using Minara Trading Copilot:
-
-#### 1. Access&#x20;
-
-Trading Copilot is now open to all Minara users. Access Trading Copilot via: copilot.minara.ai
+Access Trading Copilot at: [copilot.minara.ai](https://copilot.minara.ai)
 
 ***
 
-### 2. Ask Long / Short (AI Strategy)
+## 1. How Copilot generates signals
 
-**Ask Long / Short** is the core AI strategy feature of Trading Copilot.
+When you click **Ask Long** or **Ask Short**, Copilot evaluates the following inputs and produces a structured trade plan:
+
+**Market structure and price action**
+
+- Multi-timeframe candlestick data matched to your selected trading style
+- Trend direction, volatility structure, key price levels
+- Technical indicators: EMA, RSI, MACD
+
+**Order book and liquidity**
+
+- Real-time order book depth
+- Bid/ask imbalance and recent trade flow
+
+**Derivatives market signals**
+
+- Funding rate history and direction
+- Open interest changes
+- Positioning dynamics from derivatives data
+
+**Risk filtering**
+
+Before presenting a signal, Copilot filters out setups with unfavorable risk-to-reward ratios, insufficient stop-loss buffers, or structurally invalid risk parameters.
+
+The output includes:
+
+- Trade direction: Long, Short, or Neutral
+- Suggested entry price, take-profit (TP), and stop-loss (SL)
+- Brief explanation of the signal rationale
 
 <figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
 
-#### What it does
+***
 
-Trading Copilot analyzes market data and generates a structured trading plan, including:
+## 2. Signal parameters you control
 
-* Trade direction: **Long / Short / Neutral**
-* Suggested entry, take-profit (TP), and stop-loss (SL)
-* A brief explanation of the strategy logic
+**Trading style** — determines the timeframe Copilot focuses on:
 
-#### Necessary parameters
+- `Scalping` — 3-minute chart, short in-and-out trades
+- `Day` — 15-minute chart, same-day entries and exits
+- `Swing` — 4-hour chart, positions held days to weeks
 
-* **Initial Margin:**
-  * Your default amount of intiail margin for quick orders. It does not affect Minara's strategy output.
-* **Style**
-  * **Scalping:** Very short-term trades. Focusing on 3-minute charts for quick in-and-out for small moves.
-  * **Day:** Short-term trades. Focusing on 15-minute charts for short-term in-and-out.
-  * **Swing:** Hold positions for days to weeks. Focus on 4-hour chart timeframes to ride short-term trends.
-* **Strategy**
-  * **Max Gain:** Optimizes for high reward-to-risk setups with strong backtest upside. Fewer trades, bigger moves.
-  * **Max Win Rate** _(coming soon):_ Prioritizes high-probability setups with more flexible entry conditions. More trades, higher consistency.
+**Strategy** — determines the type of setup Copilot looks for:
+
+- `Max Gain` — high reward-to-risk setups with strong backtest upside; fewer trades, larger moves
+- `Max Win Rate` _(coming soon)_ — higher-probability setups with more flexible entry conditions
+
+**Initial margin** — your default margin amount for quick orders. Does not affect signal output.
 
 ***
 
-### 3. Core Mechanism
+## 3. Infrastructure
 
-#### Underlying Trading Infrastructure
-
-Minara does **not** provide liquidity or act as a counterparty.
-
-* All perpetual trades are executed on **Hyperliquid**
-* Pricing, leverage, funding rates, and liquidity are fully provided by Hyperliquid
-* Minara acts only as an **AI interface and execution layer**
-
-#### How Trading Copilot Generates Strategies
-
-Trading Copilot analyzes multiple categories of market signals to generate strategy suggestions.\
-These signals are evaluated together to assess **trend direction, momentum, risk, and execution feasibility**.
-
-**Market Structure & Price Action**
-
-* Multi-timeframe candlestick data (based on selected trading style)
-* Trend direction and volatility structure
-* Key price levels and recent range behavior
-* Technical indicators such as EMA, RSI, MACD, etc.&#x20;
-
-**Order Book & Liquidity Signals**
-
-* Real-time order book depth
-* Bid–ask imbalance
-* Recent trade flow and execution pressure
-
-**Derivatives Market Indicators**
-
-* Funding rate history and direction
-* Open interest (OI) changes
-* Positioning dynamics inferred from derivatives data
-
-**Risk & Volatility Metrics**
-
-* Recent volatility and range expansion
-* Distance to invalidation and stop-loss feasibility
-* Risk-to-reward structure of potential setups
-
-**Strategy Filtering & Risk Constraints**
-
-Before a strategy is presented, Trading Copilot applies internal filters to reduce low-quality or high-risk setups, including:
-
-* Excluding trades with unfavorable **risk-to-reward ratios**
-* Filtering strategies with insufficient stop-loss buffers
-* Avoiding setups where risk parameters are structurally invalid
+Minara does not provide liquidity or act as a counterparty. All perpetual trades execute on Hyperliquid. Pricing, leverage, funding rates, and liquidity are fully Hyperliquid's. Minara is the AI interface and execution layer on top.
 
 ***
 
-### 4. Deposit & Transfer
+## 4. Deposit and transfer funds
 
-Before using trading copilot, funds must be transferred to your Minara Perps Wallet.
+Before trading, you need funds in your Minara Perps Wallet. Direct deposits to the Perps Wallet are not yet supported — you must go through the Spot Wallet first.
 
-#### Deposit flow
-
-1. **Deposit funds into your Minar Spot Wallet (Default wallet)**
+**Step 1: Deposit into your Minara Spot Wallet**
 
 <figure><img src="../.gitbook/assets/图片 (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-2. **Transfer funds from Spot Wallet to Perpetual Wallet**
+**Step 2: Transfer from Spot Wallet to Perps Wallet**
 
 <figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
 
-3. Start trading perpetual contracts
+**Transfer rules:**
 
-#### Transfer rules
-
-* Please note that the transfer happens on-chain, network fee applies.
-* **Minimum transfer into Perpetual Wallet:** 10 USDT
-* **Minimum transfer out of Perpetual Wallet:** more than 1 USDT
-  * Hyperliquid charges a **1 USDT fee** on withdrawals from the perpetual wallet
-
-Direct deposits into the Perpetual Wallet are not yet supported.
+- Minimum transfer into Perps Wallet: 10 USDT
+- Minimum transfer out of Perps Wallet: more than 1 USDT
+- Hyperliquid charges a 1 USDT fee on withdrawals from the Perps Wallet
+- Network fees apply on transfer (on-chain transaction)
 
 ***
 
-### 5. Quick Order (AI One-Click Execution)
+## 5. Executing a trade
 
-Quick Order allows you to execute AI-generated strategies efficiently.
+Once Copilot generates a signal, it pre-fills a limit order with the suggested entry, take-profit, and stop-loss. Before confirming, you can adjust:
 
-#### How it works
+- Leverage
+- Initial margin
 
-* Trading Copilot pre-fills a limit order details based on its strategy (entry, take profit, and stop loss)
-* User can place the order with one click
-* Before confirming, user can adjust the position size by adjusting:
-  * Leverage
-  * Initial margin
+Place the order with one click. Manual market and limit orders are also available for advanced users.
 
 ***
 
-### 6. Manual Orders
+## 6. Managing open positions
 
-For advanced users, manual trading is also supported. Minara Trading currently supports two order types: Market orders and Limit orders.
+**Close all positions** — closes all open positions at market price (requires confirmation).
 
-***
+**Manual close** — close individual positions via market or limit order.
 
-### 7. Position Management
+**Set take-profit and stop-loss on open positions:**
 
-Once positions are open, Trading Copilot provides flexible position controls.
+Go to Trade > Positions, select a position, and click "Add":
 
-#### Available actions
+<figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.10.04 PM.png" alt=""><figcaption></figcaption></figure>
 
-* **Close All Positions**
-  * Instantly close all open positions at market price
-  * Requires confirmation
-* **Manual close**
-  * Close individual positions by:
-    * Market orders
-    * Limit orders
-* **Manual TP/SL Management** (Positions)
-  * Manually set and manage **Take Profit / Stop Loss** directly.
-  *   How to manage
+Set TP and/or SL values, optionally add split targets, then confirm:
 
-      * Go to **Trade → Positions →** Select a position → Click "Add"&#x20;
+<figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.15.02 PM.png" alt=""><figcaption></figcaption></figure>
 
-      <figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.10.04 PM.png" alt=""><figcaption></figcaption></figure>
+Your take-profit and stop-loss are now active on the position:
 
-      * Set **TP** and/or **SL**: **Input fields** → "**Add Split Target**" → **Confirm**
+<figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.15.27 PM.png" alt=""><figcaption></figcaption></figure>
 
-      <figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.15.02 PM.png" alt=""><figcaption></figcaption></figure>
-
-      * You successfully set your **Take Profit / Stop Loss** for your position.
-
-      <figure><img src="../.gitbook/assets/Screen Shot 2026-02-10 at 12.15.27 PM.png" alt=""><figcaption></figcaption></figure>
-
-
-
-All realized PnL is reflected immediately after execution.
+Realized PnL updates immediately after execution.
 
 ***
 
-### 8. Open Order Management
+## 7. Open order management
 
-You can manage pending orders directly from the trading interface.
-
-#### Supported actions
-
-* Cancel individual open orders
-* **Cancel All Orders** with one click
+You can cancel individual pending orders or use **Cancel All Orders** to clear everything at once.
 
 ***
 
-### 9. Margin Mode
+## 8. Margin mode
 
-Trading Copilot supports both margin modes provided by Hyperliquid.
+Copilot supports both margin modes provided by Hyperliquid:
 
-#### Margin options
+- `Cross margin` — all positions share the same margin balance
+- `Isolated margin` — margin is isolated per position
 
-* **Cross Margin**
-  * All positions share the same margin balance
-* **Isolated Margin**
-  * Margin is isolated per position
-
-You can switch margin modes directly in the trading interface.
+Switch margin modes directly in the trading interface.
