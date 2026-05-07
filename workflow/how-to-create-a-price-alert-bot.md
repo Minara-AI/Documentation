@@ -13,7 +13,7 @@ With Minara's monitor system, you can set high-precision, real-time alerts for t
 ### What to Expect
 
 * **High-precision, real-time monitoring** for **token absolute prices**\
-  (e.g., “Alert me when SOL hits $150”).
+  (e.g., "Alert me when SOL hits $150").
 * Works for **on-chain tokens** and **tokenized stocks**.\
   Non-tokenized stock prices and price change percentage alerts are **not yet supported** in real-time mode.
 * Alerts can be sent via telegram or email.
@@ -23,9 +23,13 @@ With Minara's monitor system, you can set high-precision, real-time alerts for t
 
 ### Example Prompts
 
-* _“Alert me when **ETH** drops to **$4,000**.”_
-* _“Email me if **SOL** rises above **$180**.”_
-* _“When **DOGE** hits **$0.28**, send me an alert.”_
+* _"Alert me when **ETH** drops to **$4,000**."_
+* _"Email me if **SOL** rises above **$180**."_
+* _"When **DOGE** hits **$0.28**, send me an alert."_
+* _"Notify me when **BTC** crosses $100,000."_
+* _"Alert me when **gold (XAU)** drops below $3,000."_
+* _"Send me a Telegram message when **NVDA** reaches $1,200."_
+* _"Alert me if **AAPL** falls below $200."_
 
 ***
 
@@ -43,7 +47,7 @@ With Minara's monitor system, you can set high-precision, real-time alerts for t
 * **Use absolute price triggers** (≥ / ≤) . Real-time % change tracking is not yet available.
 * Keep your telegram account linked and [Minara notification bot](https://t.me/MinaraNotificationBot) enabled to ensure delivery.
 * Check spam folder first if you didn't receive the alert email.
-* For small‑cap meme tokens, copycats and same‑name lookalikes are common—especially during hype. To avoid mistakes, always specify and double‑check the chain and the token’s contract address.
+* For small‑cap meme tokens, copycats and same‑name lookalikes are common—especially during hype. To avoid mistakes, always specify and double‑check the chain and the token's contract address.
 
 > Mainstream assets like BTC, ETH, or SOL are already disambiguated by contract.
 
@@ -68,4 +72,3 @@ We recommend reserving this approach for low-frequency use cases. For example:
 * **Long-term target tracking** — Every Friday, evaluate our market bias by reviewing all bull- and bear-market top indicators.
 
 To explore more about the use cases above, please check out [how-to-run-analysis-on-a-schedule.md](how-to-run-analysis-on-a-schedule.md "mention").
-
