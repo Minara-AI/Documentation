@@ -1,12 +1,10 @@
 # Wallet Security
 
-## Introduction
-
-One major advantage of Minara is that she creates a **custodial** smart wallet for each user. Users can effortlessly explore any blockchains without gas tokens(like $ETH or $SOL) or learning crypto wallets.
+Minara creates a **custodial** smart wallet for each user. Users can explore any supported blockchain without needing gas tokens (like $ETH or $SOL) or managing a crypto wallet directly.
 
 Unlike traditional centralized exchanges, **this custodial smart wallet is not stored in Minara's internal database, but is an on-chain smart contract wallet**. Minara can manage the funds in this wallet but cannot hide, delete or blacklist it. In the future, users will have the ability to customize how Minara utilizes their funds.
 
-To elaborate, Minara's wallet system involves two types of wallets:
+Minara's wallet system involves two types of wallets:
 
 * **Funding Wallet**: An automatically generated smart contract wallet for each user, storing the funds they deposit. It makes fund flows transparent, auditable, and verifiable, which is different from CEXs.
 * **Controller Wallet**: A wallet controlled by Minara that can manage the Funding Wallet and its funds, conducting transactions, staking, and other on-chain operations. This wallet uses advanced cryptography technology such as key sharding, multi-signature, and TEE to ensure security while maximizing signature efficiency.
@@ -21,7 +19,7 @@ User deposits are stored in this smart contract wallet, with every transaction p
 
 <figure><img src="../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Minara's Controller Wallet leverages Privy, TEE (Trusted Execution Environment) and a multi-party authorization signing mechanism. Its core features include:
+Minara's Controller Wallet uses Privy, TEE (Trusted Execution Environment) and a multi-party authorization signing mechanism. Its core features include:
 
 * **Sharded Key Management & TEE Custody**: Keys are encrypted and stored in shards across different security boundaries. They are encapsulated and retrieved within the TEE, ensuring they always remain in a trusted environment.
 * **M-of-N Authorized Signatures**: Multi-party authorization enhances transaction security. Independent services like business, risk control, and strategy services contribute to signature verification, minimizing single points of failure.
