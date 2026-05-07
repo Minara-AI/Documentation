@@ -14,6 +14,16 @@ In the chat input on the Strategy Studio page, describe your trading logic in pl
 
 > "Go long BTC on the 1-hour chart when the 9-EMA crosses above the 21-EMA. Exit when RSI exceeds 70 or when price drops 3% from entry. Use a 5% stop-loss."
 
+Other examples:
+
+> "Short ETH on the 15-minute chart when price drops below the 20-EMA with RSI above 60."
+
+> "Buy SOL when the daily RSI crosses above 35 coming from below. Set a 4% stop-loss and take profit at 12%."
+
+> "Long NVDA perpetual on the 4-hour chart when price breaks above the prior 3-day high."
+
+> "Trade gold (XAU) using a mean-reversion approach on the 1-hour chart: go long when RSI drops below 30, exit when it reaches 55."
+
 Be specific about: the asset, timeframe, entry condition, exit condition, and risk parameters. The more precise your description, the closer the generated code will be to your intent.
 
 **2. Review the generated code**
