@@ -1,72 +1,48 @@
 ---
-description: Minara - Your personal AI CFO for digital finance.
+description: Minara — AI trading platform built on Hyperliquid.
 ---
 
 # Introduction
 
+Minara is an AI trading platform built on Hyperliquid. Ask questions, get real-time analysis, and trade crypto, stocks, and commodities — all in one interface.
+
+<table><thead><tr><th width="346.65234375">Feature</th><th width="190.7265625" align="center">Generic Chatbots like ChatGPT and Grok</th><th align="center">Minara AI</th></tr></thead><tbody><tr><td>Accurate, real-time crypto &amp; stocks data</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> </td></tr><tr><td>Trusted &amp; actionable financial insights</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Precise market sentiment detection</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Built-in crypto wallet</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Vibe trading with stablecoins</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Gasless on-chain executions</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Creating agentic financial workflows without coding</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
+
 ## What is Minara?
 
-Minara is not just another AI chatbot—**she's an all-powerful financial AI assistant like no other.**&#x20;
+Minara combines a Web3-native AI model with a built-in custodial wallet, real-time market data, and a trading execution layer. You can ask market questions, get analysis backed by live on-chain and price data, run automated strategies, and execute trades — without switching between tools.
 
-Ask anything about digital finance—stocks, crypto, RWA, DeFi, NFTs, and more. Trade any asset in one place, and create powerful agents with just your words, no code required. With Minara, everything is possible.
-
-<table><thead><tr><th width="346.65234375">Feature</th><th width="190.7265625" align="center">Generic Chatbots like ChatGPT and Grok</th><th align="center">Minara AI</th></tr></thead><tbody><tr><td>Accurate, real-time crypto &#x26; stocks data</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> </td></tr><tr><td>Trusted &#x26; actionable financial insights</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Precise market sentiment detection</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Built-in crypto wallet</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Vibe trading with stablecoins</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Gasless on-chain executions</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Creating agentic financial workflows without coding</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
-
-## Why We build Minara?
-
-With AI and blockchain technologies maturing—and the [GENIUS](https://en.wikipedia.org/wiki/GENIUS_Act) and [CLARITY](https://en.wikipedia.org/wiki/Clarity_Act) Acts being passed—**we’re entering an era where everyone can take part in next-gen digital finance.**
-
-**What is digital finance?**
-
-We define next-gen digital finance as a 24/7 global open financial network, with the following core pillars:
-
-1. **Stablecoins** as the main currency for global trade,
-2. **Public** **blockchains** as the core infrastructure for asset transfers,
-3. **Tokens and NFTs** as standard formats for both digital-native and real-world assets (RWA),
-4. **DeFi protocols** as the foundation for open, smart contract-based investment products.
-5. **AI will serve as a 24/7 wealth manager,** assisting humans in partial or full asset management.
-
-A typical user story is shown below:
+The platform runs on Hyperliquid for perpetual trading and supports spot trading across Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, and Polygon.
 
 <figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
-In the past 5 years, digital finance is growing fast—but it’s also getting more complex. On-chain ecosystems evolve rapidly, while crypto wallets are still clunky and hard to use. This keeps the entry barrier high for newcomers. We believe the current tools aren’t enough to onboard the next wave of users.
-
-That's why Minara is here: **we need a brand new AI interface that replaces complexity with chatting and brings everyone into the digital finance—regardless of background or skill.**
-
 ## Who is Minara for?
 
-Minara is perfect for anyone interested or involved in digital finance.&#x20;
+Minara is for active traders and crypto participants who want faster, more informed decisions. Whether you are monitoring market sentiment, running a backtest, setting up a grid bot, or just asking "should I long BTC right now?" — Minara gives you a structured answer with data behind it.
 
-Whether you’re trading, exploring DeFi, hunting airdrops, or just getting started—if you struggle to find clear crypto insights, track market trends, spot alpha, or build custom financial workflows, **Minara is your ideal partner.**
+It is also useful for people newer to trading who want to act on market signals without building complex tooling from scratch.
 
-## What makes Minara different?
+## What Minara includes
 
-### Web3-native LLM
+**Web3-native AI model**
 
-Optimized with domain-specific data and an extensive digital finance knowledge graph, offering enhanced accuracy and efficient tool utilization.
+Trained on domain-specific financial and crypto data, with access to over 50 integrated data providers covering price, on-chain metrics, sentiment, DeFi, and macro signals.
 
-### Real-time Financial Data Integration
+**Real-time data integration**
 
-Minara has integrated numerous industry data sources covering the following categories:
+- Finance: transactions, stocks, crypto, DeFi, liquidations, VC and project data
+- Audience: wallet holders, smart money, social identities, PnL, relationships
+- Sentiment: news, X posts, Fear & Greed index, macro signals, policy headlines
 
-* **Finance Data:** Transactions, stocks, crypto, DeFi, NFTs, liquidation, Web3 project/VC information, etc.
-* **Audience Data:** Entities, holders, smart money, social identities, P\&L, relationships, etc.
-* **Sentiment Data:** News, X posts and trends, Greed/Fear index, macro signals, policy headlines, etc.
+**Trading execution**
 
-With access to over [**50+ leading data providers**](technology/tools-integration.md), Minara offers real-time, actionable insights into financial markets, Web3, and crypto.
+Trade perpetuals on Hyperliquid via AI Copilot (manual execution with AI signals) or Autopilot (fully automated). Spot trade across 8 chains directly from chat.
 
-### AI-powered Access To Digital Finance
+**Strategy Studio**
 
-Access raw data and protocols across multi-chains. Trade crypto and stocks with stablecoin through a built-in custodial agent wallet.
+Write and backtest algorithmic strategies using Pine Runtime, Minara's TypeScript DSL. Deploy strategies directly to Autopilot.
 
-### Agent Factory
+**Agent workflows**
 
-Prompt to create any kinds of financial workflows, like trading, monitor or yield agents—no code required.
-
-***
-
-By combining these insights with proprietary strategies, we are confident that Minara has become your best companion in your digital financing journey.&#x20;
-
-
+Build trading and monitoring workflows from templates — copy trading, DCA, price alerts — without writing code.
 
