@@ -17,7 +17,7 @@ ERC8004 gives every agent:
 * Standardized endpoints for calls, payments, and usage
 * Native monetization through x402 / A2A
 
-However, an ERC8004 agent still requires external entities(like OpenAI or Minara) to provide reliable, and verifiable AI endpoins (declared through its `metadata`). As the number of agents in the world continues to grow, distributing them effectively will become a new challenge.
+However, an ERC8004 agent still requires external entities (like OpenAI or Minara) to provide reliable, verifiable AI endpoints (declared through its `metadata`). As the number of agents in the world continues to grow, distributing them effectively will become a new challenge.
 
 That's why Gen-0 exists: **We are combining the community culture of PFP NFTs with ERC8004 Agents to create a collection of Agentic NFTs, and distribute them across the world with ease.**
 
@@ -33,7 +33,7 @@ Gen-0 holders can advertise their own Gen-0 agents externally. As more clients c
 
 ## A Transferable White-label License
 
-At the business level, Gen-0 NFT is a new type of **transferable white-label license** that allow you to run Minara Agents under your own branding and capture the commercial benefits.
+At the business level, Gen-0 NFT is a new type of **transferable white-label license** that allows you to run Minara Agents under your own branding and capture the commercial benefits.
 
 Gen-0 holders can also build on Minara's developer toolkits to create their own agent-powered websites, offering more differentiated and localized services on top of Gen-0 agents.
 
@@ -67,4 +67,4 @@ There are three ways to get a WL spot:
 * Redeem your WL with [Sparks](spark.md),
 * Redeem your WL with Engage point in DC.
 
-Joinc our Discord and check the channel [#how-to-get-wl](https://discord.gg/invite/minaraai).
+Join our Discord and check the channel [#how-to-get-wl](https://discord.gg/invite/minaraai).
