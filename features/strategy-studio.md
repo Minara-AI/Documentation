@@ -15,12 +15,20 @@ Click any entry to open it in the editor.
 
 ## Create a new strategy
 
-Click **New Strategy** in the top-right corner. You have two options:
+Click **New Strategy** in the top-right corner. Two options:
 
-- **Describe your idea in chat**: type what you want the strategy to do ("Go long BTC when RSI is below 30 and close when it crosses 50"). Minara generates the Pine Runtime code for you.
-- **Write code directly**: start from a blank editor or an existing template and write Pine Runtime code yourself.
+- **Describe your idea in chat** — type what you want the strategy to do in plain language. Minara generates the Pine Runtime code. This is what Minara calls "Vibe Trading": you describe the logic, the AI writes the code.
+- **Write code directly** — start from a blank editor or an existing template and write Pine Runtime yourself.
 
 Either way, the strategy opens in draft state. Nothing runs until you deploy.
+
+### Creating from a description
+
+Be specific about four things: asset, timeframe, entry condition, exit condition. For example:
+
+> "Go long BTC on the 1-hour chart when the 9-EMA crosses above the 21-EMA. Exit when RSI exceeds 70 or price drops 3% from entry."
+
+After Minara generates the code, open the **Code** tab to verify the logic matches your intent. Ask follow-up questions to adjust any part of it before running a backtest.
 
 ## Editor tabs
 
@@ -44,21 +52,21 @@ In the **Code** tab, set your date range and asset, then click **Run Backtest**.
 | Max Drawdown | Largest peak-to-trough decline; measures worst-case loss |
 | Win Rate | Percentage of trades that closed in profit |
 | Profit Factor | Gross profit divided by gross loss; above 1.0 means the strategy made money |
-| Sharpe Ratio | Return per unit of risk; higher is better; above 1.0 is generally acceptable |
+| Sharpe Ratio | Return per unit of risk; above 1.0 is generally acceptable |
 | Sortino Ratio | Like Sharpe but only penalizes downside volatility |
 
 {% hint style="info" %}
-A strong backtest does not guarantee live performance. Cold-start bias and overfitting are common. Use the **Paper** tab to validate the strategy in live market conditions before deploying real capital.
+A strong backtest does not guarantee live performance. Cold-start bias and overfitting are common. Use the **Paper** tab to validate the strategy in live conditions before deploying real capital.
 {% endhint %}
 
 ## Deploy a strategy
 
 When you're satisfied with the backtest and paper results, click **Deploy**. This locks the current version of your code into a running strategy. The deployed strategy appears under **Deployed** in the sidebar with a live APY counter.
 
-Two things to know about deployment:
+Two things to know:
 
 1. **Editing a draft does not affect the live strategy.** The deployed version runs the code that was current at deployment time. To update a live strategy, you must deploy again.
-2. **You cannot "un-deploy" without closing positions.** Stopping a deployed strategy closes all open positions it manages.
+2. **You cannot stop a deployed strategy without closing its positions.** Stopping it closes all open positions it manages.
 
 ## Monitor a deployed strategy
 
