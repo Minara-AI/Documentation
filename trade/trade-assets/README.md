@@ -1,11 +1,11 @@
 # Assets
 
-Minara supports three categories of tradable assets, all settled in USDC.
+Minara supports three categories of tradable assets — crypto perpetuals, tokenized stock perpetuals, and commodity perpetuals — all settled in USDC on Hyperliquid's on-chain order book.
 
-**Crypto perpetuals** — leveraged perpetual contracts on major crypto pairs. Go long or short without expiry.
+**Crypto perpetuals** — trade Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and hundreds of other tokens with leverage. Contracts have no expiry; positions stay open until you close them or get liquidated.
 
-**Stocks** — tokenized US equities that track real stock prices on-chain. Dividends are typically distributed; voting rights are not included.
+**Stock perpetuals** — take leveraged long or short positions on major US equities including Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), and Microsoft (MSFT), using the same USDC interface as crypto.
 
-**Commodities** — tokenized commodities such as gold (XAUUSDC) traded as perpetuals.
+**Commodity perpetuals** — trade gold (XAU), silver (SILVER), and crude oil as on-chain perpetual contracts, 24/7, without a brokerage account.
 
 Select an asset type below for trading details.
