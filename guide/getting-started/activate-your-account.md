@@ -2,9 +2,9 @@
 description: Access requires an invitation code. Here's how to register.
 ---
 
-# Activate your account
+# Create your account
 
-**No code?** See [Get an invitation code](get-invitation-code.md) to get one first.
+**No code?** See [Get an invitation code](/broken/pages/yjXbu2ozwlxEIBD9IrRL) to get one first.
 
 ***
 

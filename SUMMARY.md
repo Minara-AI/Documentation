@@ -5,7 +5,6 @@
 ## Get started
 
 * [Create your account](guide/getting-started/activate-your-account.md)
-* [Get an invitation code](guide/getting-started/get-invitation-code.md)
 * [Deposit funds](guide/managing-funds-and-trading/how-to-deposit-funds.md)
 
 ## Chat

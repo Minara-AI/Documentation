@@ -33,7 +33,7 @@ Is BTC still a good buy after the recent rally to $81k? Show me on-chain data an
 
 ```
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Minara pulls live on-chain data and returns: entry zone, price targets with standard deviation levels, stop loss, and an assessment of institutional accumulation vs. distribution from exchange flows.
 
