@@ -1,6 +1,6 @@
 # Trading Copilot
 
-Trading Copilot is an AI assistant that analyzes market conditions and generates structured trade signals for perpetual trading on Hyperliquid. You review the signal — entry price, take-profit, and stop-loss — and execute with one click. You remain in control of every trade.
+Trading Copilot is an AI assistant that analyzes market conditions and generates structured trade signals for perpetual trading on Hyperliquid. You review the signal (entry price, take-profit, and stop-loss) and execute with one click. You remain in control of every trade.
 
 Access Trading Copilot at: [copilot.minara.ai](https://copilot.minara.ai)
 
@@ -43,18 +43,18 @@ The output includes:
 
 ## 2. Signal parameters you control
 
-**Trading style** — determines the timeframe Copilot focuses on:
+**Trading style**: determines the timeframe Copilot focuses on:
 
-- `Scalping` — 3-minute chart, short in-and-out trades
-- `Day` — 15-minute chart, same-day entries and exits
-- `Swing` — 4-hour chart, positions held days to weeks
+- `Scalping`: 3-minute chart, short in-and-out trades
+- `Day`: 15-minute chart, same-day entries and exits
+- `Swing`: 4-hour chart, positions held days to weeks
 
-**Strategy** — determines the type of setup Copilot looks for:
+**Strategy**: determines the type of setup Copilot looks for:
 
-- `Max Gain` — high reward-to-risk setups with strong backtest upside; fewer trades, larger moves
-- `Max Win Rate` _(coming soon)_ — higher-probability setups with more flexible entry conditions
+- `Max Gain`: high reward-to-risk setups with strong backtest upside; fewer trades, larger moves
+- `Max Win Rate` _(coming soon)_: higher-probability setups with more flexible entry conditions
 
-**Initial margin** — your default margin amount for quick orders. Does not affect signal output.
+**Initial margin**: your default margin amount for quick orders. Does not affect signal output.
 
 ***
 
@@ -62,9 +62,9 @@ The output includes:
 
 Copilot generates signals for all perpetuals available on Hyperliquid. This includes:
 
-- **Crypto**: Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and hundreds of other tokens
-- **Commodities**: gold (XAU), silver (SILVER), crude oil
-- **Stocks**: Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major US equities
+- Crypto: Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and hundreds of other tokens
+- Commodities: gold (XAU), silver (SILVER), crude oil
+- Stocks: Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major US equities
 
 ***
 
@@ -76,7 +76,7 @@ Minara does not provide liquidity or act as a counterparty. All perpetual trades
 
 ## 5. Deposit and transfer funds
 
-Before trading, you need funds in your Minara Perps Wallet. Direct deposits to the Perps Wallet are not yet supported — you must go through the Spot Wallet first.
+Before trading, you need funds in your Minara Perps Wallet. Direct deposits to the Perps Wallet are not yet supported; you must go through the Spot Wallet first.
 
 **Step 1: Deposit into your Minara Spot Wallet**
 
@@ -108,9 +108,9 @@ Place the order with one click. Manual market and limit orders are also availabl
 
 ## 7. Managing open positions
 
-**Close all positions** — closes all open positions at market price (requires confirmation).
+**Close all positions**: closes all open positions at market price (requires confirmation).
 
-**Manual close** — close individual positions via market or limit order.
+**Manual close**: close individual positions via market or limit order.
 
 **Set take-profit and stop-loss on open positions:**
 
@@ -140,7 +140,7 @@ You can cancel individual pending orders or use **Cancel All Orders** to clear e
 
 Copilot supports both margin modes provided by Hyperliquid:
 
-- `Cross margin` — all positions share the same margin balance
-- `Isolated margin` — margin is isolated per position
+- `Cross margin`: all positions share the same margin balance
+- `Isolated margin`: margin is isolated per position
 
 Switch margin modes directly in the trading interface.
