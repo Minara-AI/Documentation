@@ -18,7 +18,7 @@ Minara Skills runs on top of the [Minara CLI](https://www.npmjs.com/package/mina
 
 ***
 
-## Who is Minara Skills For?
+## Who is Minara Skills for?
 
 | User Type                | Experience Level                             | How to Use                                                                                                                             |
 | ------------------------ | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
