@@ -1,4 +1,8 @@
-# Prediction Market Copilot
+---
+hidden: true
+---
+
+# Prediction Market
 
 Prediction Market Copilot is Minara's AI-powered signal engine for Hyperliquid HIP-4 binary prediction markets. It analyzes multi-timeframe technical data, estimates the probability that a price condition will be met at settlement, and compares that estimate against the current market-implied probability to identify contracts where the expected value is positive.
 
