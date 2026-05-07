@@ -1,6 +1,6 @@
 # Strategy Studio
 
-Strategy Studio is where you build, backtest, and deploy algorithmic trading strategies. Strategies are written in Pine Runtime — Minara's TypeScript DSL — and run against historical market data before going live. A deployed strategy executes automatically, opening and closing positions according to your code.
+Strategy Studio is where you build, backtest, and deploy algorithmic trading strategies. Strategies are written in Pine Runtime, Minara's TypeScript DSL, and run against historical market data before going live. A deployed strategy executes automatically, opening and closing positions according to your code.
 
 Find it at `/app/trade/strategy-studio`.
 
@@ -17,8 +17,8 @@ Click any entry to open it in the editor.
 
 Click **New Strategy** in the top-right corner. Two options:
 
-- **Describe your idea in chat** — type what you want the strategy to do in plain language. Minara generates the Pine Runtime code. This is what Minara calls "Vibe Trading": you describe the logic, the AI writes the code.
-- **Write code directly** — start from a blank editor or an existing template and write Pine Runtime yourself.
+- **Describe your idea in chat**: type what you want the strategy to do in plain language. Minara generates the Pine Runtime code. This is what Minara calls "Vibe Trading": you describe the logic, the AI writes the code.
+- **Write code directly**: start from a blank editor or an existing template and write Pine Runtime yourself.
 
 Either way, the strategy opens in draft state. Nothing runs until you deploy.
 
