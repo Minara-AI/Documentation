@@ -4,7 +4,9 @@ Minara trades crypto perpetuals on Hyperliquid — a high-performance on-chain o
 
 ## Supported assets
 
-All assets available on Hyperliquid are available in Minara, including BTC, ETH, SOL, and many others. The full list appears in the asset selector at `/app/trade/perps`.
+All assets available on Hyperliquid are available in Minara, including Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and many others. The full list appears in the asset selector at `/app/trade/perps`.
+
+Popular pairs include BTC/USDC, ETH/USDC, and SOL/USDC. You can also trade hundreds of altcoin perpetuals from the same interface.
 
 ## How perpetuals work
 
