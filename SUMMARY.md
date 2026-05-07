@@ -17,6 +17,7 @@
   * [How to withdraw funds?](guide/managing-funds-and-trading/how-to-withdraw-funds.md)
   * [How to buy cryptocurrency?](guide/managing-funds-and-trading/how-to-buy-cryptocurrency.md)
   * [How to buy stocks?](guide/managing-funds-and-trading/how-to-buy-stocks.md)
+  * [Trading Fees](guide/managing-funds-and-trading/trading-fees.md)
 * [Deep Research: Create Interactive Reports](guide/deep-research-create-interactive-reports.md)
 
 ## Features
