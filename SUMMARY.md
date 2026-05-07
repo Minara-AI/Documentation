@@ -22,10 +22,9 @@
 * [Strategy Studio](features/strategy-studio.md)
 * [Prediction Market](features/prediction-market-copilot.md)
 * [Benchmark](features/benchmark.md)
-* [Trade assets](trade/trade-assets/README.md)
-  * [Crypto perpetuals](trade/trade-assets/crypto-perpetuals.md)
-  * [Stocks](trade/trade-assets/stocks.md)
-  * [Commodities](trade/trade-assets/commodities.md)
+* [Assets](guide/managing-funds-and-trading/assets/README.md)
+  * [Cryptocurrency](guide/managing-funds-and-trading/assets/cryptocurrency.md)
+  * [Tokenized stocks](guide/managing-funds-and-trading/assets/stocks.md)
 * [Trading fees](trade/trading-fees.md)
 
 ## Workflow
