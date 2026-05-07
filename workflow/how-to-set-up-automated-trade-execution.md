@@ -6,11 +6,11 @@ description: >-
 
 # How to set up automated trade execution
 
-Minara can watch for specific price conditions and automatically place orders when they’re met — perfect for buying the dip, taking profits, or setting stop-losses without constant manual monitoring.
+Minara can watch for specific price conditions and automatically place orders when they're met — perfect for buying the dip, taking profits, or setting stop-losses without constant manual monitoring.
 
 ***
 
-### What You’ll Build
+### What You'll Build
 
 A workflow that:
 
@@ -31,12 +31,18 @@ You can simply describe the order logic you want. Minara will translate it into 
     > "If ETH price falls to 4,000 USDT, buy $500 worth of ETH."
     >
     > "If BTC price reaches 130,000 USDT, sell 0.1 BTC."
+    >
+    > "If gold (XAU) drops to $2,900, buy $200 worth."
 2.  **Buy + TP/SL Strategy**
 
     > "Buy 200 USDT of SOL if price ≤ 175 USDT, then take profit at 200 USDT and stop loss at 160 USDT."
+    >
+    > "If NVDA hits $1,000, buy $300 worth with a 5% stop-loss and 15% take-profit."
 3.  **Laddered Buy**
 
     > "Buy $200 ETH at 4,000 USDT, $200 at 4,150 USDT, and $200 at 4,250 USDT."
+    >
+    > "Buy $100 of AAPL at $200, $100 at $195, and $100 at $190."
 4.  **Partial Exit**
 
     > "If DOGE price hits 0.25 USDT, sell half my position."
@@ -49,7 +55,7 @@ You can simply describe the order logic you want. Minara will translate it into 
 * Keep your telegram account linked and [Minara notification bot](https://t.me/MinaraNotificationBot) enabled to get real-time execution updates.
 * Check spam folder first if you didn't receive the execution result email that you should've received.
 * Avoid unnecessarily small TP/SL gaps — sudden price wicks can trigger premature exits.
-* For small‑cap meme tokens, copycats and same‑name lookalikes are common—especially during hype. To avoid mistakes, always specify and double‑check the chain and the token’s contract address.
+* For small‑cap meme tokens, copycats and same‑name lookalikes are common—especially during hype. To avoid mistakes, always specify and double‑check the chain and the token's contract address.
 
 > Mainstream assets like BTC, ETH, or SOL are already disambiguated by contract.
 
