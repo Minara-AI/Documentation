@@ -21,6 +21,7 @@
 * [Autopilot](features/trading-autopilot.md)
 * [Strategy Studio](features/strategy-studio.md)
 * [Prediction Market](features/prediction-market-copilot.md)
+* [Prediction Markets](features/prediction-markets.md)
 * [Benchmark](features/benchmark.md)
 * [Assets](trade/trade-assets/README.md)
   * [Crypto perpetuals](trade/trade-assets/crypto-perpetuals.md)
