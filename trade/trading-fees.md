@@ -1,11 +1,6 @@
 # Trading Fees
 
-Every trade on Minara executes on Hyperliquid's order book. Your total fee is the sum of two components:
-
-* **Hyperliquid fee** — charged by the underlying exchange
-* **Minara fee** — charged by the platform
-
-Fees vary by asset class and trading mode.
+Every trade on Minara executes on Hyperliquid's order book. Your total fee is the sum of two components: a **Hyperliquid fee** charged by the underlying exchange, and a **Minara fee** charged by the platform. Fees vary by asset class and trading mode. A **maker** order adds liquidity to the order book — typically a limit order that does not immediately fill. A **taker** order removes liquidity — a market order or a limit order that matches an existing order on entry.
 
 ## Crypto
 
@@ -52,6 +47,3 @@ Covers binary outcome contracts traded on Hyperliquid's Outcome market, powered 
 | **Maker** | 0.04% | 0.04% | **0.08%** |
 | **Taker** | 0.056% | 0.03% | **0.086%** |
 
-## Maker vs. taker
-
-A **maker** order adds liquidity to the order book — typically a limit order that does not immediately fill. A **taker** order removes liquidity — a market order or a limit order that matches an existing order on entry.
