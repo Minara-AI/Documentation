@@ -34,9 +34,6 @@
   * [Spark](trade/agent-api/spark.md)
   * [Gen Zero](trade/agent-api/gen-zero.md)
 * [Assets](trade/trade-assets/README.md)
-  * [Crypto perpetuals](trade/trade-assets/crypto-perpetuals.md)
-  * [Stocks](trade/trade-assets/stocks.md)
-  * [Commodities](trade/trade-assets/commodities.md)
 * [Trading fees](trade/trading-fees.md)
 
 ## Workflow
