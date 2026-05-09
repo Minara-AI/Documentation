@@ -45,6 +45,8 @@ Covers silver, crude oil, and other commodities, as well as stocks.
 
 Covers binary outcome contracts traded on Hyperliquid's Outcome market, powered by Outcomexyz.
 
+### Copilot (manual trading)
+
 | | Hyperliquid fee | Minara fee | Total |
 | --- | --- | --- | --- |
 | **Maker** | 0.04% | 0.04% | **0.08%** |
