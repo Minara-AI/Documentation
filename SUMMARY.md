@@ -24,11 +24,6 @@
 * [Prediction Markets](features/prediction-markets.md)
 * [Skills](features/minara-skills.md)
 * [Benchmark](features/benchmark.md)
-* [Assets](trade/trade-assets/README.md)
-  * [Crypto perpetuals](trade/trade-assets/crypto-perpetuals.md)
-  * [Stocks](trade/trade-assets/stocks.md)
-  * [Commodities](trade/trade-assets/commodities.md)
-* [Trading fees](trade/trading-fees.md)
 * [API](trade/agent-api/README.md)
   * [Authentication](trade/agent-api/authentication.md)
   * [Getting started (API Key)](trade/agent-api/getting-started-by-api-key.md)
@@ -38,6 +33,11 @@
     * [API Reference (x402)](trade/agent-api/api-reference/api-reference-x402.md)
   * [Spark](trade/agent-api/spark.md)
   * [Gen Zero](trade/agent-api/gen-zero.md)
+* [Assets](trade/trade-assets/README.md)
+  * [Crypto perpetuals](trade/trade-assets/crypto-perpetuals.md)
+  * [Stocks](trade/trade-assets/stocks.md)
+  * [Commodities](trade/trade-assets/commodities.md)
+* [Trading fees](trade/trading-fees.md)
 
 ## Workflow
 
