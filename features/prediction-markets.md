@@ -2,7 +2,9 @@
 
 Minara's Prediction Markets feature gives you access to Hyperliquid's binary crypto prediction markets through Minara's trading interface. You can trade Yes or No positions on short-term price events — for example, "Will BTC be above $80,354 at 2:00 PM?" — with AI analysis signals displayed alongside your order panel to help inform your decision.&#x20;
 
-Try it at: prediction.minara.ai
+For trading fees, please refer to [trading-fees.md](../trade/trading-fees.md "mention") .&#x20;
+
+Try it at: [prediction.minara.ai](https://prediction.minara.aihttps/minara.ai/app/trade/prediction)
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
