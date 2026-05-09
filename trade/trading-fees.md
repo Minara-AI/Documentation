@@ -41,6 +41,15 @@ Covers silver, crude oil, and other commodities, as well as stocks.
 | **Maker** | 0.003% | 0.04% | **0.043%** |
 | **Taker** | 0.009% | 0.03% | **0.039%** |
 
+## Prediction markets
+
+Covers binary outcome contracts traded on Hyperliquid's Outcome market, powered by Outcomexyz.
+
+| | Hyperliquid fee | Minara fee | Total |
+| --- | --- | --- | --- |
+| **Maker** | 0.04% | 0.04% | **0.08%** |
+| **Taker** | 0.056% | 0.03% | **0.086%** |
+
 ## Maker vs. taker
 
 A **maker** order adds liquidity to the order book — typically a limit order that does not immediately fill. A **taker** order removes liquidity — a market order or a limit order that matches an existing order on entry.
