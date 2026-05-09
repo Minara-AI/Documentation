@@ -29,6 +29,15 @@
   * [Stocks](trade/trade-assets/stocks.md)
   * [Commodities](trade/trade-assets/commodities.md)
 * [Trading fees](trade/trading-fees.md)
+* [API](trade/agent-api/README.md)
+  * [Authentication](trade/agent-api/authentication.md)
+  * [Getting started (API Key)](trade/agent-api/getting-started-by-api-key.md)
+  * [Getting started (x402)](trade/agent-api/getting-started-by-x402.md)
+  * [API Reference](trade/agent-api/api-reference/README.md)
+    * [API Reference (API Key)](trade/agent-api/api-reference/api-reference-api-key.md)
+    * [API Reference (x402)](trade/agent-api/api-reference/api-reference-x402.md)
+  * [Spark](trade/agent-api/spark.md)
+  * [Gen Zero](trade/agent-api/gen-zero.md)
 
 ## Workflow
 
@@ -45,15 +54,6 @@
 * [Liquidations](trading-reference/liquidations.md)
 * [Personalization](features/personalization.md)
 * [Multimodal input](features/multimodal-input.md)
-* [Agent API](reference/agent-api/README.md)
-  * [Authentication](reference/agent-api/authentication.md)
-  * [Getting started (API Key)](reference/agent-api/getting-started-by-api-key.md)
-  * [Getting started (x402)](reference/agent-api/getting-started-by-x402.md)
-  * [API Reference](reference/agent-api/api-reference/README.md)
-    * [API Reference (API Key)](reference/agent-api/api-reference/api-reference-api-key.md)
-    * [API Reference (x402)](reference/agent-api/api-reference/api-reference-x402.md)
-  * [Spark](reference/agent-api/spark.md)
-  * [Gen Zero](reference/agent-api/gen-zero.md)
 
 ## Technology
 
