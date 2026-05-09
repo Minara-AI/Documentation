@@ -1,21 +1,23 @@
 # Prediction Markets
 
-Minara's Prediction Markets feature lets you trade binary crypto price outcomes powered by [Outcome.xyz](https://outcome.xyz), with an AI layer that scans live markets and surfaces opportunities ranked by confidence and statistical edge.
+Minara's Prediction Markets feature gives you access to Hyperliquid's binary crypto prediction markets through Minara's trading interface. You can trade Yes or No positions on short-term price events — for example, "Will BTC be above $80,354 at 2:00 PM?" — with AI analysis signals displayed alongside your order panel to help inform your decision.
 
 ***
 
 ## What is Prediction Markets?
 
-Prediction Markets is a trading mode inside Minara where you take Yes or No positions on short-term crypto price events — for example, "Will BTC be below $78,746 at 2:00 PM on May 10?"
+Hyperliquid runs on-chain binary prediction contracts under its Outcome market. Each contract asks a single question about a crypto price event. Yes tokens settle at $1.00 if the condition is met; No tokens settle at $1.00 if it is not. The Yes token price represents the market's current implied probability.
+
+Minara integrates these markets into its trading interface, adding an AI analysis layer that shows confidence scores, edge signals, and estimated profit per $100 for each open contract.
 
 **What you can do with Prediction Markets:**
 
-* Browse AI-curated prediction market opportunities with confidence scores (High / Medium) and Edge %
-* Review estimated profit per $100 and current odds before placing a trade
-* Trade Yes or No positions on binary crypto price outcomes
-* Use TradingView charts to analyze market price action for each outcome
-* Ask the AI for a direct recommendation on any open market via "Ask Minara"
-* Place trades with USDH using quick-fill amounts ($10, $50, $100, $500, $1,000)
+* Browse active Hyperliquid Outcome markets from within Minara
+* View AI analysis for each market: confidence level, Edge %, and Est. profit per $100
+* Trade Yes or No positions using USDH
+* Analyze market price action on a TradingView candlestick chart
+* Use quick-fill amounts ($10, $50, $100, $500, $1,000) or enter a custom size
+* Ask Minara for reasoning behind any AI signal without leaving the screen
 
 ***
 
@@ -23,9 +25,9 @@ Prediction Markets is a trading mode inside Minara where you take Yes or No posi
 
 | User Type | Experience Level | How to Use |
 |---|---|---|
-| **Beginners** | New to prediction markets | Start with the AI Prediction panel — review confidence and Est. Profit per $100 before placing any trade |
-| **Active Traders** | Familiar with perps or spot trading | Use the TradingView chart and order book to evaluate market-implied probability vs. AI edge signal |
-| **Researchers** | Quantitative background | Interpret Edge % as the AI's signal-to-noise estimate and cross-check against your own price thesis |
+| **Beginners** | New to prediction markets | Start with the AI signal panel — review confidence, edge, and Est. profit per $100 before placing any position. Use smaller amounts to learn how odds and slippage work. |
+| **Active Traders** | Familiar with perps or binary outcomes | Use AI signals as one input alongside your own price thesis. Review the TradingView chart and order book before sizing. |
+| **Quantitative Traders** | Statistical background | Interpret Edge % in the context of your own probability estimate. Compare AI confidence against market-implied probability (Yes price) to identify divergences. |
 
 ***
 
@@ -33,28 +35,42 @@ Prediction Markets is a trading mode inside Minara where you take Yes or No posi
 
 **In-app:** Log in to Minara → click the **Prediction** tab in the top navigation bar.
 
-Direct URL: `https://minara.ai/app/trade/prediction` _(confirm with team before publishing)_
+Direct URL: `prediction.minara.ai`
 
 ***
 
-## Reading the AI Prediction Panel
+## Understanding the AI Prediction Panel
 
-The left panel on the Prediction screen is the AI Prediction feed. It automatically scans live markets on Outcome.xyz and surfaces a ranked list of opportunities.
-
-Each card shows:
+The left panel on the Prediction screen shows AI analysis for active Hyperliquid Outcome markets. Each card surfaces a market with Minara's AI assessment.
 
 | Field | What it means |
 |---|---|
-| **Market title** | The binary question being traded (e.g., "BTC below 78746 on May 10 at 2:00 PM?") |
-| **Confidence** | AI confidence in its call — **High** or **Medium** |
-| **Direction** | Which side the AI recommends — **Buy YES** or **Buy NO** |
-| **Edge %** | AI's estimated statistical advantage. Positive Edge means the AI sees value; negative Edge means the market price is against the AI's thesis |
-| **Est. Profit** | Estimated profit per $100 invested if the AI call is correct |
-| **Odds** | Current market odds for the recommended side (e.g., 1.92x) |
+| **Market title** | The binary question (e.g., "BTC above 80354 on May 10 at 2:00 PM?") |
+| **Confidence** | AI confidence in its signal — **High** or **Medium** |
+| **Direction** | Which side the AI signal favors — **Buy YES** or **Buy NO** |
+| **Edge %** | AI's estimate of statistical advantage at current market prices. Positive Edge means the AI sees value on the signaled side; negative means the market price is against the thesis |
+| **Est. Profit** | Estimated profit per $100 invested if the position resolves correctly at current odds |
+| **Odds** | Current market odds for the signaled side (e.g., 2.04x) |
 
-The AI updates recommendations as market prices move. A card that showed Edge +2.0% earlier in the session may show a different value as the market reprices.
+The AI panel is a decision-support tool. All trading decisions and order submissions are made by you.
 
-> **Note:** Edge % is the AI's statistical estimate based on historical price behavior and current market data. It is not a guarantee. Negative Edge trades have appeared in the feed — review each card individually before trading.
+> **Note:** Edge % is a model estimate based on price data and current market conditions. It is not a prediction of outcome. Review each card on its own merits before trading.
+
+***
+
+## Reading the Market
+
+The top bar for each selected market displays:
+
+| Field | What it shows |
+|---|---|
+| **BTC Price / Countdown** | Current BTC spot price and time remaining until settlement |
+| **% Chance** | Current market-implied probability of the Yes outcome |
+| **Price (Yes)** | Current cost of one Yes share (equals the implied probability) |
+| **24h Change** | Price change in the Yes token over the past 24 hours |
+| **24h Volume** | Total trading volume across both sides |
+
+The center panel shows a TradingView candlestick chart of the prediction market contract's Yes token price history — not the underlying BTC price. Use this to assess how market sentiment has shifted over the contract's life.
 
 ***
 
@@ -64,19 +80,7 @@ The AI updates recommendations as market prices move. A card that showed Edge +2
 {% step %}
 ### Select a Market
 
-Click any market card in the AI Prediction panel, or browse markets manually using the market selector dropdown at the top of the chart area.
-{% endstep %}
-
-{% step %}
-### Review the Market
-
-The center panel loads a TradingView candlestick chart showing historical price action for the prediction market contract (not the underlying asset price).
-
-The top bar shows:
-* **BTC Price / Countdown** — current spot price and time remaining until settlement
-* **Probability trend** — percentage change in implied probability
-* **Price (Yes)** — current cost of a YES share
-* **24h Change** and **24h Volume** — market activity metrics
+Click any card in the AI Prediction panel, or use the market selector dropdown at the top of the chart area to browse all active Hyperliquid Outcome markets.
 {% endstep %}
 
 {% step %}
@@ -84,35 +88,35 @@ The top bar shows:
 
 In the right panel, select **Buy** or **Sell**, then choose **Yes** or **No**.
 
-| Side | When to use |
+| Side | When |
 |---|---|
-| **Yes** | You believe the outcome will occur (e.g., BTC will be below the target price at settlement) |
-| **No** | You believe the outcome will not occur |
+| **Yes** | You believe the price condition will be met at settlement |
+| **No** | You believe the price condition will not be met |
 
-Current implied probability for each side is displayed as a percentage (e.g., Yes 8.1% / No 91.9%).
+Current implied probability for each side is displayed as a percentage (e.g., Yes 49% / No 51%).
 {% endstep %}
 
 {% step %}
-### Set Amount and Review Order Details
+### Set Your Amount
 
-Enter your USDH amount manually or use the quick-fill buttons ($10, $50, $100, $500, $1,000).
+Enter a USDH amount or use the quick-fill buttons ($10, $50, $100, $500, $1,000).
 
-Before confirming, review:
+Review the order details before confirming:
 
 | Field | What it shows |
 |---|---|
-| **Slippage** | Estimated price impact of your order size |
+| **Slippage** | Estimated price impact at your order size |
 | **Avg Price** | Expected average fill price per share |
-| **Shares** | Number of shares your USDH buys at current odds |
-| **Potential Return** | Dollar gain if your position resolves correctly, shown as amount and percentage |
+| **Shares** | Number of shares your amount buys at current odds |
+| **Potential Return** | Dollar gain if your position resolves correctly |
 
-> **Review the risk disclosure.** Potential Return is calculated at current market odds. Slippage and price movement before settlement can reduce actual returns.
+> **Review before submitting.** Slippage can be significant on lower-volume contracts. Potential Return is calculated at current market odds and may shift before settlement.
 {% endstep %}
 
 {% step %}
-### Confirm the Trade
+### Confirm the Order
 
-Click **Buy Yes** or **Buy No** to submit the order. Trades settle in USDH.
+Click **Buy Yes** or **Buy No** to submit. Trades settle in USDH.
 
 Your open position appears in the **Outcomes** tab at the bottom of the screen.
 {% endstep %}
@@ -120,28 +124,30 @@ Your open position appears in the **Outcomes** tab at the bottom of the screen.
 
 ***
 
-## Asking Minara for a Recommendation
+## Asking Minara for Analysis
 
-The **Ask Minara** button at the bottom of the AI Prediction panel opens an AI chat session scoped to prediction market context. You can ask questions like:
+The **Ask Minara** button in the AI Prediction panel opens an AI chat session in the context of prediction markets. You can ask:
 
-* "Why is the AI recommending Buy NO on this BTC market?"
-* "What's the current probability trend for the May 10 markets?"
-* "Which open market has the best risk-adjusted edge right now?"
+* "Why does the AI signal Buy NO on this BTC market?"
+* "What's the reasoning behind the Medium confidence rating?"
+* "Which open contract has the highest edge right now?"
 
-Minara's AI response is based on the same data powering the prediction panel — current market prices, countdown, and its own confidence model.
+The AI response draws on the same data as the signal panel — market price, countdown, and the underlying model inputs.
 
 ***
 
-## Monitoring Open Positions
+## Monitoring Positions
 
 The bottom panel has four tabs:
 
 | Tab | What it shows |
 |---|---|
-| **Outcomes** | Your active prediction market positions with current value |
+| **Outcomes** | Your active prediction market positions and current marked-to-market value |
 | **Open Orders** | Orders submitted but not yet filled |
-| **Trade History** | Completed trades with entry price, exit price, and PnL |
-| **Order History** | All order submissions including cancelled and partially filled |
+| **Trade History** | Completed trades with entry price, exit, and PnL |
+| **Order History** | All order submissions including cancelled and partial fills |
+
+Settlement is automatic at each contract's expiry time. Winning tokens credit your USDH balance at $1.00 per share. Losing tokens expire at $0.
 
 ***
 
@@ -149,47 +155,49 @@ The bottom panel has four tabs:
 
 ### What You Can Define
 
-* Which market to trade (any market surfaced by the AI or available on Outcome.xyz)
-* Direction (Yes or No)
-* Amount (in USDH)
-* Whether to follow the AI recommendation or override it
+* Which Hyperliquid Outcome market to trade
+* Which side to take (Yes or No)
+* Position size in USDH
+* Whether to follow, partially follow, or ignore AI signals
 
 ### What the Platform Controls
 
-* Which markets are surfaced in the AI Prediction panel (based on Minara's curation model)
-* Settlement — all outcomes settle at the expiry time and price defined by Outcome.xyz, not by Minara
-* Liquidity — order fill depends on market depth on Outcome.xyz; Minara does not act as a counterparty or provide liquidity
+* Which markets are displayed in the AI Prediction panel
+* AI signal methodology (confidence tiers, Edge % calculation)
+* Settlement timing and price — governed by Hyperliquid's Outcome contract rules, not Minara
+* Liquidity — order fill depends on depth in the Hyperliquid Outcome market; Minara does not act as a counterparty
 
 ### Current Limitations
 
-* Prediction Markets currently covers **crypto price outcomes only** (BTC-denominated markets)
-* Settlement is in USDH; withdrawing proceeds to external wallets follows the standard Minara withdrawal flow
-* The AI Prediction panel shows a limited number of curated markets per session; not all Outcome.xyz markets are shown
-* Slippage can be significant on low-volume markets — always review the Slippage field before confirming
+* Only Hyperliquid Outcome markets are available. Prediction markets on other protocols are not currently supported.
+* The AI signal panel covers a curated subset of active markets; not all Hyperliquid Outcome contracts are shown.
+* Slippage can be material on lower-volume contracts. Always review the Slippage field before confirming.
+* AI signals are based on price and market data only. Macro events, news, or off-chain developments are not factored in.
 
 ***
 
 ## Tips for Better Trading
 
-1. Check the countdown timer before entering. Markets with under 30 minutes to settlement carry higher price volatility.
-2. Positive Edge does not mean guaranteed profit — it means the AI's model sees value at current market prices. Market prices can move against you before settlement.
-3. Use the TradingView chart to see how the prediction market has traded historically. A flat candlestick chart suggests low liquidity.
-4. High confidence + positive Edge together are the signal the AI is most certain about. Treat Medium confidence calls with more caution.
-5. Start with smaller amounts ($10–$50) to understand how slippage and odds work on this market before scaling.
-6. "Ask Minara" is useful for understanding the reasoning behind a call, not just the outcome. It can explain what price levels and timeframes the AI used.
-7. Your available balance for prediction markets is shown as **Avail USDH** in the right panel. Make sure you have sufficient USDH before trading.
+1. Check the countdown before entering. Contracts with under 30 minutes to settlement often have thin liquidity and wider slippage.
+2. High confidence + positive Edge is the strongest signal combination. Medium confidence calls warrant more caution and independent review.
+3. Use the TradingView chart to see how the Yes token has traded during the contract's life. Flat or choppy charts suggest low conviction in the market.
+4. The AI panel is one input, not a directive. Cross-check the AI signal against the market's current % Chance and your own price view.
+5. Start with smaller amounts ($10–$50) to get familiar with how slippage and odds behave on lower-volume Outcome contracts.
+6. Positions are binary — they resolve fully at settlement. There is no partial outcome. Size accordingly.
+7. Ensure your USDH balance is sufficient before trading. **Avail USDH** is shown in the right panel.
 
 ***
 
 ## Disclaimers
 
-* Prediction market outcomes are binary — you either receive a payout at settlement or lose your full position. There is no partial result.
-* Historical win rates and edge percentages displayed in the AI panel are based on model estimates and past data. They are not indicative of future results.
-* Minara does not set settlement prices or control market outcomes. Settlement is governed by Outcome.xyz's protocol.
+* Prediction market positions resolve at binary outcomes. You either receive full payout at $1.00 per winning share or lose the full amount invested in losing shares.
+* All prediction market contracts are settled by Hyperliquid's Outcome protocol. Minara does not control settlement prices or outcomes.
+* Minara does not act as a counterparty or liquidity provider for prediction market trades.
+* AI signals displayed in the Prediction panel are for informational purposes only and do not constitute financial or investment advice.
+* Historical win rates and edge percentages are model estimates based on past price data. They are not indicative of future results.
 * All trading involves risk. Only trade with funds you can afford to lose.
-* Minara's AI Prediction panel is a tool to assist your research, not financial advice. You are responsible for your own trading decisions.
-* You maintain full control of your USDH at all times and can exit open positions subject to available market liquidity.
+* You maintain full control of your positions at all times. Minara does not execute trades autonomously on your behalf.
 
-<figure><img src="../.gitbook/assets/prediction-markets-overview.png" alt="Prediction Markets tab showing AI Prediction panel, TradingView chart, and Buy/Sell order panel"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/prediction-markets-overview.png" alt="Prediction Markets tab showing AI Prediction panel on the left, TradingView chart in the center, and USDH order panel on the right"><figcaption></figcaption></figure>
 
-<!-- source: screenshot UI (Minara app, 2026-05-09) · generated: 2026-05-09 -->
+<!-- source: screenshot UI (Minara app + Hyperliquid Outcome, 2026-05-09) · generated: 2026-05-09 -->
