@@ -53,10 +53,6 @@
 * [Wallet security](technology/wallet-security.md)
 * [Tool Stack](technology/tools-integration.md)
 
-## Support
-
-* [Unknown errors](support/trading-issues/unknown-errors.md)
-
 ## Links
 
 * [Ask Minara](https://minara.ai/)
