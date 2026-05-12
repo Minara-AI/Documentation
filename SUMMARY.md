@@ -6,7 +6,6 @@
 
 * [Create your account](guide/getting-started/activate-your-account.md)
 * [Deposit funds](guide/managing-funds-and-trading/how-to-deposit-funds.md)
-* [Create a Lighter wallet](guide/managing-funds-and-trading/create-and-fund-lighter-wallet.md)
 * [Withdraw](get-started/withdraw.md)
 
 ## Chat
