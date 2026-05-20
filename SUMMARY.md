@@ -49,7 +49,11 @@
 
 ## Technology
 
-* [DMind LLM](technology/financial-expert-llm.md)
+* [DMind](technology/dmind/README.md)
+  * [Sovereign architecture](technology/dmind/sovereign-architecture.md)
+  * [Model family](technology/dmind/model-family.md)
+  * [DMind Benchmark](technology/dmind/benchmark.md)
+  * [Training methods](technology/dmind/training-methods.md)
 * [Wallet security](technology/wallet-security.md)
 * [Tool Stack](technology/tools-integration.md)
 
