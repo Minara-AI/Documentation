@@ -4,11 +4,12 @@ DMind's models combine two original training methods (HPS and C³-SFT) with stan
 
 ## Base models
 
-| DMind model | Base | Base provider |
-|---|---|---|
-| DMind-1 | Qwen3-32B | Alibaba |
-| DMind-1-mini | Qwen3-14B | Alibaba |
-| DMind-3 (21B) | gpt-oss-20b | OpenAI (2025 open release) |
+| DMind model   | Base                                                                         | Base provider |
+| ------------- | ---------------------------------------------------------------------------- | ------------- |
+| DMind-1       | Qwen3-32B                                                                    | Alibaba       |
+| DMind-1-mini  | Qwen3-14B                                                                    | Alibaba       |
+| DMind-3 (21B) | [functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it) | Google        |
+| DMind-3-mini  | [Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)                         | Alibaba       |
 
 Using DMind models requires honoring both DMind's Model Agreement and the underlying base model's original license.
 
@@ -56,13 +57,13 @@ DMind-1's training data is 13,276 expert-curated knowledge items, distilled from
 
 DMind-3's training data is larger and more structured:
 
-| Source | Share | What it is |
-|---|---|---|
-| Institutional alpha research | 35% | Crypto-native fund and TradFi reports, decomposed through a causal model |
-| Global macroeconomic data | 25% | Time series from FRED, World Bank, IMF, joined with on-chain indicators |
-| Cross-chain index data | 20% | Full transaction, state, and log history across major EVM chains, Solana, Cosmos |
-| Post-mortems and audits | 10% | Systemic failures, economic attacks, protocol hacks, with focus on early signals and contagion paths |
-| Geopolitics and regulation | 10% | Global regulatory changes, policy proposals, geopolitical events affecting digital assets |
+| Source                       | Share | What it is                                                                                           |
+| ---------------------------- | ----- | ---------------------------------------------------------------------------------------------------- |
+| Institutional alpha research | 35%   | Crypto-native fund and TradFi reports, decomposed through a causal model                             |
+| Global macroeconomic data    | 25%   | Time series from FRED, World Bank, IMF, joined with on-chain indicators                              |
+| Cross-chain index data       | 20%   | Full transaction, state, and log history across major EVM chains, Solana, Cosmos                     |
+| Post-mortems and audits      | 10%   | Systemic failures, economic attacks, protocol hacks, with focus on early signals and contagion paths |
+| Geopolitics and regulation   | 10%   | Global regulatory changes, policy proposals, geopolitical events affecting digital assets            |
 
 Total: 500,000+ curated documents, plus multi-terabyte on-chain structured data.
 
