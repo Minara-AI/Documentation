@@ -68,6 +68,10 @@ If you have any questions, please contact Banxa Pay support: https://support.ban
 
 ## Deposit from CEXs
 
+{% hint style="warning" %}
+Please note that deposit to Minara spot wallet is currently unavailable as the spot wallet service is under maintenance.
+{% endhint %}
+
 #### **1. Prepare Your Exchange Account**
 
 Log in to your CEX account (e.g., Binance, OKX, Coinbase) and ensure you have the crypto asset you want to transfer.
