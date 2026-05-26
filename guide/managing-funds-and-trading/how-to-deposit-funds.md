@@ -1,4 +1,4 @@
-# How to deposit funds?
+# Deposit funds
 
 This guide will show you how to deposit **USDC** in three different ways: using a credit card, withdrawing from a CEX, or transferring from another crypto wallet.
 
@@ -54,7 +54,7 @@ Select the fiat currency you wish to pay with. In the red box, input the amount 
 
 <figure><img src="../../.gitbook/assets/图片 (34).png" alt="" width="375"><figcaption></figcaption></figure>
 
-3. #### KYC and Pay
+3. **KYC and Pay**
 
 Then, fill out your personal details for KYC. After verification and payment, you will receive your tokens.
 
@@ -80,7 +80,7 @@ Visit Minara and log in to your account. Click the **“Deposit”** button at t
 
 **3. Choose Token and Network**
 
-Select the blockchain network you want to use for the deposit. Minara will generate a wallet address for the selected network.                &#x20;
+Select the blockchain network you want to use for the deposit. Minara will generate a wallet address for the selected network.
 
 <figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
@@ -96,11 +96,15 @@ Once the transaction is confirmed on-chain, your funds will appear in your Minar
 
 ***
 
-## Deposit from another crypto wallet
+## Deposit from another crypto wallet to your Spot Wallet
+
+{% hint style="warning" %}
+Please note that deposit to Minara spot wallet is currently unavailable as the spot wallet service is under maintenance.
+{% endhint %}
 
 #### **1. Prepare Your Wallet**
 
-Make sure you have a crypto wallet with sufficient funds and access to the correct blockchain network.
+Make sure you have an external crypto wallet with sufficient funds and access to the correct blockchain network.
 
 #### **2. Click "Deposit" button**
 
@@ -126,19 +130,21 @@ Copy the deposit address provided by Minara and send the tokens from your wallet
 
 ***
 
-## Deposit to a Lighter wallet
+## Deposit to Perps Wallet
 
-Minara supports Lighter as a perps exchange alongside HyperLiquid. You can create a Lighter wallet and fund it directly from the Wallet panel.
+Minara now supports Lighter and HyperLiquid. You can create a wallet for Lighter or Hyperliquid and fund it directly from the Wallet panel.
 
-#### 1. Open your wallet list
+#### 1. Create wallet
 
-Click your avatar and select `Wallet`. In the `Perps` tab, click the wallet name dropdown and select `+ Add Wallet`.
+{% hint style="info" %}
+You may skip this step if the wallet has already been created. By default, each trading platform has one wallet created, currently Lighter and Hyperliquid.
+{% endhint %}
+
+Click your avatar and select `Wallet`. In the `Perps` tab, click the wallet name dropdown and select `+ Add Wallet`. &#x20;
 
 <figure><img src="../../.gitbook/assets/lighter-wallet-add.png" alt="Wallet panel showing the dropdown with existing wallets and the Add Wallet option"><figcaption></figcaption></figure>
 
-#### 2. Select Lighter and name your wallet
-
-In the `Create Wallet` dialog, select `Lighter` as the Exchange Type. Enter a name (max 20 characters, no special characters) and click `Continue`.
+In the `Create Wallet` dialog, select the trading platform. Enter a name (max 20 characters, no special characters) and click `Continue`.
 
 <figure><img src="../../.gitbook/assets/lighter-wallet-create.png" alt="Create Wallet dialog with Lighter selected as exchange type and a wallet name input field"><figcaption></figcaption></figure>
 
@@ -153,7 +159,7 @@ Once the wallet is created, your wallet address appears on the confirmation scre
 Click `deposit` to open the deposit screen. Scan the QR code or copy the deposit address, then send USDC from your external wallet.
 
 {% hint style="warning" %}
-Perps wallet deposit currently only accepts USDC via Arbitrum. Deposits from other networks or tokens cannot be retrieved.
+The Perps wallet currently only supports USDC deposits via Arbitrum. Deposits from other networks or tokens may not appear in the app and must be managed by exporting your private key.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/lighter-wallet-deposit.png" alt="Perps Wallet Deposit screen showing Arbitrum chain, USDC asset, a QR code, and the deposit address"><figcaption></figcaption></figure>
