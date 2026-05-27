@@ -12,7 +12,7 @@ Hyperliquid also exposes HyperEVM, a general-purpose smart contract environment 
 
 Hyperliquid wallets accept USDC deposits via Arbitrum (Hyperliquid's native bridge). Deposits from other networks or tokens are not credited to the wallet.
 
-For step-by-step deposit instructions, see [Deposit funds](../../guide/managing-funds-and-trading/how-to-deposit-funds.md#deposit-to-perps-wallet).
+For step-by-step deposit instructions, see [Deposit funds](/broken/pages/IiHM9u55TyYjG4b9XN3x#deposit-to-perps-wallet).
 
 ## Transfers
 
@@ -26,8 +26,8 @@ Hyperliquid wallets support the order types, margin modes, and risk controls des
 
 ## Using Hyperliquid in Minara
 
-1. Create a Hyperliquid wallet from the `Wallet` panel (see [Deposit funds](../../guide/managing-funds-and-trading/how-to-deposit-funds.md#deposit-to-perps-wallet)).
+1. Create a Hyperliquid wallet from the `Wallet` panel (see [Deposit funds](/broken/pages/IiHM9u55TyYjG4b9XN3x#deposit-to-perps-wallet)).
 2. Deposit USDC via Arbitrum into the wallet, or transfer from an existing Lighter wallet (see [Perps wallets](../../guide/managing-funds-and-trading/perps-wallets.md#transfer-between-lighter-and-hyperliquid)).
 3. On the Perps trading page, pick the Hyperliquid wallet in the top-left wallet selector. Orders placed from that wallet execute on Hyperliquid.
 
-For a side-by-side comparison with Lighter, see [Liquidity](README.md).
+For a side-by-side comparison with Lighter, see [Liquidity](./).

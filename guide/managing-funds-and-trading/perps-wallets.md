@@ -2,7 +2,7 @@
 
 Minara supports two perpetuals exchanges: \[Lighter]\([https://lighter.xyz/](https://lighter.xyz/)) and \[Hyperliquid]\([https://app.hyperliquid.xyz/trade](https://app.hyperliquid.xyz/trade)). You can hold multiple perps wallets under one account, with each wallet bound to one of the two exchanges. Funds can be moved between wallets, including across exchanges.
 
-For first-time setup (creating a wallet, depositing USDC), see [Deposit funds](how-to-deposit-funds.md#deposit-to-perps-wallet). This page covers the rest: renaming wallets, transferring between Lighter and Hyperliquid, and switching wallets while trading.&#x20;
+For first-time setup (creating a wallet, depositing USDC), see [Deposit funds](/broken/pages/IiHM9u55TyYjG4b9XN3x#deposit-to-perps-wallet). This page covers the rest: renaming wallets, transferring between Lighter and Hyperliquid, and switching wallets while trading.&#x20;
 
 ## Rename a wallet
 

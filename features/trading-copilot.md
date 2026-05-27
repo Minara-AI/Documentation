@@ -1,4 +1,4 @@
-# Trading Copilot
+# Copilot
 
 Trading Copilot is an AI assistant that analyzes market conditions and generates structured trade signals for perpetual trading on Lighter and Hyperliquid. You review the signal (entry price, take-profit, and stop-loss) and execute with one click. You remain in control of every trade.
 
@@ -12,20 +12,20 @@ When you click **Ask Long** or **Ask Short**, Copilot evaluates the following in
 
 **Market structure and price action**
 
-- Multi-timeframe candlestick data matched to your selected trading style
-- Trend direction, volatility structure, key price levels
-- Technical indicators: EMA, RSI, MACD
+* Multi-timeframe candlestick data matched to your selected trading style
+* Trend direction, volatility structure, key price levels
+* Technical indicators: EMA, RSI, MACD
 
 **Order book and liquidity**
 
-- Real-time order book depth
-- Bid/ask imbalance and recent trade flow
+* Real-time order book depth
+* Bid/ask imbalance and recent trade flow
 
 **Derivatives market signals**
 
-- Funding rate history and direction
-- Open interest changes
-- Positioning dynamics from derivatives data
+* Funding rate history and direction
+* Open interest changes
+* Positioning dynamics from derivatives data
 
 **Risk filtering**
 
@@ -33,9 +33,9 @@ Before presenting a signal, Copilot filters out setups with unfavorable risk-to-
 
 The output includes:
 
-- Trade direction: Long, Short, or Neutral
-- Suggested entry price, take-profit (TP), and stop-loss (SL)
-- Brief explanation of the signal rationale
+* Trade direction: Long, Short, or Neutral
+* Suggested entry price, take-profit (TP), and stop-loss (SL)
+* Brief explanation of the signal rationale
 
 <figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
 
@@ -45,14 +45,14 @@ The output includes:
 
 **Trading style**: determines the timeframe Copilot focuses on:
 
-- `Scalping`: 3-minute chart, short in-and-out trades
-- `Day`: 15-minute chart, same-day entries and exits
-- `Swing`: 4-hour chart, positions held days to weeks
+* `Scalping`: 3-minute chart, short in-and-out trades
+* `Day`: 15-minute chart, same-day entries and exits
+* `Swing`: 4-hour chart, positions held days to weeks
 
 **Strategy**: determines the type of setup Copilot looks for:
 
-- `Max Gain`: high reward-to-risk setups with strong backtest upside; fewer trades, larger moves
-- `Max Win Rate` _(coming soon)_: higher-probability setups with more flexible entry conditions
+* `Max Gain`: high reward-to-risk setups with strong backtest upside; fewer trades, larger moves
+* `Max Win Rate` _(coming soon)_: higher-probability setups with more flexible entry conditions
 
 **Initial margin**: your default margin amount for quick orders. Does not affect signal output.
 
@@ -62,9 +62,9 @@ The output includes:
 
 Copilot generates signals for perpetuals available on Lighter and Hyperliquid. This includes:
 
-- Crypto: Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and hundreds of other tokens
-- Commodities: gold (XAU), silver (SILVER), crude oil
-- Stocks: Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major US equities
+* Crypto: Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and hundreds of other tokens
+* Commodities: gold (XAU), silver (SILVER), crude oil
+* Stocks: Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major US equities
 
 ***
 
@@ -76,7 +76,7 @@ Minara does not provide liquidity or act as a counterparty. Perpetual trades exe
 
 ## 5. Deposit and transfer funds
 
-Before trading, you need funds in a Lighter or Hyperliquid perps wallet. See [Deposit funds](../guide/managing-funds-and-trading/how-to-deposit-funds.md#deposit-to-perps-wallet) for creating a wallet and depositing USDC, and [Perps wallets](../guide/managing-funds-and-trading/perps-wallets.md) for transferring funds between wallets, including across the two exchanges.
+Before trading, you need funds in a Lighter or Hyperliquid perps wallet. See [Deposit funds](/broken/pages/IiHM9u55TyYjG4b9XN3x#deposit-to-perps-wallet) for creating a wallet and depositing USDC, and [Perps wallets](../guide/managing-funds-and-trading/perps-wallets.md) for transferring funds between wallets, including across the two exchanges.
 
 ***
 
@@ -84,8 +84,8 @@ Before trading, you need funds in a Lighter or Hyperliquid perps wallet. See [De
 
 Once Copilot generates a signal, it pre-fills a limit order with the suggested entry, take-profit, and stop-loss. Before confirming, you can adjust:
 
-- Leverage
-- Initial margin
+* Leverage
+* Initial margin
 
 Place the order with one click. Manual market and limit orders are also available for advanced users.
 
@@ -125,7 +125,7 @@ You can cancel individual pending orders or use **Cancel All Orders** to clear e
 
 Copilot supports both margin modes:
 
-- `Cross margin`: all positions share the same margin balance
-- `Isolated margin`: margin is isolated per position
+* `Cross margin`: all positions share the same margin balance
+* `Isolated margin`: margin is isolated per position
 
 Switch margin modes directly in the trading interface.
