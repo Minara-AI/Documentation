@@ -76,7 +76,7 @@ Minara does not provide liquidity or act as a counterparty. Perpetual trades exe
 
 ## 5. Deposit and transfer funds
 
-Before trading, you need funds in a Lighter or Hyperliquid perps wallet. See [Deposit funds](/broken/pages/IiHM9u55TyYjG4b9XN3x#deposit-to-perps-wallet) for creating a wallet and depositing USDC, and [Perps wallets](../guide/managing-funds-and-trading/perps-wallets.md) for transferring funds between wallets, including across the two exchanges.
+Before trading, you need funds in a Lighter or Hyperliquid perps wallet. See [Deposit](../guide/managing-funds-and-trading/deposit.md) for creating a wallet, depositing USDC, and transferring funds between wallets including across the two exchanges.
 
 ***
 
