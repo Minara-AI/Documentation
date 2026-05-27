@@ -10,7 +10,7 @@ Lighter is a Layer-2 perpetuals DEX that runs its matching and settlement under 
 
 Lighter wallets accept USDC deposits via Arbitrum. Deposits from other networks or tokens are not credited to the wallet and must be recovered by exporting the wallet's private key.
 
-For step-by-step deposit instructions, see [Deposit funds](/broken/pages/IiHM9u55TyYjG4b9XN3x#deposit-to-perps-wallet).
+For step-by-step deposit instructions, see [Deposit](../../guide/managing-funds-and-trading/deposit.md#deposit).
 
 ## Trading
 
@@ -18,8 +18,8 @@ Lighter wallets support the same order types, margin modes, and risk controls as
 
 ## Using Lighter in Minara
 
-1. Create a Lighter wallet from the `Wallet` panel (see [Deposit funds](/broken/pages/IiHM9u55TyYjG4b9XN3x#deposit-to-perps-wallet)).
-2. Deposit USDC via Arbitrum into the Lighter wallet, or transfer from an existing Hyperliquid wallet (see [Perps wallets](../../guide/managing-funds-and-trading/perps-wallets.md#transfer-between-lighter-and-hyperliquid)).
+1. Create a Lighter wallet from the `Wallet` panel (see [Deposit](../../guide/managing-funds-and-trading/deposit.md#deposit)).
+2. Deposit USDC via Arbitrum into the Lighter wallet, or transfer from an existing Hyperliquid wallet (see [Deposit](../../guide/managing-funds-and-trading/deposit.md#transfer-between-lighter-and-hyperliquid)).
 3. On the Perps trading page, pick the Lighter wallet in the top-left wallet selector. Orders placed from that wallet execute on Lighter.
 
 For a side-by-side comparison with Hyperliquid, see [Liquidity](./).
