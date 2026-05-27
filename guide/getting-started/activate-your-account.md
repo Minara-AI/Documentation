@@ -24,5 +24,4 @@ Once your account is created you land in the chat interface. Your spot wallet an
 
 ## Next steps
 
-* [Deposit funds](/broken/pages/IiHM9u55TyYjG4b9XN3x) to start trading.
-* [Perps wallets](../managing-funds-and-trading/perps-wallets.md): manage Lighter and Hyperliquid wallets.
+* [Deposit](../managing-funds-and-trading/deposit.md) funds, transfer between wallets, and manage Lighter and Hyperliquid wallets.
