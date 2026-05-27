@@ -30,7 +30,9 @@
   * [Authentication](trade/agent-api/authentication.md)
   * [API Key](trade/agent-api/api-key.md)
   * [x402](trade/agent-api/x402.md)
-* [Lighter](trade/lighter.md)
+* [Liquidity](trade/liquidity/README.md)
+  * [Hyperliquid](trade/liquidity/hyperliquid.md)
+  * [Lighter](trade/liquidity/lighter.md)
 * [Trading fees](trade/trading-fees.md)
 
 ## Workflow
