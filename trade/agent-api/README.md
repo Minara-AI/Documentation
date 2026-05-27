@@ -1,4 +1,4 @@
-# Agent API
+# API
 
 The Minara Agent API gives developers, traders, and market analysts direct access to Minara's financial intelligence and trading execution through a standard HTTP interface.
 
@@ -22,4 +22,4 @@ Two billing methods:
 2. **Pay-As-You-Go** — A flexible, permissionless option via the [x402 protocol](https://www.x402.org/), allowing usage-based payments with stablecoins like $USDC.
 
 \
-**Ready to build?** Follow our guides to [getting-started-by-api-key.md](getting-started-by-api-key.md "mention").
+**Ready to build?** Follow our guides to [Broken link](/broken/pages/PWjrBKiSd4zKX9Kk3gNs "mention").

@@ -20,7 +20,7 @@ curl -H "Authorization: Bearer sk-minara-xxxxxxxx" https://api-developer.minara.
 
 > **Security:** Treat your API keys like passwords. Never expose them in client-side code or public repositories.
 
-👉 **Learn more:** [getting-started-by-api-key.md](getting-started-by-api-key.md "mention")
+👉 **Learn more:** [Broken link](/broken/pages/PWjrBKiSd4zKX9Kk3gNs "mention")
 
 ### Pay-As-You-Go (x402)
 
@@ -30,4 +30,4 @@ For usage-based access without a subscription, we support the [**x402 protocol**
 
 **Explore our x402 endpoints:** [Minara on x402scan](https://www.x402scan.com/server/66307a3c-aeb9-4508-9531-71eed69bc9b5)
 
-👉 **Learn more:** [getting-started-by-x402.md](getting-started-by-x402.md "mention")
+👉 **Learn more:** [Broken link](/broken/pages/N30vuC6vXVYQnNTfAfq1 "mention")

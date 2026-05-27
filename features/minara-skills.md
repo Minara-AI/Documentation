@@ -1,4 +1,4 @@
-# Minara Skills
+# Skills
 
 ## What is Minara Skills?
 
@@ -114,19 +114,19 @@ The fastest way to validate that the install worked end-to-end. Three commands t
 
 {% stepper %}
 {% step %}
-#### Log in
+**Log in**
 
 Tell the agent: _"Login to Minara"_. The agent runs the CLI login command and opens a browser tab. Authenticate with your Minara account; the CLI stores the session locally.
 {% endstep %}
 
 {% step %}
-#### Fund your wallet
+**Fund your wallet**
 
 Tell the agent: _"Show my Minara deposit address"_ to deposit existing crypto, or _"Buy crypto with credit card"_ to on-ramp via MoonPay. To trade perps, follow up with _"Deposit 500 USDC to perps"_ to move funds from spot to the Hyperliquid perps wallet.
 {% endstep %}
 
 {% step %}
-#### Trade
+**Trade**
 
 Tell the agent what you want: _"Buy 100 USDC worth of ETH"_, _"Swap 0.1 ETH to USDC"_, or _"Long ETH perp, 5x leverage"_. The agent confirms the trade details before executing. Review the **risk disclosure** carefully before approving.
 {% endstep %}

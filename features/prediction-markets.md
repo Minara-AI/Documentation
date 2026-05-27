@@ -1,8 +1,8 @@
 # Prediction Markets
 
-Minara's Prediction Markets feature gives you access to Hyperliquid's binary crypto prediction markets through Minara's trading interface. You can trade Yes or No positions on short-term price events — for example, "Will BTC be above $80,354 at 2:00 PM?" — with AI analysis signals displayed alongside your order panel to help inform your decision.&#x20;
+Minara's Prediction Markets feature gives you access to Hyperliquid's binary crypto prediction markets through Minara's trading interface. You can trade Yes or No positions on short-term price events — for example, "Will BTC be above $80,354 at 2:00 PM?" — with AI analysis signals displayed alongside your order panel to help inform your decision.
 
-For trading fees, please refer to [trading-fees.md](../trade/trading-fees.md "mention") .&#x20;
+For trading fees, please refer to [trading-fees.md](../trade/trading-fees.md "mention") .
 
 Try it at: [prediction.minara.ai](https://prediction.minara.aihttps/minara.ai/app/trade/prediction)
 
@@ -53,7 +53,7 @@ The center panel shows a TradingView candlestick chart of the prediction market 
 
 {% stepper %}
 {% step %}
-#### Select a Market
+**Select a Market**
 
 Click any card in the AI Prediction panel, or use the market selector dropdown at the top of the chart area to browse all active Hyperliquid Outcome markets.
 
@@ -61,15 +61,15 @@ Click any card in the AI Prediction panel, or use the market selector dropdown a
 {% endstep %}
 
 {% step %}
-#### Ask Minara&#x20;
+**Ask Minara**
 
-Minara consultancy panel is right at your left and you can click "Ask Minara" to analyze current risks and profits.&#x20;
+Minara consultancy panel is right at your left and you can click "Ask Minara" to analyze current risks and profits.
 
 <figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Choose a Side
+**Choose a Side**
 
 In the right panel, select **Buy** or **Sell**, then choose **Yes** or **No**.
 
@@ -78,18 +78,18 @@ In the right panel, select **Buy** or **Sell**, then choose **Yes** or **No**.
 Current implied probability for each side is displayed as a percentage (e.g., Yes 49% / No 51%).
 
 {% hint style="info" %}
-You will need sufficient USDH in your wallet before you can trade outcomes.&#x20;
+You will need sufficient USDH in your wallet before you can trade outcomes.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Set Your Amount
+**Set Your Amount**
 
 Enter a USDH amount or use the quick-fill buttons ($10, $50, $100, $500, $1,000).
 
-Review the order details before confirming:&#x20;
+Review the order details before confirming:
 
 <table><thead><tr><th width="198.328125">Field</th><th>What it shows</th></tr></thead><tbody><tr><td><strong>Slippage</strong></td><td>Estimated price impact at your order size</td></tr><tr><td><strong>Avg Price</strong></td><td>Expected average fill price per share</td></tr><tr><td><strong>Shares</strong></td><td>Number of shares your amount buys at current odds</td></tr><tr><td><strong>Potential Return</strong></td><td>Dollar gain if your position resolves correctly</td></tr></tbody></table>
 
@@ -99,7 +99,7 @@ Review the order details before confirming:&#x20;
 {% endstep %}
 
 {% step %}
-#### Confirm the Order
+**Confirm the Order**
 
 Click **Buy Yes** or **Buy No** to submit. Trades settle in USDH.
 
