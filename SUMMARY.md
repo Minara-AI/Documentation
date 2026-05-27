@@ -6,6 +6,7 @@
 
 * [Create your account](guide/getting-started/activate-your-account.md)
 * [Deposit funds](guide/managing-funds-and-trading/how-to-deposit-funds.md)
+* [Perps wallets](guide/managing-funds-and-trading/perps-wallets.md)
 * [Withdraw](get-started/withdraw.md)
 
 ## Chat
@@ -29,6 +30,7 @@
   * [API Key](trade/agent-api/api-key.md)
   * [x402](trade/agent-api/x402.md)
 * [Assets](trade/trade-assets/README.md)
+* [Lighter](trade/lighter.md)
 * [Trading fees](trade/trading-fees.md)
 
 ## Workflow
