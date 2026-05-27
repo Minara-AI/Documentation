@@ -1,6 +1,6 @@
 # About Minara
 
-Minara is an AI trading platform built on Hyperliquid. Ask questions, get real-time analysis, and trade crypto, stocks, and commodities in one interface.
+Minara is an AI trading platform with perps execution on Lighter and Hyperliquid. Ask questions, get real-time analysis, and trade crypto, stocks, and commodities in one interface.
 
 <table><thead><tr><th width="346.65234375">Feature</th><th width="190.7265625" align="center">Generic Chatbots like ChatGPT and Grok</th><th align="center">Minara AI</th></tr></thead><tbody><tr><td>Accurate, real-time crypto &#x26; stocks data</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Trusted &#x26; actionable financial insights</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Precise market sentiment detection</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Built-in crypto wallet</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Vibe trading with stablecoins</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Gasless on-chain executions</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Creating agentic financial workflows without coding</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
 
@@ -8,7 +8,7 @@ Minara is an AI trading platform built on Hyperliquid. Ask questions, get real-t
 
 Minara combines a Web3-native AI model with a built-in custodial wallet, real-time market data, and a trading execution layer. You can ask market questions, get analysis backed by live on-chain and price data, run automated strategies, and execute trades without switching between tools.
 
-The platform runs on Hyperliquid for perpetual trading and supports spot trading across Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, and Polygon.
+The platform routes perpetual trades to Lighter or Hyperliquid depending on which wallet you use, and supports spot trading across Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, and Polygon.
 
 <figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
@@ -32,7 +32,7 @@ Trained on domain-specific financial and crypto data, with access to over 50 int
 
 **Trading execution**
 
-Trade perpetuals on Hyperliquid via AI Copilot (manual execution with AI signals) or Autopilot (fully automated). Supported assets include Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), silver, crude oil, and tokenized US stocks such as Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), and Microsoft (MSFT). Spot trade across 8 chains directly from chat.
+Trade perpetuals on Lighter or Hyperliquid via AI Copilot (manual execution with AI signals) or Autopilot (fully automated). Supported assets include Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), silver, crude oil, and tokenized US stocks such as Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), and Microsoft (MSFT). Spot trade across 8 chains directly from chat.
 
 **Strategy Studio**
 
