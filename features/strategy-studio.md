@@ -52,7 +52,7 @@ After Minara generates the code, open the **Code** tab to verify the logic match
 
 In the **Code** tab, set your date range and asset, then click **Run Backtest**. Results appear in the **Metrics** tab.
 
-Backtests are supported for all perpetual assets available on Hyperliquid, including Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), silver, and stock perpetuals such as Apple (AAPL), Tesla (TSLA), and NVIDIA (NVDA).
+Backtests are supported for perpetual assets available on Lighter and Hyperliquid, including Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), silver, and stock perpetuals such as Apple (AAPL), Tesla (TSLA), and NVIDIA (NVDA).
 
 ### What each metric means
 
