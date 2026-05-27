@@ -62,33 +62,43 @@ In the `Transfer` dialog, set `From` and `To` to the source and destination wall
 
 To move USDC out of Minara entirely, open the `Transfer` dialog (steps 1–2 above) and click `Withdraw USDC to an external Arbitrum address` at the bottom. Enter the destination Arbitrum address and the amount, then confirm. The withdrawal is sent on the Arbitrum network in USDC.
 
+<figure><img src="../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+
 Withdrawals from a Hyperliquid wallet incur a $1 fee deducted by Hyperliquid.
 
 ## Transfer between Lighter and Hyperliquid
 
-Cross-exchange transfers use the same `Transfer` dialog as same-exchange transfers; set `From` and `To` to wallets on the two different exchanges.
+Cross-exchange transfers use the same `Transfer` dialog as same-exchange transfers; set `From` and `To` to wallets on the two different exchanges. &#x20;
+
+<figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Cross-exchange transfers can take up to 15 minutes to complete. Hyperliquid deducts $1 from the transferred amount on its side. There is no Lighter-side fee.
 {% endhint %}
 
+
+
 ## Switch wallets while trading
 
 The wallet selector sits at the top-left of the Perps trading page. Click the wallet name to pick a different wallet for the next order, or click `+ Add Wallet` to create one without leaving the trading view.
 
-<figure><img src="../../.gitbook/assets/lighter-perps-page-wallet-switcher.png" alt="Perps trading page with the wallet dropdown open showing multiple Lighter and Hyperliquid wallets and the Add Wallet option"><figcaption></figcaption></figure>
-
 The selected wallet determines the balance, available margin, leverage limits, and routing venue shown in the order panel on the right.
+
+<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
 ## Rename
 
 Open the wallet panel from your avatar menu and go to the `Perps` tab. Click the pencil icon next to a wallet name in the dropdown.
 
-<!-- TODO: lighter-wallet-rename.png pending — Antonia will upload -->
-
 Type the new name (max 20 characters, no special characters) and click `Confirm`. The new name applies everywhere the wallet appears, including the trading page selector.
+
+<figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
 ## Notes
 
-- Each wallet belongs to a single exchange. You cannot convert a Lighter wallet into a Hyperliquid wallet or vice versa; create a new wallet and transfer the funds.
-- Lighter and Hyperliquid wallets use the same key model. The same [Wallet security](../../technology/wallet-security.md) rules apply to both.
+* Each wallet belongs to a single exchange. You cannot convert a Lighter wallet into a Hyperliquid wallet or vice versa; create a new wallet and transfer the funds.
+* Lighter and Hyperliquid wallets use the same key model. The same [Wallet security](../../technology/wallet-security.md) rules apply to both.
