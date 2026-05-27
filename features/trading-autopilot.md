@@ -12,6 +12,10 @@ Autopilot is built around three principles:
 - Manual actions that conflict with AI execution are handled explicitly in-product
 {% endhint %}
 
+{% hint style="danger" %}
+**Autopilot runs leveraged perpetual trades on your behalf.** Mandatory TP/SL and drawdown safety exits reduce but do not eliminate the risk of loss. Positions can still be liquidated in fast or gapping markets. Only allocate funds you can afford to lose. See [Liquidations](../trading-reference/liquidations.md).
+{% endhint %}
+
 ***
 
 ## How to access Autopilot

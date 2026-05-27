@@ -4,6 +4,10 @@ Trading Copilot is an AI assistant that analyzes market conditions and generates
 
 Access Trading Copilot at: [copilot.minara.ai](https://copilot.minara.ai)
 
+{% hint style="danger" %}
+**Leveraged trading carries risk of total loss.** Copilot signals are suggestions, not guarantees. Each trade uses leverage, and positions can be liquidated when the price moves against you. Read [Liquidations](../trading-reference/liquidations.md) and [Margin & leverage](../trading-reference/margin-and-leverage.md) before executing your first signal.
+{% endhint %}
+
 ***
 
 ## 1. How Copilot generates signals

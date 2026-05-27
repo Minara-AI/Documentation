@@ -18,6 +18,10 @@ Minara is for active traders and crypto participants who want faster, more infor
 
 It is also useful for people newer to trading who want to act on market signals without building complex tooling from scratch.
 
+{% hint style="danger" %}
+**Trading risk.** Minara provides perpetual contracts with leverage. Leverage amplifies both gains and losses, and positions can be liquidated when the price moves against you. Stock perpetuals track stock prices but are not actual shares: no dividends, no voting rights, no ownership. See [Liquidations](trading-reference/liquidations.md) and [Margin & leverage](trading-reference/margin-and-leverage.md) before trading.
+{% endhint %}
+
 ## What Minara includes
 
 **Web3-native AI model**

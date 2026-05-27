@@ -1,8 +1,17 @@
 # Personalization
 
-Minara's personalization system adapts analysis and responses to your trading habits, portfolio context, and stated preferences. Rather than returning the same generic output to every user, Minara uses information you provide — and patterns it observes over time — to make responses more relevant to how you actually work.
+Minara's personalization system adapts analysis and responses to your trading habits, portfolio context, and stated preferences. Rather than returning the same generic output to every user, Minara uses information you provide and patterns it observes over time to make responses more relevant to how you actually work.
 
 All personalization modules are enabled by default. You can disable any of them at any time.
+
+## Where to find personalization settings
+
+Click your avatar in the top-left corner of the app and select **Personalization** from the profile menu. The sections below (Trading summary, Custom Prompt, Tags, and Memories) each appear as separate panels on that page.
+
+<!-- IMAGE: 建议命名 personalization-menu-location.png
+     内容：app 左上角 avatar 菜单展开，Personalization 项高亮
+     alt text 建议：Account menu opened from the avatar in the top-left with the Personalization option highlighted
+     VERIFY: 确认菜单里 entry 叫 "Personalization"，以及入口是 avatar 下拉还是 Settings 子页 -->
 
 ***
 

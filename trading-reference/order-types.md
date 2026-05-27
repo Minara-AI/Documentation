@@ -14,7 +14,7 @@ A trigger order waits until the asset reaches a price you specify, then executes
 
 **Limit trigger**: when the trigger price is reached, the order is placed as a limit order at your specified price. You will be filled at that price or better, but the order may not fill at all if the market moves away.
 
-**Stop trigger**: when the asset crosses a threshold price, the order executes at market. Used for stop-losses — it guarantees an exit but not a specific price.
+**Stop trigger**: when the asset crosses a threshold price, the order is placed as a market order. Used for stop-losses. The order will fill at the best available price once triggered, which can differ significantly from the trigger price in fast-moving or thinly-traded markets. There is no guaranteed exit price.
 
 ## Order modifiers
 

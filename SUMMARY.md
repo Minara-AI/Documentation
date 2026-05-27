@@ -6,7 +6,7 @@
 
 * [Create your account](guide/getting-started/activate-your-account.md)
 * [Deposit](guide/managing-funds-and-trading/deposit.md)
-* [Withdraw](get-started/withdraw.md)
+* [Your first trade](guide/getting-started/first-trade.md)
 
 ## Chat
 
@@ -29,6 +29,8 @@
   * [Authentication](trade/agent-api/authentication.md)
   * [API Key](trade/agent-api/api-key.md)
   * [x402](trade/agent-api/x402.md)
+  * [API Reference (API Key)](trade/agent-api/api-reference/api-reference-api-key.md)
+  * [API Reference (x402)](trade/agent-api/api-reference/api-reference-x402.md)
 * [Liquidity](trade/liquidity/README.md)
   * [Hyperliquid](trade/liquidity/hyperliquid.md)
   * [Lighter](trade/liquidity/lighter.md)

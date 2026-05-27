@@ -26,15 +26,15 @@ Minara routes orders through Lighter's or Hyperliquid's on-chain order book, dep
 
 ## Stocks
 
+{% hint style="danger" %}
+**Stock perpetuals are not actual shares.** You do not receive dividends, voting rights, or any equity ownership. You are taking a leveraged position on price movement only. Positions can be liquidated. Closing a position ends your exposure; there is no settlement or delivery.
+{% endhint %}
+
 Minara gives you access to tokenized stocks as perpetual contracts on the supported perps exchanges. You can trade Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major equities using the same USDC-based interface as crypto. Availability varies by exchange; check the asset selector for the active wallet.
 
-These are perpetual contracts whose price tracks the underlying stock. They are not actual shares. You do not receive dividends, voting rights, or any equity ownership. You are taking a leveraged position on the price movement of the stock. Trading is available 24/7, including outside traditional market hours, though liquidity and spreads may vary when the underlying exchange is closed.
+These are perpetual contracts whose price tracks the underlying stock. Trading is available 24/7, including outside traditional market hours, though liquidity and spreads may vary when the underlying exchange is closed.
 
 The trading mechanics are identical to crypto perpetuals: positions are denominated in USDC, funding rates apply, leverage is available (at lower maximums than crypto perps), and orders can be placed as market or trigger orders. Filter by **Stocks** in the asset selector to see all available instruments.
-
-{% hint style="info" %}
-Because these are perpetuals tracking stock prices rather than direct ownership, your exposure ends when you close the position. There is no settlement or delivery.
-{% endhint %}
 
 ***
 
