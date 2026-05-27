@@ -1,6 +1,6 @@
 # Trading Copilot
 
-Trading Copilot is an AI assistant that analyzes market conditions and generates structured trade signals for perpetual trading on Hyperliquid. You review the signal (entry price, take-profit, and stop-loss) and execute with one click. You remain in control of every trade.
+Trading Copilot is an AI assistant that analyzes market conditions and generates structured trade signals for perpetual trading on Lighter and Hyperliquid. You review the signal (entry price, take-profit, and stop-loss) and execute with one click. You remain in control of every trade.
 
 Access Trading Copilot at: [copilot.minara.ai](https://copilot.minara.ai)
 
@@ -60,7 +60,7 @@ The output includes:
 
 ## 3. Supported assets
 
-Copilot generates signals for all perpetuals available on Hyperliquid. This includes:
+Copilot generates signals for perpetuals available on Lighter and Hyperliquid. This includes:
 
 - Crypto: Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and hundreds of other tokens
 - Commodities: gold (XAU), silver (SILVER), crude oil
@@ -70,28 +70,13 @@ Copilot generates signals for all perpetuals available on Hyperliquid. This incl
 
 ## 4. Infrastructure
 
-Minara does not provide liquidity or act as a counterparty. All perpetual trades execute on Hyperliquid. Pricing, leverage, funding rates, and liquidity are fully Hyperliquid's. Minara is the AI interface and execution layer on top.
+Minara does not provide liquidity or act as a counterparty. Perpetual trades execute on Lighter or Hyperliquid, depending on which wallet you use. Pricing, leverage, funding rates, and liquidity come from the underlying exchange. Minara is the AI interface and execution layer on top.
 
 ***
 
 ## 5. Deposit and transfer funds
 
-Before trading, you need funds in your Minara Perps Wallet. Direct deposits to the Perps Wallet are not yet supported; you must go through the Spot Wallet first.
-
-**Step 1: Deposit into your Minara Spot Wallet**
-
-<figure><img src="../.gitbook/assets/图片 (1).png" alt="" width="375"><figcaption></figcaption></figure>
-
-**Step 2: Transfer from Spot Wallet to Perps Wallet**
-
-<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
-
-**Transfer rules:**
-
-- Minimum transfer into Perps Wallet: 10 USDT
-- Minimum transfer out of Perps Wallet: more than 1 USDT
-- Hyperliquid charges a 1 USDT fee on withdrawals from the Perps Wallet
-- Network fees apply on transfer (on-chain transaction)
+Before trading, you need funds in a Lighter or Hyperliquid perps wallet. See [Deposit funds](../guide/managing-funds-and-trading/how-to-deposit-funds.md#deposit-to-perps-wallet) for creating a wallet and depositing USDC, and [Perps wallets](../guide/managing-funds-and-trading/perps-wallets.md) for transferring funds between wallets, including across the two exchanges.
 
 ***
 
@@ -138,7 +123,7 @@ You can cancel individual pending orders or use **Cancel All Orders** to clear e
 
 ## 9. Margin mode
 
-Copilot supports both margin modes provided by Hyperliquid:
+Copilot supports both margin modes:
 
 - `Cross margin`: all positions share the same margin balance
 - `Isolated margin`: margin is isolated per position
