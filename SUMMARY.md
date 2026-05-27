@@ -5,7 +5,7 @@
 ## Get started
 
 * [Create your account](guide/getting-started/activate-your-account.md)
-* [Perps wallets](guide/managing-funds-and-trading/perps-wallets.md)
+* [Deposit](guide/managing-funds-and-trading/deposit.md)
 * [Withdraw](get-started/withdraw.md)
 
 ## Chat
