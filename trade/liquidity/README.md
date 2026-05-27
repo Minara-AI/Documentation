@@ -18,7 +18,7 @@ Order types, leverage, funding, and liquidations follow each exchange's own rule
 
 ## Picking a venue
 
-Most users do not need to choose explicitly. By default your account has one wallet on each exchange, and the trading interface lets you swap between them in one click. If you have funds on one side and want to use the other, transfer between them. See [Perps wallets](../../guide/managing-funds-and-trading/perps-wallets.md#transfer-between-lighter-and-hyperliquid).
+Most users do not need to choose explicitly. By default your account has one wallet on each exchange, and the trading interface lets you swap between them in one click. If you have funds on one side and want to use the other, transfer between them. See [Deposit](../../guide/managing-funds-and-trading/deposit.md#transfer-between-lighter-and-hyperliquid).
 
 For details on each venue, see [Lighter](lighter.md) and [Hyperliquid](hyperliquid.md).
 
