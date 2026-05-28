@@ -24,10 +24,3 @@ For transfer instructions, see [Deposit](../../guide/managing-funds-and-trading/
 
 Hyperliquid wallets support the order types, margin modes, and risk controls described in the trading reference. The available asset list comes from Hyperliquid's listings and appears in the asset selector on the Perps trading page when a Hyperliquid wallet is active.
 
-## Using Hyperliquid in Minara
-
-1. Create a Hyperliquid wallet from the `Wallet` panel (see [Deposit](../../guide/managing-funds-and-trading/deposit.md#deposit)).
-2. Deposit USDC via Arbitrum into the wallet, or transfer from an existing Lighter wallet (see [Deposit](../../guide/managing-funds-and-trading/deposit.md#transfer-between-lighter-and-hyperliquid)).
-3. On the Perps trading page, pick the Hyperliquid wallet in the top-left wallet selector. Orders placed from that wallet execute on Hyperliquid.
-
-For a side-by-side comparison with Lighter, see [Liquidity](./).
