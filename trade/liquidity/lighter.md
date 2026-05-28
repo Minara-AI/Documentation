@@ -1,6 +1,6 @@
 # Lighter
 
-\[Lighter]\([https://lighter.xyz/](https://lighter.xyz/)) is a zero-knowledge perpetuals exchange. In Minara, orders placed against a Lighter wallet route to Lighter's on-chain order book.
+[Lighter](https://lighter.xyz/) is a zero-knowledge perpetuals exchange. In Minara, orders placed against a Lighter wallet route to Lighter's on-chain order book.
 
 ## Trust model
 

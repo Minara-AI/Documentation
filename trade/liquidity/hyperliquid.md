@@ -1,6 +1,6 @@
 # Hyperliquid
 
-\[Hyperliquid]\([https://app.hyperliquid.xyz/](https://app.hyperliquid.xyz/)) is an on-chain perpetuals and spot exchange running on a purpose-built Layer 1. In Minara, orders placed against a Hyperliquid wallet route to Hyperliquid's on-chain order book.&#x20;
+[Hyperliquid](https://app.hyperliquid.xyz/trade) is an on-chain perpetuals and spot exchange running on a purpose-built Layer 1. In Minara, orders placed against a Hyperliquid wallet route to Hyperliquid's on-chain order book.&#x20;
 
 ## Trust model
 
