@@ -48,6 +48,7 @@
 * [Order types](trading-reference/order-types.md)
 * [Margin & leverage](trading-reference/margin-and-leverage.md)
 * [Liquidations](trading-reference/liquidations.md)
+* [Credits](reference/credits.md)
 * [Personalization](features/personalization.md)
 * [Multimodal input](features/multimodal-input.md)
 
