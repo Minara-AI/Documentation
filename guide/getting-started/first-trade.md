@@ -8,29 +8,25 @@ description: >-
 
 This guide picks up after you have an account and a funded perps wallet. If you don't, finish [Create your account](activate-your-account.md) and [Deposit](../managing-funds-and-trading/deposit.md) first.
 
-## 1. Open the Trade interface
+{% hint style="danger" %}
+**Trading risk.** Perpetual trades use leverage. Losses can exceed what you expect, and positions can be liquidated when the price moves against you. Start with an amount you can afford to lose while learning the interface.
+{% endhint %}
+
+## 1. Open Trade and pick what to trade
 
 Click `Trade` in the left sidebar of the chat page, or go to [copilot.minara.ai](https://copilot.minara.ai) directly. The Perps trading page loads with a price chart on the left and an order panel on the right.
 
 <figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
-In the top-left, the wallet selector shows which perps wallet your next order will use. Switch to a wallet that holds funds.&#x20;
+In the top-left, the wallet selector shows which perps wallet your next order will use. Switch to a wallet that holds funds. At the top of the chart panel, pick an asset (BTC, ETH, SOL, AAPL, XAU, etc.) from the asset selector.
 
-At the top of the chart panel, pick an asset (BTC, ETH, SOL, AAPL, XAU, etc.) from the asset selector.
+**Optional: get a Copilot signal.** Click `Ask Long` or `Ask Short` in the Copilot panel. Copilot returns a structured signal (entry, take-profit, stop-loss, and a short rationale) and pre-fills the order panel with those values. If you'd rather place a manual order, skip this and enter your own values directly. See [Copilot](../../features/trading-copilot.md) for how signals are generated and the parameters you can control.
 
-## 2. Get a Copilot signal (optional)
+<!-- IMAGE: 建议命名 first-trade-copilot-signal.png
+     内容：Copilot panel 显示一条 long signal（entry / TP / SL / rationale）
+     alt text 建议：Copilot panel showing a long signal with entry price, take-profit, stop-loss, and rationale -->
 
-If you want Minara to suggest a direction:
-
-1. Click `Ask Long` or `Ask Short` in the Copilot panel.
-2. Copilot returns a structured signal: entry price, take-profit, stop-loss, and a short rationale.
-3. The order panel pre-fills with those values.
-
-If you'd rather place a manual order, skip this step and enter your own values directly in the order panel.
-
-See [Copilot](../../features/trading-copilot.md) for how signals are generated and the parameters you can control.
-
-## 3. Review and execute
+## 2. Review and execute
 
 Before clicking the trade button, check three things in the order panel:
 
@@ -39,6 +35,10 @@ Before clicking the trade button, check three things in the order panel:
 * **Take profit and stop loss**: required by Copilot signals, optional on manual orders but strongly recommended
 
 Click `Long` or `Short` to send the order. The order routes to the exchange bound to your selected wallet (Lighter or Hyperliquid). Once filled, the position appears in the `Position` tab at the bottom of the page.
+
+<!-- IMAGE: 建议命名 first-trade-order-panel.png
+     内容：order panel 标出 leverage / margin mode / TP/SL / Long/Short 按钮
+     alt text 建议：Order panel with leverage, margin mode, TP/SL fields, and Long/Short buttons highlighted -->
 
 ## After the trade
 
