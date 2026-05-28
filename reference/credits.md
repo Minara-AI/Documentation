@@ -6,18 +6,16 @@ Credits are Minara's metering unit for AI usage. You spend credits whenever Mina
 
 Credits come with a Minara subscription. Each paid plan tops up your balance on its renewal cycle, and annual billing is available.
 
+<figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+
 If your subscription expires, your balance resets to the Free plan's 300 credits.
 
 ## Plans
 
-<!-- IMAGE: 建议命名 manage-credits-plans.png
-     内容：完整的 Manage 弹窗截图（你在对话里发的那张），显示 Free plan 状态 + Lite / Starter / Pro 三个付费 plan 卡片
-     alt text 建议：Manage plan dialog showing the Free plan status and Lite, Starter, Pro paid plans with credits, price, and features -->
-
 Individual plans are available from the **Manage** dialog (top-right account menu in the web app, or ask Minara in chat to "manage credits"):
 
 | Plan    | Price     | Credits | Active workflows | Agent          | Notes                                           |
-|---------|-----------|---------|------------------|----------------|-------------------------------------------------|
+| ------- | --------- | ------- | ---------------- | -------------- | ----------------------------------------------- |
 | Free    | $0        | 300     | —                | —              | —                                               |
 | Lite    | $19 / mo  | 1,400   | 5                | Smarter Agent  | 190 bonus Sparks                                |
 | Starter | $49 / mo  | 4,000   | 20               | Smarter Agent  | Standard priority; 490 bonus Sparks             |
