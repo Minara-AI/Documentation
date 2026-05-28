@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Training methods
 
 DMind's models combine two original training methods (HPS and C³-SFT) with standard methods like SFT, RLHF, LoRA, and distillation. This page covers each one briefly and notes which model uses what.
