@@ -1,6 +1,6 @@
 # Lighter
 
-Lighter is a zero-knowledge perpetuals exchange. In Minara, orders placed against a Lighter wallet route to Lighter's on-chain order book.
+\[Lighter]\([https://lighter.xyz/](https://lighter.xyz/)) is a zero-knowledge perpetuals exchange. In Minara, orders placed against a Lighter wallet route to Lighter's on-chain order book.
 
 ## Trust model
 
@@ -15,4 +15,3 @@ For step-by-step deposit instructions, see [Deposit](../../guide/managing-funds-
 ## Trading
 
 Lighter wallets support the same order types, margin modes, and risk controls as Hyperliquid wallets. The available asset list comes from Lighter's listings and appears in the asset selector on the Perps trading page when a Lighter wallet is active.
-

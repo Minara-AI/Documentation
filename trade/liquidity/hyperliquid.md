@@ -1,6 +1,6 @@
 # Hyperliquid
 
-Hyperliquid is an on-chain perpetuals and spot exchange running on a purpose-built Layer 1. In Minara, orders placed against a Hyperliquid wallet route to Hyperliquid's on-chain order book.
+\[Hyperliquid]\([https://app.hyperliquid.xyz/](https://app.hyperliquid.xyz/)) is an on-chain perpetuals and spot exchange running on a purpose-built Layer 1. In Minara, orders placed against a Hyperliquid wallet route to Hyperliquid's on-chain order book.&#x20;
 
 ## Trust model
 
@@ -23,4 +23,3 @@ For transfer instructions, see [Deposit](../../guide/managing-funds-and-trading/
 ## Trading
 
 Hyperliquid wallets support the order types, margin modes, and risk controls described in the trading reference. The available asset list comes from Hyperliquid's listings and appears in the asset selector on the Perps trading page when a Hyperliquid wallet is active.
-
