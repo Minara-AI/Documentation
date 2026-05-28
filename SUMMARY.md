@@ -6,7 +6,6 @@
 
 * [Create your account](guide/getting-started/activate-your-account.md)
 * [Deposit](guide/managing-funds-and-trading/deposit.md)
-* [Your first trade](guide/getting-started/first-trade.md)
 
 ## Chat
 
