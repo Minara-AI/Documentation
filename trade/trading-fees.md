@@ -1,12 +1,10 @@
 # Trading Fees
 
-Your total fee on each trade is the sum of two components: a Hyperliquid fee charged by the underlying exchange, and a Minara fee charged by the platform. Fees vary by asset class and trading mode.
+Your total fee on each trade is the sum of two components: an exchange fee charged by the underlying perpetuals venue (Lighter or Hyperliquid), and a Minara fee charged by the platform. Fees vary by venue, asset class, and trading mode.
 
 A maker order adds liquidity to the order book, typically a limit order that does not fill immediately. A taker order removes liquidity, such as a market order or a limit order that matches an existing order on entry.
 
-{% hint style="info" %}
-The fees below are for trades routed to Hyperliquid. Lighter fee schedule is coming soon and will be added to the same table.
-{% endhint %}
+## Hyperliquid
 
 <table>
 <thead>
@@ -54,3 +52,53 @@ The fees below are for trades routed to Hyperliquid. Lighter fee schedule is com
 </table>
 
 Commodities and stocks share one fee tier and cover silver, crude oil, gold, and tokenized US equities. Prediction markets cover binary outcome contracts traded on Hyperliquid's Outcome market, powered by Outcomexyz.
+
+## Lighter
+
+Lighter uses a flat fee schedule across all supported assets; there is no per-asset-class differentiation.
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Mode</th>
+    <th rowspan="2">Component</th>
+    <th>Maker</th>
+    <th>Taker</th>
+  </tr>
+  <tr></tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="3"><strong>Autopilot</strong></td>
+    <td>Lighter fee</td>
+    <td>0.005%</td>
+    <td>0.005%</td>
+  </tr>
+  <tr>
+    <td>Minara fee</td>
+    <td>0.015%</td>
+    <td>0.015%</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td><strong>0.020%</strong></td>
+    <td><strong>0.020%</strong></td>
+  </tr>
+  <tr>
+    <td rowspan="3"><strong>Copilot</strong></td>
+    <td>Lighter fee</td>
+    <td>0.005%</td>
+    <td>0.005%</td>
+  </tr>
+  <tr>
+    <td>Minara fee</td>
+    <td>0.030%</td>
+    <td>0.040%</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td><strong>0.035%</strong></td>
+    <td><strong>0.045%</strong></td>
+  </tr>
+</tbody>
+</table>
