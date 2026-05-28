@@ -1,51 +1,28 @@
 ---
-description: An end-to-end walkthrough from a fresh account to your first executed trade.
+description: A walkthrough of placing your first perpetuals trade once your account is set up and funded.
 ---
 
 # Your first trade
 
-This guide takes you from a fresh Minara account to your first executed perpetuals trade. Five steps, roughly ten minutes of clock time (excluding deposit confirmation, which depends on the source wallet).
+This guide picks up after you have an account and a funded perps wallet. If you don't, finish [Create your account](activate-your-account.md) and [Deposit](../managing-funds-and-trading/deposit.md) first.
 
 {% hint style="danger" %}
 **Trading risk.** Perpetual trades use leverage. Losses can exceed what you expect, and positions can be liquidated when the price moves against you. Start with an amount you can afford to lose while learning the interface.
 {% endhint %}
 
-## 1. Create your account
-
-Go to [minara.ai](https://minara.ai) and click `Launch APP`, or go directly to [app.minara.ai](https://app.minara.ai) and click `Log in / Register`. Sign up with Google or email.
-
-See [Create your account](activate-your-account.md) for the full sign-up flow with screenshots.
-
-When you land in the chat interface, your spot wallet and perps wallets are created automatically. No keys to back up at this stage.
-
-## 2. Deposit USDC
-
-Trading perpetuals on Minara uses USDC on Arbitrum.
-
-1. Click the wallet icon in the top bar of the chat page.
-2. Switch to the `Perps` tab.
-3. Pick the wallet you want to fund (one Lighter and one Hyperliquid wallet are created by default).
-4. Click `Deposit` and send USDC via Arbitrum to the displayed address.
-
-The full deposit flow, including creating extra wallets and choosing between Lighter and Hyperliquid, is in [Deposit](../managing-funds-and-trading/deposit.md).
-
-<!-- IMAGE: 建议命名 first-trade-deposit-step.png
-     内容：Wallet 面板 Perps tab，Deposit 按钮高亮
-     alt text 建议：Wallet panel Perps tab with the Deposit button highlighted -->
-
-## 3. Open the Trade interface
+## 1. Open the Trade interface
 
 Click `Trade` in the left sidebar of the chat page, or go to [copilot.minara.ai](https://copilot.minara.ai) directly. The Perps trading page loads with a price chart on the left and an order panel on the right.
 
 In the top-left, the wallet selector shows which perps wallet your next order will use. Switch to a wallet that holds funds.
 
-In the top of the chart panel, pick an asset (BTC, ETH, SOL, AAPL, XAU, etc.) from the asset selector.
+At the top of the chart panel, pick an asset (BTC, ETH, SOL, AAPL, XAU, etc.) from the asset selector.
 
 <!-- IMAGE: 建议命名 first-trade-trade-page-overview.png
      内容：Trade 页面整体，标出 wallet selector 和 asset selector 两个位置
      alt text 建议：Perps trading page with the wallet selector top-left and the asset selector at the top of the chart highlighted -->
 
-## 4. Get a Copilot signal (optional)
+## 2. Get a Copilot signal (optional)
 
 If you want Minara to suggest a direction:
 
@@ -61,7 +38,7 @@ See [Copilot](../../features/trading-copilot.md) for how signals are generated a
      内容：Copilot panel 显示一条 long signal（entry / TP / SL / rationale）
      alt text 建议：Copilot panel showing a long signal with entry price, take-profit, stop-loss, and rationale -->
 
-## 5. Review and execute
+## 3. Review and execute
 
 Before clicking the trade button, check three things in the order panel:
 
