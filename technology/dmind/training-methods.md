@@ -8,12 +8,15 @@ DMind's models combine two original training methods (HPS and C³-SFT) with stan
 
 ## Base models
 
-| DMind model   | Base                                                                         | Base provider |
-| ------------- | ---------------------------------------------------------------------------- | ------------- |
-| DMind-1       | Qwen3-32B                                                                    | Alibaba       |
-| DMind-1-mini  | Qwen3-14B                                                                    | Alibaba       |
-| DMind-3 (21B) | [functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it) | Google        |
-| DMind-3-mini  | [Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)                         | Alibaba       |
+| Series  | Parameters | Base                                                                         | Base provider | Role                                                                                                                       |
+| ------- | ---------- | ---------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| DMind-1 | 33B        | Qwen3-32B                                                                    | Alibaba       | Web3 expert model for DeFi, tokenomics, governance, and smart contract Q&A and reasoning.                                  |
+| DMind-1 | 15B        | Qwen3-14B                                                                    | Alibaba       | Lightweight distilled version of DMind-1. Suits low-latency real-time Q&A, on-chain analysis, and lightweight agents.      |
+| DMind-2 | 107B       | GLM-4.5-Air                                                                  | Zhipu         | Flagship crypto investment analysis model. Covers macro trends through on-chain behavior, for professional advisory and institutional analysis. |
+| DMind-2 | 4B         | Qwen3-4B-Thinking-2507                                                       | Alibaba       | Lightweight crypto investment analysis model for local and edge deployment, privacy, and low-latency use.                  |
+| DMind-3 | 21B        | gpt-oss-20b                                                                  | OpenAI        | Cloud and enterprise-VPC macro strategy finance engine for systemic risk, cross-chain narratives, institutional research, and agent orchestration. |
+| DMind-3 | 4B         | [Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)                         | Alibaba       | Local financial modeling and strategy reasoning model. Privacy-first, available offline, with on-device deep reasoning.    |
+| DMind-3 | 270M       | [functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it) | Google        | On-device wallet and DEX intent recognition and function calling. Supports SEARCH_TOKEN and EXECUTE_SWAP, multi-chain, and Chinese/English intents. |
 
 Using DMind models requires honoring both DMind's Model Agreement and the underlying base model's original license.
 
