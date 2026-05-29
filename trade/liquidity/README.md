@@ -4,15 +4,7 @@ Minara routes perpetual trades to two on-chain order books: Lighter and Hyperliq
 
 ## Lighter vs. Hyperliquid in Minara
 
-| | Lighter | Hyperliquid |
-|---|---|---|
-| Architecture | Zero-knowledge Layer 2 | Self-settled Layer 1 (HyperBFT consensus) |
-| Settlement | On-chain via zk-proofs | On-chain, one-block finality |
-| Deposit asset | USDC via Arbitrum | USDC via Arbitrum |
-| Asset categories in Minara | Perpetuals | Perpetuals |
-| Cross-exchange transfer | Supported (USDC, USDH where available) | Supported (USDC, USDH where available) |
-| Transfer fee | None on the Lighter side | $1 deducted by Hyperliquid per outgoing transfer |
-| Wallet key model | Same as Hyperliquid | Same as Lighter |
+<table><thead><tr><th></th><th width="249">Lighter</th><th>Hyperliquid</th></tr></thead><tbody><tr><td>Architecture</td><td>Zero-knowledge Layer 2</td><td>Self-settled Layer 1 (HyperBFT consensus)</td></tr><tr><td>Settlement</td><td>On-chain via zk-proofs</td><td>On-chain, one-block finality</td></tr><tr><td>Deposit asset</td><td>USDC via Arbitrum</td><td>USDC via Arbitrum</td></tr><tr><td>Asset categories in Minara</td><td>Perpetuals</td><td>Perpetuals</td></tr><tr><td>Cross-exchange transfer</td><td>Supported (USDC, USDH where available)</td><td>Supported (USDC, USDH where available)</td></tr><tr><td>Transfer within the exchange</td><td>$3 deducted by Lighter per transfer (from one Lighter wallet to another)</td><td>$1 deducted by Hyperliquid for new wallets (the first transfer initiated). No fee for subsequent transfers of the same wallet.</td></tr><tr><td>Withdrawal fee</td><td>$3 deducted by Lighter per outgoing transfer (withdrawal)</td><td>$1 deducted by Hyperliquid per outgoing transfer (withdrawal)</td></tr><tr><td>Wallet key model</td><td>StarkEx-derived account model</td><td>EVM-native account model</td></tr></tbody></table>
 
 Order types, leverage, funding, and liquidations follow each exchange's own rules. See [Order types](../../trading-reference/order-types.md), [Margin & leverage](../../trading-reference/margin-and-leverage.md), and [Liquidations](../../trading-reference/liquidations.md).
 

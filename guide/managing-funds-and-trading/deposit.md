@@ -31,7 +31,7 @@ Once the wallet is created, the address appears on the confirmation screen. Clic
 Click `Deposit` to open the deposit screen. Scan the QR code or copy the deposit address, then send USDC from your external wallet.
 
 {% hint style="warning" %}
-The perps wallet only accepts USDC via Arbitrum. Deposits from other networks or tokens may not appear in the app and must be recovered by exporting your private key.
+The perps wallet only accepts **USDC via Arbitrum**. Deposits from other networks or tokens may not appear in the app and must be recovered by exporting your private key.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/lighter-wallet-deposit.png" alt="Perps Wallet Deposit screen showing Arbitrum chain, USDC asset, a QR code, and the deposit address"><figcaption></figcaption></figure>
@@ -70,17 +70,18 @@ Withdrawals from a Hyperliquid wallet incur a $1 fee deducted by Hyperliquid.
 
 ## Transfer between Lighter and Hyperliquid
 
-Cross-exchange transfers use the same `Transfer` dialog as same-exchange transfers; set `From` and `To` to wallets on the two different exchanges. &#x20;
+Cross-exchange transfers use the same `Transfer` dialog as same-exchange transfers; set `From` and `To` to wallets on the two different exchanges.
 
 <figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-Cross-exchange transfers can take up to 15 minutes to complete. Hyperliquid deducts $1 from the transferred amount on its side. There is no Lighter-side fee.
+Cross-exchange transfers can take up to 15 minutes to complete.&#x20;
+
+If you are transfering from Hyperliquid to Lighter: Hyperliquid deducts $1 from the transferred amount on its side.\
+If you are transfering from Lighter to Hyperliquid: Lighter deducts $3 from the transferred amount on its side.
 {% endhint %}
-
-
 
 ## Switch wallets while trading
 
