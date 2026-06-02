@@ -41,3 +41,13 @@ Bonus Sparks are a separate reward currency for ecosystem perks (badges, NFT whi
 ## When credits run out
 
 For Agent API requests, calls pause until your balance is replenished, either at your next renewal or after upgrading your plan.
+
+## Refunds and plan changes
+
+**Can I get a refund?**
+
+Subscription fees are charged at the start of each billing cycle and are not refundable, except where required by applicable law. Top-Up Credits are also non-refundable and do not carry over to the next billing cycle.
+
+**How do I downgrade my plan?**
+
+Open the **Manage** dialog (top-right account menu, or ask Minara "manage credits") and select a lower plan. The change takes effect at the start of your next billing cycle. Until then, you keep full access to your current plan's features.
