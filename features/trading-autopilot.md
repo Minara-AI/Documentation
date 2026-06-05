@@ -86,6 +86,7 @@ Autopilot only opens positions within your authorized scope. Assets outside that
 
 For standard AI strategies (Sharpe Guard 2.0):
 
+- Uses all available funds in your Perps Wallet, including any funds you deposit while Autopilot is running
 - Opens positions when entry signals fire within your authorized trading scope
 - Places take-profit and stop-loss orders on every position
 - Trails the stop-loss as the market moves in your favor
