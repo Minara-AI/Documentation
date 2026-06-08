@@ -16,7 +16,13 @@ Autopilot is built around three principles:
 **Autopilot runs leveraged perpetual trades on your behalf.** Mandatory TP/SL and drawdown safety exits reduce but do not eliminate the risk of loss. Positions can still be liquidated in fast or gapping markets. Only allocate funds you can afford to lose. See [Liquidations](../trading-reference/liquidations.md).
 {% endhint %}
 
-Autopilot is built to be steady, not to catch every move. It won't chase short-term swings, and it will sit out stretches of the market that don't fit its rules. The logic is mathematical and rule-based, designed to perform more consistently over longer horizons (roughly six months to a year) than over any single week. Treat it as capital you can leave in place for that long.
+Treat Autopilot as capital you hold for the long run, and try not to watch short-term P&L.
+
+Autopilot follows rules. When the conditions for a trade aren't met, it scales back and waits. Those quiet stretches are the strategy staying disciplined rather than a sign that something has broken. Every strategy moves through drawdowns and stretches of outperformance, and both are normal.
+
+The most common way to lose money is to buy in after a hot run and cut during a drawdown. The steadier approach is the opposite: stay put or add during weakness, and trim after a strong stretch. Keep one thing in mind, though. A strategy is not an asset, and a loss does not guarantee a bounce. The goal is to stop chasing highs and panic-selling lows, and to let time and compounding do the work. Long-term compounding and a strategy that stays effective will serve you better than catching short-term hype.
+
+One more point on how trades are filled: Minara is never your counterparty. We run no order book and make no markets. Every trade routes to an on-chain venue such as Hyperliquid and fills against real participants, so we do not profit when you lose.
 
 ***
 
