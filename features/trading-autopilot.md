@@ -16,6 +16,8 @@ Autopilot is built around three principles:
 **Autopilot runs leveraged perpetual trades on your behalf.** Mandatory TP/SL and drawdown safety exits reduce but do not eliminate the risk of loss. Positions can still be liquidated in fast or gapping markets. Only allocate funds you can afford to lose. See [Liquidations](../trading-reference/liquidations.md).
 {% endhint %}
 
+Autopilot is built to be steady, not to catch every move. It won't chase short-term swings, and it will sit out stretches of the market that don't fit its rules. The logic is mathematical and rule-based, designed to perform more consistently over longer horizons (roughly six months to a year) than over any single week. Treat it as capital you can leave in place for that long.
+
 ***
 
 ## How to access Autopilot
