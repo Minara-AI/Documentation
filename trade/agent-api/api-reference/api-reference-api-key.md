@@ -32,7 +32,7 @@ The core endpoint for interacting with Minara's conversational AI.
 
 ### Endpoint
 
-`POST https://api-developer.minara.ai/v1/developer/chat`
+`POST https://api.minara.ai/v1/developer/chat`
 
 ### Request Body
 
@@ -47,7 +47,7 @@ The core endpoint for interacting with Minara's conversational AI.
 ### Example Request
 
 ```bash
-curl -X POST https://api-developer.minara.ai/v1/developer/chat \
+curl -X POST https://api.minara.ai/v1/developer/chat \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -95,7 +95,7 @@ data: [DONE]
 
 ### Endpoint
 
-`POST https://api-developer.minara.ai/v1/developer/intent-to-swap-tx`
+`POST https://api.minara.ai/v1/developer/intent-to-swap-tx`
 
 Convert natural language trading intent into an executable swap transaction payload. Compatible with OKX DEX by default.
 
@@ -110,7 +110,7 @@ Convert natural language trading intent into an executable swap transaction payl
 ### Example Request
 
 ```bash
-curl -X POST https://api-developer.minara.ai/v1/developer/intent-to-swap-tx \
+curl -X POST https://api.minara.ai/v1/developer/intent-to-swap-tx \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -180,7 +180,7 @@ curl -X POST https://api-developer.minara.ai/v1/developer/intent-to-swap-tx \
 
 ### Endpoint
 
-`POST https://api-developer.minara.ai/v1/developer/perp-trading-suggestion`
+`POST https://api.minara.ai/v1/developer/perp-trading-suggestion`
 
 Get AI-powered perpetual trading suggestions with long/short recommendations, entry price, stop loss, take profit levels, and confidence score based on comprehensive market analysis.
 
@@ -197,7 +197,7 @@ Get AI-powered perpetual trading suggestions with long/short recommendations, en
 ### Example Request
 
 ```bash
-curl -X POST https://api-developer.minara.ai/v1/developer/perp-trading-suggestion \
+curl -X POST https://api.minara.ai/v1/developer/perp-trading-suggestion \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -238,7 +238,7 @@ curl -X POST https://api-developer.minara.ai/v1/developer/perp-trading-suggestio
 
 ### Endpoint
 
-`POST https://api-developer.minara.ai/v1/developer/prediction-market-ask`
+`POST https://api.minara.ai/v1/developer/prediction-market-ask`
 
 AI-powered prediction market analysis. Analyze prediction market events and get probability estimates for each outcome with detailed reasoning.
 
@@ -254,7 +254,7 @@ AI-powered prediction market analysis. Analyze prediction market events and get 
 ### Example Request
 
 ```bash
-curl -X POST https://api-developer.minara.ai/v1/developer/prediction-market-ask \
+curl -X POST https://api.minara.ai/v1/developer/prediction-market-ask \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
