@@ -51,7 +51,7 @@ Authorization: Bearer <YOUR_API_KEY>
 
 ```bash
 curl -H "Authorization: Bearer sk-minara-xxxxxxxx" \
-  https://api-developer.minara.ai/v1/developer/chat
+  https://api.minara.ai/v1/developer/chat
 ```
 
 {% hint style="warning" %}
@@ -68,7 +68,7 @@ All API calls consume **credits** from your Minara account. If credits run out, 
 
 ## API reference
 
-Base URL: `https://api-developer.minara.ai`
+Base URL: `https://api.minara.ai`
 
 ### Chat
 
@@ -88,7 +88,7 @@ Base URL: `https://api-developer.minara.ai`
 **Example:**
 
 ```bash
-curl -X POST https://api-developer.minara.ai/v1/developer/chat \
+curl -X POST https://api.minara.ai/v1/developer/chat \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -119,7 +119,7 @@ Convert natural language trading intent into an executable swap transaction payl
 **Example:**
 
 ```bash
-curl -X POST https://api-developer.minara.ai/v1/developer/intent-to-swap-tx \
+curl -X POST https://api.minara.ai/v1/developer/intent-to-swap-tx \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -152,7 +152,7 @@ Get AI-powered perpetual trading suggestions with long/short recommendations, en
 **Example:**
 
 ```bash
-curl -X POST https://api-developer.minara.ai/v1/developer/perp-trading-suggestion \
+curl -X POST https://api.minara.ai/v1/developer/perp-trading-suggestion \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
@@ -185,7 +185,7 @@ AI-powered probability estimates for prediction market outcomes.
 **Example:**
 
 ```bash
-curl -X POST https://api-developer.minara.ai/v1/developer/prediction-market-ask \
+curl -X POST https://api.minara.ai/v1/developer/prediction-market-ask \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{
