@@ -34,9 +34,9 @@ For subscription payments, deposit USDC on a non-EVM chain. We recommend **Solan
 
 <figure><img src="../../.gitbook/assets/subscribe-deposit-solana.png" alt="Deposit dialog with Solana selected as the chain, a QR code, and the deposit address with a Copy button"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
-### 2. Pay with your wallet balance
+### 2. Pay with your wallet balance&#x20;
 
 Once the deposit lands, open the plan picker again, click `Subscribe` on your plan, and choose `Pay with Minara Wallet`. Review the amount and the payment execution cost, then click `Confirm`.
 
