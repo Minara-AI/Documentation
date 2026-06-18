@@ -27,7 +27,7 @@ Deep Research runs a multi-stage research workflow instead of responding immedia
 
 {% columns %}
 {% column %}
-<figure><img src="../.gitbook/assets/02-slash-menu (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02-slash-menu.png" alt=""><figcaption></figcaption></figure>
 
 _Slash menu_
 {% endcolumn %}
@@ -62,7 +62,7 @@ Data Visualization turns your question into structured data output — tables, c
 
 {% columns %}
 {% column %}
-<figure><img src="../.gitbook/assets/02-slash-menu (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02-slash-menu.png" alt=""><figcaption></figcaption></figure>
 
 _Slash menu_
 {% endcolumn %}
@@ -73,8 +73,6 @@ _Slash menu_
 _Data Visualization mode activated_
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 **Available chart types:** Lines, Bars, Pie, Candles, Funnel, Scatter, Heatmap, Radar, Calendar, Treemap, Sankey, Sunburst, Network, Gauge.
 

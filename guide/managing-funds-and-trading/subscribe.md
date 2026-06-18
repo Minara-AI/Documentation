@@ -8,11 +8,11 @@ You can pay two ways: with crypto from your Minara Spot wallet, or with a card t
 
 Click the plan label or `Upgrade` in the top bar.
 
-<figure><img src="../../.gitbook/assets/subscribe-plan-upgrade-topbar.png" alt="Top bar plan dropdown showing the Free plan, an Upgrade link, current credits, and the expiration date"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/subscribe-manage-plans.png" alt="Manage dialog showing the Lite, Starter, and Pro plans with prices, a Pay annually toggle, and a Subscribe button on each"><figcaption></figcaption></figure>
 
 In the `Manage` dialog, switch between `Individual` and `Business`, toggle `Pay annually` if you want annual billing, and click `Subscribe` on the plan you want.
 
-<figure><img src="../../.gitbook/assets/subscribe-manage-plans.png" alt="Manage dialog showing the Lite, Starter, and Pro plans with prices, a Pay annually toggle, and a Subscribe button on each"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 A confirmation dialog opens with the plan and price. Pick a payment method: `Pay with Minara Wallet` (crypto) or `Pay with Stripe` (card). The plan takes effect immediately, and Minara prorates the charge for the rest of the current billing period.
 
@@ -33,6 +33,8 @@ For subscription payments, deposit USDC on a non-EVM chain. We recommend **Solan
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/subscribe-deposit-solana.png" alt="Deposit dialog with Solana selected as the chain, a QR code, and the deposit address with a Copy button"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Pay with your wallet balance
 
