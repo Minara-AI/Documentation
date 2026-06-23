@@ -1,47 +1,88 @@
 # About Minara
 
-Minara is an AI trading platform with perps execution on Lighter and Hyperliquid. Ask questions, get real-time analysis, and trade crypto, stocks, and commodities in one interface.
+Minara is a purpose-built AI agent for digital finance: autonomous execution, research, and portfolio management across spot, perps, DeFi, equities, commodities, and FX.
 
-<table><thead><tr><th width="346.65234375">Feature</th><th width="190.7265625" align="center">Generic Chatbots like ChatGPT and Grok</th><th align="center">Minara AI</th></tr></thead><tbody><tr><td>Accurate, real-time crypto &#x26; stocks data</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Trusted &#x26; actionable financial insights</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Precise market sentiment detection</td><td align="center">Weak</td><td align="center"><strong>Strong</strong></td></tr><tr><td>Built-in crypto wallet</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Vibe trading with stablecoins</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Gasless on-chain executions</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>Creating agentic financial workflows without coding</td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
+You can ask, do research, and trade any digital assets proactively, write and backtest your own quant strategies, or run strategies built by other traders.
 
-## What is Minara?
+<figure><img src=".gitbook/assets/about-chat-whales.png" alt="Minara chat answering an on-chain whale question, with cited sources and a data table"><figcaption></figcaption></figure>
 
-Minara combines a Web3-native AI model with a built-in custodial wallet, real-time market data, and a trading execution layer. You can ask market questions, get analysis backed by live on-chain and price data, run automated strategies, and execute trades without switching between tools.
+<figure><img src=".gitbook/assets/about-trade-copilot.png" alt="Minara perpetuals view with order book and an AI Copilot trade suggestion"><figcaption></figcaption></figure>
 
-The platform routes perpetual trades to Lighter or Hyperliquid depending on which wallet you use, and supports spot trading across Solana, Ethereum, Base, BNB Chain, Avalanche, Arbitrum, Optimism, and Polygon.
+<figure><img src=".gitbook/assets/about-strategy-backtest.png" alt="Strategy Studio backtest result with performance metrics, equity curve, and drawdown"><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+## Why Minara？
 
-## Who is Minara for?
+Most traders juggle a separate app for each job: one for charts, another to place orders, a spreadsheet to track positions, and a chatbot that can't see live prices. Minara folds those into one product, built on a financial AI model that works from live market data.
 
-Minara is for active traders and crypto participants who want faster, more informed decisions. Whether you are monitoring market sentiment on Bitcoin (BTC) or Ethereum (ETH), running a backtest on a Solana (SOL) strategy, setting up a grid bot on gold (XAU), or just asking "should I long BTC right now?" — Minara gives you a structured answer with data behind it.
+You ask in plain language. The model reads live prices and on-chain data, gives you analysis you can check, and places the trade or runs the strategy you decide on. Trade it yourself or let it run while you're away; either way, it's one window.
 
-It is also useful for people newer to trading who want to act on market signals without building complex tooling from scratch.
+## Who Minara is for
 
-{% hint style="danger" %}
-**Trading risk.** Minara provides perpetual contracts with leverage. Leverage amplifies both gains and losses, and positions can be liquidated when the price moves against you. Stock perpetuals track stock prices but are not actual shares: no dividends, no voting rights, no ownership. See [Liquidations](trading-reference/liquidations.md) and [Margin & leverage](trading-reference/margin-and-leverage.md) before trading.
-{% endhint %}
+Minara fits a few kinds of traders.
 
-## What Minara includes
+* **US equities and TradFi traders.** Trade tokenized US stocks like AAPL, TSLA, and NVDA, plus commodities such as gold and oil. Settle in stablecoins, use leverage, and trade outside regular market hours.
+* **Quant and systematic traders.** Write strategies in Pine Runtime, backtest them against minute-level history, and deploy to a live account without standing up your own infrastructure or execution layer.
+* **Independent and discretionary traders.** Get a read on any ticker or event, then place the trade in the same window. Ask what the data says, and the answer comes back with the numbers behind it.
+* **Crypto-native traders.** Trade spot across eight chains and perpetuals on Lighter or Hyperliquid, follow on-chain and smart-money flows, and price prediction markets, all from chat.
 
-**Web3-native AI model**
+## What's inside
 
-Trained on domain-specific financial and crypto data, with access to over 50 integrated data providers covering price, on-chain metrics, sentiment, DeFi, and macro signals.
+* **Chat and research.** Ask about a ticker, a wallet, or a market event and get an answer drawn from live data, with its sources shown.
+* **Copilot.** The model flags the signal and the risk; you decide and place the order.
+* **Autopilot.** Hand a strategy to Minara and it trades the rules for you, with fixed risk controls and a log of every action it takes.
+* **Strategy Studio.** Write, backtest, and tune strategies in Pine Runtime, then send them to Autopilot.
+* **Strategy marketplace.** Browse strategies from the Minara team and other traders, check their track record, and run a proven one on your own account.
+* **Prediction markets.** Get probability estimates on Polymarket-style events, with the reasoning and data the model used to reach them.
+* **Agent workflows.** Describe an automation in a sentence and Minara builds it: a price alert, a scheduled analysis, a DCA plan, or a copy-trading bot.
+* **Agent API.** Call Minara's chat, swap, perp-suggestion, and prediction endpoints from your own app, paying by API key or x402.
 
-**Real-time data integration**
+## What you can trade
 
-* Finance: transactions, stocks, crypto, DeFi, liquidations, VC and project data
-* Audience: wallet holders, smart money, social identities, PnL, relationships
-* Sentiment: news, X posts, Fear & Greed index, macro signals, policy headlines
+One account and one balance, for markets that normally live on separate platforms.
 
-**Trading execution**
+* **US stocks and commodities:** AAPL, TSLA, NVDA, AMZN, MSFT, gold (XAU), silver, crude oil, etc. via Hyperliquid.
+* **Crypto:** BTC, ETH, SOL; perpetuals via Lighter or Hyperliquid; spot across 8 chains.
+* **Events:** prediction markets with Polymarket coverage.
 
-Trade perpetuals on Lighter or Hyperliquid via AI Copilot (manual execution with AI signals) or Autopilot (fully automated). Supported assets include Bitcoin (BTC), Ethereum (ETH), Solana (SOL), gold (XAU), silver, crude oil, and tokenized US stocks such as Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), and Microsoft (MSFT). Spot trade across 8 chains directly from chat.
+## The model underneath
 
-**Strategy Studio**
+Minara runs on [DMind](https://huggingface.co/DMindAI), a model trained on financial and market data rather than the open web. It reads live prices, on-chain flows, equity fundamentals, and sentiment from more than 40 data providers, so its answers track the current market instead of a training snapshot.
 
-Write and backtest algorithmic strategies using Pine Runtime, Minara's TypeScript DSL. Deploy strategies directly to Autopilot.
+* 40+ data providers wired in
+* 3 asset classes in one chat
+* 8 chains for spot trading
 
-**Agent workflows**
+## How it compares
 
-Build trading and monitoring workflows from templates — copy trading, DCA, price alerts — without writing code.
+### Chatboxes
+
+| Capability | General chatbots | Minara |
+|---|---|---|
+| Live crypto, stock, and commodity data | No | Yes |
+| Analysis you can act on, with sources | Weak | Strong |
+| Market sentiment read in real time | Weak | Strong |
+| Built-in wallet and order execution | No | Yes |
+| Backtest and deploy quant strategies | No | Yes |
+| No-code automated trading workflows | No | Yes |
+
+### Brokers
+
+| Capability | Brokers & exchanges | Minara |
+|---|---|---|
+| Crypto, US stocks, and commodities in one account | Partial | Yes |
+| AI research and analysis built in | No | Yes |
+| Build and backtest quant strategies | No | Yes |
+| Plain-language strategy authoring (no code) | No | Yes |
+| Automated execution (Autopilot) | Manual | Yes |
+| No-code automation workflows | No | Yes |
+
+### Strategy Platforms
+
+| Capability | TradingView / QuantConnect | Minara |
+|---|---|---|
+| Build strategies without writing code | Code required | Yes |
+| AI research with citations, in plain language | No | Yes |
+| Vetted factor library, IC + source per factor | Limited | Yes |
+| Backtest and deploy to live in one place | Via brokers | Yes |
+| Built-in wallet and one-click execution | Via brokers | Yes |
+| Multi-asset: crypto, equities, FX in one agent | Partial | Yes |
