@@ -4,17 +4,17 @@ Minara is a purpose-built AI agent for digital finance: autonomous execution, re
 
 You can ask, do research, and trade any digital assets proactively, write and backtest your own quant strategies, or run strategies built by other traders.
 
-<figure><img src=".gitbook/assets/about-chat-whales.png" alt="Minara chat answering an on-chain whale question, with cited sources and a data table"><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/about-trade-copilot.png" alt="Minara perpetuals view with order book and an AI Copilot trade suggestion"><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/about-strategy-backtest.png" alt="Strategy Studio backtest result with performance metrics, equity curve, and drawdown"><figcaption></figcaption></figure>
-
 ## Why Minara？
 
 Most traders juggle a separate app for each job: one for charts, another to place orders, a spreadsheet to track positions, and a chatbot that can't see live prices. Minara folds those into one product, built on a financial AI model that works from live market data.
 
 You ask in plain language. The model reads live prices and on-chain data, gives you analysis you can check, and places the trade or runs the strategy you decide on. Trade it yourself or let it run while you're away; either way, it's one window.
+
+<figure><img src=".gitbook/assets/about-chat-whales.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/about-trade-copilot.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/about-strategy-backtest.png" alt=""><figcaption></figcaption></figure>
 
 ## Who Minara is for
 
@@ -56,33 +56,33 @@ Minara runs on [DMind](https://huggingface.co/DMindAI), a model trained on finan
 
 ### Chatboxes
 
-| Capability | General chatbots | Minara |
-|---|---|---|
-| Live crypto, stock, and commodity data | No | Yes |
-| Analysis you can act on, with sources | Weak | Strong |
-| Market sentiment read in real time | Weak | Strong |
-| Built-in wallet and order execution | No | Yes |
-| Backtest and deploy quant strategies | No | Yes |
-| No-code automated trading workflows | No | Yes |
+| Capability                             | General chatbots | Minara |
+| -------------------------------------- | ---------------- | ------ |
+| Live crypto, stock, and commodity data | No               | Yes    |
+| Analysis you can act on, with sources  | Weak             | Strong |
+| Market sentiment read in real time     | Weak             | Strong |
+| Built-in wallet and order execution    | No               | Yes    |
+| Backtest and deploy quant strategies   | No               | Yes    |
+| No-code automated trading workflows    | No               | Yes    |
 
 ### Brokers
 
-| Capability | Brokers & exchanges | Minara |
-|---|---|---|
-| Crypto, US stocks, and commodities in one account | Partial | Yes |
-| AI research and analysis built in | No | Yes |
-| Build and backtest quant strategies | No | Yes |
-| Plain-language strategy authoring (no code) | No | Yes |
-| Automated execution (Autopilot) | Manual | Yes |
-| No-code automation workflows | No | Yes |
+| Capability                                        | Brokers & exchanges | Minara |
+| ------------------------------------------------- | ------------------- | ------ |
+| Crypto, US stocks, and commodities in one account | Partial             | Yes    |
+| AI research and analysis built in                 | No                  | Yes    |
+| Build and backtest quant strategies               | No                  | Yes    |
+| Plain-language strategy authoring (no code)       | No                  | Yes    |
+| Automated execution (Autopilot)                   | Manual              | Yes    |
+| No-code automation workflows                      | No                  | Yes    |
 
 ### Strategy Platforms
 
-| Capability | TradingView / QuantConnect | Minara |
-|---|---|---|
-| Build strategies without writing code | Code required | Yes |
-| AI research with citations, in plain language | No | Yes |
-| Vetted factor library, IC + source per factor | Limited | Yes |
-| Backtest and deploy to live in one place | Via brokers | Yes |
-| Built-in wallet and one-click execution | Via brokers | Yes |
-| Multi-asset: crypto, equities, FX in one agent | Partial | Yes |
+| Capability                                     | TradingView / QuantConnect | Minara |
+| ---------------------------------------------- | -------------------------- | ------ |
+| Build strategies without writing code          | Code required              | Yes    |
+| AI research with citations, in plain language  | No                         | Yes    |
+| Vetted factor library, IC + source per factor  | Limited                    | Yes    |
+| Backtest and deploy to live in one place       | Via brokers                | Yes    |
+| Built-in wallet and one-click execution        | Via brokers                | Yes    |
+| Multi-asset: crypto, equities, FX in one agent | Partial                    | Yes    |
