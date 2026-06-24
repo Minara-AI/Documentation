@@ -8,144 +8,40 @@ New here? Skim **Trading basics** and **Margin, leverage & liquidation** first. 
 
 ## Trading basics
 
-| Term | Meaning |
-|---|---|
-| Position | Your active trade on an asset. Opening a position starts the trade; closing it ends the trade and settles your gain or loss. |
-| Long | A bet that a price will go up. You profit if the asset rises after you enter. |
-| Short | A bet that a price will go down. You profit if the asset falls. On Minara you can short an asset without owning it first. |
-| Entry / exit | The price at which you open a position (entry) and the price at which you close it (exit). |
-| Spot | Buying the actual asset and owning it outright. The opposite of a derivative like a perpetual. |
-| Volatility | How much and how fast a price moves. High volatility means larger, quicker swings in both directions. |
-| P&L (profit and loss) | How much you have gained or lost on a trade. |
-| Unrealized P&L | The gain or loss on a position you still hold. It moves with the price and is not locked in yet. |
-| Realized P&L | The gain or loss that is locked in once you close a position. |
-| Equity | The total current value of your account: your cash plus the unrealized P&L of any open positions. |
-| Drawdown | A drop from a recent peak in your account value. |
-| Max drawdown | The largest peak-to-trough drop over a period. A measure of worst-case loss. |
+<table><thead><tr><th width="190.73748779296875">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Position</td><td>Your active trade on an asset. Opening a position starts the trade; closing it ends the trade and settles your gain or loss.</td></tr><tr><td>Long</td><td>A bet that a price will go up. You profit if the asset rises after you enter.</td></tr><tr><td>Short</td><td>A bet that a price will go down. You profit if the asset falls. On Minara you can short an asset without owning it first.</td></tr><tr><td>Entry / exit</td><td>The price at which you open a position (entry) and the price at which you close it (exit).</td></tr><tr><td>Spot</td><td>Buying the actual asset and owning it outright. The opposite of a derivative like a perpetual.</td></tr><tr><td>Volatility</td><td>How much and how fast a price moves. High volatility means larger, quicker swings in both directions.</td></tr><tr><td>P&#x26;L (profit and loss)</td><td>How much you have gained or lost on a trade.</td></tr><tr><td>Unrealized P&#x26;L</td><td>The gain or loss on a position you still hold. It moves with the price and is not locked in yet.</td></tr><tr><td>Realized P&#x26;L</td><td>The gain or loss that is locked in once you close a position.</td></tr><tr><td>Equity</td><td>The total current value of your account: your cash plus the unrealized P&#x26;L of any open positions.</td></tr><tr><td>Drawdown</td><td>A drop from a recent peak in your account value.</td></tr><tr><td>Max drawdown</td><td>The largest peak-to-trough drop over a period. A measure of worst-case loss.</td></tr></tbody></table>
 
 ## Perpetuals & contracts
 
-| Term | Meaning |
-|---|---|
-| Derivative | A contract whose price tracks another asset, instead of the asset itself. |
-| Futures | A contract to trade an asset at a set price. Traditional futures expire on a fixed date. |
-| Perpetual (perp) | A futures contract with no expiry date. You can hold it as long as you want. Minara trades crypto, stocks, and commodities as perpetuals. |
-| Funding rate | A small recurring payment between long and short holders that keeps a perpetual's price near the real asset price. When positive, longs pay shorts; when negative, shorts pay longs. |
-| Open interest | The total number of open positions in a market. Rising open interest means more money is flowing in. |
-| Tokenized stock | A perpetual that tracks a stock's price, such as AAPL or TSLA. You trade the price movement but do not own real shares, dividends, or voting rights. |
-| Altcoin | Any cryptocurrency other than Bitcoin. |
+<table><thead><tr><th width="194.9281005859375">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Derivative</td><td>A contract whose price tracks another asset, instead of the asset itself.</td></tr><tr><td>Futures</td><td>A contract to trade an asset at a set price. Traditional futures expire on a fixed date.</td></tr><tr><td>Perpetual (perp)</td><td>A futures contract with no expiry date. You can hold it as long as you want. Minara trades crypto, stocks, and commodities as perpetuals.</td></tr><tr><td>Funding rate</td><td>A small recurring payment between long and short holders that keeps a perpetual's price near the real asset price. When positive, longs pay shorts; when negative, shorts pay longs.</td></tr><tr><td>Open interest</td><td>The total number of open positions in a market. Rising open interest means more money is flowing in.</td></tr><tr><td>Tokenized stock</td><td>A perpetual that tracks a stock's price, such as AAPL or TSLA. You trade the price movement but do not own real shares, dividends, or voting rights.</td></tr><tr><td>Altcoin</td><td>Any cryptocurrency other than Bitcoin.</td></tr></tbody></table>
 
 ## Margin, leverage & liquidation
 
-| Term | Meaning |
-|---|---|
-| Margin | The money you put up as collateral to open a leveraged position. |
-| Collateral | Funds set aside to back a position. On Minara this is USDC. |
-| Leverage | Trading with more size than your own funds, shown as a multiple like 10x. It multiplies both gains and losses: at 10x, a 1% price move becomes a 10% move on your margin. |
-| Initial margin | The amount needed to open a position. Higher leverage means less initial margin for the same position size. |
-| Maintenance margin | The minimum equity needed to keep a position open. Fall below it and the position is liquidated. |
-| Margin ratio | How close a position is to liquidation. As the market moves against you, this ratio worsens. |
-| Cross margin | All your funds back all your positions together. Minara's default. Spare balance can absorb a loss before liquidation, but a loss on one trade reduces the margin available to the others. |
-| Isolated margin | Margin is locked to one position. A loss can only liquidate that position, without touching the rest of your balance. |
-| Liquidation | When your equity falls below the maintenance margin, the system force-closes your position to stop your balance going negative. You cannot undo it. |
-| Liquidation price | The asset price at which your position gets liquidated. Higher leverage moves this price closer to your entry. |
-| Auto-deleveraging (ADL) | A rare last-resort backstop. In extreme moves with too little liquidity, the exchange closes some profitable traders' positions to cover liquidations. |
+<table><thead><tr><th width="200.44061279296875">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Margin</td><td>The money you put up as collateral to open a leveraged position.</td></tr><tr><td>Collateral</td><td>Funds set aside to back a position. On Minara this is USDC.</td></tr><tr><td>Leverage</td><td>Trading with more size than your own funds, shown as a multiple like 10x. It multiplies both gains and losses: at 10x, a 1% price move becomes a 10% move on your margin.</td></tr><tr><td>Initial margin</td><td>The amount needed to open a position. Higher leverage means less initial margin for the same position size.</td></tr><tr><td>Maintenance margin</td><td>The minimum equity needed to keep a position open. Fall below it and the position is liquidated.</td></tr><tr><td>Margin ratio</td><td>How close a position is to liquidation. As the market moves against you, this ratio worsens.</td></tr><tr><td>Cross margin</td><td>All your funds back all your positions together. Minara's default. Spare balance can absorb a loss before liquidation, but a loss on one trade reduces the margin available to the others.</td></tr><tr><td>Isolated margin</td><td>Margin is locked to one position. A loss can only liquidate that position, without touching the rest of your balance.</td></tr><tr><td>Liquidation</td><td>When your equity falls below the maintenance margin, the system force-closes your position to stop your balance going negative. You cannot undo it.</td></tr><tr><td>Liquidation price</td><td>The asset price at which your position gets liquidated. Higher leverage moves this price closer to your entry.</td></tr><tr><td>Auto-deleveraging (ADL)</td><td>A rare last-resort backstop. In extreme moves with too little liquidity, the exchange closes some profitable traders' positions to cover liquidations.</td></tr></tbody></table>
 
 ## Orders
 
-| Term | Meaning |
-|---|---|
-| Order book | The live list of buy and sell orders for an asset. Its depth shows how much can be traded at each price. |
-| Market order | Buys or sells right now at the best available price. Fast, but the exact price depends on what is available. |
-| Limit order | An order to trade only at a price you set or better. It may not fill if the market never reaches your price. |
-| Trigger order | An order that waits until the price hits a level you choose, then fires. |
-| Stop trigger | A trigger that fires a market order when price crosses a threshold. Used for stop-losses. There is no guaranteed fill price. |
-| Limit trigger | A trigger that places a limit order once the level is reached. |
-| Take-profit (TP) | An order that closes your position automatically once it reaches a profit target. |
-| Stop-loss (SL) | An order that closes your position automatically once a loss reaches a level you set, to cap the damage. |
-| Trailing stop | A stop-loss that moves with the price as a trade works in your favor, locking in more of the gain. |
-| Reduce only | A setting so an order can only shrink an existing position, never grow it or flip its direction. |
-| Post only | A setting that keeps your order a maker order. If it would fill immediately as a taker, it is cancelled instead. |
+<table><thead><tr><th width="200.109375">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Order book</td><td>The live list of buy and sell orders for an asset. Its depth shows how much can be traded at each price.</td></tr><tr><td>Market order</td><td>Buys or sells right now at the best available price. Fast, but the exact price depends on what is available.</td></tr><tr><td>Limit order</td><td>An order to trade only at a price you set or better. It may not fill if the market never reaches your price.</td></tr><tr><td>Trigger order</td><td>An order that waits until the price hits a level you choose, then fires.</td></tr><tr><td>Stop trigger</td><td>A trigger that fires a market order when price crosses a threshold. Used for stop-losses. There is no guaranteed fill price.</td></tr><tr><td>Limit trigger</td><td>A trigger that places a limit order once the level is reached.</td></tr><tr><td>Take-profit (TP)</td><td>An order that closes your position automatically once it reaches a profit target.</td></tr><tr><td>Stop-loss (SL)</td><td>An order that closes your position automatically once a loss reaches a level you set, to cap the damage.</td></tr><tr><td>Trailing stop</td><td>A stop-loss that moves with the price as a trade works in your favor, locking in more of the gain.</td></tr><tr><td>Reduce only</td><td>A setting so an order can only shrink an existing position, never grow it or flip its direction.</td></tr><tr><td>Post only</td><td>A setting that keeps your order a maker order. If it would fill immediately as a taker, it is cancelled instead.</td></tr></tbody></table>
 
 ## Fees & execution
 
-| Term | Meaning |
-|---|---|
-| Maker | An order that adds to the order book and waits, usually a limit order. Maker fees are lower. |
-| Taker | An order that fills immediately against existing orders, such as a market order. Taker fees are higher. |
-| Slippage | The gap between the price you expected and the price you actually got. Larger in fast-moving or thin markets. |
-| Notional / position size | The full value of your position, including the part funded by leverage. $1,000 of margin at 10x controls a $10,000 notional position. |
-| Spread | The gap between the highest price buyers offer and the lowest price sellers ask. |
-| Counterparty | The party on the other side of your trade. Minara is never your counterparty: trades fill against real market participants on-chain. |
+<table><thead><tr><th width="206.79376220703125">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Maker</td><td>An order that adds to the order book and waits, usually a limit order. Maker fees are lower.</td></tr><tr><td>Taker</td><td>An order that fills immediately against existing orders, such as a market order. Taker fees are higher.</td></tr><tr><td>Slippage</td><td>The gap between the price you expected and the price you actually got. Larger in fast-moving or thin markets.</td></tr><tr><td>Notional / position size</td><td>The full value of your position, including the part funded by leverage. $1,000 of margin at 10x controls a $10,000 notional position.</td></tr><tr><td>Spread</td><td>The gap between the highest price buyers offer and the lowest price sellers ask.</td></tr><tr><td>Counterparty</td><td>The party on the other side of your trade. Minara is never your counterparty: trades fill against real market participants on-chain.</td></tr></tbody></table>
 
 ## Prediction markets
 
-| Term | Meaning |
-|---|---|
-| Prediction market | A market where you bet Yes or No on whether an event will happen, such as "Will BTC be above $80,000 at 2pm?" |
-| Binary outcome contract | A contract with only two results. The winning side pays $1.00 per share; the losing side pays $0. |
-| Implied probability | The chance the market is pricing in for an outcome. A Yes share priced at $0.65 means the market sees a 65% chance. |
-| Settlement | When a contract ends and pays out based on the actual result. |
-| Edge | The gap between Minara AI's estimated probability and the market's price. Positive edge means the AI sees value the market has not priced in. |
-| Expected value (EV) | The average result of a bet if you repeated it many times. A positive-EV trade is statistically worth taking, though any single trade can still lose. |
+<table><thead><tr><th width="220.8062744140625">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Prediction market</td><td>A market where you bet Yes or No on whether an event will happen, such as "Will BTC be above $80,000 at 2pm?"</td></tr><tr><td>Binary outcome contract</td><td>A contract with only two results. The winning side pays $1.00 per share; the losing side pays $0.</td></tr><tr><td>Implied probability</td><td>The chance the market is pricing in for an outcome. A Yes share priced at $0.65 means the market sees a 65% chance.</td></tr><tr><td>Settlement</td><td>When a contract ends and pays out based on the actual result.</td></tr><tr><td>Edge</td><td>The gap between Minara AI's estimated probability and the market's price. Positive edge means the AI sees value the market has not priced in.</td></tr><tr><td>Expected value (EV)</td><td>The average result of a bet if you repeated it many times. A positive-EV trade is statistically worth taking, though any single trade can still lose.</td></tr></tbody></table>
 
 ## Strategy & metrics
 
-| Term | Meaning |
-|---|---|
-| Backtest | Running a strategy against past market data to see how it would have performed. Strong past results do not guarantee future ones. |
-| Paper trading | Testing a strategy live with fake money, so no real capital is at risk. |
-| Total return | The overall percentage gain or loss over a period. |
-| Win rate | The share of trades that closed in profit. |
-| Profit factor | Total profit divided by total loss. Above 1.0 means the strategy made money overall. |
-| Sharpe ratio | Return measured against risk. Higher is better; above 1.0 is generally considered acceptable. |
-| Sortino ratio | Like the Sharpe ratio, but it only counts downside swings as risk. |
-| APY (annual percentage yield) | A return rate expressed as if it ran for a full year. |
-| Overfitting | When a strategy is tuned so tightly to past data that it fails on new data. |
-| Cold-start bias | Lower accuracy when a strategy or model is new and has not gathered enough live data yet. |
-| Trend-following | A strategy that enters in the direction of an existing trend and rides it. |
-| Mean reversion | A strategy that bets a price stretched far from its average will snap back. |
-| Range-bound market | A market moving sideways between a floor and a ceiling rather than trending. Also called a sideways market. |
-| Grid trading | A strategy that places staggered buy and sell orders across a price range to profit from back-and-forth movement. Minara's Futures Grid works this way. |
-| Market regime | The prevailing market mood, such as trending vs. ranging or risk-on vs. risk-off. |
-| Whipsaw | A sharp reversal that triggers a losing trade right before the price turns back your way. |
-| Reward-to-risk ratio | How much you stand to gain versus how much you risk on a trade. |
+<table><thead><tr><th width="200.07183837890625">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Backtest</td><td>Running a strategy against past market data to see how it would have performed. Strong past results do not guarantee future ones.</td></tr><tr><td>Paper trading</td><td>Testing a strategy live with fake money, so no real capital is at risk.</td></tr><tr><td>Total return</td><td>The overall percentage gain or loss over a period.</td></tr><tr><td>Win rate</td><td>The share of trades that closed in profit.</td></tr><tr><td>Profit factor</td><td>Total profit divided by total loss. Above 1.0 means the strategy made money overall.</td></tr><tr><td>Sharpe ratio</td><td>Return measured against risk. Higher is better; above 1.0 is generally considered acceptable.</td></tr><tr><td>Sortino ratio</td><td>Like the Sharpe ratio, but it only counts downside swings as risk.</td></tr><tr><td>APY (annual percentage yield)</td><td>A return rate expressed as if it ran for a full year.</td></tr><tr><td>Overfitting</td><td>When a strategy is tuned so tightly to past data that it fails on new data.</td></tr><tr><td>Cold-start bias</td><td>Lower accuracy when a strategy or model is new and has not gathered enough live data yet.</td></tr><tr><td>Trend-following</td><td>A strategy that enters in the direction of an existing trend and rides it.</td></tr><tr><td>Mean reversion</td><td>A strategy that bets a price stretched far from its average will snap back.</td></tr><tr><td>Range-bound market</td><td>A market moving sideways between a floor and a ceiling rather than trending. Also called a sideways market.</td></tr><tr><td>Grid trading</td><td>A strategy that places staggered buy and sell orders across a price range to profit from back-and-forth movement. Minara's Futures Grid works this way.</td></tr><tr><td>Market regime</td><td>The prevailing market mood, such as trending vs. ranging or risk-on vs. risk-off.</td></tr><tr><td>Whipsaw</td><td>A sharp reversal that triggers a losing trade right before the price turns back your way.</td></tr><tr><td>Reward-to-risk ratio</td><td>How much you stand to gain versus how much you risk on a trade.</td></tr></tbody></table>
 
 ## Trading styles
 
-| Term | Meaning |
-|---|---|
-| Scalping | Very short trades, in and out within minutes. |
-| Day trading | Opening and closing positions within the same day. |
-| Swing trading | Holding positions for days to weeks to catch larger moves. |
+<table><thead><tr><th width="204.918701171875">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Scalping</td><td>Very short trades, in and out within minutes.</td></tr><tr><td>Day trading</td><td>Opening and closing positions within the same day.</td></tr><tr><td>Swing trading</td><td>Holding positions for days to weeks to catch larger moves.</td></tr></tbody></table>
 
 ## Chart & indicators
 
-| Term | Meaning |
-|---|---|
-| Candlestick (K-line) | A chart bar showing the open, high, low, and close price for one time period. |
-| Timeframe | The time each candle covers, such as 15-minute or 4-hour. Shorter timeframes show faster detail; longer ones show the bigger picture. |
-| EMA (exponential moving average) | An average price that weights recent prices more heavily, used to read trend direction. |
-| RSI (relative strength index) | A 0–100 gauge of whether an asset looks overbought (high) or oversold (low). |
-| MACD | An indicator that compares two moving averages to flag shifts in momentum. |
-| Bollinger Bands | Bands above and below an average price that widen with volatility, used to judge whether price is stretched. |
-| ATR (average true range) | A measure of how much an asset typically moves, often used to size stops. |
-| Support / resistance | Price levels where an asset has tended to stop falling (support) or stop rising (resistance). |
+<table><thead><tr><th width="212.65618896484375">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Candlestick (K-line)</td><td>A chart bar showing the open, high, low, and close price for one time period.</td></tr><tr><td>Timeframe</td><td>The time each candle covers, such as 15-minute or 4-hour. Shorter timeframes show faster detail; longer ones show the bigger picture.</td></tr><tr><td>EMA (exponential moving average)</td><td>An average price that weights recent prices more heavily, used to read trend direction.</td></tr><tr><td>RSI (relative strength index)</td><td>A 0–100 gauge of whether an asset looks overbought (high) or oversold (low).</td></tr><tr><td>MACD</td><td>An indicator that compares two moving averages to flag shifts in momentum.</td></tr><tr><td>Bollinger Bands</td><td>Bands above and below an average price that widen with volatility, used to judge whether price is stretched.</td></tr><tr><td>ATR (average true range)</td><td>A measure of how much an asset typically moves, often used to size stops.</td></tr><tr><td>Support / resistance</td><td>Price levels where an asset has tended to stop falling (support) or stop rising (resistance).</td></tr></tbody></table>
 
 ## Wallets, funds & on-chain
 
-| Term | Meaning |
-|---|---|
-| USDC | A stablecoin pegged to the US dollar. Minara's perps wallets are funded with USDC. |
-| USDH | A stablecoin used to settle Hyperliquid prediction markets and some transfers. |
-| Stablecoin | A crypto token designed to hold a steady value, usually $1. |
-| Arbitrum | The blockchain network Minara uses to move USDC in and out. Deposits must arrive via Arbitrum. |
-| On-chain | Recorded directly on a public blockchain, visible and verifiable by anyone. |
-| Layer 1 / Layer 2 | A Layer 1 is a base blockchain, like Hyperliquid's own chain. A Layer 2 is built on top of another chain to make it faster or cheaper, like Lighter. |
-| Custodial wallet | A wallet whose keys are managed for you. Minara uses a custodial smart wallet so you do not have to handle private keys or gas yourself. |
-| Self-custody | Holding your own keys and controlling funds directly, the opposite of custodial. |
-| Smart contract wallet | A wallet that is itself an on-chain program, which makes its activity auditable, rather than an entry in a company database. |
-| Gas | The network fee paid to process an on-chain transaction. Minara's wallet covers this for you. |
-| DEX / CEX | A decentralized exchange (DEX) runs on-chain with no central operator. A centralized exchange (CEX) is run by a company that holds your funds. |
-| Perps wallet | Your trading wallet for perpetuals. Each one is tied to a single exchange, Lighter or Hyperliquid. |
-| Private key | The secret that controls a wallet's funds. Anyone who has it can move the money, so never share it. |
+<table><thead><tr><th width="210.95623779296875">Term</th><th>Meaning</th></tr></thead><tbody><tr><td>USDC</td><td>A stablecoin pegged to the US dollar. Minara's perps wallets are funded with USDC.</td></tr><tr><td>USDH</td><td>A stablecoin used to settle Hyperliquid prediction markets and some transfers.</td></tr><tr><td>Stablecoin</td><td>A crypto token designed to hold a steady value, usually $1.</td></tr><tr><td>Arbitrum</td><td>The blockchain network Minara uses to move USDC in and out. Deposits must arrive via Arbitrum.</td></tr><tr><td>On-chain</td><td>Recorded directly on a public blockchain, visible and verifiable by anyone.</td></tr><tr><td>Layer 1 / Layer 2</td><td>A Layer 1 is a base blockchain, like Hyperliquid's own chain. A Layer 2 is built on top of another chain to make it faster or cheaper, like Lighter.</td></tr><tr><td>Custodial wallet</td><td>A wallet whose keys are managed for you. Minara uses a custodial smart wallet so you do not have to handle private keys or gas yourself.</td></tr><tr><td>Self-custody</td><td>Holding your own keys and controlling funds directly, the opposite of custodial.</td></tr><tr><td>Smart contract wallet</td><td>A wallet that is itself an on-chain program, which makes its activity auditable, rather than an entry in a company database.</td></tr><tr><td>Gas</td><td>The network fee paid to process an on-chain transaction. Minara's wallet covers this for you.</td></tr><tr><td>DEX / CEX</td><td>A decentralized exchange (DEX) runs on-chain with no central operator. A centralized exchange (CEX) is run by a company that holds your funds.</td></tr><tr><td>Perps wallet</td><td>Your trading wallet for perpetuals. Each one is tied to a single exchange, Lighter or Hyperliquid.</td></tr><tr><td>Private key</td><td>The secret that controls a wallet's funds. Anyone who has it can move the money, so never share it.</td></tr></tbody></table>
