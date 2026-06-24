@@ -34,6 +34,7 @@
   * [Hyperliquid](trade/liquidity/hyperliquid.md)
   * [Lighter](trade/liquidity/lighter.md)
 * [Trading fees](trade/trading-fees.md)
+* [Glossary](trade/glossary.md)
 
 ## Workflow
 
