@@ -1,15 +1,11 @@
-# Strategy Studio
-
-Strategy Studio is where you build, backtest, and deploy algorithmic trading strategies. Strategies are written in Pine Runtime, Minara's TypeScript DSL, and run against historical market data before going live. A deployed strategy executes automatically, opening and closing positions according to your code.
-
-Find it at `/app/trade/strategy-studio`.
+# Create Time-series Strategies
 
 ## Left sidebar
 
 The sidebar shows two sections:
 
-- **Deployed**: strategies currently running live. Each deployed strategy shows its live APY and the asset it trades.
-- **Drafts**: strategies you're editing or have not yet deployed. Changes to a draft never affect a deployed strategy.
+* **Deployed**: strategies currently running live. Each deployed strategy shows its live APY and the asset it trades.
+* **Drafts**: strategies you're editing or have not yet deployed. Changes to a draft never affect a deployed strategy.
 
 Click any entry to open it in the editor.
 
@@ -17,8 +13,8 @@ Click any entry to open it in the editor.
 
 Click **New Strategy** in the top-right corner. Two options:
 
-- **Describe your idea in chat**: type what you want the strategy to do in plain language. Minara generates the Pine Runtime code. This is what Minara calls "Vibe Trading": you describe the logic, the AI writes the code.
-- **Write code directly**: start from a blank editor or an existing template and write Pine Runtime yourself.
+* **Describe your idea in chat**: type what you want the strategy to do in plain language. Minara generates the Pine Runtime code. This is what Minara calls "Vibe Trading": you describe the logic, the AI writes the code.
+* **Write code directly**: start from a blank editor or an existing template and write Pine Runtime yourself.
 
 Either way, the strategy opens in draft state. Nothing runs until you deploy.
 
@@ -40,12 +36,12 @@ After Minara generates the code, open the **Code** tab to verify the logic match
 
 ## Editor tabs
 
-| Tab | What it shows |
-|---|---|
-| Code | Pine Runtime source code for your strategy |
-| Metrics | Backtest performance summary |
-| Trades | Individual trade log from the backtest |
-| Paper | Live paper trading (no real capital) |
+| Tab      | What it shows                                     |
+| -------- | ------------------------------------------------- |
+| Code     | Pine Runtime source code for your strategy        |
+| Metrics  | Backtest performance summary                      |
+| Trades   | Individual trade log from the backtest            |
+| Paper    | Live paper trading (no real capital)              |
 | Optimize | Parameter sweep tool for finding optimal settings |
 
 ## Run a backtest
@@ -56,14 +52,14 @@ Backtests are supported for perpetual assets available on Lighter and Hyperliqui
 
 ### What each metric means
 
-| Metric | What it tells you |
-|---|---|
-| Total Return | Percentage gain or loss over the backtest period |
-| Max Drawdown | Largest peak-to-trough decline; measures worst-case loss |
-| Win Rate | Percentage of trades that closed in profit |
+| Metric        | What it tells you                                                           |
+| ------------- | --------------------------------------------------------------------------- |
+| Total Return  | Percentage gain or loss over the backtest period                            |
+| Max Drawdown  | Largest peak-to-trough decline; measures worst-case loss                    |
+| Win Rate      | Percentage of trades that closed in profit                                  |
 | Profit Factor | Gross profit divided by gross loss; above 1.0 means the strategy made money |
-| Sharpe Ratio | Return per unit of risk; above 1.0 is generally acceptable |
-| Sortino Ratio | Like Sharpe but only penalizes downside volatility |
+| Sharpe Ratio  | Return per unit of risk; above 1.0 is generally acceptable                  |
+| Sortino Ratio | Like Sharpe but only penalizes downside volatility                          |
 
 {% hint style="info" %}
 A strong backtest does not guarantee live performance. Cold-start bias and overfitting are common. Use the **Paper** tab to validate the strategy in live conditions before deploying real capital.
@@ -82,10 +78,10 @@ Two things to know:
 
 Click a deployed strategy to view:
 
-- **APY**: annualized return since deployment
-- **Positions**: current open positions and their unrealized P&L
-- **Trade log**: every entry and exit, with timestamps and realized P&L
+* **APY**: annualized return since deployment
+* **Positions**: current open positions and their unrealized P\&L
+* **Trade log**: every entry and exit, with timestamps and realized P\&L
 
 {% hint style="info" %}
-APY is calculated from the strategy's realized P&L since deployment. It resets if you stop and redeploy the strategy.
+APY is calculated from the strategy's realized P\&L since deployment. It resets if you stop and redeploy the strategy.
 {% endhint %}

@@ -18,7 +18,9 @@
 
 * [Copilot](features/trading-copilot.md)
 * [Autopilot](features/trading-autopilot.md)
-* [Strategy Studio](features/strategy-studio.md)
+* [Strategy Studio](trade/strategy-studio/README.md)
+  * [Create Cross-sectional Strategies](trade/strategy-studio/create-cross-sectional-strategies.md)
+  * [Create Time-series Strategies](trade/strategy-studio/create-time-series-strategies.md)
 * [Prediction Market](features/prediction-market-copilot.md)
 * [Prediction Markets](features/prediction-markets.md)
 * [Assets](trade/trade-assets/README.md)

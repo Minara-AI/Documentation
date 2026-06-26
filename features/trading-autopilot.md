@@ -1,4 +1,4 @@
-# Trading Autopilot
+# Autopilot
 
 Autopilot executes trading strategies on your behalf, 24 hours a day. Once you select a strategy and define your trading scope, the AI opens positions, manages take-profit and stop-loss orders, trails stops as conditions change, and closes or reverses positions when signals shift, without requiring manual input.
 
@@ -7,16 +7,16 @@ You can override or stop Autopilot at any time.
 {% hint style="info" %}
 Autopilot is built around three principles:
 
-- Every automated action is visible and explainable
-- You can override at any time
-- Manual actions that conflict with AI execution are handled explicitly in-product
+* Every automated action is visible and explainable
+* You can override at any time
+* Manual actions that conflict with AI execution are handled explicitly in-product
 {% endhint %}
 
 {% hint style="danger" %}
 **Autopilot runs leveraged perpetual trades on your behalf.** Mandatory TP/SL and drawdown safety exits reduce but do not eliminate the risk of loss. Positions can still be liquidated in fast or gapping markets. Only allocate funds you can afford to lose. See [Liquidations](../trading-reference/liquidations.md).
 {% endhint %}
 
-Treat Autopilot as capital you hold for the long run, and try not to watch short-term P&L.
+Treat Autopilot as capital you hold for the long run, and try not to watch short-term P\&L.
 
 Autopilot follows rules. When the conditions for a trade aren't met, it scales back and waits. Those quiet stretches are the strategy staying disciplined rather than a sign that something has broken. Every strategy moves through drawdowns and stretches of outperformance, and both are normal.
 
@@ -78,7 +78,7 @@ Supertrend Monitor has been retired. Existing users should migrate to Sharpe Gua
 
 ### Custom strategies from Strategy Studio
 
-Autopilot also supports custom strategies built in [Strategy Studio](strategy-studio.md). Once you deploy a strategy from Studio, it appears in the Autopilot strategy list alongside official strategies and runs under the same execution and risk-control framework.
+Autopilot also supports custom strategies built in [Strategy Studio](../trade/strategy-studio/). Once you deploy a strategy from Studio, it appears in the Autopilot strategy list alongside official strategies and runs under the same execution and risk-control framework.
 
 ***
 
@@ -94,14 +94,14 @@ Autopilot only opens positions within your authorized scope. Assets outside that
 
 For standard AI strategies (Sharpe Guard 2.0):
 
-- Uses all available funds in your Perps Wallet, including any funds you deposit while Autopilot is running
-- Opens positions when entry signals fire within your authorized trading scope
-- Places take-profit and stop-loss orders on every position
-- Trails the stop-loss as the market moves in your favor
-- Closes the position at market price if technical indicators shift rapidly
-- Reverses the position when conditions warrant, sizing the new position using the same rules as any new entry
-- Applies global risk controls, including maximum drawdown limits
-- Exits and sends you a notification if safety thresholds are triggered
+* Uses all available funds in your Perps Wallet, including any funds you deposit while Autopilot is running
+* Opens positions when entry signals fire within your authorized trading scope
+* Places take-profit and stop-loss orders on every position
+* Trails the stop-loss as the market moves in your favor
+* Closes the position at market price if technical indicators shift rapidly
+* Reverses the position when conditions warrant, sizing the new position using the same rules as any new entry
+* Applies global risk controls, including maximum drawdown limits
+* Exits and sends you a notification if safety thresholds are triggered
 
 ***
 
@@ -133,8 +133,8 @@ If you deposit less than 10 USDC (for example, 5 USDC), the funds remain pending
 
 Autopilot requires cross margin for all managed assets. Autopilot cannot start if:
 
-- You have any isolated margin position, or
-- You hold a position outside the strategy's trading scope
+* You have any isolated margin position, or
+* You hold a position outside the strategy's trading scope
 
 For example: if the active strategy covers BTC, ETH, and SOL, but you hold an open HYPE position, you must close HYPE before starting Autopilot.
 
