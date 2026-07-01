@@ -8,6 +8,8 @@ Minara supports three categories of tradable assets: crypto perpetuals, tokenize
 
 Minara trades crypto perpetuals on Lighter and Hyperliquid, both high-performance on-chain order books. Perpetuals are futures contracts with no expiry date. You hold them as long as you want, and the contract price tracks the underlying asset via a funding rate mechanism.
 
+<figure><img src="../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
+
 **Supported assets**: the perpetuals listed on Lighter and Hyperliquid are available in Minara, including Bitcoin (BTC), Ethereum (ETH), Solana (SOL), and many others. Popular pairs include BTC/USDC, ETH/USDC, and SOL/USDC. You can also trade hundreds of altcoin perpetuals from the same interface. The full list appears in the asset selector at `/app/trade/perps`.
 
 **No expiry**: unlike traditional futures, perpetuals don't settle on a fixed date. You open a position and hold it indefinitely, or until you close it or get liquidated.
@@ -30,7 +32,9 @@ Minara routes orders through Lighter's or Hyperliquid's on-chain order book, dep
 **Stock perpetuals are not actual shares.** You do not receive dividends, voting rights, or any equity ownership. You are taking a leveraged position on price movement only. Positions can be liquidated. Closing a position ends your exposure; there is no settlement or delivery.
 {% endhint %}
 
-Minara gives you access to tokenized stocks as perpetual contracts on the supported perps exchanges. You can trade Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major equities using the same USDC-based interface as crypto. Availability varies by exchange; check the asset selector for the active wallet.
+Minara gives you access to tokenized stocks as perpetual contracts on the supported perps exchanges. You can trade Apple (AAPL), Tesla (TSLA), NVIDIA (NVDA), Amazon (AMZN), Microsoft (MSFT), and other major equities using the same USDC-based interface as crypto. Availability varies by exchange; check the asset selector for the active wallet.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
 These are perpetual contracts whose price tracks the underlying stock. Trading is available 24/7, including outside traditional market hours, though liquidity and spreads may vary when the underlying exchange is closed.
 
@@ -44,7 +48,9 @@ Minara supports trading commodity perpetuals including gold (XAU), silver (SILVE
 
 * **Gold (XAU)**: trade gold perpetuals as XAUUSDC, priced in USDC, 24/7 without a brokerage account.
 * **Silver (SILVER)**: silver futures perpetual, priced in USDC.
-* **Crude oil**: available as a perpetual contract.
+* **Crude oil**: available as a perpetual contract.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 More commodities may be added as exchange listings expand. Filter by **Commodities** in the asset selector to see the current list.
 
