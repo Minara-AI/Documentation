@@ -1,6 +1,6 @@
 # Assets
 
-Minara supports three categories of tradable assets: crypto perpetuals, tokenized stock perpetuals, and commodity perpetuals, all settled in USDC on Lighter's or Hyperliquid's on-chain order book depending on which wallet you trade from.
+Minara supports six categories of tradable assets: crypto perpetuals, tokenized stock perpetuals, commodity perpetuals, pre-IPO perpetuals, index perpetuals, and FX perpetuals. All are settled in USDC on Lighter's or Hyperliquid's on-chain order book depending on which wallet you trade from. Use the asset selector at the top of the trade screen to filter by category.
 
 ***
 
@@ -44,11 +44,14 @@ The trading mechanics are identical to crypto perpetuals: positions are denomina
 
 ## Commodities
 
-Minara supports trading commodity perpetuals including gold (XAU), silver (SILVER), and crude oil where the active exchange lists them.
+Minara supports trading commodity perpetuals including precious metals, energy, and industrial metals where the active exchange lists them.
 
-* **Gold (XAU)**: trade gold perpetuals as XAUUSDC, priced in USDC, 24/7 without a brokerage account.
-* **Silver (SILVER)**: silver futures perpetual, priced in USDC.
-* **Crude oil**: available as a perpetual contract.&#x20;
+* **Gold (GOLD)**: gold perpetual priced in USDC, 24/7 without a brokerage account.
+* **Silver (SILVER)**: silver perpetual, priced in USDC.
+* **Crude oil (CL)**: WTI crude oil perpetual.
+* **Brent oil (BRENTOIL)**: Brent crude perpetual.
+* **Copper (COPPER)**: copper perpetual.
+* **Natural gas (NATGAS)**: natural gas perpetual.
 
 <figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
@@ -59,6 +62,48 @@ Commodity perpetuals work the same way as crypto perpetuals: no expiry, funding 
 {% hint style="info" %}
 Commodity perpetuals track the underlying commodity price via oracle feeds. You are not taking delivery of physical goods.
 {% endhint %}
+
+***
+
+## Pre-IPO
+
+{% hint style="warning" %}
+Pre-IPO perpetuals track a synthetic valuation of a private company, not tradable equity. There are no shares, no ownership, and no claim on the company. You are taking a leveraged position on price movement only, and positions can be liquidated.
+{% endhint %}
+
+Minara lists pre-IPO perpetuals that track the estimated valuation of private companies before they go public. You trade them in USDC with the same interface as every other perpetual. Available symbols include SPCX-USDC, CBRS-USDC, and QNT-USDC, with leverage up to 20x. Filter by **Pre-IPO** in the asset selector to see the current list.
+
+<figure><img src="../../.gitbook/assets/trade-assets-pre-ipo.png" alt="Pre-IPO perpetuals in the asset selector"><figcaption></figcaption></figure>
+
+Because there is no public market for these companies, prices reference off-market valuation data via oracle feeds. Liquidity can be thinner than in crypto or stock perpetuals.
+
+***
+
+## Indices
+
+Minara lists perpetuals that track major equity indices, priced in USDC and available 24/7. Supported symbols include:
+
+* **SP500-USDC**: S&P 500 index perpetual, up to 50x leverage.
+* **XYZ100-USDC**: Nasdaq-100 style tech index perpetual, up to 30x leverage.
+* **JP225-USDC**: Nikkei 225 (Japan) index perpetual, up to 20x leverage.
+* **KR200-USDC**: KOSPI 200 (Korea) index perpetual, up to 20x leverage.
+
+<figure><img src="../../.gitbook/assets/trade-assets-indices.png" alt="Index perpetuals in the asset selector"><figcaption></figcaption></figure>
+
+Index perpetuals work the same way as other perpetuals: no expiry, funding rates, and market or trigger orders. Filter by **Indices** in the asset selector to see the current list.
+
+***
+
+## FX
+
+Minara lists foreign-exchange perpetuals that track major currency pairs against the US dollar, priced in USDC with leverage up to 50x. Supported symbols include:
+
+* **JPY-USDC**: Japanese yen perpetual.
+* **EUR-USDC**: euro perpetual.
+
+<figure><img src="../../.gitbook/assets/trade-assets-fx.png" alt="FX perpetuals in the asset selector"><figcaption></figcaption></figure>
+
+FX perpetuals trade 24/7 and use the same funding-rate mechanism as other perpetuals. Filter by **FX** in the asset selector to see the current list.
 
 ***
 
