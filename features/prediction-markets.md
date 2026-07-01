@@ -6,7 +6,7 @@ For trading fees, please refer to [trading-fees.md](../trade/trading-fees.md "me
 
 Try it at: [prediction.minara.ai](https://prediction.minara.aihttps/minara.ai/app/trade/prediction)
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
 ## What is Prediction Markets?
 
@@ -43,9 +43,9 @@ The top bar for each selected market displays:
 
 <table><thead><tr><th width="237.29296875">Field</th><th>What it shows</th></tr></thead><tbody><tr><td><strong>BTC Price / Countdown</strong></td><td>Current BTC spot price and time remaining until settlement</td></tr><tr><td><strong>% Chance</strong></td><td>Current market-implied probability of the Yes outcome</td></tr><tr><td><strong>Price (Yes)</strong></td><td>Current cost of one Yes share (equals the implied probability)</td></tr><tr><td><strong>24h Change</strong></td><td>Price change in the Yes token over the past 24 hours</td></tr><tr><td><strong>24h Volume</strong></td><td>Total trading volume across both sides</td></tr></tbody></table>
 
-The center panel shows a TradingView candlestick chart of the prediction market contract's Yes token price history — not the underlying BTC price. Use this to assess how market sentiment has shifted over the contract's life.
+The center panel shows a TradingView candlestick chart of the prediction market contract's Yes token price history — not the underlying BTC price. Use this to assess how market sentiment has shifted over the contract's life.&#x20;
 
-<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
