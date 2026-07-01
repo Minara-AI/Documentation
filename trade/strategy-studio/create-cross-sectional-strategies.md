@@ -176,6 +176,9 @@ It depends on the direction you choose:
 **What data feeds the backtests?**\
 Binance for crypto. FMP for TradFi.
 
+**The platform trade RWA tradfi perps, why backtest on FMP data instead?**\
+The tokenized (RWA) contracts on Hyperliquid are still young and don't have enough price history for a trustworthy backtest. Quant validation needs _long_ history to avoid short-term overfitting, so we deliberately use FMP, which provides decades of stock data. The trade-off: Hyperliquid's actual price, order flow, and liquidity will differ from the FMP series. So please treat the backtest as directional evidence, not a promise, and mind the risk when you go live.
+
 **Can professional quants get something out of this?**\
 Yes. Reasons including:
 
