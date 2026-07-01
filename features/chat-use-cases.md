@@ -2,9 +2,11 @@
 
 Minara's chat handles research, analysis, and trade decisions across crypto, stocks, commodities, and macro. This page shows concrete examples by trader type — the kind of questions Minara answers well, and what you get back.
 
-<figure><img src="../.gitbook/assets/uc-chat-main.png" alt="Minara chat interface showing Trending, Crypto, Stock, Macro, Sentiment, Workflow, and Learn tabs"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
 The tabs at the bottom of the chat input (Trending, Crypto, Stock, Macro, Sentiment, Workflow, Learn) show ready-made starting points. You can also type anything directly.
+
+<figure><img src="../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -33,9 +35,9 @@ Is BTC still a good buy after the recent rally to $81k? Show me on-chain data an
 
 ```
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
-Minara pulls live on-chain data and returns: entry zone, price targets with standard deviation levels, stop loss, and an assessment of institutional accumulation vs. distribution from exchange flows.
+Minara pulls live on-chain data and returns: entry zone, price targets with standard deviation levels, stop loss, and an assessment of institutional accumulation vs. distribution from exchange flows.&#x20;
 
 **DeFi and yield**
 
@@ -51,8 +53,6 @@ Compare Pendle's fixed-yield pools for ETH — which maturity gives the best ris
 What are the top pools on Uniswap v3 by fee APR this week?
 ```
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
-
 **Meme coins and alpha**
 
 ```
@@ -67,8 +67,6 @@ Which coins are institutions quietly paying attention to or allocating into?
 Any coins worth buying right now? Drop me 5 solid picks.
 ```
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ## Stock traders
@@ -79,7 +77,7 @@ Any coins worth buying right now? Drop me 5 solid picks.
 What does NVDA's latest earnings tell me about the AI hardware cycle? Is it still worth holding?
 ```
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
 Minara returns a structured earnings breakdown — quarterly and annual metrics side by side — followed by a qualitative read on what the numbers mean for the sector. For NVDA: data center revenue hit $39.1B with 73% YoY growth, net margin expanded to 63.1%.
 
@@ -95,8 +93,6 @@ Summarize the key takeaways from $AAPL's latest earnings report.
 What risks does $META's $145B capex plan pose to its profitability outlook?
 ```
 
-<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
-
 **Sector and momentum**
 
 ```
@@ -111,7 +107,7 @@ Which S&P 500 sectors are showing the strongest institutional inflows this week?
 Compare the 30-day performance of semiconductors vs. software vs. cloud infrastructure.
 ```
 
-<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+
 
 ***
 
@@ -123,7 +119,7 @@ Compare the 30-day performance of semiconductors vs. software vs. cloud infrastr
 With the Fed holding rates and tariff uncertainty, how should I position between gold, BTC, and Nasdaq right now?
 ```
 
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+
 
 Minara reads current macro data — Fed meeting minutes, inflation figures, GDP prints — and returns an asset-by-asset positioning table. In this example: Fed locked at 3.75% with hawkish tilt, inflation reaccelerated to 3.5% YoY, stagflation risk flagged, Gold overweight.
 

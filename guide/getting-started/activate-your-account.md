@@ -10,11 +10,11 @@ There are two ways to get to the sign-up screen. Use either one.
 
 **From the homepage.** Go to [minara.ai](https://minara.ai) and click `Launch APP` in the top-right corner.
 
-<figure><img src="../../.gitbook/assets/signup-launch-app.png" alt="Minara homepage with the Launch APP button highlighted in the top-right corner"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
 
 **Or, from the chat page directly.** If you land on [app.minara.ai](https://app.minara.ai) without an account, click `Log in / Register` in the top-right corner.
 
-<figure><img src="../../.gitbook/assets/signup-login-register.png" alt="Minara chat page with the Log in / Register button highlighted in the top-right corner"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Sign up with Google or email
 
