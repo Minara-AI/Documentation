@@ -78,7 +78,7 @@ The AI translates your description into **readable Python code** (which can be f
 
 <figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
-#### Step 3 — Backtest
+#### Step 3. Backtest
 
 Minara automatically backtests the generated strategy on the window of last 4 years by default. You may also tweak the parameters and backtest manually.
 
@@ -146,7 +146,7 @@ A treemap of **trading volume by symbol** — bigger tiles = more turnover in th
 
 Iterate by chatting with the AI to refine. Each refinement re-runs the backtest.
 
-#### Step 4 — Live Trading
+#### Step 4. Live Trading
 
 Once you are satisfied with the strategy, you can start running it live. Push it to a dedicated sub-wallet on the underlying venue:
 
