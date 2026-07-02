@@ -185,3 +185,14 @@ Yes. Reasons including:
 1. Natural-language sketching to validate an idea or factor in minutes, not days.
 2. No need to build your own backtest infrastructure.
 
+**Do crypto and TradFi universes rebalance on the same schedule?**\
+No. They run on different clocks:
+
+* **Crypto Universe** trades **24/7**. It rebalances on UTC interval boundaries (4h, daily, weekly, …), including weekends.
+* **TradFi Universe** trades **only on NYSE trading days**, and each rebalance fires **after the NYSE regular-hours close (16:00 ET)**. Weekends and NYSE holidays are not trading days, so no orders are placed on them. A live TradFi strategy simply holds through the close.
+
+Two reasons for the TradFi schedule:
+
+1. **It matches the FMP backtest data.** FMP's series is built on NYSE regular-hours daily bars, so trading once per trading day after the close keeps live execution aligned with what you backtested.
+2. **When the US market is closed, the on-chain price of tokenized stocks is thin and easily distorted.** Restricting trades to after the official close avoids getting whipsawed by fake off-hours moves.
+
