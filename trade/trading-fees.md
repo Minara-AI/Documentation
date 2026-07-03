@@ -16,7 +16,7 @@ Some TradFi assets on Hyperliquid, such as GOLD, carry higher fees than the rate
 | Hyperliquid | TradFi (commodities & stocks) | 0.018% / 0.024% |
 | Lighter     | All assets                    | 0.020% / 0.020% |
 
-Lighter charges one flat rate across every asset it supports. Commodities and stocks cover silver, crude oil, gold, and tokenized US equities. Autopilot does not support prediction markets.
+Lighter charges one flat rate across every asset it supports. Commodities and stocks cover silver, crude oil, and tokenized US equities. Autopilot does not support prediction markets.
 
 ## Copilot & Manual
 
