@@ -1,8 +1,8 @@
-# Wallet Security
+# Wallet security
 
-Minara creates a **custodial** smart wallet for each user. Users can explore any supported blockchain without needing gas tokens (like $ETH or $SOL) or managing a crypto wallet directly.
+Minara creates a **non-custodial** smart wallet for each user. Users can explore any supported blockchain without needing gas tokens (like $ETH or $SOL) or managing a crypto wallet directly.
 
-Unlike traditional centralized exchanges, **this custodial smart wallet is not stored in Minara's internal database, but is an on-chain smart contract wallet**. Minara can manage the funds in this wallet but cannot hide, delete or blacklist it. In the future, users will have the ability to customize how Minara utilizes their funds.
+Unlike traditional centralized exchanges, **this non-custodial smart wallet is not stored in Minara's internal database, but is an on-chain smart contract wallet**. Minara can manage the funds in this wallet but cannot hide, delete or blacklist it. In the future, users will have the ability to customize how Minara utilizes their funds.
 
 Minara's wallet system involves two types of wallets:
 
@@ -11,7 +11,7 @@ Minara's wallet system involves two types of wallets:
 
 ## Funding Wallet
 
-Funding wallet is powered by [Privy](https://www.privy.io/). It's a kind of smart contract wallet built on the [ERC-4337](https://www.alchemy.com/overviews/how-do-smart-contract-wallets-work) standard and compatible with existing EOA wallets.&#x20;
+Funding wallet is powered by [Privy](https://www.privy.io/). It's a kind of smart contract wallet built on the [ERC-4337](https://www.alchemy.com/overviews/how-do-smart-contract-wallets-work) standard and compatible with existing EOA wallets.
 
 User deposits are stored in this smart contract wallet, with every transaction publicly recorded and verifiable on-chain. **This ensures funds cannot be misused in private and allows for full auditing.**
 
