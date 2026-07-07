@@ -12,8 +12,6 @@ You ask in plain language. The model reads live prices and on-chain data, gives 
 
 <figure><img src=".gitbook/assets/about-chat-whales.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/about-trade-copilot.png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src=".gitbook/assets/about-strategy-backtest.png" alt=""><figcaption></figcaption></figure>
 
 ### The Minara stack
