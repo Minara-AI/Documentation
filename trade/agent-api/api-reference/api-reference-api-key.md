@@ -36,13 +36,16 @@ The core endpoint for interacting with Minara's conversational AI.
 
 ### Request Body
 
-| Parameter         | Type    | Required | Description                                                             |
-| ----------------- | ------- | -------- | ----------------------------------------------------------------------- |
-| `mode`            | string  | Yes      | Model mode: 'fast' for quick responses, 'expert' for in-depth analysis. |
-| `stream`          | boolean | Yes      | Set to true for streaming (SSE), false for standard JSON response.      |
-| `message`         | object  | Yes      | Message object with role and content                                    |
-| `message.role`    | string  | Yes      | Message sender role, must be 'user'.                                    |
-| `message.content` | string  | Yes      | The user's query content.                                               |
+| Parameter         | Type    | Required | Description                                                                                                            |
+| ----------------- | ------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
+| `mode`            | string  | Yes      | Model mode: 'fast' for quick responses, 'expert' for in-depth analysis.                                              |
+| `stream`          | boolean | No       | Set to true for streaming (SSE), false (default) for standard JSON response. Cannot be combined with `background`.    |
+| `background`      | boolean | No       | Set to true to run a non-streaming request asynchronously and poll the result later. Requires `stream: false`.       |
+| `requestId`       | string  | No       | Client-generated idempotency key, unique within the API key. 1–128 chars matching `^[A-Za-z0-9._:-]+$`. See below.   |
+| `chatId`          | string  | No       | Existing chat to continue. A new chat is created if omitted.                                                          |
+| `message`         | object  | Yes      | Message object with role and content                                                                                 |
+| `message.role`    | string  | Yes      | Message sender role, must be 'user'.                                                                                 |
+| `message.content` | string  | Yes      | The user's query content.                                                                                            |
 
 ### Example Request
 
@@ -71,7 +74,24 @@ Returns a JSON object with the complete response.
   "chatId": "chat_abc123",
   "messageId": "msg_def456",
   "content": "SOL is currently trading at $187.50, up 4.2% in the last 24 hours. Based on the 4H chart, it has broken above the key resistance at $185 with strong volume. RSI is at 62, indicating bullish momentum without being overbought. \n\nSuggestion: Consider a long position with entry around $186-188, take profit at $195, and stop loss at $180...",
-  "usage": {}
+  "usage": {
+    "inputTokens": 1240,
+    "outputTokens": 320,
+    "totalTokens": 1560
+  }
+}
+```
+
+When a `requestId` is supplied, the response also echoes the server `id` and `requestId`:
+
+```json
+{
+  "id": "bg_abc123",
+  "requestId": "my-idempotency-key-1",
+  "chatId": "chat_abc123",
+  "messageId": "msg_def456",
+  "content": "...",
+  "usage": { "inputTokens": 1240, "outputTokens": 320, "totalTokens": 1560 }
 }
 ```
 
@@ -88,6 +108,110 @@ data: {"chatId":"chat_abc123","messageId":"msg_def456","object":"chat.completion
 
 data: [DONE]
 ```
+
+When a streaming request carries a `requestId`, the response includes an `X-Request-Id` header, generation continues even if the client disconnects, and the final result can be retrieved afterwards via the [status endpoint](#chat-request-status).
+
+***
+
+## Background Chat & Idempotency
+
+The chat endpoint supports asynchronous execution and idempotent retries via two optional fields: `background` and `requestId`.
+
+### Background execution
+
+Set `background: true` (only valid with `stream: false`) to have the request accepted immediately and processed asynchronously. Poll the [status endpoint](#chat-request-status) with the returned `id` (or your `requestId`) until it reaches a terminal state.
+
+```bash
+curl -X POST https://api.minara.ai/v1/developer/chat \
+  -H "Authorization: Bearer <YOUR_API_KEY>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "mode": "expert",
+    "stream": false,
+    "background": true,
+    "requestId": "my-idempotency-key-1",
+    "message": {
+      "role": "user",
+      "content": "Do a deep analysis of the current BTC market structure."
+    }
+  }'
+```
+
+Response — `202 Accepted`:
+
+```json
+{
+  "id": "bg_abc123",
+  "requestId": "my-idempotency-key-1",
+  "chatId": "chat_abc123",
+  "status": "queued"
+}
+```
+
+> Combining `background: true` with `stream: true` returns `400 Bad Request`.
+
+### Idempotency with `requestId`
+
+`requestId` is a client-generated key, unique **within a single API key**, that lets you safely retry a request without generating (and being billed for) a duplicate result. It works with sync, stream, and background modes.
+
+- **Same key, same payload** → the existing job is reused. You get back its current status/result instead of a new generation. If it is still running you receive `202 Accepted`; if it has completed you receive `200 OK` with the result.
+- **Same key, different payload** → `409 Conflict` (`"requestId was already used with a different request"`).
+- **Reusing an expired key** → `409 Conflict` (`"requestId has expired and cannot be reused"`).
+
+Constraints: 1–128 characters, matching `^[A-Za-z0-9._:-]+$` (letters, digits, `.`, `_`, `:`, `-`).
+
+### Chat request status
+
+Retrieve the status and result of any `requestId`-backed request (sync, stream, or background) by either the server-assigned `id` or your `requestId`.
+
+#### Endpoint
+
+`GET https://api.minara.ai/v1/developer/chat/requests/{id}`
+
+`{id}` may be the server `id` (e.g. `bg_abc123`) or your `requestId`. The request must use the same API key that created the job.
+
+```bash
+curl https://api.minara.ai/v1/developer/chat/requests/bg_abc123 \
+  -H "Authorization: Bearer <YOUR_API_KEY>"
+```
+
+#### Response
+
+```json
+{
+  "id": "bg_abc123",
+  "requestId": "my-idempotency-key-1",
+  "chatId": "chat_abc123",
+  "status": "completed",
+  "executionMode": "background",
+  "createdAt": "2026-07-14T08:00:00.000Z",
+  "startedAt": "2026-07-14T08:00:01.000Z",
+  "completedAt": "2026-07-14T08:00:42.000Z",
+  "expiresAt": "2026-07-15T08:00:42.000Z",
+  "result": {
+    "chatId": "chat_abc123",
+    "messageId": "msg_def456",
+    "content": "...",
+    "usage": { "inputTokens": 1240, "outputTokens": 320, "totalTokens": 1560 }
+  }
+}
+```
+
+| Field           | Type   | Description                                                                       |
+| --------------- | ------ | --------------------------------------------------------------------------------- |
+| `id`            | string | Server-assigned request id.                                                       |
+| `requestId`     | string | Your idempotency key, if one was provided.                                        |
+| `chatId`        | string | Chat the request belongs to.                                                      |
+| `status`        | string | One of `queued`, `in_progress`, `completed`, `failed`.                            |
+| `executionMode` | string | One of `sync`, `stream`, `background`.                                            |
+| `result`        | object | Present when `status` is `completed`. Same shape as the standard chat response.   |
+| `error`         | object | Present when `status` is `failed`; contains `code` and `message`.                 |
+
+**Notes**
+
+- Records are retained for **24 hours** after reaching a terminal state (`expiresAt`), then removed.
+- A request lookup that does not exist or has expired returns `404 Not Found`.
+- Interrupted or timed-out jobs fail explicitly (they are **not** retried automatically). Failure `code` is one of `processing_error`, `processing_interrupted`, `processing_timeout`. Submit a new request to retry.
 
 ***
 
