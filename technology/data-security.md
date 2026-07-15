@@ -1,4 +1,4 @@
-# Data security
+# Data Security
 
 Minara handles trading strategies, code, wallet activity, and account data. This page explains how that data is handled, what Minara can and cannot access, and the limits of that protection.
 
