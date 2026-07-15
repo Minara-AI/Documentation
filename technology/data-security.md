@@ -22,6 +22,17 @@ Strategy features run through Minara's protected processing path:
 
 Encryption protects the connection and stored records, but not every detail around them. Minara can still see operational data such as your account ID, request timing and size, and which feature you used.
 
+## How strategy code runs in a TEE
+
+For strategy features that use a TEE, Minara runs your code in a protected worker:
+
+1. The worker receives the authorized strategy request after Minara checks the session and feature permissions.
+2. The strategy code and the data needed for the request are loaded into the TEE-backed worker.
+3. The code runs in the worker's protected memory. Its temporary variables and intermediate results stay inside that environment while the request is running.
+4. The worker returns the feature result and stores any saved strategy in encrypted form.
+
+The TEE helps separate the running code from the surrounding server. It does not guarantee that the code is correct or prevent a result from revealing information the feature is designed to return.
+
 ## How Minara protects your strategy
 
 Strategy content is used only inside the protected service path for the feature you request. It is not shared with other users and is kept out of ordinary logs, support tools, telemetry, analytics, and advertising systems.
