@@ -34,17 +34,22 @@ Strategy content is used only inside the protected service path for the feature 
 | Saved strategy | Stored as encrypted data with protected key material |
 | Wallet private key | Not passed to ordinary Minara servers as a complete, exportable key |
 
+{% hint style="info" %}
 Privy protects wallet-key operations. An authorized Minara service can request an approved operation, but ordinary servers do not receive a complete private key that can be exported.
+{% endhint %}
 
-## Encryption
+## How strategies are encrypted and stored
 
-Your connection to Minara uses TLS, and saved strategies are encrypted with protected key material. Privy governs approved wallet operations, while a TEE adds isolation when strategy data is being processed. Together, these controls keep strategy use limited to the feature you request and prevent routine access.
+Minara protects strategy data while it moves, is used, and is saved:
 
-## How strategies are stored
+| Stage | Protection |
+| --- | --- |
+| In transit | TLS between your client and Minara |
+| Wallet operations | Privy handles approved wallet-key operations for authorized services |
+| In use | An authorized worker processes the data; a TEE adds isolation where used |
+| At rest | Each saved strategy is encrypted with its own data-encryption key and protected key material |
 
-When you save a strategy, it is encrypted before it is written to disk. Each strategy uses its own data-encryption key, and the database stores the encrypted record and protected key material rather than the strategy plaintext.
-
-Access to a saved strategy requires the relevant protected key material and an authorized service path. A database backup alone should not be enough to read a saved strategy.
+When you save a strategy, the database stores the encrypted record and protected key material rather than the strategy plaintext. Access requires the relevant key material and an authorized service path, so a database backup alone should not be enough to read a saved strategy.
 
 ## Data Minara does collect
 
