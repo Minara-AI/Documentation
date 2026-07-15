@@ -26,6 +26,8 @@ Minara uses Privy-backed wallets. In the configured wallet model, Minara's backe
 
 That capability must not be confused with possession of a user's raw private key. In Privy's architecture, the complete wallet private key is reconstructed only temporarily inside its secure enclave for an authorized operation; encrypted key shares are kept across separate security boundaries. Minara's ordinary servers should receive the result of an approved operation, not an exportable complete private key.
 
+Privy describes the underlying [secure-enclave architecture](https://docs.privy.io/security/wallet-infrastructure/architecture) and [server-side signer model](https://docs.privy.io/wallets/using-wallets/signers) in its documentation. Those materials describe Privy's platform controls; Minara's own access policies and feature configuration determine which authorized requests Minara permits.
+
 For strategy data, the practical consequence is important: wallet-linked encryption or decryption is a **service-controlled access mechanism**, not a promise that only the creator can ever decrypt a strategy. If Minara's authorized backend can request the relevant key operation, it can enable the feature to access the strategy plaintext. Our controls are designed to make that access deliberate, authorized, limited to the feature, and auditable.
 
 {% hint style="info" %}
