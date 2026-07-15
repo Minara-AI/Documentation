@@ -1,6 +1,6 @@
 # Data Security
 
-Minara handles trading strategies, code, wallet activity, and account data. Your strategy remains your own: Minara uses your ideas and code only to provide the feature you request. We do not copy strategies, publish them, sell them, make them available to other users, or use them to train shared models.
+Minara handles trading strategies, code, wallet activity, and account data. Your strategy remains your own: Minara uses your prompts and code only to provide the feature you request. We do not copy strategies, publish them, sell them, or use them to train shared models. Strategy code is shared with other users only when its creator chooses to open-source it.
 
 Minara uses [Privy](https://www.privy.io/), a widely used provider of embedded user wallets, for wallet services. An authorized Minara service can request the wallet operation needed to provide a feature. This lets the feature work without exposing a complete private key to ordinary Minara servers.
 
@@ -28,28 +28,17 @@ Strategy content is used only inside the protected service path for the feature 
 
 | Input | How Minara protects it |
 | --- | --- |
-| Strategy ideas you type | Used only to provide the feature you request; never shared with other users |
-| Strategy code you write or generate | Used only to provide the feature you request; never shared with other users |
+| Strategy prompts you write | Used only to provide the feature you request; never shared with other users |
+| Strategy code you write or generate | Private by default; shared with other users only if you choose to open-source it |
 | Intermediate work inside a TEE | Kept inside the protected worker while it runs, away from the surrounding host system |
 | Saved strategy | Stored as encrypted data with protected key material |
 | Wallet private key | Not passed to ordinary Minara servers as a complete, exportable key |
 
-{% hint style="info" %}
 Privy protects wallet-key operations. An authorized Minara service can request an approved operation, but ordinary servers do not receive a complete private key that can be exported.
-{% endhint %}
 
 ## Encryption
 
-Minara uses protection at each stage where strategy data moves or is held:
-
-| Stage | Protection |
-| --- | --- |
-| In transit | TLS between your client and Minara |
-| Wallet operations | Privy handles approved wallet-key operations for authorized services |
-| In use | An authorized worker processes the data; a TEE adds isolation where used |
-| At rest | Saved strategies are encrypted with protected key material |
-
-TLS protects the connection to Minara. Like any cloud feature that runs a strategy, the protected service needs to use the strategy data for the task you request. The wallet and service controls, encrypted storage, and TEE isolation are designed to keep that use limited and to prevent routine access.
+Your connection to Minara uses TLS, and saved strategies are encrypted with protected key material. Privy governs approved wallet operations, while a TEE adds isolation when strategy data is being processed. Together, these controls keep strategy use limited to the feature you request and prevent routine access.
 
 ## How strategies are stored
 
@@ -65,7 +54,7 @@ Some data is needed to run your account and is handled outside the strategy-proc
 - Wallet addresses and on-chain transactions, which are public by nature of the blockchain.
 - Usage data such as which features you open and basic device information, used to operate and improve the product.
 
-This is operational data. Strategy ideas and code are handled through the protected path described above when you use a strategy feature.
+This is operational data. Strategy prompts and code are handled through the protected path described above when you use a strategy feature.
 
 ## Data retention
 
