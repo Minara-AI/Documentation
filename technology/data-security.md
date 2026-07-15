@@ -4,10 +4,6 @@ Minara handles trading strategies, code, wallet activity, and account data. This
 
 Minara uses [Privy](https://www.privy.io/), a widely used provider of embedded user wallets, for wallet services. An authorized Minara service can request the wallet operation needed to provide a feature. This means strategy data is not end-to-end encrypted from Minara: Minara may process it when it is needed to provide the feature you asked for.
 
-## Overview
-
-<figure><img src="../.gitbook/assets/strategy-data-security-overview.png" alt="Five steps for strategy data: you send a request, Minara checks access, Privy handles the wallet operation, a protected worker processes the strategy, and the encrypted strategy is stored."><figcaption><p>A simple view of how strategy data moves through Minara.</p></figcaption></figure>
-
 ## What a Trusted Execution Environment is
 
 A Trusted Execution Environment (TEE) is a hardware-isolated place to run software. Strategy data is decrypted only when the authorized worker needs it, and the TEE helps keep that worker's memory separate from the surrounding server while it runs.
