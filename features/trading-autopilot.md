@@ -2,7 +2,7 @@
 
 Autopilot executes trading strategies on your behalf, 24 hours a day. Once you select a strategy and define your trading scope, the AI opens positions, manages take-profit and stop-loss orders, trails stops as conditions change, and closes or reverses positions when signals shift, without requiring manual input.
 
-You can override or stop Autopilot at any time.
+You can run a strategy you built yourself, or one you discovered from another creator, and you can override or stop Autopilot at any time.
 
 {% hint style="info" %}
 Autopilot is built around three principles:
@@ -28,7 +28,7 @@ One more point on how trades are filled: Minara is never your counterparty. We r
 
 ## How to access Autopilot
 
-Path: [Trade](https://copilot.minara.ai/) > Perps > Autopilot
+Path 1: [Trade](https://copilot.minara.ai/) > Perps > Autopilot
 
 {% columns %}
 {% column %}
@@ -46,7 +46,47 @@ Copilot Mode
 {% endcolumn %}
 {% endcolumns %}
 
+
+
+Path 2: Strategy > Dashboard > Autopilot
+
+<figure><img src="../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Click "Run A Strategy"</p>
+
+
+
+Path 3: Visit any subscribable strategy page
+
+
+
 Autopilot is available on paid plans. If your subscription expires while Autopilot is running, you can continue viewing and operating the panel, but you cannot start a new Autopilot session until your subscription is reactivated.
+
+***
+
+## Starting Autopilot
+
+1. You pick the **strategy** to run, from **My**, **Starred**, the **Marketplace**, or the official list
+2. You confirm the **Trading Scope**
+3. You confirm risk settings and start
+
+On later enablement attempts, Autopilot reuses your last configuration.
+
+When multiple assets trigger entry signals simultaneously and the account supports fewer concurrent positions than available signals, Autopilot opens positions in asset priority order.
+
+All existing open orders are canceled when Autopilot starts.
+
+***
+
+## Choosing a strategy to run
+
+Autopilot can run **any** strategy you have access to — one you built yourself, or one you discovered from another creator. When you start Autopilot, the strategy picker in the settings dialog gives you three ways to find one:
+
+<figure><img src="../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+
+* **My:** strategies you created in Strategy Studio. Your own drafts and deployed strategies, ready to run.
+* **Starred:** strategies you favorited from other creators. Star a strategy anywhere in Minara and it lands here for quick reuse.
+* **Marketplace** — a shortcut that jumps straight to the [Marketplace](https://marketplace.minara.ai), where you can browse published strategies, check their track record, and pick one to run. Running someone else's strategy never exposes its source code — you can run it, but the underlying logic stays private to the creator.
 
 ***
 
@@ -60,8 +100,6 @@ A trend-following strategy optimized for Sharpe Ratio. It combines fast stop-los
 
 Version 2.0 adds a **market regime detection** layer that classifies prevailing market conditions (trending vs. ranging, risk-on vs. risk-off) and adjusts entry sizing and exit behavior accordingly. This reduces whipsaws in choppy markets and increases conviction during clear trend conditions.
 
-Read more: [Sharpe Guard 2.0 announcement](https://x.com/minara/status/2030132735910785335)
-
 ### Classic Futures Grid
 
 Type: Range-bound
@@ -70,23 +108,26 @@ A long/short grid strategy for sideways markets. Autopilot suggests grid paramet
 
 Futures Grid cannot run when there are open positions in the wallet. All existing open orders are canceled on start.
 
-### Supertrend Monitor (legacy — deprecated)
-
-{% hint style="info" %}
-Supertrend Monitor has been retired. Existing users should migrate to Sharpe Guard 2.0, which supersedes it with broader regime-aware logic. This section is kept for historical reference only.
-{% endhint %}
-
 ### Custom strategies from Strategy Studio
 
 Autopilot also supports custom strategies built in [Strategy Studio](../trade/strategy-studio/). Once you deploy a strategy from Studio, it appears in the Autopilot strategy list alongside official strategies and runs under the same execution and risk-control framework.
 
 ***
 
-## Trading scope
+## Autopilot Dashboard
 
-When you start Autopilot, you define which assets it is authorized to manage. The strategy supports crypto perpetuals such as Bitcoin (BTC), Ethereum (ETH), and Solana (SOL), as well as commodity perpetuals including gold (XAU) and silver. Stock perpetuals such as Apple (AAPL), Tesla (TSLA), and NVIDIA (NVDA) can also be included depending on the active strategy.
+Once a strategy is running, the **Strategy → Dashboard → Autopilot** view gives you a complete, per-strategy overview of your account. Instead of a flat list of positions, the dashboard is organized **by strategy**, so you can see exactly what each running strategy is doing and how it's performing.
 
-Autopilot only opens positions within your authorized scope. Assets outside that scope are not touched.
+For each running strategy, the dashboard shows:
+
+* **Wallet overview** — total equity, available funds, and margin in use for the wallet the strategy runs on.
+* **Running status** — whether the strategy is active, paused, or stopped, and how long it has been running.
+* **Current P\&L** — realized and unrealized profit and loss for that strategy, so performance is attributed to the strategy that produced it.
+* **Open positions and recent trades** — the live positions and executions Autopilot has made under that strategy.
+
+\{% hint style="info" %\} 📷 **\[Image needed]** Screenshot of the Strategy → Dashboard → Autopilot view showing the per-strategy wallet overview, running status, and current P\&L. \{% endhint %\}
+
+From the dashboard you can stop a strategy at any time — choosing to keep or close its positions.
 
 ***
 

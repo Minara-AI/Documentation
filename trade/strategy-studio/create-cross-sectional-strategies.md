@@ -56,7 +56,7 @@ Each factor in Minara's library has already passed an objective quality screen: 
 <figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 1. Make sure the mode toggle says **Multi-Asset**.
-2. Pick your **universe**. It defaults to **TradFi 30**; click another universe card (Coin 30 / Coin 50) to switch. You may also see the detailed asset list by clicking on the universe.&#x20;
+2. Pick your **universe**. It defaults to **TradFi 30**; click another universe card (Coin 30 / Coin 50) to switch. You may also see the detailed asset list by clicking on the universe.
 3. Give the AI your input. You can do **any** of these:
    * **Factors + prompt.** Click factor cards in the library to add them, then add a line of guidance. E.g. select **3-Year Debt Growth (inverted)** and **MACD (Price-Normalized)**, then write _"combine these, long the top 5 and short the bottom 5."_
    * **Factors only.** Simply pick factors from the library, just let Minara builds a strategy around them.
@@ -73,7 +73,7 @@ The AI translates your description into **readable Python code** (which can be f
 
 * Factor imports are pulled from the validated library.
 * The logic is fully visible: rebalance schedule, ranking method, position sizing, missing-value handling.
-* You can always **edit the code directly**, which will create a new version upon saving.&#x20;
+* You can always **edit the code directly**, which will create a new version upon saving.
 * Though you can also iterate your strategy simply through the chat ("change rebalance frequency to every 3 days", "swap MACD for short-term reversal").
 
 <figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
@@ -84,7 +84,7 @@ Minara automatically backtests the generated strategy on the window of last 4 ye
 
 **Common parameters**
 
-<figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
 * You may change universe, leverage, interval (certain avalaible options) and the backtest window.
 * Pick the direction amongst these options: Long Only (only long the top assets), Short Only (only short the bottom assets), Long & Short (long the top and short the bottom).
@@ -96,7 +96,7 @@ Minara automatically backtests the generated strategy on the window of last 4 ye
 
 <figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="249">Name</th><th width="249.2559814453125">Function</th><th>Use case</th></tr></thead><tbody><tr><td><strong>Initial capital</strong></td><td>Starting capital the backtest deploys. The equity curve and all returns are measured against this. </td><td>Important when the strategy trade using cash instead of percentage. (e.g. "buy $200 each time")</td></tr><tr><td><strong>Taker fee</strong></td><td>The trading fee charged on each fill, in basis points (<code>1 bp = 0.01%</code>). <strong>Toggle on</strong> = charge this fee; <strong>toggle off</strong> = run the backtest fee-free.</td><td>Turn off only to see the gross (pre-fee) picture. Raise it to stress-test a high-turnover strategy against worse fees. Keep it on for any realistic result.</td></tr><tr><td><strong>Slippage</strong></td><td>An extra cost, in basis points, added on top of the taker fee on every fill, simulating the gap between the price you expect and the price you actually get. Effective per-fill cost = taker fee + slippage (e.g. 2 bps fee + 3 bps slippage = 5 bps total).</td><td>Raise it to be conservative. Especially for larger size, thinner assets, or higher-frequency rebalancing, where real fills drift further from the quoted price.</td></tr><tr><td><strong>Rebalance tolerance</strong></td><td>A "don't bother" band. If an asset's new target weight differs from its current weight by <strong>less than this</strong>, the strategy holds the position as-is instead of trading. "This position <em>barely changed</em>, don't re-trade it"</td><td>Raise it (e.g. 0.3–0.5%) to trade less and cut fees on a high-turnover strategy. Lower it toward 0 to track target weights more tightly.</td></tr><tr><td><strong>Weight floor</strong></td><td>A minimum-size filter. Any target weight <strong>smaller than this in absolute value</strong> is set to zero. "This position is <em>too small</em>, don't open it"</td><td>Raise it to hold fewer, larger positions (cleaner book, lower fees). Lower it to allow more small positions.</td></tr><tr><td><strong>Warmup bars</strong></td><td>How many leading bars to use just to "warm up" indicators before trading starts (e.g. a 200-day moving average needs 200 bars of history before its first valid value). These bars prime the indicators and are excluded from performance.</td><td>Increase it if your strategy uses long-lookback indicators and you want to be sure the early backtest period isn't trading on half-formed signals.</td></tr></tbody></table>
+<table><thead><tr><th width="249">Name</th><th width="249.2559814453125">Function</th><th>Use case</th></tr></thead><tbody><tr><td><strong>Initial capital</strong></td><td>Starting capital the backtest deploys. The equity curve and all returns are measured against this.</td><td>Important when the strategy trade using cash instead of percentage. (e.g. "buy $200 each time")</td></tr><tr><td><strong>Taker fee</strong></td><td>The trading fee charged on each fill, in basis points (<code>1 bp = 0.01%</code>). <strong>Toggle on</strong> = charge this fee; <strong>toggle off</strong> = run the backtest fee-free.</td><td>Turn off only to see the gross (pre-fee) picture. Raise it to stress-test a high-turnover strategy against worse fees. Keep it on for any realistic result.</td></tr><tr><td><strong>Slippage</strong></td><td>An extra cost, in basis points, added on top of the taker fee on every fill, simulating the gap between the price you expect and the price you actually get. Effective per-fill cost = taker fee + slippage (e.g. 2 bps fee + 3 bps slippage = 5 bps total).</td><td>Raise it to be conservative. Especially for larger size, thinner assets, or higher-frequency rebalancing, where real fills drift further from the quoted price.</td></tr><tr><td><strong>Rebalance tolerance</strong></td><td>A "don't bother" band. If an asset's new target weight differs from its current weight by <strong>less than this</strong>, the strategy holds the position as-is instead of trading. "This position <em>barely changed</em>, don't re-trade it"</td><td>Raise it (e.g. 0.3–0.5%) to trade less and cut fees on a high-turnover strategy. Lower it toward 0 to track target weights more tightly.</td></tr><tr><td><strong>Weight floor</strong></td><td>A minimum-size filter. Any target weight <strong>smaller than this in absolute value</strong> is set to zero. "This position is <em>too small</em>, don't open it"</td><td>Raise it to hold fewer, larger positions (cleaner book, lower fees). Lower it to allow more small positions.</td></tr><tr><td><strong>Warmup bars</strong></td><td>How many leading bars to use just to "warm up" indicators before trading starts (e.g. a 200-day moving average needs 200 bars of history before its first valid value). These bars prime the indicators and are excluded from performance.</td><td>Increase it if your strategy uses long-lookback indicators and you want to be sure the early backtest period isn't trading on half-formed signals.</td></tr></tbody></table>
 
 **Backtest Report**
 
@@ -155,8 +155,6 @@ Once you are satisfied with the strategy, you can start running it live. Push it
 
 A deployed strategy appears in the left sidebar with a `Deployed` tag, and also visible in the trade-perps page. You can stop it at any time.
 
-
-
 ***
 
 ### FAQ
@@ -195,4 +193,3 @@ Two reasons for the TradFi schedule:
 
 1. **It matches the FMP backtest data.** FMP's series is built on NYSE regular-hours daily bars, so trading once per trading day after the close keeps live execution aligned with what you backtested.
 2. **When the US market is closed, the on-chain price of tokenized stocks is thin and easily distorted.** Restricting trades to after the official close avoids getting whipsawed by fake off-hours moves.
-
