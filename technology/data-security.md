@@ -1,30 +1,41 @@
 # Data security
 
-Minara processes trading strategies, code, wallet activity, and account data. This page explains how that data is handled, what stays private to you, and what Minara can and cannot access.
+Minara processes trading strategies, code, wallet activity, and account data. This page explains how that data is handled, what stays private to you, what Minara can and cannot access, and the limits of that protection so you can judge it accurately.
 
-The analysis that turns your inputs into results runs inside a Trusted Execution Environment (TEE). A TEE is a hardware-isolated region that keeps data encrypted while it is being processed. Code and data inside it cannot be read from the outside, including by Minara.
+Most analysis that turns your inputs into results runs inside a Trusted Execution Environment (TEE): a hardware-isolated region that separates a workload and its memory from the host operating system and from the people who operate the infrastructure.
 
 ## What a Trusted Execution Environment is
 
-A TEE is an isolated processing environment enforced by the hardware itself. Data enters encrypted, is decrypted only inside the sealed region, is processed there, and leaves as an encrypted result. While processing runs, nothing outside the enclave can inspect its memory: not the operating system, the host machine, or Minara's engineers. Inputs go in encrypted and results come out, and the intermediate state is not visible to the host system or to Minara's operators.
+A TEE is an isolated processing environment enforced by the hardware. Data reaches it encrypted and is decrypted inside the sealed region before it is processed. The protection comes from isolation, not from computing on data that stays encrypted. While the workload runs, the host operating system, the hypervisor, and infrastructure operators are designed not to be able to read the workload's memory. Inputs go in, results come out, and the intermediate state is held inside the enclave rather than on the surrounding system.
+
+A TEE protects against the operators and software layers around the workload. It does not by itself protect against flaws in the code running inside the enclave. See [What a TEE does not cover](#what-a-tee-does-not-cover) below.
 
 ## How your data is processed
 
-Analysis runs in Minara's cloud TEE cluster. Data is encrypted before it reaches the cluster and stays encrypted throughout. When you enter a strategy idea or code, that input goes into the TEE cluster for processing. Minara's servers route the encrypted payload but cannot decrypt or read it. The cluster processes the input inside the enclave and returns the result directly to your client. Under normal operation, strategy content is encrypted by the client and is not available to Minara's application servers.
+Analysis runs in Minara's cloud TEE cluster. The intended data flow is:
+
+1. Your client encrypts strategy content with a key for the enclave, so it can be decrypted only inside the TEE.
+2. The ciphertext travels to Minara over TLS.
+3. Minara's gateway routes the ciphertext to the cluster.
+4. The enclave decrypts and processes it, then returns the result to your client.
+
+Under normal operation, strategy content is encrypted by the client and is not available to Minara's application servers.
+
+Encryption protects the content, not the metadata around it. Minara can still see operational metadata such as your IP address, request timing and size, your account ID, and which feature you used.
 
 ## What Minara cannot see
 
-The table below lists what happens to each type of strategy input you provide.
+Under normal operation, the strategy inputs you provide are encrypted before they leave your client and are not available to Minara's application servers. The table below lists what happens to each type of input.
 
 | Input | Minara's access |
 | --- | --- |
-| Strategy ideas you type | Cannot read them |
-| Strategy code you write or generate | Cannot read it |
+| Strategy ideas you type | Not readable by Minara's application servers under normal operation |
+| Strategy code you write or generate | Not readable by Minara's application servers under normal operation |
 | Intermediate analysis inside the TEE | Isolated from the host operating system and infrastructure operators, subject to the security of the enclave workload and its permitted outputs |
-| The encrypted payload in transit | Routed, but not decryptable by Minara |
+| The encrypted payload in transit | Routed by Minara, decryptable only inside the enclave |
 
 {% hint style="info" %}
-Under normal operation, Minara's application servers do not have access to your strategy ideas or code as they move through the encrypted path into the enclave. This is a property of the encryption path, not only a policy commitment. What the enclave workload itself can access is governed by the code running inside it and the outputs it is permitted to return.
+This is a property of the encryption path and the enclave isolation, not only a policy commitment. It is not an absolute guarantee. What the enclave workload can access is governed by the code running inside it and the outputs it is allowed to return, and the protection holds only while the mechanisms described here work as designed.
 {% endhint %}
 
 ## Encryption
@@ -34,9 +45,11 @@ Minara encrypts data at every stage where your inputs move or are held:
 | Stage | Protection |
 | --- | --- |
 | In transit | TLS on all traffic between your client and Minara |
-| Into the enclave | Strategy inputs are encrypted so that only the TEE can decrypt them |
-| In use | Data is processed inside the sealed enclave and is never decrypted outside it |
+| Into the enclave | Strategy content is encrypted on the client with a key for the enclave, so only the enclave can decrypt it |
+| In use | Data is decrypted and processed inside the sealed enclave, not on the surrounding system |
 | At rest | Stored account data is encrypted on Minara's infrastructure |
+
+TLS and the client-to-enclave encryption are two separate layers. TLS protects the connection to Minara; the client-to-enclave encryption is what keeps the content out of reach of Minara's own servers.
 
 ## How strategies are stored
 
@@ -60,7 +73,21 @@ Account and usage data is kept for as long as your account is active, and for a 
 
 ## Third-party services
 
-Minara relies on a small set of infrastructure and analytics providers to operate the product, for example cloud hosting and product analytics. These providers process only the operational data needed for their function and are bound by their own data protection terms. Strategy inputs handled inside the TEE are not shared with any third party.
+Minara relies on a small set of infrastructure and analytics providers to operate the product, for example cloud hosting and product analytics. These providers receive only the operational data needed for their function and are bound by their own data protection terms. Some analysis features may rely on an external data or model provider to work. Where they do, the data sent is limited to what the feature requires. Minara does not share your strategy content with analytics or advertising providers.
+
+## What a TEE does not cover
+
+A TEE protects a workload from the systems and operators around it. It is not a guarantee against every risk. It does not protect:
+
+- Data that is already public, such as your wallet address and on-chain transactions.
+- Your device if it is compromised by malware, or a strategy you choose to share yourself.
+- Inputs that a result can reveal on its own.
+- Bugs in the application logic, or a compromised dependency running inside the enclave.
+- What happens to a strategy once it is authorized to execute.
+- Correctness of a model's output.
+- Custody of your funds, which is a separate matter covered by wallet security.
+
+Side-channel and firmware-level attacks against TEEs are an active area of research, and no hardware protection is absolute.
 
 ## Your controls
 
