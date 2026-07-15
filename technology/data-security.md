@@ -46,6 +46,12 @@ Minara encrypts data at every stage where your inputs move or are held:
 | In use | Data is processed inside the sealed enclave and is never decrypted outside it |
 | At rest | Stored account data is encrypted on Minara's infrastructure |
 
+## How strategies are stored
+
+When you save a strategy, it is encrypted before it is written to disk. The encryption is tied to your wallet private key, so only your key can decrypt the stored strategy. No one else can read it, including Minara.
+
+The encrypted records are held in a database protected by several layers of access control. Even in an unexpected data breach, an attacker would obtain only the encrypted records. The strategy code stays unreadable, because decrypting it requires your private key.
+
 ## Data Minara does collect
 
 Some data is needed to run your account and is handled outside the TEE analysis path. This includes:
