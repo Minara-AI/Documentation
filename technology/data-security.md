@@ -1,8 +1,8 @@
 # Data Security
 
-Minara handles trading strategies, code, wallet activity, and account data. This page explains how that data is handled, what Minara can and cannot access, and the limits of that protection.
+Minara handles trading strategies, code, wallet activity, and account data. Your strategy remains your own: Minara uses your ideas and code only to provide the feature you request. We do not copy strategies, publish them, sell them, make them available to other users, or use them to train shared models.
 
-Minara uses [Privy](https://www.privy.io/), a widely used provider of embedded user wallets, for wallet services. An authorized Minara service can request the wallet operation needed to provide a feature. This means strategy data is not end-to-end encrypted from Minara: Minara may process it when it is needed to provide the feature you asked for.
+Minara uses [Privy](https://www.privy.io/), a widely used provider of embedded user wallets, for wallet services. An authorized Minara service can request the wallet operation needed to provide a feature. This lets the feature work without exposing a complete private key to ordinary Minara servers.
 
 ## What a Trusted Execution Environment is
 
@@ -22,17 +22,17 @@ Strategy features run through Minara's protected processing path:
 
 Encryption protects the connection and stored records, but not every detail around them. Minara can still see operational data such as your account ID, request timing and size, and which feature you used.
 
-## What Minara can and cannot access
+## How Minara protects your strategy
 
-Minara can process strategy content when an authorized feature needs it. We keep that access limited to the services that provide the feature and aim to keep strategy plaintext out of ordinary logs, support tools, telemetry, analytics, and advertising systems.
+Strategy content is used only inside the protected service path for the feature you request. It is not shared with other users and is kept out of ordinary logs, support tools, telemetry, analytics, and advertising systems.
 
-| Input | Minara's access |
+| Input | How Minara protects it |
 | --- | --- |
-| Strategy ideas you type | Processed by an authorized worker when needed for a feature |
-| Strategy code you write or generate | Processed by an authorized worker when needed for a feature |
-| Intermediate work inside a TEE | Isolated from the surrounding host system while the workload runs |
+| Strategy ideas you type | Used only to provide the feature you request; never shared with other users |
+| Strategy code you write or generate | Used only to provide the feature you request; never shared with other users |
+| Intermediate work inside a TEE | Kept inside the protected worker while it runs, away from the surrounding host system |
 | Saved strategy | Stored as encrypted data with protected key material |
-| Wallet private key | Not normally available to Minara's servers as a complete, exportable key |
+| Wallet private key | Not passed to ordinary Minara servers as a complete, exportable key |
 
 {% hint style="info" %}
 Privy protects wallet-key operations. An authorized Minara service can request an approved operation, but ordinary servers do not receive a complete private key that can be exported.
@@ -49,7 +49,7 @@ Minara uses protection at each stage where strategy data moves or is held:
 | In use | An authorized worker processes the data; a TEE adds isolation where used |
 | At rest | Saved strategies are encrypted with protected key material |
 
-TLS protects the connection to Minara. The wallet and service controls determine which approved operations Minara can request. Together with encrypted storage and TEE isolation, these controls limit and protect access; they are not a promise that Minara can never process strategy plaintext.
+TLS protects the connection to Minara. Like any cloud feature that runs a strategy, the protected service needs to use the strategy data for the task you request. The wallet and service controls, encrypted storage, and TEE isolation are designed to keep that use limited and to prevent routine access.
 
 ## How strategies are stored
 
