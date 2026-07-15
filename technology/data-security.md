@@ -1,69 +1,108 @@
-# Strategy data security
+# Data security
 
-This page explains how Minara handles the private parts of your strategy: your ideas, prompts, code, rules, settings, and saved versions.
+Minara handles trading strategies, code, wallet activity, and account data. This page explains how that data is handled, what Minara can and cannot access, and the limits of that protection.
 
-Minara uses [Privy](https://www.privy.io/), a widely used provider of embedded user wallets, for wallet services. An authorized Minara service can request the wallet operation needed to run a feature. In plain terms, this is **not** end-to-end encryption from Minara: Minara may process strategy data when it needs to provide the feature you asked for.
-
-We protect that access with sign-in checks, access controls, encrypted storage, and isolated processing for sensitive workloads.
+Minara uses [Privy](https://www.privy.io/), a widely used provider of embedded user wallets, for wallet services. An authorized Minara service can request the wallet operation needed to provide a feature. This means strategy data is not end-to-end encrypted from Minara: Minara may process it when it is needed to provide the feature you asked for.
 
 ## Overview
 
 <figure><img src="../.gitbook/assets/strategy-data-security-overview.png" alt="Five steps for strategy data: you send a request, Minara checks access, Privy handles the wallet operation, a protected worker processes the strategy, and the encrypted strategy is stored."><figcaption><p>A simple view of how strategy data moves through Minara.</p></figcaption></figure>
 
-## In brief
+## What a Trusted Execution Environment is
 
-- Your request is encrypted while it travels to Minara (TLS).
-- Minara checks that you are signed in and that the request is allowed.
-- Privy helps protect the wallet key used for approved wallet operations. Minara's authorized services can request those operations, but ordinary servers do not receive an exportable full private key.
-- An authorized worker processes the strategy. For sensitive workloads, a TEE adds an extra layer of isolation while the worker runs.
-- Saved strategies are stored as encrypted records with protected key material.
+A Trusted Execution Environment (TEE) is a hardware-isolated place to run software. Strategy data is decrypted only when the authorized worker needs it, and the TEE helps keep that worker's memory separate from the surrounding server while it runs.
 
-## What happens when you use a strategy feature
+A TEE protects a workload from the systems around it. It does not make Minara unable to access data through an approved service, and it does not protect against every software or hardware vulnerability. See [What a TEE does not cover](#what-a-tee-does-not-cover) below.
 
-1. You send a request to save, run, or update a strategy.
-2. Minara checks your session and applies the access rules for that feature.
-3. If the feature needs a wallet operation, an authorized Minara service requests it through Privy.
-4. The strategy worker processes the data needed for the feature and returns the result.
+## How your data is processed
+
+Strategy features run through Minara's protected processing path:
+
+1. Your request travels to Minara over TLS.
+2. Minara checks your session and the access rules for the feature.
+3. If a wallet operation is needed, an authorized Minara service requests it through Privy.
+4. An authorized worker processes the strategy. A TEE adds isolation for sensitive workloads while they run.
 5. If you save the strategy, Minara stores an encrypted version.
 
-Minara does not use strategy plaintext in analytics or advertising tools. We also aim to keep it out of ordinary logs, support tools, and telemetry.
+Encryption protects the connection and stored records, but not every detail around them. Minara can still see operational data such as your account ID, request timing and size, and which feature you used.
 
-## Wallets and keys
+## What Minara can and cannot access
 
-Privy is the wallet service used by Minara. Its protected environment performs approved wallet-key operations. In the normal path, Minara's ordinary servers receive the result of that operation, not a complete private key that can be exported.
+Minara can process strategy content when an authorized feature needs it. We keep that access limited to the services that provide the feature and aim to keep strategy plaintext out of ordinary logs, support tools, telemetry, analytics, and advertising systems.
 
-However, because Minara can request approved operations through this wallet path, a wallet is not a promise that Minara can never access strategy data. The wallet, access rules, and encryption work together to limit and protect that access.
-
-## What a TEE means
-
-A Trusted Execution Environment (TEE) is a protected area for running software. It helps keep a worker's memory separate from the surrounding server while it is running.
-
-Your strategy is decrypted only when the authorized worker needs to use it. A TEE adds protection around that step, but it does not make Minara unable to access data through an approved service, and it cannot protect against every software or hardware vulnerability.
-
-## What Minara may handle
-
-| Data | How it is handled |
+| Input | Minara's access |
 | --- | --- |
-| Strategy data | Processed by an authorized worker when needed for a feature. |
-| Saved strategy | Stored as encrypted data. |
-| Wallet operation | Requested by an authorized Minara service through Privy when a feature needs it. |
-| Wallet private key | Not normally available to Minara's servers as a complete, exportable key. |
-| Account and request details | Used to run, secure, and support the service. |
-| Feature result | Returned to you; it may reveal information that the feature is designed to show. |
+| Strategy ideas you type | Processed by an authorized worker when needed for a feature |
+| Strategy code you write or generate | Processed by an authorized worker when needed for a feature |
+| Intermediate work inside a TEE | Isolated from the surrounding host system while the workload runs |
+| Saved strategy | Stored as encrypted data with protected key material |
+| Wallet private key | Not normally available to Minara's servers as a complete, exportable key |
 
-## Storage and deletion
+{% hint style="info" %}
+Privy protects wallet-key operations. An authorized Minara service can request an approved operation, but ordinary servers do not receive a complete private key that can be exported.
+{% endhint %}
 
-Minara keeps saved strategies in encrypted form. When you delete one, we remove it from the active product path and begin deletion from the relevant systems. Encrypted backup copies may remain for a limited time before they expire.
+## Encryption
 
-## Important limits
+Minara uses protection at each stage where strategy data moves or is held:
 
-No security system removes every risk. This page does not protect against a compromised device or account, a strategy you choose to share, an output that reveals strategy details, public blockchain data, or every possible software and hardware vulnerability.
+| Stage | Protection |
+| --- | --- |
+| In transit | TLS between your client and Minara |
+| Wallet operations | Privy handles approved wallet-key operations for authorized services |
+| In use | An authorized worker processes the data; a TEE adds isolation where used |
+| At rest | Saved strategies are encrypted with protected key material |
 
-Some features may use an external model or data provider. If a feature sends strategy data outside Minara's normal protected path, it should tell you what is sent and why.
+TLS protects the connection to Minara. The wallet and service controls determine which approved operations Minara can request. Together with encrypted storage and TEE isolation, these controls limit and protect access; they are not a promise that Minara can never process strategy plaintext.
 
-## Questions or security reports
+## How strategies are stored
 
-If you have a question about strategy-data handling or believe you found a security issue, contact `security@minara.ai`.
+When you save a strategy, it is encrypted before it is written to disk. Each strategy uses its own data-encryption key, and the database stores the encrypted record and protected key material rather than the strategy plaintext.
+
+Access to a saved strategy requires the relevant protected key material and an authorized service path. A database backup alone should not be enough to read a saved strategy.
+
+## Data Minara does collect
+
+Some data is needed to run your account and is handled outside the strategy-processing path. This includes:
+
+- Account details you provide when you register, such as your email address.
+- Wallet addresses and on-chain transactions, which are public by nature of the blockchain.
+- Usage data such as which features you open and basic device information, used to operate and improve the product.
+
+This is operational data. Strategy ideas and code are handled through the protected path described above when you use a strategy feature.
+
+## Data retention
+
+Account and usage data is kept for as long as your account is active, and for a limited period afterward where retention is required for legal, accounting, or security reasons. Saved strategies remain encrypted while stored. When you delete a strategy, Minara removes it from the active product path and begins deletion from the relevant systems. Encrypted backup copies may remain for a limited time before they expire.
+
+## Third-party services
+
+Minara relies on infrastructure and analytics providers to operate the product. These providers receive only the operational data needed for their function. Minara does not share strategy plaintext with analytics or advertising providers.
+
+Some features may rely on an external data or model provider. Where they do, the feature should explain what data is sent and why. That feature may have a different data path from the one described on this page.
+
+## What a TEE does not cover
+
+A TEE is an important protection layer, but it is not a guarantee against every risk. It does not protect:
+
+- Data that is already public, such as your wallet address and on-chain transactions.
+- Your device if it is compromised, or a strategy you choose to share.
+- Inputs that a result can reveal on its own.
+- Bugs in the application logic, or a compromised dependency running inside the workload.
+- Correctness of a model's output.
+- Custody of your funds, which is a separate matter covered by wallet security.
+
+No hardware protection is absolute. TEE isolation reduces exposure while a workload runs; it does not remove the need for secure software and access controls.
+
+## Your controls
+
+- You can export your wallet private key at any time from settings, so you retain full custody of your funds.
+- You can request access to, or deletion of, your account data by contacting the security team.
+- You can review the permissions the app requests on your device and revoke them through your operating system.
+
+## Reporting a security issue
+
+If you believe you have found a vulnerability or have a question about how your data is handled, contact the Minara security team at `security@minara.ai`. Please include enough detail to reproduce the issue. Minara does not take legal action against good-faith security research.
 
 ## Changes to this statement
 
