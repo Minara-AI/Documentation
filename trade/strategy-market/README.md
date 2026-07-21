@@ -1,6 +1,8 @@
-# Strategy Market
+# Strategy Marketplace
 
-Strategy Market is where traders discover, compare, run, and publish automated trading strategies. It connects strategies built in [Strategy Studio](../strategy-studio/) with traders who want to use them through Autopilot.
+[Strategy Marketplace](https://minara.ai/app/marketplace) is where traders discover, compare, run, and publish automated trading strategies. It connects strategies built in [Strategy Studio](../strategy-studio/) with traders who want to use them through Autopilot.&#x20;
+
+{% embed url="https://x.com/minara/status/2077780543673180304" %}
 
 You do not need to write code to run a published strategy. You can inspect its creator, description and intended behavior, historical backtest, post-publication record, risk measurements, and trading activity before deciding whether it fits your account.
 
@@ -42,9 +44,6 @@ Build and test the trading logic in Strategy Studio, then use [Publish and manag
 
 ## Strategy Market and Strategy Studio
 
-| Product | Main purpose | Typical actions |
-| --- | --- | --- |
-| Strategy Studio | Create and test trading logic | Describe, code, backtest, optimize, and deploy a strategy |
-| Strategy Market | Discover and distribute published strategies | Compare, inspect, star, run, publish, and manage a listing |
+<table><thead><tr><th width="164.09375">Product</th><th>Main purpose</th><th>Typical actions</th></tr></thead><tbody><tr><td>Strategy Studio</td><td>Create and test trading logic</td><td>Describe, code, backtest, optimize, and deploy a strategy</td></tr><tr><td>Strategy Market</td><td>Discover and distribute published strategies</td><td>Compare, inspect, star, run, publish, and manage a listing</td></tr></tbody></table>
 
 Editing a publication does not change the underlying trading rules. Return to Strategy Studio when the code, signals, asset universe, timeframe, or execution behavior needs to change.

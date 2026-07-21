@@ -22,7 +22,7 @@
   * [Create Cross-sectional Strategies](trade/strategy-studio/create-cross-sectional-strategies.md)
   * [Create Time-series Strategies](trade/strategy-studio/create-time-series-strategies.md)
   * [Copy of Create Time-series Strategies](trade/strategy-studio/copy-of-create-time-series-strategies.md)
-* [Strategy Market](trade/strategy-market/README.md)
+* [Strategy Marketplace](trade/strategy-market/README.md)
   * [Discover strategies](trade/strategy-market/discover-strategies.md)
   * [Compare Top Strategies](trade/strategy-market/compare-top-strategies.md)
   * [Evaluate a strategy](trade/strategy-market/evaluate-a-strategy.md)
