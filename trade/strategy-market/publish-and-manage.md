@@ -4,7 +4,7 @@ Creators use Strategy Studio to build the trading logic and Strategy Market to p
 
 Select `Publish my strategies` from Marketplace or Top Strategies to open the creator flow, or open your profile and go directly to `My Strategies`.
 
-<figure><img src="../../.gitbook/assets/strategy-market-my-strategies.png" alt="My Strategies tab showing the creator's strategy library, filters, public labels, and Edit and Run controls"><figcaption>My Strategies contains both public and non-public strategies attached to your account.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-my-strategies.png" alt="My Strategies tab showing the creator&#x27;s strategy library, filters, public labels, and Edit and Run controls"><figcaption><p>My Strategies contains both public and non-public strategies attached to your account.</p></figcaption></figure>
 
 ## Find the strategy
 
@@ -23,16 +23,11 @@ Publishing and running are separate actions. Publishing makes a strategy discove
 
 Open `Edit` from My Strategies or use the pencil button on the owner view of a strategy page.
 
-<figure><img src="../../.gitbook/assets/strategy-market-edit-about.png" alt="Strategy publication editor on the About tab with name, description, style, risk profile, and Edit in Strategy Studio link"><figcaption>The About tab changes the listing, not the underlying trading logic.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-edit-about.png" alt="Strategy publication editor on the About tab with name, description, style, risk profile, and Edit in Strategy Studio link"><figcaption><p>The About tab changes the listing, not the underlying trading logic.</p></figcaption></figure>
 
 The `About` tab controls how the strategy is presented:
 
-| Field | What to include |
-| --- | --- |
-| Strategy name | A specific name that distinguishes the publication from your other strategies. |
-| Description | The market, main signal or factor, trading cadence, and intended risk behavior. |
-| Style | The closest trading behavior, such as mean reversion, trend following, swing, breakout, arbitrage, or market making. |
-| Risk profile | The classification that best matches the strategy and its backtest. |
+<table><thead><tr><th width="154.11566162109375">Field</th><th>What to include</th></tr></thead><tbody><tr><td>Strategy name</td><td>A specific name that distinguishes the publication from your other strategies.</td></tr><tr><td>Description</td><td>The market, main signal or factor, trading cadence, and intended risk behavior.</td></tr><tr><td>Style</td><td>The closest trading behavior, such as mean reversion, trend following, swing, breakout, arbitrage, or market making.</td></tr><tr><td>Risk profile</td><td>The classification that best matches the strategy and its backtest.</td></tr></tbody></table>
 
 Use the `Backtest` tab to review the result attached to the publication. The description and the displayed backtest should refer to the same strategy version.
 
@@ -40,13 +35,9 @@ Select `Edit in Strategy Studio` when you need to change code, signals, paramete
 
 ## Set visibility and availability
 
-<figure><img src="../../.gitbook/assets/strategy-market-edit-visibility.png" alt="Strategy publication editor on the Visibility tab with Public, Subscribable, and Open source settings"><figcaption>Visibility settings determine how other traders can access the publication.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-edit-visibility.png" alt="Strategy publication editor on the Visibility tab with Public, Subscribable, and Open source settings"><figcaption><p>Visibility settings determine how other traders can access the publication.</p></figcaption></figure>
 
-| Setting | Effect |
-| --- | --- |
-| Public | Other users can find and view the strategy. |
-| Subscribable | Eligible users can subscribe and run it. The source remains private unless `Open source` is also enabled. |
-| Open source | Other users can view and fork the source code. |
+<table><thead><tr><th width="134.47491455078125">Setting</th><th>Effect</th></tr></thead><tbody><tr><td>Public</td><td>Other users can find and view the strategy.</td></tr><tr><td>Subscribable</td><td>Eligible users can subscribe and run it. The source remains private unless <code>Open source</code> is also enabled.</td></tr><tr><td>Open source</td><td>Other users can view and fork the source code.</td></tr></tbody></table>
 
 When `Subscribable` is enabled, review the profit-share rate, minimum and maximum investment amounts, and subscriber limit shown by the editor. The profit-share rate is the percentage of a subscriber's strategy profit allocated to the creator.
 

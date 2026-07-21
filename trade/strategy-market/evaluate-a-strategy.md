@@ -2,7 +2,7 @@
 
 Open a strategy from Marketplace, Top Strategies, a creator profile, or your Starred list to see its full record. Evaluate the strategy page before you start a live run.
 
-<figure><img src="../../.gitbook/assets/strategy-market-strategy-details.png" alt="Published strategy page with author information, strategy description, backtest summary, and Run controls"><figcaption>The detail page connects the creator's description with the evidence produced by the strategy.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-strategy-details.png" alt="Published strategy page with author information, strategy description, backtest summary, and Run controls"><figcaption><p>The detail page connects the creator's description with the evidence produced by the strategy.</p></figcaption></figure>
 
 ## Start with the context
 
@@ -24,21 +24,13 @@ Do not read these as one continuous live track record. A backtest helps you unde
 
 ## Read return and risk together
 
-| Measurement | What to ask |
-| --- | --- |
-| Total Return | How much did the strategy gain or lose across the full displayed period? |
-| Annualized Return | Is the measurement window long enough for an annualized rate to be meaningful? |
-| Max Drawdown | What was the worst historical decline, and could your allocation tolerate a similar or larger loss? |
-| Sharpe Ratio | Did the strategy earn its return with relatively stable or volatile results? |
-| Calmar Ratio | How much annualized return was produced relative to maximum drawdown? |
-| Alpha and Beta | What benchmark-adjusted excess return is reported, and how sensitive was the strategy to the benchmark? |
-| Total Fills | Is there enough activity to evaluate, and could turnover make costs important? |
+<table><thead><tr><th width="169.78125">Measurement</th><th>What to ask</th></tr></thead><tbody><tr><td>Total Return</td><td>How much did the strategy gain or lose across the full displayed period?</td></tr><tr><td>Annualized Return</td><td>Is the measurement window long enough for an annualized rate to be meaningful?</td></tr><tr><td>Max Drawdown</td><td>What was the worst historical decline, and could your allocation tolerate a similar or larger loss?</td></tr><tr><td>Sharpe Ratio</td><td>Did the strategy earn its return with relatively stable or volatile results?</td></tr><tr><td>Calmar Ratio</td><td>How much annualized return was produced relative to maximum drawdown?</td></tr><tr><td>Alpha and Beta</td><td>What benchmark-adjusted excess return is reported, and how sensitive was the strategy to the benchmark?</td></tr><tr><td>Total Fills</td><td>Is there enough activity to evaluate, and could turnover make costs important?</td></tr></tbody></table>
 
 No single measurement answers whether a strategy is suitable. A high return with severe drawdown, a high Sharpe over a short window, or a strong backtest with little live-forward data all require caution.
 
 ## Inspect the full report
 
-<figure><img src="../../.gitbook/assets/strategy-market-performance-report.png" alt="Strategy report with drawdown chart, portfolio composition, returns, risk and benchmark measurements, and trade analysis"><figcaption>The lower report explains where the headline result came from.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-performance-report.png" alt="Strategy report with drawdown chart, portfolio composition, returns, risk and benchmark measurements, and trade analysis"><figcaption><p>The lower report explains where the headline result came from.</p></figcaption></figure>
 
 The lower report adds several checks:
 

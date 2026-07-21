@@ -2,23 +2,13 @@
 
 Marketplace is the full catalog of published strategies. Search by name or UID, then combine filters to narrow the results before opening a strategy page.
 
-<figure><img src="../../.gitbook/assets/strategy-market-marketplace.png" alt="Marketplace with search and filter controls above a grid of published strategy cards"><figcaption>Marketplace groups strategy discovery, comparison, and the first step of the run flow.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-marketplace.png" alt="Marketplace with search and filter controls above a grid of published strategy cards"><figcaption><p>Marketplace groups strategy discovery, comparison, and the first step of the run flow.</p></figcaption></figure>
 
 ## Search and filters
 
 Start with the filter that matters most to you, then add constraints until the list is manageable.
 
-| Filter | What it narrows | How to use it |
-| --- | --- | --- |
-| Search | Strategy name or UID | Find a known publication directly. |
-| Category | Time-Series or Cross-Sectional | Choose between strategies that time one market and strategies that rank a basket. |
-| Asset | A universe or individual market | Limit the catalog to markets you are willing to trade. |
-| Sort by | Featured, APY, Sharpe, Calmar, or Max DD | Order results by the measurement you want to compare. |
-| Style | Trend following, swing, mean reversion, breakout, arbitrage, market making, or other | Match the strategy to the behavior you understand. |
-| Risk | Conservative, balanced, or aggressive | Narrow by the publication's risk classification. |
-| Availability | Subscribable or open source | Separate strategies you can run from those whose source can be viewed or forked. |
-| Creator | All or verified | Limit the catalog by profile verification status when needed. |
-| Direction | Available exposure choices | Filter by the market direction or exposure the strategy uses. |
+<table><thead><tr><th width="125.0718994140625">Filter</th><th>What it narrows</th><th>How to use it</th></tr></thead><tbody><tr><td>Search</td><td>Strategy name or UID</td><td>Find a known publication directly.</td></tr><tr><td>Category</td><td>Time-Series or Cross-Sectional</td><td>Choose between strategies that time one market and strategies that rank a basket.</td></tr><tr><td>Asset</td><td>A universe or individual market</td><td>Limit the catalog to markets you are willing to trade.</td></tr><tr><td>Sort by</td><td>Featured, APY, Sharpe, Calmar, or Max DD</td><td>Order results by the measurement you want to compare.</td></tr><tr><td>Style</td><td>Trend following, swing, mean reversion, breakout, arbitrage, market making, or other</td><td>Match the strategy to the behavior you understand.</td></tr><tr><td>Risk</td><td>Conservative, balanced, or aggressive</td><td>Narrow by the publication's risk classification.</td></tr><tr><td>Availability</td><td>Subscribable or open source</td><td>Separate strategies you can run from those whose source can be viewed or forked.</td></tr><tr><td>Creator</td><td>All or verified</td><td>Limit the catalog by profile verification status when needed.</td></tr><tr><td>Direction</td><td>Available exposure choices</td><td>Filter by the market direction or exposure the strategy uses.</td></tr></tbody></table>
 
 Filters are discovery tools, not an assessment of quality. For example, `Conservative` is a classification attached to the publication; it does not guarantee a small future drawdown.
 

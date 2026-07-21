@@ -2,7 +2,7 @@
 
 Top Strategies compares published strategies on a common ranking screen. Use it to build a shortlist, then open each strategy page before making a decision.
 
-<figure><img src="../../.gitbook/assets/strategy-market-top-strategies.png" alt="Top Strategies page with a rolling cumulative return chart, ranked table, popular creators, and new submissions"><figcaption>Top Strategies combines a visual comparison with the measurements behind the ranking.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-top-strategies.png" alt="Top Strategies page with a rolling cumulative return chart, ranked table, popular creators, and new submissions"><figcaption><p>Top Strategies combines a visual comparison with the measurements behind the ranking.</p></figcaption></figure>
 
 ## Choose a ranking view
 
@@ -19,14 +19,7 @@ The cumulative return chart compares strategies over the selected rolling window
 
 The table provides the measurements behind each line:
 
-| Column | What it tells you |
-| --- | --- |
-| Annualized Return | The measured return converted to a yearly rate. Short windows can make this number look unusually large. |
-| Window Return | The total return over the displayed measurement window. |
-| Sharpe | Return relative to volatility. Compare it with drawdown rather than using it alone. |
-| Max DD | The largest peak-to-trough decline in the measured period. |
-| Trades | The number of fills or trades supporting the result. A small sample is easier to overinterpret. |
-| Window | The start and end of the record displayed for that strategy. |
+<table><thead><tr><th width="180.15625">Column</th><th>What it tells you</th></tr></thead><tbody><tr><td>Annualized Return</td><td>The measured return converted to a yearly rate. Short windows can make this number look unusually large.</td></tr><tr><td>Window Return</td><td>The total return over the displayed measurement window.</td></tr><tr><td>Sharpe</td><td>Return relative to volatility. Compare it with drawdown rather than using it alone.</td></tr><tr><td>Max DD</td><td>The largest peak-to-trough decline in the measured period.</td></tr><tr><td>Trades</td><td>The number of fills or trades supporting the result. A small sample is easier to overinterpret.</td></tr><tr><td>Window</td><td>The start and end of the record displayed for that strategy.</td></tr></tbody></table>
 
 The chart can use a rolling comparison window and refresh as new performance data arrives. Rankings may therefore change even when the underlying strategy has not been edited.
 
@@ -36,7 +29,7 @@ The chart can use a rolling comparison window and refresh as new performance dat
 
 `New Submissions` surfaces recently published strategies before they have a long public history.
 
-<figure><img src="../../.gitbook/assets/strategy-market-new-submissions.png" alt="New Submissions list showing recently published strategies, creators, and annualized return"><figcaption>New submissions may have less post-publication evidence than established strategies.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-new-submissions.png" alt="New Submissions list showing recently published strategies, creators, and annualized return"><figcaption><p>New submissions may have less post-publication evidence than established strategies.</p></figcaption></figure>
 
 Treat a new submission as a starting point for research. Check its backtest window, live-forward segment, drawdown, and creator before relying on the displayed annualized return.
 
