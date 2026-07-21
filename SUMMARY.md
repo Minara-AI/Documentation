@@ -27,7 +27,7 @@
   * [Compare Top Strategies](trade/strategy-market/compare-top-strategies.md)
   * [Evaluate a strategy](trade/strategy-market/evaluate-a-strategy.md)
   * [Creators and profiles](trade/strategy-market/creators-and-profiles.md)
-  * [Run a strategy](trade/strategy-market/run-a-strategy.md)
+  * [Subscribe to a strategy](trade/strategy-market/run-a-strategy.md)
   * [Publish and manage](trade/strategy-market/publish-and-manage.md)
 * [Prediction Market](features/prediction-market-copilot.md)
 * [Prediction Markets](features/prediction-markets.md)

@@ -1,6 +1,6 @@
-# Run a strategy
+# Subscribe to a strategy
 
-Run a published strategy only after reviewing its description and intended behavior, performance window, live-forward record, drawdown, costs, and creator. The strategy executes through Autopilot using a wallet you select.
+Subscribe to a published strategy only after reviewing its description and intended behavior, performance window, live-forward record, drawdown, costs, and creator. The strategy executes through Autopilot using a wallet you select.
 
 ## Before you run
 
@@ -24,7 +24,7 @@ Your wallet determines where the live strategy executes when more than one suppo
 
 ## Confirm deployment
 
-<figure><img src="../../.gitbook/assets/strategy-market-run-success.png" alt="Strategy deployed confirmation showing the selected wallet, symbol, interval, and link to the live trading view"><figcaption>Check the strategy and wallet on the confirmation screen before leaving the flow.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/strategy-market-run-success.png" alt="Strategy deployed confirmation showing the selected wallet, symbol, interval, and link to the live trading view"><figcaption><p>Check the strategy and wallet on the confirmation screen before leaving the flow.</p></figcaption></figure>
 
 The success screen confirms:
 
