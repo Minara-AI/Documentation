@@ -1,6 +1,6 @@
 # Strategy Marketplace
 
-[Strategy Marketplace](https://minara.ai/app/marketplace) is where traders discover, compare, run, and publish automated trading strategies. It connects strategies built in [Strategy Studio](../strategy-studio/) with traders who want to use them through Autopilot.&#x20;
+[Strategy Marketplace](https://minara.ai/app/marketplace) is where traders discover, compare, run, and publish automated trading strategies. It connects strategies built in [Strategy Studio](../strategy-studio/) with prospective Subscribers who want to use them through Autopilot.&#x20;
 
 {% embed url="https://x.com/minara/status/2077780543673180304" %}
 
@@ -25,8 +25,8 @@ A strategy moves through the market in four stages:
 
 1. A creator builds and backtests it in Strategy Studio.
 2. The creator publishes it with a description, classification, backtest, and visibility settings.
-3. Traders discover and evaluate the publication in Marketplace, Top Strategies, or a creator profile.
-4. Eligible traders run it from their own wallet through Autopilot. The creator's code remains private unless the publication is marked `Open source`.
+3. Prospective Subscribers discover and evaluate the publication in Marketplace, Top Strategies, or a creator profile.
+4. Eligible Subscribers subscribe and run it from their own wallet through Autopilot. The creator's code remains private unless the publication is marked `Open source`.
 
 ## Choose your path
 

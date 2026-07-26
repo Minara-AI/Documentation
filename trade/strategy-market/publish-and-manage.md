@@ -51,4 +51,4 @@ Subscriber data belongs to a specific strategy publication. Check the strategy n
 
 ## Keep your creator profile current
 
-The pencil control on your profile opens profile editing. You can update the banner, avatar, display name, bio, website, and supported social links. These details help traders identify the creator behind a strategy, but they do not replace a clear strategy description or a complete performance record.
+The pencil control on your profile opens profile editing. You can update the banner, avatar, display name, bio, website, and supported social links. These details help prospective Subscribers identify the creator behind a strategy, but they do not replace a clear strategy description or a complete performance record.
