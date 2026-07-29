@@ -150,7 +150,7 @@ For standard AI strategies (Sharpe Guard 2.0):
 
 **Minimum funds required**
 
-Autopilot requires at least **$100** in available funds to operate. For Futures Grid, the minimum is calculated dynamically based on the grid parameters.
+Autopilot requires at least **$100** in available funds for strategies you deploy yourself. To subscribe to a published strategy from Strategy Market, a Subscriber must allocate at least **$500**. The creator may set a higher minimum for an individual strategy. For Futures Grid, the minimum is calculated dynamically based on the grid parameters.
 
 <figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption><p>Real-time available funds shown here</p></figcaption></figure>
 

@@ -12,6 +12,8 @@ Complete the checks in [Evaluate a strategy](evaluate-a-strategy.md), then confi
 4. The strategy interval and any allocation settings shown in the run flow.
 5. The fees, liquidity, and drawdown risk your allocation can tolerate.
 
+A Subscriber must allocate at least **$500** to run a published Strategy Market strategy. A creator may set a higher minimum for an individual strategy, so review the amount shown in the run flow before confirming.
+
 {% hint style="warning" %}
 A backtest is not a live guarantee. Execution, liquidity, fees, funding costs, market conditions, and your allocation can all change the result.
 {% endhint %}

@@ -39,7 +39,7 @@ Select `Edit in Strategy Studio` when you need to change code, signals, paramete
 
 <table><thead><tr><th width="134.47491455078125">Setting</th><th>Effect</th></tr></thead><tbody><tr><td>Public</td><td>Other users can find and view the strategy.</td></tr><tr><td>Subscribable</td><td>Eligible users can subscribe and run it. The source remains private unless <code>Open source</code> is also enabled.</td></tr><tr><td>Open source</td><td>Other users can view and fork the source code.</td></tr></tbody></table>
 
-When `Subscribable` is enabled, review the profit-share rate, minimum and maximum investment amounts, and subscriber limit shown by the editor. The profit-share rate is the percentage of a subscriber's strategy profit allocated to the creator.
+When `Subscribable` is enabled, review the profit-share rate, minimum and maximum investment amounts, and Subscriber limit shown by the editor. The platform minimum for one Subscriber is **$500**; a creator may set a higher minimum for an individual strategy. The profit-share rate is the percentage of a Subscriber's strategy profit allocated to the creator.
 
 To remove the strategy from public discovery, turn off `Public` and save. Review its existing subscribers and live-run state before unpublishing.
 
