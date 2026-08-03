@@ -43,6 +43,8 @@ If you do not already hold USDC, you can buy it with fiat through MoonPay or Ban
 {% hint style="warning" %}
 MoonPay and Banxa Pay are third-party providers. Availability, payment methods, limits, fees, exchange rates, processing times, and KYC requirements vary by provider and region. MoonPay is disabled in regions where it is not available.
 
+If you cannot use a provider in your country or region, check its current official availability list: [MoonPay's unsupported countries](https://support.moonpay.com/en/articles/380968-moonpay-s-unsupported-countries) or [countries supported by Banxa](https://support.banxa.com/en/support/solutions/articles/44002216505-what-countries-are-supported-by-banxa-). These lists are maintained by the providers and may change.
+
 Minara does not process card payments or review KYC. For order or payment issues, contact [MoonPay Support](https://support.moonpay.com/) or [Banxa Support](https://support.banxa.com/).
 {% endhint %}
 
@@ -65,7 +67,7 @@ Click `MoonPay`. On first use, review and accept the third-party service notice.
 After MoonPay completes the order, the purchased USDC is sent to the perps wallet you selected in Minara.
 
 {% hint style="info" %}
-If the MoonPay option is disabled, MoonPay is not available in your current region. Use Banxa Pay or make an on-chain USDC deposit instead.
+If the MoonPay option is disabled, MoonPay is not available in your current region. Check [MoonPay's official unsupported-country list](https://support.moonpay.com/en/articles/380968-moonpay-s-unsupported-countries), then use Banxa Pay or make an on-chain USDC deposit instead.
 {% endhint %}
 
 ### 3. Complete a Banxa Pay order
