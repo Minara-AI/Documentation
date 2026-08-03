@@ -36,6 +36,55 @@ The perps wallet only accepts **USDC via Arbitrum**. Deposits from other network
 
 <figure><img src="../../.gitbook/assets/lighter-wallet-deposit.png" alt="Perps Wallet Deposit screen showing Arbitrum chain, USDC asset, a QR code, and the deposit address"><figcaption></figcaption></figure>
 
+## Buy USDC directly with MoonPay or Banxa Pay
+
+If you do not already hold USDC, you can buy it with fiat through MoonPay or Banxa Pay and have it delivered directly to a selected Minara perps wallet. Minara automatically supplies the destination wallet address and sets the asset and network to USDC on Arbitrum.
+
+{% hint style="warning" %}
+MoonPay and Banxa Pay are third-party providers. Availability, payment methods, limits, fees, exchange rates, processing times, and KYC requirements vary by provider and region. MoonPay is disabled in regions where it is not available.
+
+Minara does not process card payments or review KYC. For order or payment issues, contact [MoonPay Support](https://support.moonpay.com/) or [Banxa Support](https://support.banxa.com/).
+{% endhint %}
+
+### 1. Select a provider
+
+Click `Deposit` in the top bar. In the `Perps Wallet Deposit` dialog, select the wallet you want to fund. Under `Deposit with Card`, choose `MoonPay` or `Banxa Pay`.
+
+<figure><img src="../../.gitbook/assets/perps-direct-deposit-methods.png" alt="Perps Wallet Deposit dialog showing a wallet selector, On-chain Deposit, MoonPay, and Banxa Pay; MoonPay is unavailable in the current region"><figcaption></figcaption></figure>
+
+### 2. Complete a MoonPay order
+
+Click `MoonPay`. On first use, review and accept the third-party service notice. A new MoonPay window opens with the destination wallet prepared for USDC on Arbitrum.
+
+1. Select the fiat currency and enter the amount of USDC to buy.
+2. Verify your email address.
+3. Select a payment method and enter the required payment details.
+4. Complete MoonPay's identity verification if prompted.
+5. Review the quote, fees, destination asset, and network, then complete the payment.
+
+After MoonPay completes the order, the purchased USDC is sent to the perps wallet you selected in Minara.
+
+{% hint style="info" %}
+If the MoonPay option is disabled, MoonPay is not available in your current region. Use Banxa Pay or make an on-chain USDC deposit instead.
+{% endhint %}
+
+### 3. Complete a Banxa Pay order
+
+Click `Banxa Pay`. A new Banxa window opens with USDC, Arbitrum, and the destination wallet address already selected.
+
+1. Select the fiat currency and enter the amount to spend.
+2. Confirm that `USDC` and `Arbitrum` are selected.
+3. Choose a payment method and review the estimated USDC amount, fees, and total payable.
+4. Click `Create Order`, then complete Banxa's identity verification and payment steps.
+
+<figure><img src="../../.gitbook/assets/banxa-direct-deposit.png" alt="Banxa purchase window showing an example USD-to-USDC quote on Arbitrum, card payment method, fees, and Create Order button"><figcaption></figcaption></figure>
+
+The amounts and fees in the image are examples only. Your live quote may differ.
+
+### 4. Confirm the deposit
+
+After the provider marks the order as complete, return to Minara and check the selected perps wallet. The USDC balance updates after the provider sends the funds and the Arbitrum transfer is confirmed. Keep the provider's order reference until the funds arrive.
+
 ## Transfer
 
 You can move funds between any two of your Minara perps wallets.
