@@ -72,7 +72,7 @@
   * [Training methods](technology/dmind/training-methods.md)
 * [Wallet security](technology/wallet-security.md)
 * [Tool Stack](technology/tools-integration.md)
-* [Strategy confidentiality architecture](technology/data-security.md)
+* [TEE-based Data Security](technology/data-security.md)
 
 ## Links
 
