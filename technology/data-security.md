@@ -1,14 +1,10 @@
 # TEE-based Data Security
 
-Target production plan: the full process is completed inside trusted execution environments.
-
-<table><thead><tr><th width="335.14373779296875">Document positioning</th><th>Version and date</th></tr></thead><tbody><tr><td>External statement for the target production version of full-lifecycle TEE</td><td>v1.0 / 2026-08-06</td></tr><tr><td>Intended audience</td><td>Users, partners, media, security questionnaires, and product pages</td></tr><tr><td>Core premise</td><td>All gates in the 02 technical plan have been completed and passed production acceptance</td></tr></tbody></table>
+<table><thead><tr><th width="335.14373779296875">Document positioning</th><th>Version and date</th></tr></thead><tbody><tr><td>External statement for full-lifecycle TEE</td><td>v1.0 / 2026-08-06</td></tr><tr><td>Intended audience</td><td>Users, partners, media, security questionnaires, and product pages</td></tr></tbody></table>
 
 | Core commitment                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Plaintext source code exists only inside Minara-approved TEE workloads that have completed remote attestation. Ordinary services, hosts, databases, queues, logs, backups, and operations accounts do not touch plaintext. |
-
-Usage note: This document is written for the target state in which full-lifecycle TEE has been fully released. It can be published as a formal external statement only after all release gates in the 02 plan have been completed and production evidence has been retained.
 
 ## 1. Formal external statement
 
@@ -82,77 +78,3 @@ Minara uses remote attestation, attested key release, ciphertext-only storage, T
 2. The KMS policy constrains ImageSha384/PCR0, signing certificate/PCR8, environment, and encryption context.
 3. The measurement registry supports active, grace, and revoked states. Client policy and KMS policy are updated together.
 4. Execution receipts can be publicly verified, but they do not contain source code, DEK, or full sensitive inputs.
-
-## 5. User FAQ
-
-### Q1: Can Minara or administrators see my strategy source code?
-
-Ordinary services, hosts, and operations accounts cannot obtain plaintext source code. Source code is decrypted only inside approved and attested TEEs. Break-glass also runs only inside the TEE, requires two-person approval, MFA, short TTL, and a full receipt, and cannot export source code.
-
-### Q2: Does the database store plaintext source code?
-
-No. Databases, object storage, caches, queues, logs, and backups store only ciphertext, wrapped DEK, artifact references, policy tickets, and classified results.
-
-### Q3: Are backtesting, paper trading, and live trading all inside TEEs?
-
-Yes. Strategy Studio and XStrategy use independent attested TEE runtimes. State and checkpoints are also encrypted inside the enclave before persistence. Trading services receive only minimal order intent that has passed through the egress gate.
-
-### Q4: Will AI send source code to ordinary model providers?
-
-No. Raw source code is processed only in a local TEE model or sent to a confidential downstream whose identity and policy can be attested. Ordinary providers can receive only allowed inputs that are desensitized, structured, and do not contain raw source code.
-
-### Q5: How do I view my own source code?
-
-The browser first verifies the Source Gateway attestation and establishes a short-lived session. After authorization, the TEE rewraps the source code to that session public key, and the browser decrypts it locally. Ordinary APIs do not return plaintext source code.
-
-### Q6: What happens if attestation or KMS fails?
-
-The system fails closed: the task enters retry, paused, or manual-recovery status. It does not fall back to software providers, local keys, legacy HTTP, or standard\_backend plaintext paths.
-
-### Q7: How are open-source strategies handled?
-
-Open source must be explicitly selected by the owner, and it creates a separate public artifact or is delivered through the PUBLIC\_READ purpose. Private versions, historical versions, model context, and runtime state are not automatically made public.
-
-### Q8: Does TEE mean absolute security?
-
-No. TEE materially reduces the attack surface through which hosts, administrators, and ordinary services can read plaintext, but client security, supply chain, sandboxing, network controls, keys, audit, availability, and business risk controls are still required.
-
-## 6. Public transparency and responsibility boundaries
-
-### 6.1 Verifiable facts we commit to
-
-1. Every approved runtime has a traceable EIF, source commit, SBOM, dependency lock, build provenance, and measurement.
-2. Ordinary logs do not record source code, DEK, tokens, full prompts, or debug payloads. CloudTrail and receipts are linked through requestId.
-3. Old measurements are revoked after the shortest rolling window. If risk is found, Minara can immediately revoke, freeze keys/policies, and pause affected runtimes.
-4. During security exceptions, plaintext boundaries take priority. Features may be temporarily unavailable, but plaintext downgrade is not enabled.
-
-### 6.2 Absolute commitments we do not make
-
-| Statement                                                                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| TEE is not a synonym for "absolute security" or "zero risk." Minara does not claim to eliminate all risk from malicious client code, side channels, supply chain, denial of service, business logic defects, or strategy inference from public output. |
-
-| Risk boundary                | Description                                                                                          | Supporting control                                                                               |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Client                       | Malicious browser extensions or compromised devices can read source code after the user decrypts it. | Local attestation verification, short-lived sessions, security prompts, and endpoint protection. |
-| Supply chain                 | Compilers, dependencies, or build processes may introduce risk.                                      | Reproducible builds, SBOM, signatures, two-person approval, and measurement pinning.             |
-| Side channels / availability | TEE cannot eliminate all side channels or denial of service.                                         | Resource isolation, patches, capacity management, circuit breakers, and disaster recovery.       |
-| Output inference             | Returns, orders, and response patterns may reveal some strategy characteristics.                     | Egress classification, minimization, rate limits, privacy review, and product rules.             |
-| Active public release        | After the user authorizes public release, the public artifact can be accessed by third parties.      | Explicit confirmation, separate artifact, version boundary, and revocable status.                |
-
-## Appendix A - Formal release gates (internal verification)
-
-| Statement                                                                                                                                                                                                                                                                              |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Only after all gates below have been completed can the body of this document move from "target production version" to formal public statement. If any gate rolls back or its evidence becomes invalid, the relevant wording should be paused and updated through the incident process. |
-
-<table><thead><tr><th width="244.643798828125">Gate</th><th>Acceptance criteria</th><th>Required evidence</th></tr></thead><tbody><tr><td>Data</td><td>artifact v3 is ciphertext-only; historical plaintext fields and backups have been cleaned or isolated; schema and CI block plaintext regression.</td><td>Data verification report</td></tr><tr><td>Upload / view</td><td>The client completes attestation, nonce/expiry, and measurement allowlist verification; failures close; source code is delivered only as a session envelope.</td><td>Cross-client E2E report</td></tr><tr><td>KMS / attestation</td><td>RecipientAttestation policy, PCR0/PCR8, environment, and encryption context pass acceptance; ordinary KMS Decrypt calls do not return Plaintext.</td><td>KMS policy and CloudTrail</td></tr><tr><td>Runtime</td><td>Studio, XStrategy, paper/live, and scheduled tasks all use approved TEE pools, with 0 standard_backend and 0 plaintext bypass.</td><td>Deployment list and runtime evidence</td></tr><tr><td>AI</td><td>Raw source code exists only inside TEEs or attested downstreams; provider, retention, training, region, and subprocessor reviews are complete.</td><td>DPA / security acceptance</td></tr><tr><td>Network / egress</td><td>vsock proxy allowlist, mTLS, schema, size, and timeout limits are in place; egress is default-deny and covers all runtime paths.</td><td>Network and policy tests</td></tr><tr><td>Receipts / audit</td><td>Every major job has a signed receipt; measurement mismatch, tampering, replay, and receipt failure can be detected and alerted.</td><td>Verification and monitoring report</td></tr><tr><td>Availability / emergency</td><td>Attestation or key-release failure does not fall back to plaintext; rolling measurement, revoke, disaster recovery, and break-glass drills have passed.</td><td>Drill record</td></tr><tr><td>External copy</td><td>Security, legal, SRE, and product jointly confirm that the body matches the actual production boundary.</td><td>Formal release approval</td></tr></tbody></table>
-
-## Appendix B - Unified terminology
-
-| Recommended wording                                                     | Wording to avoid                                   | Reason                                                                                                 |
-| ----------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Full-lifecycle TEE / verifiable confidential computing                  | Absolute security / zero risk                      | TEE reduces the trusted boundary, but it does not eliminate all system risk.                           |
-| Ordinary services and administrators do not touch plaintext source code | Nobody can see source code under any circumstances | User-end decryption, active public release, and approved TEE processing still sit within the boundary. |
-| Fail closed when attestation fails                                      | Never fails                                        | A secure failure policy is not the same as unlimited availability.                                     |
-| Ordinary providers do not receive raw source code                       | AI never sees any related information              | Allowed structured/desensitized inputs and outputs may still participate in the task.                  |
