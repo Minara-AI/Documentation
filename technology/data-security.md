@@ -1,112 +1,172 @@
-# Data Security
+# Minara strategy confidentiality technical architecture statement
 
-Minara handles trading strategies, code, wallet activity, and account data. Your strategy remains your own: Minara uses your prompts and code only to provide the feature you request. We do not copy strategies, publish them, sell them, or use them to train shared models. Strategy code is shared with other users only when its creator chooses to open-source it.
+Target production plan: the full process is completed inside trusted execution environments.
 
-Minara uses [Privy](https://www.privy.io/), a widely used provider of embedded user wallets, for wallet services. An authorized Minara service can request the wallet operation needed to provide a feature. This lets the feature work without exposing a complete private key to ordinary Minara servers.
-
-## What a Trusted Execution Environment is
-
-A Trusted Execution Environment (TEE) is a hardware-isolated place to run software. Strategy data is decrypted only when the authorized worker needs it, and the TEE helps keep that worker's memory separate from the surrounding server while it runs.
-
-A TEE protects a workload from the systems around it. It does not make Minara unable to access data through an approved service, and it does not protect against every software or hardware vulnerability. See [What a TEE does not cover](#what-a-tee-does-not-cover) below.
-
-## How your data is processed
-
-Strategy features run through Minara's protected processing path:
-
-1. Your request travels to Minara over TLS.
-2. Minara checks your session and the access rules for the feature.
-3. If a wallet operation is needed, an authorized Minara service requests it through Privy.
-4. An authorized worker processes the strategy. A TEE adds isolation for sensitive workloads while they run.
-5. If you save the strategy, Minara stores an encrypted version.
-
-Encryption protects the connection and stored records, but not every detail around them. Minara can still see operational data such as your account ID, request timing and size, and which feature you used.
-
-## How strategy code runs in a TEE
-
-For strategy features that use a TEE, Minara runs your code in a protected worker:
-
-1. The worker receives the authorized strategy request after Minara checks the session and feature permissions.
-2. The strategy code and the data needed for the request are loaded into the TEE-backed worker.
-3. The code runs in the worker's protected memory. Its temporary variables and intermediate results stay inside that environment while the request is running.
-4. The worker returns the feature result and stores any saved strategy in encrypted form.
-
-The TEE helps separate the running code from the surrounding server. It does not guarantee that the code is correct or prevent a result from revealing information the feature is designed to return.
-
-## How Minara protects your strategy
-
-Strategy content is used only inside the protected service path for the feature you request. It is not shared with other users and is kept out of ordinary logs, support tools, telemetry, analytics, and advertising systems.
-
-| Input | How Minara protects it |
+| Document positioning | Version and date |
 | --- | --- |
-| Strategy prompts you write | Used only to provide the feature you request; never shared with other users |
-| Strategy code you write or generate | Private by default; shared with other users only if you choose to open-source it |
-| Intermediate work inside a TEE | Kept inside the protected worker while it runs, away from the surrounding host system |
-| Saved strategy | Stored as encrypted data with protected key material |
-| Wallet private key | Not passed to ordinary Minara servers as a complete, exportable key |
+| External statement for the target production version of full-lifecycle TEE | v1.0 / 2026-08-06 |
+| Intended audience | Users, partners, media, security questionnaires, and product pages |
+| Core premise | All gates in the 02 technical plan have been completed and passed production acceptance |
 
-{% hint style="info" %}
-Privy protects wallet-key operations. An authorized Minara service can request an approved operation, but ordinary servers do not receive a complete private key that can be exported.
-{% endhint %}
+| Core commitment |
+| --- |
+| Plaintext source code exists only inside Minara-approved TEE workloads that have completed remote attestation. Ordinary services, hosts, databases, queues, logs, backups, and operations accounts do not touch plaintext. |
 
-## How strategies are encrypted and stored
+Usage note: This document is written for the target state in which full-lifecycle TEE has been fully released. It can be published as a formal external statement only after all release gates in the 02 plan have been completed and production evidence has been retained.
 
-Minara protects strategy data while it moves, is used, and is saved:
+## 1. Formal external statement
 
-| Stage | Protection |
-| --- | --- |
-| In transit | TLS between your client and Minara |
-| Wallet operations | Privy handles approved wallet-key operations for authorized services |
-| In use | An authorized worker processes the data; a TEE adds isolation where used |
-| At rest | Each saved strategy is encrypted with its own data-encryption key and protected key material |
+### 1.1 Full version
 
-When you save a strategy, the database stores the encrypted record and protected key material rather than the strategy plaintext. Access requires the relevant key material and an authorized service path, so a database backup alone should not be enough to read a saved strategy.
+Minara has deployed the full lifecycle of confidential strategy source code inside remotely attested hardware trusted execution environments (TEE). From encrypted browser upload, ciphertext storage, AI code processing, backtesting, paper trading, and live trading, to order intent output, source-code viewing, and execution receipt generation, plaintext source code exists only briefly inside approved TEE workloads. Ordinary APIs, workers, hosts, databases, caches, queues, logs, backups, and operations accounts cannot obtain plaintext source code.
 
-## Data Minara does collect
+Before upload, the user's browser verifies the TEE's remote attestation and approved measurement, then establishes a short-lived encrypted session with the enclave. The control plane only forwards ciphertext, artifact references, authorization tickets, and metadata that does not contain source code. Source code is encrypted with an independent DEK using AEAD. The storage layer keeps only ciphertext, wrapped DEK, context, and signed receipts. KMS encrypts key material to a designated enclave only when attestation, purpose, image, and policy conditions are all satisfied.
 
-Some data is needed to run your account and is handled outside the strategy-processing path. This includes:
+Strategy Studio, XStrategy, and AI tasks process source code in isolated TEE runtimes. Market data and required external dependencies enter through a controlled vsock proxy. Every output first passes through an in-enclave egress policy that applies default deny and minimization by purpose, destination, field, and size. The trading system receives only classified order intent. AI handles original source code only inside the enclave or through an attested confidential downstream. Ordinary model providers do not receive plaintext source code.
 
-- Account details you provide when you register, such as your email address.
-- Wallet addresses and on-chain transactions, which are public by nature of the blockchain.
-- Usage data such as which features you open and basic device information, used to operate and improve the product.
+Every upload, view, AI processing task, or strategy execution generates a verifiable receipt bound to the artifact hash, input and output commitments, runtime measurement, policyVersion, purpose, time, and result status. If attestation fails, key policy does not match, or egress is denied, the system pauses or retries the task. It does not downgrade to a plaintext backend path.
 
-This is operational data. Strategy prompts and code are handled through the protected path described above when you use a strategy feature.
+### 1.2 Short version
 
-## Data retention
+| Statement |
+| --- |
+| Minara places the full lifecycle of strategy source code, from encrypted upload, ciphertext storage, AI, backtesting, and trading runtime to source-code delivery, inside remotely attested TEEs. Ordinary services and operations staff do not touch plaintext source code. Keys are released according to attestation, output is minimized through an egress gate, and every major operation receives a verifiable receipt. |
 
-Account and usage data is kept for as long as your account is active, and for a limited period afterward where retention is required for legal, accounting, or security reasons. Saved strategies remain encrypted while stored. When you delete a strategy, Minara removes it from the active product path and begins deletion from the relevant systems. Encrypted backup copies may remain for a limited time before they expire.
+### 1.3 Product prompt copy
 
-## Third-party services
+Full-lifecycle TEE is enabled: source code is decrypted and processed only inside verified confidential execution environments. You can view the measurement, strategy version, and execution receipt on the client. If attestation fails, the system fails closed and does not fall back to plaintext processing.
 
-Minara relies on infrastructure and analytics providers to operate the product. These providers receive only the operational data needed for their function. Minara does not share strategy plaintext with analytics or advertising providers.
+### 1.4 Media one-liner
 
-Some features may rely on an external data or model provider. Where they do, the feature should explain what data is sent and why. That feature may have a different data path from the one described on this page.
+Minara uses remote attestation, attested key release, ciphertext-only storage, TEE runtimes, and verifiable receipts to provide full-lifecycle confidential computing for strategy source code across upload, AI, backtesting, trading, and delivery.
 
-## What a TEE does not cover
+## 2. Public architecture for full-lifecycle TEE
 
-A TEE is an important protection layer, but it is not a guarantee against every risk. It does not protect:
+<figure><img src="../.gitbook/assets/strategy-confidentiality-tee-architecture.png" alt="Minara full-lifecycle TEE public architecture, showing separation between the control plane and the attested confidential data plane"><figcaption>Figure 1 - The control plane is separated from the attested confidential data plane. Plaintext exists only inside the approved TEE pool.</figcaption></figure>
 
-- Data that is already public, such as your wallet address and on-chain transactions.
-- Your device if it is compromised, or a strategy you choose to share.
-- Inputs that a result can reveal on its own.
-- Bugs in the application logic, or a compromised dependency running inside the workload.
-- Correctness of a model's output.
-- Custody of your funds, which is a separate matter covered by wallet security.
+### 2.1 Three core boundaries
 
-No hardware protection is absolute. TEE isolation reduces exposure while a workload runs; it does not remove the need for secure software and access controls.
+| Boundary | Responsibilities | Explicitly does not touch |
+| --- | --- | --- |
+| User side | Verify attestation, establish an encrypted session, locally decrypt the source-code envelope, and verify receipts | Platform internal keys and other users' data |
+| Control plane | Identity, owner, purpose, job, artifact ref, policy tickets, status, and classification results | Source code, DEK, debug plaintext, and raw AI context |
+| TEE data plane | Decryption, validation, AI, backtesting, paper/live, egress decisions, rewrapping, and signed receipts | Unapproved network destinations and unclassified output |
+| Ciphertext storage / KMS | Store ciphertext and wrapped DEK; release keys according to RecipientAttestation conditions | Plaintext source code and ordinary KMS Decrypt plaintext |
 
-## Your controls
+## 3. From upload to execution receipt
 
-- You can export your wallet private key at any time from settings, so you retain full custody of your funds.
-- You can request access to, or deletion of, your account data by contacting the security team.
-- You can review the permissions the app requests on your device and revoke them through your operating system.
+<figure><img src="../.gitbook/assets/strategy-confidentiality-tee-lifecycle.png" alt="Full-lifecycle TEE path from upload to execution receipt, with seven steps and fail-closed invariants"><figcaption>Figure 2 - Full-lifecycle TEE path and fail-closed invariants.</figcaption></figure>
 
-## Reporting a security issue
+### 3.1 Seven-step protection chain
 
-If you believe you have found a vulnerability or have a question about how your data is handled, contact the Minara security team at `security@minara.ai`. Please include enough detail to reproduce the issue. Minara does not take legal action against good-faith security research.
+1. Attestation verification: the client or task scheduler first verifies the approved measurement, signature chain, nonce, time, and policy version.
+2. Encrypted upload: the browser establishes a short-lived ECDH session with the TEE, then uploads the source code, operation, and context in an AEAD envelope.
+3. Ciphertext write: the TEE validates the source code and generates a DEK. It writes only ciphertext, wrapped DEK, context, and receipt.
+4. Key release after attestation: the TEE runtime requests KMS with RecipientAttestation. If the conditions are not met, no usable key is returned.
+5. Confidential execution: AI, backtesting, and paper/live run inside independent TEE pools. State and checkpoints are encrypted again before persistence.
+6. Controlled output: the egress gate outputs minimal order intent, results, or browser-session envelopes according to destination and field allowlists.
+7. Verifiable receipt: the result is bound to measurement, artifact/input/output hash, policy, purpose, time, and status, then signed.
 
-## Changes to this statement
+## 4. What this means for users
 
-Minara may update this statement as the product and its infrastructure change. Material changes will be noted here, and the date below reflects the most recent revision.
+| Scenario | Full-lifecycle TEE behavior | Protection for the user |
+| --- | --- | --- |
+| Upload | The browser verifies the TEE identity before encryption. The control plane only forwards ciphertext. | Ordinary APIs or proxies cannot read source code on the upload path. |
+| Storage | Databases, object storage, caches, and backups store only ciphertext and required metadata. | Database snapshots and backups do not contain plaintext source code. |
+| Backtesting | Pine and XStrategy runtimes decrypt and execute inside attested enclaves. | Hosts and ordinary workers do not read source code. |
+| Paper/live | Strategy state and checkpoints are encrypted inside the TEE. Orders are output only as minimal intent. | Trading services do not receive source code. They only process controlled actions. |
+| AI | Raw source code goes only to a local TEE model or an attested confidential downstream. | Ordinary third-party model providers do not receive plaintext source code. |
+| Source-code viewing | The TEE rewraps source code to a verified browser session. The client decrypts locally. | Ordinary backends do not return plaintext source code in HTTP responses. |
+| Clone / public release | Cloning is completed inside the TEE. Public release requires explicit owner authorization and creates a separate public artifact. | Public release does not automatically expose private versions or historical context. |
+| Operations / emergency | Break-glass runs only inside the TEE, requires two-person approval, MFA, and a short TTL, and issues a receipt. | Administrators cannot export source code to ordinary terminals or logs. |
 
-_Last updated: 15 July 2026_
+### 4.1 Verifiable evidence rather than commitments alone
+
+1. The client verifies the AWS Nitro attestation certificate chain, COSE_Sign1, nonce, public_key, time, and approved PCRs.
+2. The KMS policy constrains ImageSha384/PCR0, signing certificate/PCR8, environment, and encryption context.
+3. The measurement registry supports active, grace, and revoked states. Client policy and KMS policy are updated together.
+4. Execution receipts can be publicly verified, but they do not contain source code, DEK, or full sensitive inputs.
+
+## 5. User FAQ
+
+### Q1: Can Minara or administrators see my strategy source code?
+
+Ordinary services, hosts, and operations accounts cannot obtain plaintext source code. Source code is decrypted only inside approved and attested TEEs. Break-glass also runs only inside the TEE, requires two-person approval, MFA, short TTL, and a full receipt, and cannot export source code.
+
+### Q2: Does the database store plaintext source code?
+
+No. Databases, object storage, caches, queues, logs, and backups store only ciphertext, wrapped DEK, artifact references, policy tickets, and classified results.
+
+### Q3: Are backtesting, paper trading, and live trading all inside TEEs?
+
+Yes. Strategy Studio and XStrategy use independent attested TEE runtimes. State and checkpoints are also encrypted inside the enclave before persistence. Trading services receive only minimal order intent that has passed through the egress gate.
+
+### Q4: Will AI send source code to ordinary model providers?
+
+No. Raw source code is processed only in a local TEE model or sent to a confidential downstream whose identity and policy can be attested. Ordinary providers can receive only allowed inputs that are desensitized, structured, and do not contain raw source code.
+
+### Q5: How do I view my own source code?
+
+The browser first verifies the Source Gateway attestation and establishes a short-lived session. After authorization, the TEE rewraps the source code to that session public key, and the browser decrypts it locally. Ordinary APIs do not return plaintext source code.
+
+### Q6: What happens if attestation or KMS fails?
+
+The system fails closed: the task enters retry, paused, or manual-recovery status. It does not fall back to software providers, local keys, legacy HTTP, or standard_backend plaintext paths.
+
+### Q7: How are open-source strategies handled?
+
+Open source must be explicitly selected by the owner, and it creates a separate public artifact or is delivered through the PUBLIC_READ purpose. Private versions, historical versions, model context, and runtime state are not automatically made public.
+
+### Q8: Does TEE mean absolute security?
+
+No. TEE materially reduces the attack surface through which hosts, administrators, and ordinary services can read plaintext, but client security, supply chain, sandboxing, network controls, keys, audit, availability, and business risk controls are still required.
+
+## 6. Public transparency and responsibility boundaries
+
+### 6.1 Verifiable facts we commit to
+
+1. Every approved runtime has a traceable EIF, source commit, SBOM, dependency lock, build provenance, and measurement.
+2. Ordinary logs do not record source code, DEK, tokens, full prompts, or debug payloads. CloudTrail and receipts are linked through requestId.
+3. Old measurements are revoked after the shortest rolling window. If risk is found, Minara can immediately revoke, freeze keys/policies, and pause affected runtimes.
+4. During security exceptions, plaintext boundaries take priority. Features may be temporarily unavailable, but plaintext downgrade is not enabled.
+
+### 6.2 Absolute commitments we do not make
+
+| Statement |
+| --- |
+| TEE is not a synonym for "absolute security" or "zero risk." Minara does not claim to eliminate all risk from malicious client code, side channels, supply chain, denial of service, business logic defects, or strategy inference from public output. |
+
+| Risk boundary | Description | Supporting control |
+| --- | --- | --- |
+| Client | Malicious browser extensions or compromised devices can read source code after the user decrypts it. | Local attestation verification, short-lived sessions, security prompts, and endpoint protection. |
+| Supply chain | Compilers, dependencies, or build processes may introduce risk. | Reproducible builds, SBOM, signatures, two-person approval, and measurement pinning. |
+| Side channels / availability | TEE cannot eliminate all side channels or denial of service. | Resource isolation, patches, capacity management, circuit breakers, and disaster recovery. |
+| Output inference | Returns, orders, and response patterns may reveal some strategy characteristics. | Egress classification, minimization, rate limits, privacy review, and product rules. |
+| Active public release | After the user authorizes public release, the public artifact can be accessed by third parties. | Explicit confirmation, separate artifact, version boundary, and revocable status. |
+
+## Appendix A - Formal release gates (internal verification)
+
+| Statement |
+| --- |
+| Only after all gates below have been completed can the body of this document move from "target production version" to formal public statement. If any gate rolls back or its evidence becomes invalid, the relevant wording should be paused and updated through the incident process. |
+
+| Gate | Acceptance criteria | Required evidence |
+| --- | --- | --- |
+| Data | artifact v3 is ciphertext-only; historical plaintext fields and backups have been cleaned or isolated; schema and CI block plaintext regression. | Data verification report |
+| Upload / view | The client completes attestation, nonce/expiry, and measurement allowlist verification; failures close; source code is delivered only as a session envelope. | Cross-client E2E report |
+| KMS / attestation | RecipientAttestation policy, PCR0/PCR8, environment, and encryption context pass acceptance; ordinary KMS Decrypt calls do not return Plaintext. | KMS policy and CloudTrail |
+| Runtime | Studio, XStrategy, paper/live, and scheduled tasks all use approved TEE pools, with 0 standard_backend and 0 plaintext bypass. | Deployment list and runtime evidence |
+| AI | Raw source code exists only inside TEEs or attested downstreams; provider, retention, training, region, and subprocessor reviews are complete. | DPA / security acceptance |
+| Network / egress | vsock proxy allowlist, mTLS, schema, size, and timeout limits are in place; egress is default-deny and covers all runtime paths. | Network and policy tests |
+| Receipts / audit | Every major job has a signed receipt; measurement mismatch, tampering, replay, and receipt failure can be detected and alerted. | Verification and monitoring report |
+| Availability / emergency | Attestation or key-release failure does not fall back to plaintext; rolling measurement, revoke, disaster recovery, and break-glass drills have passed. | Drill record |
+| External copy | Security, legal, SRE, and product jointly confirm that the body matches the actual production boundary. | Formal release approval |
+
+## Appendix B - Unified terminology
+
+| Recommended wording | Wording to avoid | Reason |
+| --- | --- | --- |
+| Full-lifecycle TEE / verifiable confidential computing | Absolute security / zero risk | TEE reduces the trusted boundary, but it does not eliminate all system risk. |
+| Ordinary services and administrators do not touch plaintext source code | Nobody can see source code under any circumstances | User-end decryption, active public release, and approved TEE processing still sit within the boundary. |
+| Fail closed when attestation fails | Never fails | A secure failure policy is not the same as unlimited availability. |
+| Ordinary providers do not receive raw source code | AI never sees any related information | Allowed structured/desensitized inputs and outputs may still participate in the task. |
