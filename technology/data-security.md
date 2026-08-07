@@ -59,22 +59,3 @@ Minara uses remote attestation, attested key release, ciphertext-only storage, T
 6. Controlled output: the egress gate outputs minimal order intent, results, or browser-session envelopes according to destination and field allowlists.
 7. Verifiable receipt: the result is bound to measurement, artifact/input/output hash, policy, purpose, time, and status, then signed.
 
-## 4. What this means for users
-
-| Scenario               | Full-lifecycle TEE behavior                                                                                                       | Protection for the user                                                              |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Upload                 | The browser verifies the TEE identity before encryption. The control plane only forwards ciphertext.                              | Ordinary APIs or proxies cannot read source code on the upload path.                 |
-| Storage                | Databases, object storage, caches, and backups store only ciphertext and required metadata.                                       | Database snapshots and backups do not contain plaintext source code.                 |
-| Backtesting            | Pine and XStrategy runtimes decrypt and execute inside attested enclaves.                                                         | Hosts and ordinary workers do not read source code.                                  |
-| Paper/live             | Strategy state and checkpoints are encrypted inside the TEE. Orders are output only as minimal intent.                            | Trading services do not receive source code. They only process controlled actions.   |
-| AI                     | Raw source code goes only to a local TEE model or an attested confidential downstream.                                            | Ordinary third-party model providers do not receive plaintext source code.           |
-| Source-code viewing    | The TEE rewraps source code to a verified browser session. The client decrypts locally.                                           | Ordinary backends do not return plaintext source code in HTTP responses.             |
-| Clone / public release | Cloning is completed inside the TEE. Public release requires explicit owner authorization and creates a separate public artifact. | Public release does not automatically expose private versions or historical context. |
-| Operations / emergency | Break-glass runs only inside the TEE, requires two-person approval, MFA, and a short TTL, and issues a receipt.                   | Administrators cannot export source code to ordinary terminals or logs.              |
-
-### 4.1 Verifiable evidence rather than commitments alone
-
-1. The client verifies the AWS Nitro attestation certificate chain, COSE\_Sign1, nonce, public\_key, time, and approved PCRs.
-2. The KMS policy constrains ImageSha384/PCR0, signing certificate/PCR8, environment, and encryption context.
-3. The measurement registry supports active, grace, and revoked states. Client policy and KMS policy are updated together.
-4. Execution receipts can be publicly verified, but they do not contain source code, DEK, or full sensitive inputs.
