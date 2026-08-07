@@ -6,10 +6,6 @@
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Plaintext source code exists only inside Minara-approved TEE workloads that have completed remote attestation. Ordinary services, hosts, databases, queues, logs, backups, and operations accounts do not touch plaintext. |
 
-## 1. Formal external statement
-
-### 1.1 Full version
-
 Minara has deployed the full lifecycle of confidential strategy source code inside remotely attested hardware trusted execution environments (TEE). From encrypted browser upload, ciphertext storage, AI code processing, backtesting, paper trading, and live trading, to order intent output, source-code viewing, and execution receipt generation, plaintext source code exists only briefly inside approved TEE workloads. Ordinary APIs, workers, hosts, databases, caches, queues, logs, backups, and operations accounts cannot obtain plaintext source code.
 
 Before upload, the user's browser verifies the TEE's remote attestation and approved measurement, then establishes a short-lived encrypted session with the enclave. The control plane only forwards ciphertext, artifact references, authorization tickets, and metadata that does not contain source code. Source code is encrypted with an independent DEK using AEAD. The storage layer keeps only ciphertext, wrapped DEK, context, and signed receipts. KMS encrypts key material to a designated enclave only when attestation, purpose, image, and policy conditions are all satisfied.
@@ -18,25 +14,13 @@ Strategy Studio, XStrategy, and AI tasks process source code in isolated TEE run
 
 Every upload, view, AI processing task, or strategy execution generates a verifiable receipt bound to the artifact hash, input and output commitments, runtime measurement, policyVersion, purpose, time, and result status. If attestation fails, key policy does not match, or egress is denied, the system pauses or retries the task. It does not downgrade to a plaintext backend path.
 
-### 1.2 Short version
 
-| Statement                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Minara places the full lifecycle of strategy source code, from encrypted upload, ciphertext storage, AI, backtesting, and trading runtime to source-code delivery, inside remotely attested TEEs. Ordinary services and operations staff do not touch plaintext source code. Keys are released according to attestation, output is minimized through an egress gate, and every major operation receives a verifiable receipt. |
 
-### 1.3 Product prompt copy
-
-Full-lifecycle TEE is enabled: source code is decrypted and processed only inside verified confidential execution environments. You can view the measurement, strategy version, and execution receipt on the client. If attestation fails, the system fails closed and does not fall back to plaintext processing.
-
-### 1.4 Media one-liner
-
-Minara uses remote attestation, attested key release, ciphertext-only storage, TEE runtimes, and verifiable receipts to provide full-lifecycle confidential computing for strategy source code across upload, AI, backtesting, trading, and delivery.
-
-## 2. Architecture for full-lifecycle TEE
+## Architecture for full-lifecycle TEE
 
 <figure><img src="../.gitbook/assets/strategy-confidentiality-tee-architecture.png" alt="Minara full-lifecycle TEE public architecture, showing separation between the control plane and the attested confidential data plane"><figcaption><p>Figure 1 - The control plane is separated from the attested confidential data plane. Plaintext exists only inside the approved TEE pool.</p></figcaption></figure>
 
-### 2.1 Three core boundaries
+### Three core boundaries
 
 | Boundary                 | Responsibilities                                                                                                  | Explicitly does not touch                                |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
@@ -45,11 +29,11 @@ Minara uses remote attestation, attested key release, ciphertext-only storage, T
 | TEE data plane           | Decryption, validation, AI, backtesting, paper/live, egress decisions, rewrapping, and signed receipts            | Unapproved network destinations and unclassified output  |
 | Ciphertext storage / KMS | Store ciphertext and wrapped DEK; release keys according to RecipientAttestation conditions                       | Plaintext source code and ordinary KMS Decrypt plaintext |
 
-## 3. From upload to execution receipt
+## From upload to execution receipt
 
 <figure><img src="../.gitbook/assets/strategy-confidentiality-tee-lifecycle.png" alt="Full-lifecycle TEE path from upload to execution receipt, with seven steps and fail-closed invariants"><figcaption><p>Figure 2 - Full-lifecycle TEE path and fail-closed invariants.</p></figcaption></figure>
 
-### 3.1 Seven-step protection chain
+### Seven-step protection chain
 
 1. Attestation verification: the client or task scheduler first verifies the approved measurement, signature chain, nonce, time, and policy version.
 2. Encrypted upload: the browser establishes a short-lived ECDH session with the TEE, then uploads the source code, operation, and context in an AEAD envelope.
