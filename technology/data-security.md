@@ -12,7 +12,7 @@ Every upload, view, AI processing task, or strategy execution generates a verifi
 
 ## Architecture for full-lifecycle TEE
 
-<figure><img src="../.gitbook/assets/strategy-confidentiality-tee-architecture.png" alt="Minara full-lifecycle TEE public architecture, showing separation between the control plane and the attested confidential data plane"><figcaption><p>Figure 1 - The control plane is separated from the attested confidential data plane. Plaintext exists only inside the approved TEE pool.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/strategy-confidentiality-tee-architecture.png" alt="Minara full-lifecycle TEE public architecture, showing separation between the control plane and the attested confidential data plane"><figcaption></figcaption></figure>
 
 ### Three core boundaries
 
@@ -25,7 +25,7 @@ Every upload, view, AI processing task, or strategy execution generates a verifi
 
 ## From upload to execution receipt
 
-<figure><img src="../.gitbook/assets/strategy-confidentiality-tee-lifecycle.png" alt="Full-lifecycle TEE path from upload to execution receipt, with seven steps and fail-closed invariants"><figcaption><p>Figure 2 - Full-lifecycle TEE path and fail-closed invariants.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/strategy-confidentiality-tee-lifecycle.png" alt="Full-lifecycle TEE path from upload to execution receipt, with seven steps and fail-closed invariants"><figcaption></figcaption></figure>
 
 ### Seven-step protection chain
 
