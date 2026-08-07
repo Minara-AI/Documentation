@@ -32,7 +32,7 @@ Full-lifecycle TEE is enabled: source code is decrypted and processed only insid
 
 Minara uses remote attestation, attested key release, ciphertext-only storage, TEE runtimes, and verifiable receipts to provide full-lifecycle confidential computing for strategy source code across upload, AI, backtesting, trading, and delivery.
 
-## 2. Public architecture for full-lifecycle TEE
+## 2. Architecture for full-lifecycle TEE
 
 <figure><img src="../.gitbook/assets/strategy-confidentiality-tee-architecture.png" alt="Minara full-lifecycle TEE public architecture, showing separation between the control plane and the attested confidential data plane"><figcaption><p>Figure 1 - The control plane is separated from the attested confidential data plane. Plaintext exists only inside the approved TEE pool.</p></figcaption></figure>
 
