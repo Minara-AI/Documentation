@@ -1,39 +1,48 @@
 # TEE-based Data Security
 
-Minara has deployed the full lifecycle of confidential strategy source code inside remotely attested hardware trusted execution environments (TEE). From encrypted browser upload, ciphertext storage, AI code processing, backtesting, paper trading, and live trading, to order intent output, source-code viewing, and execution receipt generation, plaintext source code exists only briefly inside approved TEE workloads. Ordinary APIs, workers, hosts, databases, caches, queues, logs, backups, and operations accounts cannot obtain plaintext source code.
+Your strategy source code is encrypted in your browser before it leaves your device, and it is decrypted only inside a hardware-attested trusted execution environment (TEE). Minara runs the complete lifecycle this way: upload, storage, AI processing, backtesting, paper trading, live trading, order output, source-code viewing, and receipt generation. Plaintext source code lives in enclave memory for the duration of an approved task and is never written to disk. It is not available to Minara's general infrastructure (API services, workers, hosts, databases, caches, queues, logs, and backups) or to Minara staff.
 
-Before upload, the user's browser verifies the TEE's remote attestation and approved measurement, then establishes a short-lived encrypted session with the enclave. The control plane only forwards ciphertext, artifact references, authorization tickets, and metadata that does not contain source code. Source code is encrypted with an independent DEK using AEAD. The storage layer keeps only ciphertext, wrapped DEK, context, and signed receipts. KMS encrypts key material to a designated enclave only when attestation, purpose, image, and policy conditions are all satisfied.
+Minara's enclaves run on AWS Nitro Enclaves. Attestation, key release, and network egress are enforced by the platform, not by application code. Every check fails closed: when a condition is not met, the task stops instead of falling back to a path that would handle your code in plaintext.
 
-Strategy Studio, XStrategy, and AI tasks process source code in isolated TEE runtimes. Market data and required external dependencies enter through a controlled vsock proxy. Every output first passes through an in-enclave egress policy that applies default deny and minimization by purpose, destination, field, and size. The trading system receives only classified order intent. AI handles original source code only inside the enclave or through an attested confidential downstream. Ordinary model providers do not receive plaintext source code.
+### Encryption before upload
 
-Every upload, view, AI processing task, or strategy execution generates a verifiable receipt bound to the artifact hash, input and output commitments, runtime measurement, policyVersion, purpose, time, and result status. If attestation fails, key policy does not match, or egress is denied, the system pauses or retries the task. It does not downgrade to a plaintext backend path.
+Your browser verifies the enclave's remote attestation document and confirms that its measurement matches an approved build. It then opens a short-lived encrypted session (ECDH) with the enclave and uploads your source code in an authenticated-encryption (AEAD) envelope. Minara's control plane forwards only ciphertext, artifact references, authorization tickets, and metadata that contains no source code.
 
+### Storage
 
+Each artifact is encrypted with its own data key. The storage layer holds the ciphertext, the wrapped data key, context, and signed receipts, and nothing else. AWS KMS releases key material to a designated enclave only when attestation, purpose, enclave image, and policy conditions are all satisfied. A decrypt call made from outside an enclave returns nothing usable.
 
-## Architecture for full-lifecycle TEE
+### Processing
 
-<figure><img src="../.gitbook/assets/strategy-confidentiality-tee-architecture.png" alt="Minara full-lifecycle TEE public architecture, showing separation between the control plane and the attested confidential data plane"><figcaption></figcaption></figure>
+Strategy Studio, multi-asset strategy runs, and AI tasks each execute in isolated enclave runtimes. Market data and required external dependencies reach them through a controlled host proxy over vsock. An in-enclave egress policy checks every output, denies by default, and releases the minimum the destination needs. The trading system receives the resulting order intent and not the logic behind it. AI processing of your source code happens inside the enclave, and third-party model providers do not receive it in plaintext.
 
-### Three core boundaries
+### Verifiable receipts
 
-| Boundary                 | Responsibilities                                                                                                  | Explicitly does not touch                                |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| User side                | Verify attestation, establish an encrypted session, locally decrypt the source-code envelope, and verify receipts | Platform internal keys and other users' data             |
-| Control plane            | Identity, owner, purpose, job, artifact ref, policy tickets, status, and classification results                   | Source code, DEK, debug plaintext, and raw AI context    |
-| TEE data plane           | Decryption, validation, AI, backtesting, paper/live, egress decisions, rewrapping, and signed receipts            | Unapproved network destinations and unclassified output  |
-| Ciphertext storage / KMS | Store ciphertext and wrapped DEK; release keys according to RecipientAttestation conditions                       | Plaintext source code and ordinary KMS Decrypt plaintext |
+Every upload, view, AI task, and strategy execution produces a signed receipt. A receipt binds the artifact hash, input and output commitments, the runtime measurement, the policy version, the purpose, and the result. You can check a receipt yourself instead of taking our word for it.&#x20;
 
-## From upload to execution receipt
+### Architecture
 
-<figure><img src="../.gitbook/assets/strategy-confidentiality-tee-lifecycle.png" alt="Full-lifecycle TEE path from upload to execution receipt, with seven steps and fail-closed invariants"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (136).png" alt=""><figcaption><p>The control plane never handles plaintext. Strategy source code is decrypted only inside attested enclaves.</p></figcaption></figure>
 
-### Seven-step protection chain
+#### Where your code can and cannot go
 
-1. Attestation verification: the client or task scheduler first verifies the approved measurement, signature chain, nonce, time, and policy version.
-2. Encrypted upload: the browser establishes a short-lived ECDH session with the TEE, then uploads the source code, operation, and context in an AEAD envelope.
-3. Ciphertext write: the TEE validates the source code and generates a DEK. It writes only ciphertext, wrapped DEK, context, and receipt.
-4. Key release after attestation: the TEE runtime requests KMS with RecipientAttestation. If the conditions are not met, no usable key is returned.
-5. Confidential execution: AI, backtesting, and paper/live run inside independent TEE pools. State and checkpoints are encrypted again before persistence.
-6. Controlled output: the egress gate outputs minimal order intent, results, or browser-session envelopes according to destination and field allowlists.
-7. Verifiable receipt: the result is bound to measurement, artifact/input/output hash, policy, purpose, time, and status, then signed.
+| Layer                     | What it does                                                                                                      | What it never sees                                 |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Your browser              | Verifies attestation, opens the encrypted session, decrypts your source code locally, checks receipts             | Minara's internal keys, other users' data          |
+| Control plane             | Identity and ownership, task orchestration, artifact references, policy tickets, status, classification results   | Source code, data keys, AI prompts and context     |
+| Enclave data plane        | Decryption, validation, AI, backtesting, paper and live trading, egress decisions, re-encryption, receipt signing | Unapproved network destinations, unfiltered output |
+| Encrypted storage and KMS | Stores ciphertext and wrapped data keys; releases keys only against a valid enclave attestation                   | Plaintext source code                              |
 
+### From upload to execution receipt
+
+<figure><img src="../.gitbook/assets/image (163).png" alt=""><figcaption><p>Each step verifies the one before it. A failed check stops the task instead of opening a plaintext path.</p></figcaption></figure>
+
+1. **Attestation.** The client or task scheduler verifies the enclave's approved measurement, signature chain, nonce, timestamp, and policy version before anything is sent.
+2. **Encrypted upload.** The browser opens a short-lived ECDH session with the enclave and uploads the source code, operation, and context inside an AEAD envelope.
+3. **Ciphertext write.** The enclave validates the source code, generates a data key, and persists only ciphertext, the wrapped key, context, and a receipt.
+4. **Attested key release.** The enclave requests key material from KMS with its attestation document attached. Without a matching attestation, no usable key is returned.
+5. **Confidential execution.** AI, backtesting, and paper and live trading run in separate enclave pools. Intermediate state and checkpoints are re-encrypted before they are persisted.
+6. **Controlled output.** The egress gate emits only order intent, results, or a session envelope for your browser, according to destination and field allowlists.
+7. **Signed receipt.** The outcome is bound to the runtime measurement, artifact and input and output hashes, policy, purpose, time, and status, then signed.
+
+If attestation fails, a key policy does not match, or an egress request is denied, the task pauses or retries. There is no plaintext fallback path.
