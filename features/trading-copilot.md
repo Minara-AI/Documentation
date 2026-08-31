@@ -1,6 +1,12 @@
-# Copilot
+---
+description: >-
+  Learn how Minara's AI trading copilot analyzes live market data, creates
+  long or short trade plans, and lets you review risk before execution.
+---
 
-Trading Copilot is an AI assistant that analyzes market conditions and generates structured trade signals for perpetual trading on Lighter and Hyperliquid. You review the signal (entry price, take-profit, and stop-loss) and execute with one click. You remain in control of every trade.
+# AI trading copilot
+
+Minara Trading Copilot is an AI trading assistant for perpetual markets. It analyzes live price action, order-book liquidity, funding, and open interest, then returns a structured long, short, or neutral trade plan. Each plan includes an entry price, take-profit, stop-loss, and a short explanation. You review the proposed risk and choose whether to execute it on Lighter or Hyperliquid.
 
 Access Trading Copilot at: [copilot.minara.ai](https://copilot.minara.ai)
 
@@ -133,3 +139,19 @@ Copilot supports both margin modes:
 * `Isolated margin`: margin is isolated per position
 
 Switch margin modes directly in the trading interface.
+
+***
+
+## 10. Trading Copilot FAQ
+
+### What is an AI trading copilot?
+
+An AI trading copilot analyzes current market data and proposes a trade plan for review. Unlike a trading bot, it does not require you to hand over the final decision. In Minara, you choose the asset and direction, inspect the suggested entry and risk levels, and decide whether to place the order.
+
+### How does a trading copilot work?
+
+Minara combines price action, technical indicators, order-book data, funding rates, and open interest. It filters setups that do not meet its risk rules, then returns a structured signal with an explanation. Market conditions can change after a signal is generated, so you should review the latest price and risk before execution.
+
+### What is the difference between Trading Copilot and a trading bot?
+
+Trading Copilot proposes a trade for you to approve. A trading bot follows predefined rules and can place or manage trades automatically. Use [Autopilot](trading-autopilot.md) for automated execution, or [Strategy Studio](https://minara.ai/product/strategy-studio) to build and backtest a rule-based strategy.

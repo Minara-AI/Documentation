@@ -1,3 +1,9 @@
+---
+description: >-
+  Minara is an AI trading platform for live market research, trading signals,
+  strategy backtesting, and execution across crypto, stocks, and commodities.
+---
+
 # About Minara
 
 Minara is a purpose-built AI agent for digital finance: autonomous execution, research, and portfolio management across spot, perps, DeFi, equities, commodities, and FX.
@@ -32,9 +38,9 @@ Minara fits a few kinds of traders.
 ## What's inside
 
 * **Chat and research.** Ask about a ticker, a wallet, or a market event and get an answer drawn from live data, with its sources shown.
-* **Copilot.** The model flags the signal and the risk; you decide and place the order.
+* **Copilot.** The [AI trading copilot](features/trading-copilot.md) flags the signal and the risk; you decide and place the order.
 * **Autopilot.** Hand a strategy to Minara and it trades the rules for you, with fixed risk controls and a log of every action it takes.
-* **Strategy Studio.** Write, backtest, and tune strategies in Pine Runtime, then send them to Autopilot.
+* **Strategy Studio.** Use the [AI strategy builder](https://minara.ai/product/strategy-studio) to write, backtest, and tune strategies in Pine Runtime, then send them to Autopilot.
 * **Strategy marketplace.** Browse strategies from the Minara team and other traders, check their track record, and run a proven one on your own account.
 * **Prediction markets.** Get probability estimates on Polymarket-style events, with the reasoning and data the model used to reach them.
 * **Agent workflows.** Describe an automation in a sentence and Minara builds it: a price alert, a scheduled analysis, a DCA plan, or a copy-trading bot.
