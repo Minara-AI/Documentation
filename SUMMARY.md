@@ -16,7 +16,7 @@
 
 ## Trade
 
-* [Copilot](features/trading-copilot.md)
+* [AI trading copilot](features/trading-copilot.md)
 * [Autopilot](features/trading-autopilot.md)
 * [Strategy Studio](trade/strategy-studio/README.md)
   * [Create Cross-sectional Strategies](trade/strategy-studio/create-cross-sectional-strategies.md)
