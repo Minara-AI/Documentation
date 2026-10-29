@@ -1,4 +1,4 @@
-# Tools integration
+# Tool Stack
 
 Minara integrates the following external tools, including various data sources from the financial and crypto sectors, as well as Minara team's private data and knowledge base.
 

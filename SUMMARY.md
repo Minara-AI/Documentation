@@ -8,11 +8,19 @@
 * [Deposit](guide/managing-funds-and-trading/deposit.md)
 * [Subscribe](guide/managing-funds-and-trading/subscribe.md)
 
-## Chat
+## Minara Harness
 
-* [Research and analysis](features/deep-research.md)
-* [What to ask Minara](features/chat-use-cases.md)
-* [Crypto picks](features/crypto-picks.md)
+* [Minara Harness](harness/README.md)
+* [Use cases](harness/use-cases/README.md)
+  * [Scan the markets](harness/use-cases/scan-markets.md)
+  * [Research an asset before you trade](harness/use-cases/asset-research.md)
+  * [Run an institution-style review](harness/use-cases/institution-review.md)
+  * [Check what your portfolio covers](harness/use-cases/portfolio-scope.md)
+  * [Enable computer control](harness/use-cases/computer-control.md)
+* [How a task works](harness/how-a-task-works.md)
+* [Memory and learning](harness/memory-and-learning.md)
+* [Workspace and coding](harness/workspace-and-coding.md)
+* [Safety and approvals](harness/safety-and-approvals.md)
 
 ## Trade
 
@@ -21,7 +29,6 @@
 * [Strategy Studio](trade/strategy-studio/README.md)
   * [Create Cross-sectional Strategies](trade/strategy-studio/create-cross-sectional-strategies.md)
   * [Create Time-series Strategies](trade/strategy-studio/create-time-series-strategies.md)
-  * [Copy of Create Time-series Strategies](trade/strategy-studio/copy-of-create-time-series-strategies.md)
 * [Strategy Marketplace](trade/strategy-market/README.md)
   * [Discover strategies](trade/strategy-market/discover-strategies.md)
   * [Compare Top Strategies](trade/strategy-market/compare-top-strategies.md)
@@ -46,13 +53,20 @@
 * [Trading fees](trade/trading-fees.md)
 * [Glossary](trade/glossary.md)
 
-## Workflow
+## Automation
 
-* [Overview](workflow/agentic-workflow.md)
-* [Price alert bot](workflow/how-to-create-a-price-alert-bot.md)
-* [Automated trade execution](workflow/how-to-set-up-automated-trade-execution.md)
-* [Scheduled analysis](workflow/how-to-run-analysis-on-a-schedule.md)
-* [Copy trading bot](workflow/how-to-create-a-copy-trading-bot.md)
+* [Overview](automation/overview.md)
+* [Scheduled briefs and reports](automation/scheduled-briefs-and-reports.md)
+* [Price alerts](automation/price-alerts.md)
+* [Wallet and trader monitoring](automation/wallet-and-trader-monitoring.md)
+* [Research monitors](automation/research-monitors.md)
+* [Automated trading plans](automation/automated-trading-plans.md)
+* [Legacy: Workflow](automation/legacy-workflow/README.md)
+  * [Workflow overview (Legacy)](automation/legacy-workflow/agentic-workflow.md)
+  * [Price alert bot (Legacy)](automation/legacy-workflow/how-to-create-a-price-alert-bot.md)
+  * [Automated trade execution (Legacy)](automation/legacy-workflow/how-to-set-up-automated-trade-execution.md)
+  * [Scheduled analysis (Legacy)](automation/legacy-workflow/how-to-run-analysis-on-a-schedule.md)
+  * [Copy trading bot (Legacy)](automation/legacy-workflow/how-to-create-a-copy-trading-bot.md)
 
 ## Reference
 
@@ -65,6 +79,7 @@
 
 ## Technology
 
+* [Minara Bug Bounty Program](technology/minara-bug-bounty-program.md)
 * [DMind](technology/dmind/README.md)
   * [Sovereign architecture](technology/dmind/sovereign-architecture.md)
   * [Model family](technology/dmind/model-family.md)

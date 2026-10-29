@@ -4,7 +4,11 @@ description: >-
   triggers are hit.
 ---
 
-# How to set up automated trade execution
+# Automated trade execution (Legacy)
+
+{% hint style="warning" %}
+**Legacy.** This page describes Workflow in the Minara web app, which is being retired. It is kept for reference only and may not reflect current behavior. For new automations, see [Automated trading plans](../automated-trading-plans.md) in the Minara desktop app.
+{% endhint %}
 
 Minara can watch for specific price conditions and automatically place orders when they're met, perfect for buying the dip, taking profits, or setting stop-losses without constant manual monitoring.
 

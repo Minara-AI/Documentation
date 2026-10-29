@@ -8,11 +8,11 @@ There are two ways to get to the sign-up screen. Use either one.
 
 ## 1. Open the app
 
-**From the homepage.** Go to [minara.ai](https://minara.ai) and click `Launch APP` in the top-right corner.
+**From the homepage:** If you land on [minara.ai/home](https://minara.ai/home), click `Try Minara` in the top-right corner to enter the app.
 
 <figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
 
-**Or, from the chat page directly.** If you land on [app.minara.ai](https://app.minara.ai) without an account, click `Log in / Register` in the top-right corner.
+**Or, from the chat page directly.** If you land on [minara.ai](https://minara.ai) without an account, click `Log in / Register` in the top-right corner.
 
 <figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 

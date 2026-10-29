@@ -2,7 +2,11 @@
 description: Minara makes you stay informed without any manual check.
 ---
 
-# How to run analysis on a schedule
+# Scheduled analysis (Legacy)
+
+{% hint style="warning" %}
+**Legacy.** This page describes Workflow in the Minara web app, which is being retired. It is kept for reference only and may not reflect current behavior. For new automations, see [Scheduled briefs and reports](../scheduled-briefs-and-reports.md) in the Minara desktop app.
+{% endhint %}
 
 Whether it's weekly market health checks, monthly portfolio reviews, or periodic strategy evaluations, this workflow keeps you in the loop consistently.
 
