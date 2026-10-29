@@ -4,7 +4,11 @@ description: >-
   workflows, no manual effort needed.
 ---
 
-# How to create a copy trading bot?
+# Copy trading bot (Legacy)
+
+{% hint style="warning" %}
+**Legacy.** This page describes Workflow in the Minara web app, which is being retired. It is kept for reference only and may not reflect current behavior. For new automations, see [Wallet and trader monitoring](../wallet-and-trader-monitoring.md) and [Automated trading plans](../automated-trading-plans.md) in the Minara desktop app.
+{% endhint %}
 
 ### What you’ll build
 

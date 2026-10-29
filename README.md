@@ -37,13 +37,13 @@ Minara fits a few kinds of traders.
 
 ## What's inside
 
-* **Chat and research.** Ask about a ticker, a wallet, or a market event and get an answer drawn from live data, with its sources shown.
+* **Research and analysis.** Ask about a ticker, a wallet, or a market event and get an answer drawn from live data, with its sources shown. Minara can research, prepare trades, and run analysis for you, and always asks before moving your money. See [How Minara works](guide/getting-started/how-minara-works.md).
 * **Copilot.** The [AI trading copilot](features/trading-copilot.md) flags the signal and the risk; you decide and place the order.
 * **Autopilot.** Hand a strategy to Minara and it trades the rules for you, with fixed risk controls and a log of every action it takes.
 * **Strategy Studio.** Use the [AI strategy builder](https://minara.ai/product/strategy-studio) to write, backtest, and tune strategies in Pine Runtime, then send them to Autopilot.
 * **Strategy marketplace.** Browse strategies from the Minara team and other traders, check their track record, and run a proven one on your own account.
 * **Prediction markets.** Get probability estimates on Polymarket-style events, with the reasoning and data the model used to reach them.
-* **Agent workflows.** Describe an automation in a sentence and Minara builds it: a price alert, a scheduled analysis, a DCA plan, or a copy-trading bot.
+* **Automation.** Describe an automation in a sentence and Minara builds it: a price alert, a scheduled brief, a recurring buy, or wallet monitoring. See [Automation](automation/overview.md).
 * **Agent API.** Call Minara's chat, swap, perp-suggestion, and prediction endpoints from your own app, paying by API key or x402.
 
 ## What you can trade

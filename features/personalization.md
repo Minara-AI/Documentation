@@ -93,3 +93,15 @@ Memories are specific facts Minara stores about your preferences, strategies, an
 - Typical risk tolerance
 
 Memories allow Minara to maintain continuity across conversations — you do not need to re-explain your context each time. You can delete any memory you do not want Minara to retain.
+
+### How Minara uses memory
+
+Beyond preferences, Minara can also remember earlier research, the reasoning behind past decisions, investment theses you're tracking, and lessons from past tasks. A trade history shows *what* happened; memory can also keep *why* a decision made sense at the time, and what happened afterwards.
+
+Over time, Minara turns useful experience into better working habits: **Observe → Reflect → Distill → Reuse**. A profitable trade doesn't automatically mean the reasoning was right, and a losing trade doesn't automatically mean the idea was wrong. Minara looks at the reasoning, not just the outcome.
+
+What memory does not do:
+
+* **It is not permission.** A remembered preference or an earlier approval never counts as approval for a new trade. See [Safety and approvals](../technology/safety-and-approvals.md).
+* **It does not replace fresh data.** Minara still checks current market and account information.
+* **It only covers what Minara can see.** Trades or accounts outside Minara aren't included unless you've connected them.

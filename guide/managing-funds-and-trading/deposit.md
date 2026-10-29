@@ -45,6 +45,8 @@ MoonPay and Banxa Pay are third-party providers. Availability, payment methods, 
 
 If you cannot use a provider in your country or region, check its current official availability list: [MoonPay's unsupported countries](https://support.moonpay.com/en/articles/380968-moonpay-s-unsupported-countries) or [countries supported by Banxa](https://support.banxa.com/en/support/solutions/articles/44002216505-what-countries-are-supported-by-banxa-). These lists are maintained by the providers and may change.
 
+*For Korean users, purchasing crypto via card payment through MoonPay or Banxa Pay is not supported.*
+
 Minara does not process card payments or review KYC. For order or payment issues, contact [MoonPay Support](https://support.moonpay.com/) or [Banxa Support](https://support.banxa.com/).
 {% endhint %}
 

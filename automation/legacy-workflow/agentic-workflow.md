@@ -1,4 +1,8 @@
-# Overview
+# Workflow overview (Legacy)
+
+{% hint style="warning" %}
+**Legacy.** This page describes Workflow in the Minara web app, which is being retired. It is kept for reference only and may not reflect current behavior. For new automations, see [Automation](../overview.md) in the Minara desktop app.
+{% endhint %}
 
 Workflow is a visual automation tool built into Minara. You describe what you want to automate (in plain language or by filling in a template) and Minara builds a node-based pipeline that runs on a schedule or in response to market events.
 

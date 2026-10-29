@@ -4,7 +4,11 @@ description: >-
   hit.
 ---
 
-# How to create a price alert bot?
+# Price alert bot (Legacy)
+
+{% hint style="warning" %}
+**Legacy.** This page describes Workflow in the Minara web app, which is being retired. It is kept for reference only and may not reflect current behavior. For new automations, see [Price alerts](../price-alerts.md) in the Minara desktop app.
+{% endhint %}
 
 With Minara's monitor system, you can set high-precision, real-time alerts for token prices without worrying about delays or missed triggers. When the set price condition is met, Minara can instantly notify you without consuming any credits.
 
