@@ -1,8 +1,8 @@
-# Check what your portfolio covers
+# Portfolio coverage
 
 Use this when you ask about your holdings, exposure, or strategies, and want to know exactly which accounts the answer includes.
 
-<figure><img src="../../.gitbook/assets/harness-portfolio-coverage.png" alt="Portfolio coverage view in the Minara desktop app"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/harness-portfolio-coverage.png" alt="Portfolio coverage view in the Minara desktop app"><figcaption></figcaption></figure>
 
 ## What you get
 
@@ -16,4 +16,4 @@ An exposure summary split into spot, perps, and strategies, and a clear note of 
 
 ## Keep in mind
 
-Your portfolio view only covers the Minara wallets and accounts connected to the app. It isn't a complete picture of everything you own unless you've connected it all. To give Minara context on wallets outside Minara, you can import them in [Personalization](../../features/personalization.md).
+Your portfolio view only covers the Minara wallets and accounts connected to the app. It isn't a complete picture of everything you own unless you've connected it all. To give Minara context on wallets outside Minara, you can import them in [Personalization](./personalization.md).

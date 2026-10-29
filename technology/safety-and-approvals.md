@@ -45,4 +45,4 @@ Approving an action doesn't guarantee the result. Submitting, filling, and updat
 
 These safeguards control what Minara can do. They don't remove market risk or guarantee any outcome.
 
-For how your funds and data are protected, see [Wallet security](../technology/wallet-security.md) and [TEE-based data security](../technology/data-security.md).
+For how your funds and data are protected, see [Wallet security](wallet-security.md) and [TEE-based data security](data-security.md).

@@ -37,7 +37,7 @@ Minara fits a few kinds of traders.
 
 ## What's inside
 
-* **Minara Harness.** Ask about a ticker, a wallet, or a market event and get an answer drawn from live data, with its sources shown. Minara can research, prepare trades, and run analysis for you, and always asks before moving your money. See [Minara Harness](harness/README.md).
+* **Research and analysis.** Ask about a ticker, a wallet, or a market event and get an answer drawn from live data, with its sources shown. Minara can research, prepare trades, and run analysis for you, and always asks before moving your money. See [How Minara works](guide/getting-started/how-minara-works.md).
 * **Copilot.** The [AI trading copilot](features/trading-copilot.md) flags the signal and the risk; you decide and place the order.
 * **Autopilot.** Hand a strategy to Minara and it trades the rules for you, with fixed risk controls and a log of every action it takes.
 * **Strategy Studio.** Use the [AI strategy builder](https://minara.ai/product/strategy-studio) to write, backtest, and tune strategies in Pine Runtime, then send them to Autopilot.

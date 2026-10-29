@@ -7,24 +7,14 @@
 * [Create your account](guide/getting-started/activate-your-account.md)
 * [Deposit](guide/managing-funds-and-trading/deposit.md)
 * [Subscribe](guide/managing-funds-and-trading/subscribe.md)
-
-## Minara Harness
-
-* [Minara Harness](harness/README.md)
-* [Use cases](harness/use-cases/README.md)
-  * [Scan the markets](harness/use-cases/scan-markets.md)
-  * [Research an asset before you trade](harness/use-cases/asset-research.md)
-  * [Run an institution-style review](harness/use-cases/institution-review.md)
-  * [Check what your portfolio covers](harness/use-cases/portfolio-scope.md)
-  * [Enable computer control](harness/use-cases/computer-control.md)
-* [How a task works](harness/how-a-task-works.md)
-* [Memory and learning](harness/memory-and-learning.md)
-* [Workspace and coding](harness/workspace-and-coding.md)
-* [Safety and approvals](harness/safety-and-approvals.md)
+* [How Minara works](guide/getting-started/how-minara-works.md)
 
 ## Trade
 
 * [AI trading copilot](features/trading-copilot.md)
+  * [Research an asset before you trade](features/asset-research.md)
+* [Scan the markets](features/scan-markets.md)
+* [Institution review](features/institution-review.md)
 * [Autopilot](features/trading-autopilot.md)
 * [Strategy Studio](trade/strategy-studio/README.md)
   * [Create Cross-sectional Strategies](trade/strategy-studio/create-cross-sectional-strategies.md)
@@ -39,6 +29,7 @@
 * [Prediction Market](features/prediction-market-copilot.md)
 * [Prediction Markets](features/prediction-markets.md)
 * [Assets](trade/trade-assets/README.md)
+* [Portfolio coverage](features/portfolio-coverage.md)
 * [Skills](features/minara-skills.md)
 * [Benchmark](features/benchmark.md)
 * [API](trade/agent-api/README.md)
@@ -76,6 +67,7 @@
 * [Credits](reference/credits.md)
 * [Personalization](features/personalization.md)
 * [Multimodal input](features/multimodal-input.md)
+* [Desktop workspace](features/desktop-workspace.md)
 
 ## Technology
 
@@ -85,6 +77,7 @@
   * [Model family](technology/dmind/model-family.md)
   * [DMind Benchmark](technology/dmind/benchmark.md)
   * [Training methods](technology/dmind/training-methods.md)
+* [Safety and approvals](technology/safety-and-approvals.md)
 * [Wallet security](technology/wallet-security.md)
 * [Tool Stack](technology/tools-integration.md)
 * [TEE-based Data Security](technology/data-security.md)

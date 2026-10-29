@@ -2,7 +2,7 @@
 
 Use this when you want a quick first look across stock indices, sectors, crypto majors, top gainers, and volume leaders before digging into a specific asset.
 
-<figure><img src="../../.gitbook/assets/harness-crypto-markets.png" alt="Crypto markets overview in the Minara desktop app"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/harness-crypto-markets.png" alt="Crypto markets overview in the Minara desktop app"><figcaption></figcaption></figure>
 
 ## What you get
 

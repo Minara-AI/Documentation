@@ -1,8 +1,8 @@
-# Run an institution-style review
+# Institution review
 
 Use this when you want one investment question looked at from several expert angles before you form a view.
 
-<figure><img src="../../.gitbook/assets/harness-institution.png" alt="Institution review start screen in the Minara desktop app"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/harness-institution.png" alt="Institution review start screen in the Minara desktop app"><figcaption></figcaption></figure>
 
 ## What you get
 
