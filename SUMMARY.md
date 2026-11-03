@@ -72,6 +72,7 @@
 ## Technology
 
 * [Minara Bug Bounty Program](technology/minara-bug-bounty-program.md)
+* [Security audit (SlowMist)](technology/security-audit.md)
 * [DMind](technology/dmind/README.md)
   * [Sovereign architecture](technology/dmind/sovereign-architecture.md)
   * [Model family](technology/dmind/model-family.md)
