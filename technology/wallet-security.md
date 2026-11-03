@@ -51,6 +51,10 @@ Because the wallet is your own on-chain address, you can take full self-custody 
 
 While Minara applies industry-standard safeguards, no system is perfectly secure.
 
+#### Security audit
+
+Minara AI was audited by the SlowMist Security Team from July 30 to August 19, 2025, with a result of Passed. See [Security audit (SlowMist)](security-audit.md) for the scope, findings, and fix status.
+
 ## Technical References
 
 * [Intel SGX Developer Guide](https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/overview.html)
