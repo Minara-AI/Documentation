@@ -81,6 +81,18 @@ All 78 test items are marked **Passed** in the report.
 * **Fixed:** the issue was resolved, and SlowMist confirmed the fix. Minara did not provide a fixed version of the code for review, so SlowMist checked every fix by testing the live product from the outside (black-box testing).
 * **Acknowledged:** Minara accepted the suggestion but did not fix it during the audit window. All 9 acknowledged items are suggestions, SlowMist's lowest level, which means "there are better practices for coding or architecture". None of them are critical, high, medium, or low severity vulnerabilities.
 
+## Updates since the audit
+
+Minara has kept working on several of the suggestions after the audit. The updates below are as of **November 3, 2026**. They come from Minara's own checks and were not re-verified by SlowMist.
+
+| No. | Suggestion in the report                 | Update                                                                                                                                                                                                                                      |
+| --- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| N23 | CORS allowed requests from any origin    | **Fixed.** The Minara API now only accepts cross-origin requests from Minara's own site. Requests from other websites are not allowed.                                                                                                      |
+| N14 | Swap API did not check the account balance first | **Improved.** Before a trade is placed, Minara simulates it and checks your available balance. If you don't have enough, the order is stopped and you see how much you're short. Before a sell, Minara also checks that you hold enough of the token. |
+| N15 | No anti-phishing strategy                | **Improved.** Minara can check whether a website or DApp is a phishing site, scan a token for scam risks such as honeypots, simulate a transaction before you sign it, and find risky token approvals for you to revoke. Minara also watches for common scam patterns, such as someone posing as support, a "safe account" transfer, or a recipient address that unexpectedly changes, and asks you to verify before you send funds. |
+
+Separately, Minara's site still rejects connections over the outdated TLS 1.0 and 1.1 protocols, in line with the fix for N18.
+
 ## Severity levels used in the report
 
 | Level      | Meaning in the SlowMist report                                                        |
@@ -107,7 +119,7 @@ Yes. Minara AI was audited by the SlowMist Security Team from July 30 to August 
 The Minara AI web app at minara.ai and its backend code at commit `f31bab713289177fb2c138c375c871f0e9ca1642`, including deposits and transfers, accounts and login, sessions, APIs, trading flows, and infrastructure. SlowMist ran 78 test items, and all of them passed.
 
 **Were the vulnerabilities fixed?**\
-All critical, high, and low severity findings were fixed: 1 critical, 2 high, and 8 low. Of the 12 suggestions, 3 were fixed and 9 were acknowledged. SlowMist verified the fixes through black-box testing.
+All critical, high, and low severity findings were fixed: 1 critical, 2 high, and 8 low. Of the 12 suggestions, 3 were fixed and 9 were acknowledged. SlowMist verified the fixes through black-box testing. Since the audit, Minara has also fixed the CORS suggestion (N23) and improved balance checks (N14) and anti-phishing protection (N15). See [Updates since the audit](#updates-since-the-audit).
 
 **Were there any medium severity findings?**\
 No. The audit found no medium severity issues.
