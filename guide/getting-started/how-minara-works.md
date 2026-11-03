@@ -23,6 +23,10 @@ The model reads your request, weighs the evidence, and proposes next steps. The 
 * Placing the order requires your confirmation.
 * Remembering that you prefer low leverage helps Minara tailor its answers, but it never counts as permission to trade.
 
+## Web and desktop
+
+Minara works the same in the web app and the desktop app: one interface, one agent. On the web, each user's work runs in a private cloud sandbox of their own, and your chats can sync between devices. A few features that need your own computer, such as Automation and computer control, are desktop-only. See [Workspace](../../features/workspace.md).
+
 ## From request to answer
 
 ### 1. You describe the goal
@@ -46,7 +50,7 @@ Specialized tools are brought in only when the task needs them, which keeps answ
 
 ### 3. Minara does the work
 
-Minara can read market pages, run analysis, check your portfolio, write and run scripts, and, if you've turned it on, use your computer for a specific task. See [Desktop workspace](../../features/desktop-workspace.md).
+Minara can read market pages, run analysis, check your portfolio, write and run scripts, and, if you've turned it on, use your computer for a specific task. See [Workspace](../../features/workspace.md).
 
 Throughout, Minara keeps a clear line between what it was *asked* to do and what *actually happened*. Previewing an order is not the same as placing it, and a backtest is not the same as live performance.
 

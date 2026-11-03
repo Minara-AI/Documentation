@@ -67,7 +67,7 @@
 * [Credits](reference/credits.md)
 * [Personalization](features/personalization.md)
 * [Multimodal input](features/multimodal-input.md)
-* [Desktop workspace](features/desktop-workspace.md)
+* [Workspace](features/workspace.md)
 
 ## Technology
 

@@ -7,10 +7,10 @@ description: >-
 
 
 {% hint style="info" %}
-**Desktop only.** Automation is currently available only in the Minara desktop app. The Minara web app and mobile app do not support it yet. [Download Minara Desktop](https://minara.ai/download-app).
+**Desktop only.** Automation is currently available only in the Minara desktop app. If you open Automations in the web app, Minara shows a link to download the desktop app. The mobile app does not support it yet. [Download Minara Desktop](https://minara.ai/download-app).
 {% endhint %}
 
-Automation lets Minara take care of recurring work for you. It can send you a market brief every morning, alert you when a price crosses a level, watch a wallet, track the story behind your holdings, or carry out a trading plan you have defined.
+Automation replaces Workflow from the old web app. Instead of one-off workflows, automations keep running in the background and take care of recurring work for you. It can send you a market brief every morning, alert you when a price crosses a level, watch a wallet, track the story behind your holdings, or carry out a trading plan you have defined.
 
 You describe what you want in plain language. Minara builds the automation, shows you exactly what it will do, and then runs it for you.
 
