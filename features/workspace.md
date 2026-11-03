@@ -1,6 +1,29 @@
-# Desktop workspace
+---
+description: >-
+  Each Minara task has its own workspace for files, code, and results. On the
+  web, it runs in a private cloud sandbox of your own. Chats can sync between
+  web and desktop.
+---
 
-Each task in the Minara desktop app has its own workspace: a place where Minara can read your files, create new ones, run analysis, and save the results for you to review.
+# Workspace
+
+Each task in Minara has its own workspace: a place where Minara can read your files, create new ones, run analysis, and save the results for you to review. Workspaces work the same way in the web app and the desktop app.
+
+## Web and desktop
+
+The Minara web app and desktop app share the same interface and the same agent. Features such as suggested next steps and file previews, which used to be desktop-only, now work on the web too.
+
+* **On the web,** every user gets a private cloud sandbox: a cloud environment of your own where your workspace files and task data are stored. It is separate from other users' sandboxes, which keeps your data more private and secure.
+* **On desktop,** your workspace runs on your own computer.
+
+A few features need your own computer, so they are only available in the desktop app, such as [computer control](#computer-control) and [Automation](../automation/overview.md). If you open one of them in the web app, Minara shows a link to download the desktop app.
+
+## Sync across devices
+
+You can keep your conversations in sync between the web app and the desktop app. Go to **Settings → Sync across devices** and turn on **Sync conversations**. You can also sync your personalization memories and investing profile there.
+
+* With **Automatically** turned on, Minara keeps this device and your account in sync on its own. Turn it off to sync only when you click **Sync now**.
+* If you turn syncing off, each device keeps only the conversations it recorded itself.
 
 ## What goes in the workspace
 

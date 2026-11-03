@@ -22,7 +22,9 @@ You ask in plain language. The model reads live prices and on-chain data, gives 
 
 ### The Minara stack
 
-It all sits on one base. Minara AI is the foundation, wired to execution venues like Hyperliquid and Lighter, with more being added. The surfaces you work in are built on top of it: chat and research, 24/7 Autopilot, workflows, and Strategy Studio. Whichever one you open, it reads from the same account, balance, and live data.
+It all sits on one base. Minara AI is the foundation, wired to execution venues like Hyperliquid and Lighter, with more being added. The surfaces you work in are built on top of it: the Minara agent for research and analysis, 24/7 Autopilot, Automation, and Strategy Studio. Whichever one you open, it reads from the same account, balance, and live data.
+
+Minara works the same in the web app and the desktop app. On the web, each user gets a private cloud sandbox for their work, and chats can sync across devices. See [Workspace](features/workspace.md).
 
 <figure><img src=".gitbook/assets/minara-stack.png" alt="The Minara stack, with Minara AI and execution venues Hyperliquid and Lighter at the base, and Chat and Research, 24/7 Autopilot, Workflow, and Strategy Studio built on top"><figcaption></figcaption></figure>
 
