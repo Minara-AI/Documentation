@@ -1,0 +1,169 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Minara Docs
+  structure:
+    - type: section
+      key: section-4
+      title: Harness
+      path: agent
+      description: ""
+      children:
+        - type: space
+          key: space-20
+          title: Harness
+          path: agent
+          default: true
+          content:
+            directory: ./agent
+    - type: section
+      key: section-1
+      title: Docs
+      path: minara-handbook
+      description: ""
+      default: true
+      children:
+        - type: space
+          key: space-1
+          title: English
+          path: docs
+          default: true
+          content:
+            directory: ./minara-handbook/docs
+        - type: space
+          key: space-3
+          title: 日本語
+          path: ja
+          content:
+            directory: ./minara-handbook/ja
+            language: ja
+        - type: space
+          key: space-4
+          title: Türkçe
+          path: tr
+          content:
+            directory: ./minara-handbook/tr
+            language: tr
+        - type: space
+          key: space-5
+          title: 简体中文
+          path: zh
+          content:
+            directory: ./minara-handbook/zh
+            language: zh
+        - type: space
+          key: space-6
+          title: Español
+          path: es
+          content:
+            directory: ./minara-handbook/es
+            language: es
+        - type: space
+          key: space-7
+          title: 한국어
+          path: ko
+          content:
+            directory: ./minara-handbook/ko
+            language: ko
+        - type: space
+          key: space-8
+          title: Русский
+          path: ru
+          content:
+            directory: ./minara-handbook/ru
+            language: ru
+    - type: section
+      key: section-3
+      title: Academy
+      path: academy
+      description: ""
+      children:
+        - type: space
+          key: space-15
+          title: English
+          path: en
+          default: true
+          content:
+            directory: ./academy/en
+        - type: space
+          key: space-16
+          title: 日本語
+          path: ja
+          content:
+            directory: ./academy/ja
+            language: ja
+        - type: space
+          key: space-17
+          title: 한국어
+          path: kr
+          content:
+            directory: ./academy/kr
+            language: ko
+        - type: space
+          key: space-18
+          title: Русский
+          path: ru
+          content:
+            directory: ./academy/ru
+            language: ru
+        - type: space
+          key: space-19
+          title: 简体中文
+          path: zh
+          content:
+            directory: ./academy/zh
+            language: zh
+    - type: section
+      key: section-2
+      title: Support
+      path: support
+      description: ""
+      children:
+        - type: space
+          key: space-2
+          title: English
+          path: help-center
+          default: true
+          content:
+            directory: ./support/help-center
+        - type: space
+          key: space-9
+          title: 日本語
+          path: ja
+          content:
+            directory: ./support/ja
+            language: ja
+        - type: space
+          key: space-10
+          title: 简体中文
+          path: zh
+          content:
+            directory: ./support/zh
+            language: zh
+        - type: space
+          key: space-11
+          title: Русский
+          path: ru
+          content:
+            directory: ./support/ru
+            language: ru
+        - type: space
+          key: space-12
+          title: 한국어
+          path: ko
+          content:
+            directory: ./support/ko
+            language: ko
+        - type: space
+          key: space-13
+          title: Türkçe
+          path: tr
+          content:
+            directory: ./support/tr
+            language: tr
+        - type: space
+          key: space-14
+          title: Español
+          path: es
+          content:
+            directory: ./support/es
+            language: es
